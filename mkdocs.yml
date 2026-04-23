@@ -51,4 +51,5 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Shieldbreaks: shieldbreaks/index.md
+  - Runs: runs.md
   - Methods: methods.md

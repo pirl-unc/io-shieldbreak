@@ -103,12 +103,35 @@ Always record the exact URL and timestamp of every fetch in the per-run search l
 6. **Append** validated rows to `data/shieldbreaks/<slug>/trials.jsonl` (append-only — never rewrite or delete existing rows; corrections are new rows with `supersedes: <prior_id>`).
 7. **Rebuild** `docs/shieldbreaks/<slug>/index.md` from the JSONL using `scripts/build_table.py <slug>` (write or extend the script if needed; keep it pure-Python, no LLM calls). The page should include: shieldbreak name, last-updated date, link back to `../index.md`, and the sortable trial table.
 8. **Update** `docs/shieldbreaks/index.md` to ensure this shieldbreak is listed (with name, slug link, last-updated date, row count). Add a row if new; update it if existing.
-9. **Verify locally**: `mkdocs build --strict` to catch broken links/tables.
-10. **Commit** with a clear message:
+9. **Log the run** — append one JSON object to `data/runs.jsonl` with the schema below, then regenerate `docs/runs.md` from the JSONL (newest first). Required fields:
+   ```json
+   {
+     "run_id": "<YYYYMMDD-HHMMSS>-<slug>",
+     "timestamp_utc": "<ISO 8601>",
+     "agent": "trialist_screener",
+     "shieldbreak": "<slug>",
+     "action": "new | refresh | backfill | schema",
+     "hits_searched": <int>,
+     "hits_kept": <int>,
+     "rows_added": <int>,
+     "rows_updated": <int>,
+     "rows_superseded": <int>,
+     "source_tiers": {"pmc_full_text": <int>, "europepmc_full_text": <int>, "pubmed_abstract": <int>},
+     "notes": "<short string or empty>",
+     "commit": "<short SHA, filled in after step 10>"
+   }
+   ```
+   Only log **successful** runs. Aborted or failed runs leave their per-run search file in `data/shieldbreaks/<slug>/searches/` for postmortem and are not logged.
+10. **Verify locally**: `mkdocs build --strict` to catch broken links/tables.
+11. **Commit** with a clear message:
     ```
     data(<slug>): add N trials from <run-date>
     ```
-11. **Push** — only after explicit user confirmation. The `pages.yml` workflow auto-deploys.
+    Then update the run-log row's `commit` field with the short SHA and stage that update as a separate commit:
+    ```
+    log: record run <run_id>
+    ```
+12. **Push** — only after explicit user confirmation. The `pages.yml` workflow auto-deploys.
 
 ## Schema changes
 
@@ -129,7 +152,8 @@ Schema changes are scoped to one shieldbreak — they never affect other shieldb
 - **Flag disagreements** when the same trial reports different values across publications (interim vs. final, abstract vs. full report). Surface both, mark the canonical one.
 - **Never push without confirmation.** Local commits are fine; pushes to `pirl-unc/io-shieldbreak` are user-authorized only.
 - **Append-only data.** No row is ever deleted. Corrections supersede.
-- **Shieldbreak isolation.** Never mix data, prompts, or docs across shieldbreaks. A run for `<slug-A>` must not touch any file under another shieldbreak's directories.
+- **Shieldbreak isolation.** Never mix data, prompts, or docs across shieldbreaks. A run for `<slug-A>` must not touch any file under another shieldbreak's directories. The two cross-shieldbreak files you may write to are `docs/shieldbreaks/index.md` (directory listing) and `data/runs.jsonl` + `docs/runs.md` (run log).
+- **Always log successful runs** to `data/runs.jsonl` per the schema in the workflow. The run log is the audit trail for the site — a successful run that isn't logged is a bug.
 
 ## Output style
 
