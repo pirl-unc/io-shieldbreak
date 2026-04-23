@@ -1,0 +1,719 @@
+#!/usr/bin/env python3
+"""
+Build the per-shieldbreak trial-table Markdown page from trials.jsonl.
+
+Usage:
+    python scripts/build_table.py <slug>
+
+For the `treg-depletion` shieldbreak this renders according to
+styles/treg-depletion/STYLE.md:
+- Booktabs-style table with `.pd-table` class
+- `.pill` badges for success_flag, tissue, assay, change_mechanism
+- Signed change colors for pct_change with unicode arrow
+- Row grouping by study_id with left-edge stripe (cycle of 6)
+- Two-tier column visibility (primary + expanded behind toggle)
+- Tissue filter chip row with inline JS
+- Side-list for reviews.jsonl rendered as trailing section
+
+Pure-Python; no LLM calls, no external deps.
+"""
+
+from __future__ import annotations
+
+import json
+import re
+import sys
+from datetime import datetime, timezone
+from html import escape
+from pathlib import Path
+
+
+REPO_ROOT = Path(__file__).resolve().parent.parent
+DATA_DIR = REPO_ROOT / "data" / "shieldbreaks"
+DOCS_DIR = REPO_ROOT / "docs" / "shieldbreaks"
+STYLE_DIR = REPO_ROOT / "styles"
+
+
+# ---------- helpers ----------
+
+
+def read_jsonl(path: Path) -> list[dict]:
+    if not path.exists():
+        return []
+    rows: list[dict] = []
+    with path.open() as fh:
+        for line in fh:
+            line = line.strip()
+            if line:
+                rows.append(json.loads(line))
+    return rows
+
+
+def safe(v, default: str = "—") -> str:
+    if v is None or v == "":
+        return default
+    return str(v)
+
+
+def classify_success(row: dict) -> tuple[str, str]:
+    """Map (depletion_success, change_direction, change_mechanism) -> (sf-class, label)."""
+    sig = (row.get("change_significance") or "").lower()
+    ds = (row.get("depletion_success") or "").lower()
+    cd = (row.get("change_direction") or "").lower()
+    cm = (row.get("change_mechanism") or "").lower()
+
+    if cd == "increase" and cm != "expansion-with-ratio-shift":
+        return ("sf-increase", "increase")
+    if ds == "succeeded" and (
+        "p=" in sig or "significant" in sig or "p<" in sig or "reported" in sig
+    ):
+        return ("sf-sig-reduction", "significant reduction")
+    if ds == "partial" or "inconsistent" in sig or "trend" in sig:
+        return ("sf-nonsig-trend", "nonsignificant trend")
+    if ds == "failed" or cm == "null-result":
+        return ("sf-null-result", "null result")
+    if ds == "not-assessed":
+        return ("sf-nonsig-trend", "ratio-shift only")
+    return ("sf-null-result", "—")
+
+
+def mech_chip(change_mechanism: str | None) -> str:
+    if not change_mechanism:
+        return ""
+    cm = change_mechanism.lower()
+    mapping = {
+        "absolute-reduction": ("mech-depletion", "depletion"),
+        "ratio-shift": ("mech-ratio-only", "ratio only"),
+        "expansion-with-ratio-shift": ("mech-frac-shift", "fraction shift"),
+        "functional-impairment-only": ("mech-frac-shift", "functional only"),
+        "null-result": ("mech-null", "null"),
+    }
+    cls, label = mapping.get(cm, ("mech-null", cm))
+    return f'<span class="pill {cls}">{escape(label)}</span>'
+
+
+def tissue_chip(tissue: str | None) -> str:
+    if not tissue:
+        return "—"
+    t = tissue.lower()
+    cls_map = {
+        "pbmc": "tis-pbmc",
+        "tumor": "tis-tumor",
+        "tdln": "tis-tdln",
+        "bone-marrow": "tis-bm",
+        "ascites": "tis-ascites",
+        "pleural-effusion": "tis-ascites",
+        "csf": "tis-other",
+        "skin": "tis-skin",
+        "other": "tis-other",
+    }
+    cls = cls_map.get(t, "tis-other")
+    return f'<span class="pill {cls}">{escape(tissue)}</span>'
+
+
+def assay_chip(gating_quality: str | None, readout_type: str | None) -> str:
+    """STYLE.md defines assay chips; our schema stores gating_quality.
+    Map conservatively: FOXP3-confirmed → flow, functional-assay → flow+functional,
+    surface-only → flow, mixed/unclear → flow."""
+    label = "flow"
+    cls = "assay-flow"
+    if gating_quality == "functional-assay":
+        label = "flow+fn"
+        cls = "assay-flow"
+    if readout_type == "suppressive-function":
+        label = "suppress"
+        cls = "assay-flow"
+    return f'<span class="pill {cls}">{escape(label)}</span>'
+
+
+def percent_from_magnitude(magnitude: str | None) -> tuple[str, str]:
+    """Extract a signed percent change string from free-text change_magnitude.
+    Returns (rendered_html_fragment, plain_value_for_sort). Falls back to em-dash."""
+    if not magnitude:
+        return ("—", "")
+    m = magnitude
+    # Try "X% reduction" / "X% decrease"
+    down = re.search(r"([~≥]?\s*\d+(?:\.\d+)?)\s*%\s*(?:reduction|decrease|decline)", m, re.I)
+    if down:
+        num = down.group(1).replace("~", "").replace("≥", "").strip()
+        return (f'<span class="change-neg">↓ −{num}%</span>', f"-{num}")
+    up = re.search(r"([~≥]?\s*\d+(?:\.\d+)?)\s*%\s*(?:increase|rise|expansion)", m, re.I)
+    if up:
+        num = up.group(1).replace("~", "").replace("≥", "").strip()
+        return (f'<span class="change-pos">↑ +{num}%</span>', f"+{num}")
+    # "median X% reduction"
+    med = re.search(r"median\s+(\d+(?:\.\d+)?)\s*%\s*reduction", m, re.I)
+    if med:
+        num = med.group(1)
+        return (f'<span class="change-neg">↓ −{num}%</span>', f"-{num}")
+    # Fold
+    fold_down = re.search(r"(\d+(?:\.\d+)?)\s*[×x]\s*(?:decrease|reduction)", m, re.I)
+    if fold_down:
+        return (f'<span class="change-neg">↓ {fold_down.group(1)}×</span>', f"-{fold_down.group(1)}")
+    fold_up = re.search(r"(\d+(?:\.\d+)?)\s*[×x]\s*increase", m, re.I)
+    if fold_up:
+        return (f'<span class="change-pos">↑ {fold_up.group(1)}×</span>', f"+{fold_up.group(1)}")
+    return ("—", "")
+
+
+def cite_links(row: dict) -> str:
+    links: list[str] = []
+    if row.get("pmid"):
+        links.append(
+            f'<a href="https://pubmed.ncbi.nlm.nih.gov/{escape(row["pmid"])}/">PMID</a>'
+        )
+    if row.get("pmcid"):
+        links.append(
+            f'<a href="https://europepmc.org/article/PMC/{escape(row["pmcid"].replace("PMC",""))}">PMCID</a>'
+        )
+    if row.get("doi"):
+        links.append(f'<a href="https://doi.org/{escape(row["doi"])}">DOI</a>')
+    if row.get("nct_id"):
+        links.append(
+            f'<a href="https://clinicaltrials.gov/study/{escape(row["nct_id"])}">NCT</a>'
+        )
+    if not links:
+        return "—"
+    return '<span class="cite-links">' + " ".join(links) + "</span>"
+
+
+def intervention_cell(row: dict) -> str:
+    primary = safe(row.get("intervention"))
+    combo = row.get("combo_partners")
+    if combo and combo.strip() and combo.lower() != "null":
+        return f'{escape(primary)}<span class="combo">{escape(combo)}</span>'
+    return escape(primary)
+
+
+def build_row_html(row: dict, group_idx: int) -> str:
+    pct_html, _ = percent_from_magnitude(row.get("change_magnitude"))
+    sf_cls, sf_label = classify_success(row)
+    sf_badge = f'<span class="pill {sf_cls}">{escape(sf_label)}</span>'
+    mech_html = mech_chip(row.get("change_mechanism"))
+
+    tissue = row.get("tissue") or "other"
+
+    # Primary cells
+    primary_cells = [
+        ("", intervention_cell(row)),
+        ("", escape(safe(row.get("indication")))),
+        ('style="text-align:right"', escape(str(row.get("n_treated_with_treg_measurement") or ""))),
+        ("", tissue_chip(tissue)),
+        ("", assay_chip(row.get("gating_quality"), row.get("readout_type"))),
+        ('style="text-align:right"', pct_html),
+        ("", sf_badge + (f'<br>{mech_html}' if mech_html else "")),
+        ("", cite_links(row)),
+    ]
+
+    # Expanded cells
+    expanded_cells = [
+        ("col-expanded", escape(safe(row.get("pmid")))),
+        ("col-expanded", escape(safe(row.get("design_type")))),
+        ('col-expanded truncate', escape(safe(row.get("dose")))),
+        ("col-expanded mono truncate", escape(safe(row.get("treg_definition")))),
+        ("col-expanded", escape(safe(row.get("readout_type")))),
+        ("col-expanded", escape(safe(row.get("timepoint_cluster")))),
+        ("col-expanded mono truncate", escape(safe(row.get("timepoint_detail")))),
+        ("col-expanded truncate", escape(safe(row.get("baseline_value")))),
+        ("col-expanded truncate", escape(safe(row.get("post_value")))),
+        ("col-expanded truncate", escape(safe(row.get("change_magnitude")))),
+        ("col-expanded", escape(safe(row.get("change_significance")))),
+        ("col-expanded col-durability", escape(safe(row.get("durability_described")))),
+        ("col-expanded", escape(safe(row.get("intent_to_deplete")))),
+        ("col-expanded", escape(safe(row.get("source_type")))),
+        ("col-expanded col-notes truncate", escape(safe(row.get("notes")))),
+    ]
+
+    td_parts = []
+    for attr, content in primary_cells:
+        td_parts.append(f"<td {attr}>{content}</td>")
+    for cls, content in expanded_cells:
+        td_parts.append(f'<td class="{cls}" title="{escape(str(content))}">{content}</td>')
+
+    tr = (
+        f'<tr class="group-{group_idx % 6}" data-tissue="{escape(tissue)}" '
+        f'data-study="{escape(safe(row.get("pmid"), ""))}">'
+        + "".join(td_parts)
+        + "</tr>"
+    )
+    return tr
+
+
+def build_table_html(rows: list[dict]) -> str:
+    # Sort: pmid, tissue, timepoint_cluster so multi-row studies group contiguously
+    tp_order = {
+        "baseline": 0,
+        "early-on-treatment": 1,
+        "mid": 2,
+        "late": 3,
+        "post-progression": 4,
+        "off-treatment-recovery": 5,
+    }
+    rows_sorted = sorted(
+        rows,
+        key=lambda r: (
+            r.get("pmid") or "zzz",
+            r.get("tissue") or "zzz",
+            tp_order.get(r.get("timepoint_cluster") or "", 9),
+        ),
+    )
+
+    # Assign group indices by order of first appearance of pmid
+    first_seen: dict[str, int] = {}
+    for r in rows_sorted:
+        pid = r.get("pmid") or r.get("row_id")
+        if pid not in first_seen:
+            first_seen[pid] = len(first_seen)
+
+    body_rows = []
+    for r in rows_sorted:
+        pid = r.get("pmid") or r.get("row_id")
+        body_rows.append(build_row_html(r, first_seen[pid]))
+
+    # Thead: primary + expanded headers
+    primary_headers = ["Intervention", "Disease", "N", "Tissue", "Assay", "Treg change", "Result", "Source"]
+    expanded_headers = [
+        "PMID", "Design", "Dose/schedule", "Treg defn", "Readout",
+        "Timepoint", "Timing detail", "Baseline", "Post", "Magnitude",
+        "Significance", "Durability", "Intent", "Data source", "Notes",
+    ]
+
+    thead_cells = [f"<th>{h}</th>" for h in primary_headers]
+    thead_cells += [f'<th class="th-expanded">{h}</th>' for h in expanded_headers]
+
+    filter_chips_html = """
+<div class="filter-row">
+  <span class="filter-chip active" data-tissue="all">All</span>
+  <span class="filter-chip pill tis-pbmc" data-tissue="PBMC">PBMC</span>
+  <span class="filter-chip pill tis-tumor" data-tissue="tumor">tumor</span>
+  <span class="filter-chip pill tis-tdln" data-tissue="TDLN">TDLN</span>
+  <span class="filter-chip pill tis-bm" data-tissue="bone-marrow">bone marrow</span>
+  <span class="filter-chip pill tis-ascites" data-tissue="ascites">ascites</span>
+  <span class="filter-chip pill tis-skin" data-tissue="skin">skin</span>
+  <span class="filter-chip pill tis-other" data-tissue="other">other</span>
+</div>
+""".strip()
+
+    toggle_html = """
+<label class="expand-toggle">
+  <input type="checkbox" id="expand-cols"> Show all columns (dose, treg defn, baseline/post values, durability, notes)
+</label>
+""".strip()
+
+    table_html = (
+        f'<div class="pd-table-wrapper" markdown="0">\n'
+        f"{filter_chips_html}\n"
+        f"{toggle_html}\n"
+        f'<table class="pd-table">\n'
+        f"<thead><tr>{''.join(thead_cells)}</tr></thead>\n"
+        f"<tbody>\n" + "\n".join(body_rows) + "\n</tbody>\n"
+        f"</table>\n"
+        f'</div>\n'
+        + FILTER_SCRIPT
+        + EXPAND_SCRIPT
+    )
+    return table_html
+
+
+FILTER_SCRIPT = """
+<script>
+(function(){
+  var chips = document.querySelectorAll('.filter-chip');
+  chips.forEach(function(chip){
+    chip.addEventListener('click', function(){
+      var t = chip.dataset.tissue;
+      chips.forEach(function(c){ c.classList.remove('active'); });
+      chip.classList.add('active');
+      document.querySelectorAll('.pd-table tbody tr').forEach(function(row){
+        row.style.display = (t === 'all' || row.dataset.tissue === t) ? '' : 'none';
+      });
+    });
+  });
+})();
+</script>
+""".strip()
+
+EXPAND_SCRIPT = """
+<script>
+(function(){
+  var cb = document.getElementById('expand-cols');
+  if (!cb) return;
+  cb.addEventListener('change', function(){
+    var t = document.querySelector('.pd-table');
+    if (t) t.classList.toggle('show-all', cb.checked);
+  });
+})();
+</script>
+""".strip()
+
+
+def build_reviews_section(reviews: list[dict]) -> str:
+    if not reviews:
+        return ""
+    parts = ["\n## Side-list: systematic reviews and meta-analyses\n"]
+    parts.append(
+        "These are excluded from the primary table but retained as follow-up leads.\n"
+    )
+    parts.append("| First author | Year | Journal | Title | Type | Links |")
+    parts.append("|---|---|---|---|---|---|")
+    for r in reviews:
+        links = []
+        if r.get("pmid"):
+            links.append(f'[PMID](https://pubmed.ncbi.nlm.nih.gov/{r["pmid"]}/)')
+        if r.get("doi"):
+            links.append(f'[DOI](https://doi.org/{r["doi"]})')
+        parts.append(
+            f"| {safe(r.get('first_author'))} | {safe(r.get('year'))} | "
+            f"{safe(r.get('journal'))} | {safe(r.get('title'))} | "
+            f"{safe(r.get('review_type'))} | {' '.join(links) or '—'} |"
+        )
+    return "\n".join(parts) + "\n"
+
+
+# ---------- page ----------
+
+
+def build_index_md(slug: str) -> str:
+    rows = read_jsonl(DATA_DIR / slug / "trials.jsonl")
+    reviews = read_jsonl(DATA_DIR / slug / "reviews.jsonl")
+    n_rows = len(rows)
+    n_studies = len({r.get("pmid") for r in rows if r.get("pmid")})
+    n_success = sum(1 for r in rows if r.get("depletion_success") == "succeeded")
+    n_failed = sum(1 for r in rows if r.get("depletion_success") == "failed")
+    n_partial = sum(1 for r in rows if r.get("depletion_success") == "partial")
+    n_not_assessed = sum(1 for r in rows if r.get("depletion_success") == "not-assessed")
+
+    today = datetime.now(timezone.utc).date().isoformat()
+    title = "Treg depletion"
+    research_question = (
+        "Which clinical interventions reduce regulatory T cells (Tregs) — in absolute number, "
+        "frequency, or functional dominance — in humans, and how durable / context-dependent "
+        "is that effect?"
+    )
+
+    class_counts: dict[str, int] = {}
+    for r in rows:
+        c = r.get("intervention_class") or "other"
+        class_counts[c] = class_counts.get(c, 0) + 1
+    class_summary = ", ".join(
+        f"{k} ({v})" for k, v in sorted(class_counts.items(), key=lambda kv: -kv[1])
+    )
+
+    tissue_counts: dict[str, int] = {}
+    for r in rows:
+        t = r.get("tissue") or "other"
+        tissue_counts[t] = tissue_counts.get(t, 0) + 1
+    tissue_summary = ", ".join(
+        f"{k} ({v})" for k, v in sorted(tissue_counts.items(), key=lambda kv: -kv[1])
+    )
+
+    header = f"""# {title}
+
+[← back to shieldbreaks]({"../index.md"})
+
+**Last updated:** {today}  **Rows:** {n_rows} across {n_studies} studies  **Depletion outcomes:** {n_success} succeeded / {n_partial} partial / {n_failed} failed / {n_not_assessed} not-assessed (ratio-shift)
+
+## Research question
+
+{research_question}
+
+## Scope summary
+
+- **Intervention classes:** {class_summary}
+- **Tissue compartments:** {tissue_summary}
+- **Design types:** paired pre/post, treated-vs-untreated, single-arm, window-of-opportunity, case series (all flagged per row)
+- **Row grain:** one row per (study × tissue × timepoint-cluster × dose-cohort)
+- **Primary-research-only;** reviews / meta-analyses live in the [side-list](#side-list-systematic-reviews-and-meta-analyses) below.
+
+See `prompts/shieldbreaks/treg-depletion/search.md` for the full search specification and
+`prompts/shieldbreaks/treg-depletion/extract.md` for the extraction schema.
+
+## Pharmacodynamic results
+
+"""
+
+    table_html = build_table_html(rows)
+    reviews_md = build_reviews_section(reviews)
+
+    return header + table_html + "\n" + reviews_md
+
+
+def build_css() -> str:
+    """Emit the treg-depletion.css per STYLE.md. Also includes .pill base class
+    (factored out so future shieldbreaks can @import it)."""
+    return """/* Generated by scripts/build_table.py — do not hand-edit.
+   Source spec: styles/treg-depletion/STYLE.md */
+
+/* ---- .pill base class (factor into pills.css if a second shieldbreak lands) ---- */
+.pill {
+  display: inline-block;
+  padding: 0.05em 0.55em;
+  margin-right: 0.35em;
+  border-radius: 0.65em;
+  font-size: 0.72em;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  vertical-align: 0.12em;
+  white-space: nowrap;
+  border: 1px solid transparent;
+}
+
+/* ---- Citation links ---- */
+.cite-links a {
+  font-size: 0.75em;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--md-primary-fg-color);
+  text-decoration: none;
+  margin-right: 0.3em;
+  white-space: nowrap;
+}
+.cite-links a:hover { text-decoration: underline; }
+
+/* ---- Booktabs-style table ---- */
+.pd-table-wrapper { overflow-x: auto; margin: 1em 0; }
+.pd-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.88em;
+}
+.pd-table thead tr:first-child th { border-top: 2px solid var(--md-default-fg-color); }
+.pd-table thead tr:last-child  th { border-bottom: 1.5px solid var(--md-default-fg-color); }
+.pd-table tbody tr:last-child  td { border-bottom: 2px solid var(--md-default-fg-color); }
+.pd-table th, .pd-table td {
+  border: none;
+  padding: 0.35em 0.6em;
+  vertical-align: top;
+}
+.pd-table td { border-bottom: none !important; }
+.pd-table th { text-align: left; font-weight: 600; }
+
+/* ---- Truncation ---- */
+.pd-table td.truncate {
+  max-width: 22ch;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.pd-table td.truncate:hover {
+  white-space: normal;
+  overflow: visible;
+  position: relative;
+  z-index: 10;
+  background: var(--md-default-bg-color);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* ---- Monospace cells ---- */
+.pd-table td.mono {
+  font-family: var(--md-code-font);
+  font-size: 0.82em;
+}
+
+/* ---- Durability ---- */
+.pd-table td.col-durability { font-style: italic; font-size: 0.83em; }
+
+/* ---- Notes column ---- */
+.pd-table td.col-notes {
+  font-style: italic;
+  font-size: 0.80em;
+  opacity: 0.8;
+  max-width: 26ch;
+}
+
+/* ---- Inline combination secondary text ---- */
+.pd-table td .combo {
+  display: block;
+  font-size: 0.82em;
+  opacity: 0.7;
+  margin-top: 0.15em;
+}
+.pd-table td .combo::before { content: "+ "; }
+
+/* ---- Two-tier column visibility ---- */
+.pd-table .col-expanded { display: none; }
+.pd-table.show-all .col-expanded { display: table-cell; }
+.pd-table .th-expanded { display: none; }
+.pd-table.show-all .th-expanded { display: table-cell; }
+
+.expand-toggle {
+  display: inline-block;
+  margin: 0.5em 0;
+  font-size: 0.85em;
+  cursor: pointer;
+  user-select: none;
+}
+.expand-toggle input { margin-right: 0.4em; }
+
+/* ---- Filter chip row ---- */
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em;
+  margin-bottom: 0.75em;
+  align-items: center;
+}
+.filter-chip {
+  cursor: pointer;
+  opacity: 0.65;
+  transition: opacity 0.15s;
+}
+.filter-chip.active { opacity: 1; outline: 2px solid var(--md-primary-fg-color); }
+.filter-chip:hover { opacity: 0.9; }
+
+/* ---- Signed change ---- */
+.change-neg { color: #1d6b4a; font-weight: 600; }
+.change-pos { color: #8c4a1f; font-weight: 600; }
+[data-md-color-scheme="slate"] .change-neg { color: #9fd4b7; }
+[data-md-color-scheme="slate"] .change-pos { color: #e8b896; }
+
+/* ---- Success flag badges ---- */
+.pill.sf-sig-reduction {
+  background: #d9f2e5; color: #1d6b4a; border-color: #9fd4b7;
+  font-size: 0.78em;
+}
+.pill.sf-nonsig-trend {
+  background: #fbeacb; color: #8a5510; border-color: #e0b87c;
+}
+.pill.sf-null-result {
+  background: #ececf2; color: #3f3f5c; border-color: #b4b4c4;
+}
+.pill.sf-increase {
+  background: #fde4d3; color: #8c4a1f; border-color: #e8b896;
+}
+[data-md-color-scheme="slate"] .pill.sf-sig-reduction {
+  background: #1d4a36; color: #9fd4b7; border-color: #4a7a62;
+}
+[data-md-color-scheme="slate"] .pill.sf-nonsig-trend {
+  background: #4a3616; color: #e0b87c; border-color: #7a5c2e;
+}
+[data-md-color-scheme="slate"] .pill.sf-null-result {
+  background: #2a2a38; color: #b4b4c4; border-color: #4e4e64;
+}
+[data-md-color-scheme="slate"] .pill.sf-increase {
+  background: #4a2a14; color: #e8b896; border-color: #7a4a2a;
+}
+
+/* ---- Tissue chips ---- */
+.pill.tis-pbmc    { background:#dce6f7; color:#234f8c; border-color:#7ea5d4; }
+.pill.tis-tumor   { background:#e7dcf3; color:#5b3a87; border-color:#a995c8; }
+.pill.tis-tdln    { background:#d4ecec; color:#1d5c5c; border-color:#8fc4c4; }
+.pill.tis-bm      { background:#e8ebc7; color:#5a6a1d; border-color:#bac28a; }
+.pill.tis-ascites { background:#fbeacb; color:#8a5510; border-color:#e0b87c; }
+.pill.tis-skin    { background:#fde4d3; color:#8c4a1f; border-color:#e8b896; }
+.pill.tis-other   { background:#ececf2; color:#3f3f5c; border-color:#b4b4c4; }
+
+/* ---- Assay chips ---- */
+.pill.assay-flow      { background:#dce6f7; color:#234f8c; border-color:#7ea5d4; }
+.pill.assay-cytof     { background:#e7dcf3; color:#5b3a87; border-color:#a995c8; }
+.pill.assay-ihc       { background:#d4ecec; color:#1d5c5c; border-color:#8fc4c4; }
+.pill.assay-mif       { background:#fbeacb; color:#8a5510; border-color:#e0b87c; }
+.pill.assay-bulk-rna  { background:#e8ebc7; color:#5a6a1d; border-color:#bac28a; }
+.pill.assay-scrna     { background:#d9f2e5; color:#1d6b4a; border-color:#9fd4b7; }
+.pill.assay-qpcr      { background:#ececf2; color:#3f3f5c; border-color:#b4b4c4; }
+
+/* ---- Change mechanism chips (smaller) ---- */
+.pill.mech-depletion  { background:#d9f2e5; color:#1d6b4a; border-color:#9fd4b7; font-size:0.65em; }
+.pill.mech-frac-shift { background:#dce6f7; color:#234f8c; border-color:#7ea5d4; font-size:0.65em; }
+.pill.mech-ratio-only { background:#fbeacb; color:#8a5510; border-color:#e0b87c; font-size:0.65em; }
+.pill.mech-null       { background:#ececf2; color:#3f3f5c; border-color:#b4b4c4; font-size:0.65em; }
+
+/* ---- Row grouping (left-edge stripe cycle) ---- */
+.pd-table tr.group-0 td:first-child { border-left: 3px solid #7ea5d4; }
+.pd-table tr.group-1 td:first-child { border-left: 3px solid #9fd4b7; }
+.pd-table tr.group-2 td:first-child { border-left: 3px solid #e0b87c; }
+.pd-table tr.group-3 td:first-child { border-left: 3px solid #a995c8; }
+.pd-table tr.group-4 td:first-child { border-left: 3px solid #bac28a; }
+.pd-table tr.group-5 td:first-child { border-left: 3px solid #8fc4c4; }
+[data-md-color-scheme="slate"] .pd-table tr.group-0 td:first-child { border-left-color: #3d5e8a; }
+[data-md-color-scheme="slate"] .pd-table tr.group-1 td:first-child { border-left-color: #4a7a62; }
+[data-md-color-scheme="slate"] .pd-table tr.group-2 td:first-child { border-left-color: #7a5c2e; }
+[data-md-color-scheme="slate"] .pd-table tr.group-3 td:first-child { border-left-color: #6a4c90; }
+[data-md-color-scheme="slate"] .pd-table tr.group-4 td:first-child { border-left-color: #555f25; }
+[data-md-color-scheme="slate"] .pd-table tr.group-5 td:first-child { border-left-color: #3e6464; }
+"""
+
+
+def update_shieldbreaks_index(slug: str, row_count: int) -> None:
+    """Regenerate the cross-shieldbreak directory page from data/shieldbreaks/*/trials.jsonl."""
+    entries: list[tuple[str, int, str]] = []  # (slug, row_count, last_updated)
+    for sb_dir in sorted(DATA_DIR.iterdir()):
+        if not sb_dir.is_dir():
+            continue
+        jsonl = sb_dir / "trials.jsonl"
+        if not jsonl.exists():
+            continue
+        rows = read_jsonl(jsonl)
+        if not rows:
+            continue
+        last_upd = datetime.fromtimestamp(jsonl.stat().st_mtime, timezone.utc).date().isoformat()
+        entries.append((sb_dir.name, len(rows), last_upd))
+
+    lines = [
+        "# Shieldbreaks",
+        "",
+        'A "shieldbreak" is a single project query — one research question with its own search parameters, extraction schema, and trial table. Each lives in its own subdirectory so it can evolve independently of the others.',
+        "",
+        "## Active shieldbreaks",
+        "",
+    ]
+    if not entries:
+        lines.append("_(no shieldbreaks yet — the first will appear here once `trialist_screener` runs)_")
+    else:
+        lines.append("| Shieldbreak | Rows | Last updated |")
+        lines.append("|---|---|---|")
+        for name, n, upd in entries:
+            title = name.replace("-", " ").title()
+            lines.append(f"| [{title}]({name}/index.md) | {n} | {upd} |")
+    lines += [
+        "",
+        "## Adding a shieldbreak",
+        "",
+        "Invoke the `trialist_screener` Claude Code subagent and answer \"new shieldbreak\" when prompted. The agent will:",
+        "",
+        "1. Ask for a project name and propose a slug (kebab-case)",
+        "2. Elicit the search parameters → write to `prompts/shieldbreaks/<slug>/search.md`",
+        "3. Elicit the extraction schema → write to `prompts/shieldbreaks/<slug>/extract.md` and `data/shieldbreaks/<slug>/schema.json`",
+        "4. Run the search, screen, extract → append to `data/shieldbreaks/<slug>/trials.jsonl`",
+        "5. Generate `docs/shieldbreaks/<slug>/index.md` with the trial table",
+        "6. Add a row to this index page linking to the new project",
+        "",
+    ]
+    (DOCS_DIR / "index.md").write_text("\n".join(lines))
+
+
+# ---------- main ----------
+
+
+def main(argv: list[str]) -> int:
+    if len(argv) != 2:
+        print("usage: build_table.py <slug>", file=sys.stderr)
+        return 2
+    slug = argv[1]
+    sb_data = DATA_DIR / slug
+    sb_docs = DOCS_DIR / slug
+    if not sb_data.exists():
+        print(f"no data dir: {sb_data}", file=sys.stderr)
+        return 1
+    sb_docs.mkdir(parents=True, exist_ok=True)
+
+    page = build_index_md(slug)
+    (sb_docs / "index.md").write_text(page)
+
+    # CSS
+    css_dir = REPO_ROOT / "docs" / "stylesheets"
+    css_dir.mkdir(parents=True, exist_ok=True)
+    (css_dir / f"{slug}.css").write_text(build_css())
+
+    # Update cross-shieldbreak index
+    rows = read_jsonl(sb_data / "trials.jsonl")
+    update_shieldbreaks_index(slug, len(rows))
+
+    print(f"built docs/shieldbreaks/{slug}/index.md — {len(rows)} rows")
+    print(f"built docs/stylesheets/{slug}.css")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv))

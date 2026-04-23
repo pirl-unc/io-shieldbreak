@@ -48,6 +48,9 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
 
+extra_css:
+  - stylesheets/treg-depletion.css
+
 nav:
   - Home: index.md
   - Shieldbreaks: shieldbreaks/index.md

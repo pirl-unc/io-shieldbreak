@@ -1,0 +1,103 @@
+{
+  "run_id": "20260423-treg-depletion",
+  "run_date": "2026-04-23",
+  "agent": "trialist_screener",
+  "shieldbreak": "treg-depletion",
+  "notes": "NCBI-first composite discovery. Per-intervention-family PubMed esearch runs; counts are pre-screening hits. CT.gov cross-ref performed for NCT resolution during extraction.",
+  "queries": [
+    {
+      "source": "pubmed",
+      "family": "anti-CCR4 (mogamulizumab)",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=(mogamulizumab[tiab]+OR+%22anti-CCR4%22[tiab])+AND+(%22regulatory+T%22[tiab]+OR+%22Treg%22[tiab]+OR+%22FOXP3%22[tiab])+AND+(%222000%22[dp]%3A%223000%22[dp])+AND+english[la]",
+      "count": 81,
+      "retrieved_ids": 81
+    },
+    {
+      "source": "pubmed",
+      "family": "anti-CD25 (daclizumab, basiliximab, camidanlumab, RG6292)",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=(daclizumab[tiab]+OR+basiliximab[tiab]+OR+camidanlumab[tiab]+OR+%22ADCT-301%22[tiab]+OR+%22anti-CD25%22[tiab]+OR+RG6292[tiab]+OR+vopikitug[tiab])+AND+(%22regulatory+T%22[tiab]+OR+%22Treg%22[tiab]+OR+%22FOXP3%22[tiab])",
+      "count": 597,
+      "retrieved_ids": 100
+    },
+    {
+      "source": "pubmed",
+      "family": "Fc-enhanced anti-CTLA-4 (botensilimab, quavonlimab, ONC-392, BMS-986218)",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=(botensilimab[tiab]+OR+AGEN1181[tiab]+OR+%22Fc-enhanced%22[tiab]+OR+%22Fc-engineered%22[tiab]+OR+quavonlimab[tiab]+OR+%22ONC-392%22[tiab]+OR+gotistobart[tiab]+OR+%22BMS-986218%22[tiab])+AND+(%22regulatory+T%22[tiab]+OR+%22Treg%22[tiab]+OR+%22FOXP3%22[tiab])",
+      "count": 10,
+      "retrieved_ids": 10
+    },
+    {
+      "source": "pubmed",
+      "family": "ipilimumab/tremelimumab Treg PD",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=(ipilimumab[tiab]+OR+tremelimumab[tiab])+AND+(%22regulatory+T%22[tiab]+OR+%22Treg%22[tiab]+OR+%22FOXP3%22[tiab])+AND+(depletion[tiab]+OR+reduction[tiab]+OR+intratumoral[tiab]+OR+%22tumor+infiltrating%22[tiab]+OR+pharmacodynamic[tiab])",
+      "count": 70,
+      "retrieved_ids": 70
+    },
+    {
+      "source": "pubmed",
+      "family": "low-dose / metronomic cyclophosphamide",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=(cyclophosphamide[tiab]+AND+(%22low-dose%22[tiab]+OR+metronomic[tiab])+AND+(%22regulatory+T%22[tiab]+OR+%22Treg%22[tiab]+OR+%22FOXP3%22[tiab]))",
+      "count": 159,
+      "retrieved_ids": 100
+    },
+    {
+      "source": "pubmed",
+      "family": "denileukin diftitox",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=(%22denileukin+diftitox%22[tiab]+OR+ONTAK[tiab]+OR+E7777[tiab])+AND+(%22regulatory+T%22[tiab]+OR+%22Treg%22[tiab]+OR+%22FOXP3%22[tiab])",
+      "count": 45,
+      "retrieved_ids": 45
+    },
+    {
+      "source": "pubmed",
+      "family": "IL-2 variants (nemvaleukin, bempegaldesleukin)",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=(nemvaleukin[tiab]+OR+%22ALKS+4230%22[tiab]+OR+bempegaldesleukin[tiab]+OR+%22NKTR-214%22[tiab])+AND+(%22regulatory+T%22[tiab]+OR+%22Treg%22[tiab]+OR+%22FOXP3%22[tiab])",
+      "count": 19,
+      "retrieved_ids": 19
+    },
+    {
+      "source": "pubmed",
+      "family": "anti-CCR8",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=(%22anti-CCR8%22[tiab]+OR+%22CCR8+antibody%22[tiab]+OR+%22BMS-986340%22[tiab]+OR+%22LY3475070%22[tiab]+OR+%22S-531011%22[tiab]+OR+FPA157[tiab]+OR+%22GS-1811%22[tiab])+AND+(%22regulatory+T%22[tiab]+OR+%22Treg%22[tiab]+OR+%22FOXP3%22[tiab])",
+      "count": 21,
+      "retrieved_ids": 21
+    },
+    {
+      "source": "pubmed",
+      "family": "anti-GITR",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=(%22anti-GITR%22[tiab]+OR+TRX518[tiab]+OR+%22MK-4166%22[tiab]+OR+%22MK-1248%22[tiab]+OR+%22BMS-986156%22[tiab]+OR+GWN323[tiab])+AND+(%22regulatory+T%22[tiab]+OR+%22Treg%22[tiab]+OR+%22FOXP3%22[tiab])",
+      "count": 89,
+      "retrieved_ids": 89
+    },
+    {
+      "source": "pubmed",
+      "family": "EZH2 inhibitor (tazemetostat)",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=(tazemetostat[tiab]+OR+%22EZH2+inhibitor%22[tiab])+AND+(%22regulatory+T%22[tiab]+OR+%22Treg%22[tiab]+OR+%22FOXP3%22[tiab])",
+      "count": 13,
+      "retrieved_ids": 13
+    },
+    {
+      "source": "pubmed",
+      "family": "PI3K-delta inhibitor (idelalisib, parsaclisib)",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=(idelalisib[tiab]+OR+parsaclisib[tiab]+OR+%22PI3K+delta%22[tiab]+OR+%22PI3K-delta%22[tiab])+AND+(%22regulatory+T%22[tiab]+OR+%22Treg%22[tiab]+OR+%22FOXP3%22[tiab])",
+      "count": 30,
+      "retrieved_ids": 30
+    },
+    {
+      "source": "pubmed",
+      "family": "adenosine axis (anti-CD39, anti-CD73, A2AR)",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=(%22anti-CD39%22[tiab]+OR+%22anti-CD73%22[tiab]+OR+%22A2A+receptor%22[tiab]+OR+%22A2AR%22[tiab])+AND+(%22regulatory+T%22[tiab]+OR+%22Treg%22[tiab]+OR+%22FOXP3%22[tiab])+AND+(clinical[tiab]+OR+patients[tiab]+OR+%22phase+1%22[tiab]+OR+%22phase+2%22[tiab])",
+      "count": 44,
+      "retrieved_ids": 44
+    }
+  ],
+  "totals": {
+    "raw_hit_count": 1178,
+    "retrieved_for_screening": 622,
+    "screening_cap": 50,
+    "screening_strategy": "Title/abstract relevance screen; prioritize landmark Treg-PD reports per intervention family; dedup by PMID > DOI > NCT > normalized title; exclude fludarabine-dominant ACT papers; exclude reviews (to side-list)."
+  },
+  "ctgov_cross_reference": {
+    "url_template": "https://clinicaltrials.gov/api/v2/studies?query.term=<q>&pageSize=50&format=json",
+    "used_for": "NCT ID resolution and registry-side design confirmation during per-paper extraction"
+  }
+}

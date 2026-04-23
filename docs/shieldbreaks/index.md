@@ -4,7 +4,9 @@ A "shieldbreak" is a single project query — one research question with its own
 
 ## Active shieldbreaks
 
-_(no shieldbreaks yet — the first will appear here once `trialist_screener` runs)_
+| Shieldbreak | Rows | Last updated |
+|---|---|---|
+| [Treg Depletion](treg-depletion/index.md) | 40 | 2026-04-23 |
 
 ## Adding a shieldbreak
 
