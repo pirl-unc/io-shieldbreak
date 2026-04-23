@@ -56,5 +56,55 @@
   "side_list": {
     "file": "reviews.jsonl",
     "columns": ["pmid", "pmcid", "doi", "first_author", "year", "journal", "title", "review_type", "scope_summary", "notes", "fetch_timestamp_utc"]
+  },
+  "critique_topline_override": [
+    "44 of 44 papers critiqued. 34 had full text accessible (27 full PMC XML + 6 PMC-paywalled via WebFetched HTML + 1 combined); 10 were PubMed-abstract-only (paywalled journals such as J Immunother, Clin Exp Immunol, Int J Cancer, Inflamm Bowel Dis, Br J Dermatol, Cancer Discov, Clin Cancer Res subscription-only).",
+    "No retractions, corrections, or expressions of concern found. One extraction-fidelity discrepancy flagged (Huang 2011 — Mann-Whitney label applied to paired pre/post biopsy data; screener correctly noted the inconsistency).",
+    "The central methodological lesson: Treg-definition heterogeneity and gating-confounding drive much of the apparent inter-paper inconsistency. CD25-based gating during CD25-targeting therapy (denileukin diftitox, daclizumab) structurally confounds depletion claims; single-marker FOXP3 IHC cannot distinguish Tregs from activated effector T cells that transiently express FOXP3."
+  ],
+  "critique_synthesis": {
+    "Direction of effect across intervention classes": [
+      "Mogamulizumab (anti-CCR4): large, on-target eTreg depletion (~90% PBMC, ~87% tumor) in CTCL/ATLL. Fujikawa 2023 + Jinushi 2025 + Roelens 2022 are mutually corroborative. HIGH confidence that CCR4+ effector-Tregs are depleted; broader FOXP3+ population partially spared.",
+      "Denileukin diftitox (anti-CD25 IL-2 fusion): MIXED — Dannull 2005 (RCC, n=7, positive), Mahnke 2007 (melanoma, positive), Geskin 2018 (CTCL, positive), Liao 2024 (ovarian, positive with dose-dependence) vs Attia 2005 (melanoma, NEGATIVE) and Thibodeaux 2021 (phase II failure). Reconciling variables: (a) CD25-gating confound in positive studies, (b) indication, (c) dose schedule. Attia 2005's use of FoxP3 mRNA readout (sidestepping CD25-gating) is the most methodologically defensible negative.",
+      "Standard (IgG1 ipilimumab, IgG2 tremelimumab) anti-CTLA-4: DOES NOT DEPLETE INTRATUMORAL TREGS. Sharma 2019 (N=45 across 3 cancers) + Huang 2011 (n=19 tremelimumab melanoma, 4.75× INCREASE p=0.0029) + Ribas 2009 (n=7 retrospective, slight increase) + Comin-Anduix 2008 + Penter 2023 (ipilimumab after decitabine AML, EXPANDED marrow Tregs) all converge. Preclinical ADCC-depletion mechanism does NOT translate to humans with non-Fc-engineered antibodies.",
+      "Fc-enhanced anti-CTLA-4: DEPLETES INTRATUMORAL TREGS. Ager 2026 NeoRED-P (BMS-986218 afucosylated, randomized phase I, p=0.031) + Chand 2024 (botensilimab + balstilimab in MSS CRC). The Fc-engineering-reconciling-variable hypothesis is supported by the contrast: enhanced CD16a/FCGR3A affinity enables ADCP/ADCC by tumor macrophages.",
+      "Non-α IL-2 variants (nemvaleukin, bempegaldesleukin): EXPAND Tregs absolutely but expand effectors more (ratio-shift mechanism). Bentebibel 2019 + Diab 2020 initial abstract claims of 'without Treg enhancement' subsequently contradicted by Gogas 2024 (same PIVOT-02 cohort, 8-10× absolute Treg expansion documented). Vaishampayan 2024 + Calvo 2025 + Piha-Paul 2025 all confirm the absolute-expansion / ratio-shift pattern. CRITICAL CLINICAL CONTEXT: the bempegaldesleukin phase 3 PIVOT-IO program FAILED (2022) — the ratio-shift mechanism did not translate to clinical benefit.",
+      "Cyclophosphamide (depletion setting): Metronomic oral dosing (Ghiringhelli 2007) DEPLETES Tregs 61% p<0.0001; single IV dose (Audia 2007) does NOT. Schedule-dependent, not pan-agent effect.",
+      "HDACi: Highly specificity- and context-dependent. Class-I selective (entinostat: Pili 2017 RCC; vorinostat: Terranova-Barberio 2020 breast) decrease tumor Tregs. Broad-spectrum panobinostat INCREASES Tregs in HIV cART (Brinkmann 2018, +40% p=0.003) but REDUCES TNFR2+ Treg SUBSET in AML (Govindaraj 2014). No simple class effect.",
+      "DNMTi / HMAs: Generally INCREASE Tregs via TSDR demethylation. Han 2021 ITP (therapeutic direction for autoimmunity), Penter 2023 AML/MDS (post-decitabine ipilimumab EXPANDS marrow Tregs — interpreted as resistance mechanism). Opposite direction to the scope-expansion hypothesis.",
+      "CELMoDs (iberdomide): INCREASE Tregs. Lipsky 2022 SLE randomized placebo-controlled, +104.9% Tregs at 0.45 mg p<0.001. Amatangelo 2024 RRMM consistent. Iberdomide degrades Ikaros/Aiolos (not Helios/IKZF2) — preserves Treg identity.",
+      "Anti-TIGIT, anti-GITR, anti-OX40, anti-TNFR2, EP4, NRP1, CCR8-CAR-T: Limited human PD data. Anti-GITR programs (TRX518, MK-4166) did not advance clinically despite modest PD signals. Anti-TIGIT shows PBMC-only Treg reduction (Guan 2024) without clear tumor-compartment effect; broader program's phase 3 results mixed. Anti-TNFR2 has no published clinical Treg PD data as of 2026-04-23. IKZF2-selective degraders and CCR8-CAR-T remain preclinical."
+    ],
+    "Gating-confounding patterns": [
+      "Classic confound: CD25-based Treg gating during CD25-targeting therapy (denileukin diftitox, daclizumab). Present in Dannull 2005, Geskin 2018, Mahnke 2007, most other DD studies. Attia 2005 and Liao 2024 sidestepped this by measuring FoxP3 mRNA; Morse 2008 partially addressed with intracellular FoxP3 + explicit CD25-half-life argument. Papers that ONLY use CD25 gating during DD should have depletion claims discounted.",
+      "Single-marker FOXP3 IHC limitation: Sharma 2019 explicitly notes that FOXP3 can be expressed on activated T effector cells as well as Tregs. Huang 2011 used the same single-marker IHC. CyTOF orthogonal validation (Sharma 2019, Ager 2026) is the methodological fix and all papers that use only FOXP3 IHC without co-staining are potentially overcounting Tregs.",
+      "Frequency vs absolute count framing: Sharma 2019 explicitly notes that prior 'Treg reduction' claims (e.g., Liakou 2008 bladder) were driven by FREQUENCY-AS-PERCENT-OF-TOTAL-T calculations — total T cells increased, so Treg frequency decreased even though absolute count did NOT. The Diab 2020 PIVOT-02 'without Treg enhancement' claim is a similar artifact (frequency vs absolute count)."
+    ],
+    "Heterogeneity sources": [
+      "Compartment: PBMC, tumor, tumor-draining LN, ascites, bone marrow, and skin often move in opposite directions with the same drug. Examples: Ager 2026 (tumor Treg ↓, tdLN Treg ↑ p<0.0001); Terranova-Barberio 2020 (tumor Treg ↓, PBMC Treg unchanged); Guan 2024 (PBMC Treg ↓, tumor ambiguous). Compartment-stratified interpretation is essential.",
+      "Disease indication: DD positive in CTCL/RCC/ovarian, negative in melanoma. Anti-CTLA-4 non-depleting across all tested cancers (melanoma, prostate, bladder).",
+      "Dose and schedule: Cyclophosphamide metronomic vs single-IV is the clearest example. DD repeated vs single-dose (Morse 2008) also shows schedule effects.",
+      "Gating: Single-marker vs co-stain vs surface vs intracellular vs mRNA vs scRNA-seq cluster all matter."
+    ],
+    "Functional vs numerical endpoints": [
+      "Most papers report count/frequency only; few include functional suppression assays. Ghiringhelli 2007 includes NK cytotoxicity and T-cell proliferation restoration (supportive of functional reduction); Attia 2005 explicitly reports ≥50% SUPPRESSION PRESERVED despite minimal numerical change (STRONG evidence against DD depletion claim); Dannull 2005 reports 'abrogation' of suppressive activity (positive). The discrepancy between numerical and functional readouts in the DD literature is itself a signal that the field has not converged on a valid readout.",
+      "For interventions where the expected mechanism is functional impairment rather than count depletion (IL-2 variants, anti-CTLA-4, EZH2i in theory), suppression-assay evidence is the appropriate standard. Few papers in this shieldbreak meet that standard."
+    ],
+    "Clinical-translation record": [
+      "Bempegaldesleukin: PIVOT-02 phase 1 positive signal DID NOT translate to phase 3 success (PIVOT-IO program failed 2022 melanoma + RCC; bempeg development halted). The ratio-shift mechanism as a basis for clinical benefit has been substantially disconfirmed.",
+      "Anti-GITR (TRX518, MK-4166, MK-1248): Modest PD signals; programs have not advanced.",
+      "Denileukin diftitox: Original formulation withdrawn; new formulation (Lymphir / I/ONTAK) recently FDA-approved in CTCL only. Broader-indication efficacy remains limited.",
+      "Anti-CTLA-4: ipilimumab succeeded clinically BUT NOT via Treg depletion. The clinical benefit must be attributed to effector-cell potentiation rather than Treg removal, given converging Sharma 2019 / Huang 2011 / Penter 2023 evidence.",
+      "Fc-enhanced anti-CTLA-4 (botensilimab, BMS-986218): Early signals (Chand 2024, Ager 2026) are encouraging but await randomized phase 3 confirmation.",
+      "Mogamulizumab: Clinically validated in CTCL/ATLL; the on-target CCR4+ eTreg depletion is mechanistically cleanest but the clinical benefit observed in non-CTCL settings has been modest.",
+      "HDACi class-I + ICI: Roussos Torres 2021, Pili 2017, Terranova-Barberio 2020 — all phase 1/2 studies; no definitive phase 3 validation yet."
+    ],
+    "What would change the picture": [
+      "Randomized phase 3 of Fc-enhanced anti-CTLA-4 (botensilimab or BMS-986218) with pre-specified tumor Treg PD would confirm or refute the Fc-engineering reconciling-variable hypothesis.",
+      "Functional suppression-assay readouts in more DD and IL-2-variant studies would clarify whether observed count changes translate to functional benefit.",
+      "Standardized multi-marker Treg gating (FoxP3 intracellular + CD127low + CD45RA− + Helios) across studies would eliminate much of the single-marker-vs-multi-marker noise.",
+      "Compartment-stratified analysis as default (PBMC AND tumor AND tdLN in the same trial) would reveal the within-patient compartment dissociation that single-compartment papers miss.",
+      "A replication of Dannull 2005 (JCI positive) with FoxP3-mRNA-primary readout in RCC would resolve the Attia-Dannull conflict."
+    ]
   }
 }

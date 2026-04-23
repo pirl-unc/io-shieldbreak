@@ -1,0 +1,501 @@
+<?xml version="1.0"  ?><!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd"><pmc-articleset><article xml:lang="en" article-type="research-article" dtd-version="1.4"><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">Ann Rheum Dis</journal-id><journal-id journal-id-type="iso-abbrev">Ann Rheum Dis</journal-id><journal-id journal-id-type="pmc-domain-id">694</journal-id><journal-id journal-id-type="pmc-domain">bmjgroup</journal-id><journal-id journal-id-type="publisher-id">ard</journal-id><journal-title-group><journal-title>Annals of the Rheumatic Diseases</journal-title></journal-title-group><issn pub-type="ppub">0003-4967</issn><issn pub-type="epub">1468-2060</issn><custom-meta-group><custom-meta><meta-name>pmc-is-collection-domain</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-collection-title</meta-name><meta-value>BMJ Open Access</meta-value></custom-meta></custom-meta-group></journal-meta><article-meta><article-id pub-id-type="pmcid">PMC9279852</article-id><article-id pub-id-type="pmcid-ver">PMC9279852.1</article-id><article-id pub-id-type="pmcaid">9279852</article-id><article-id pub-id-type="pmcaiid">9279852</article-id><article-id pub-id-type="pmid">35477518</article-id><article-id pub-id-type="doi">10.1136/annrheumdis-2022-222212</article-id><article-id pub-id-type="publisher-id">annrheumdis-2022-222212</article-id><article-version article-version-type="pmc-version">1</article-version><article-categories><subj-group subj-group-type="heading"><subject>Systemic Lupus Erythematosus</subject></subj-group><subj-group subj-group-type="hwp-journal-coll"><subject>1506</subject><subject>2311</subject><subject>2494</subject></subj-group></article-categories><title-group><article-title>Biological impact of iberdomide in patients with active systemic lupus erythematosus</article-title></title-group><contrib-group><contrib id="author-23075930" contrib-type="author" corresp="yes"><contrib-id contrib-id-type="orcid" authenticated="false">http://orcid.org/0000-0002-9287-1676</contrib-id><name name-style="western"><surname>Lipsky</surname><given-names initials="PE">Peter E</given-names></name><xref rid="aff1" ref-type="aff">1</xref></contrib><contrib id="author-94367411" contrib-type="author"><name name-style="western"><surname>van Vollenhoven</surname><given-names initials="R">Ronald</given-names></name><xref rid="aff2" ref-type="aff">2</xref></contrib><contrib id="author-22408073" contrib-type="author"><contrib-id contrib-id-type="orcid" authenticated="false">http://orcid.org/0000-0002-6478-7725</contrib-id><name name-style="western"><surname>Dörner</surname><given-names initials="T">Thomas</given-names></name><xref rid="aff3" ref-type="aff">3</xref></contrib><contrib id="author-70017642" contrib-type="author"><name name-style="western"><surname>Werth</surname><given-names initials="VP">Victoria P</given-names></name><xref rid="aff4" ref-type="aff">4</xref></contrib><contrib id="author-23762368" contrib-type="author"><name name-style="western"><surname>Merrill</surname><given-names initials="JT">Joan T</given-names></name><xref rid="aff5" ref-type="aff">5</xref></contrib><contrib id="author-52022904" contrib-type="author"><contrib-id contrib-id-type="orcid" authenticated="false">http://orcid.org/0000-0001-6712-1585</contrib-id><name name-style="western"><surname>Furie</surname><given-names initials="R">Richard</given-names></name><xref rid="aff6" ref-type="aff">6</xref></contrib><contrib id="author-94367474" contrib-type="author"><name name-style="western"><surname>Petronijevic</surname><given-names initials="M">Milan</given-names></name><xref rid="aff7" ref-type="aff">7</xref></contrib><contrib id="author-53722214" contrib-type="author"><name name-style="western"><surname>Velasco Zamora</surname><given-names initials="B">Benito</given-names></name><xref rid="aff8" ref-type="aff">8</xref></contrib><contrib id="author-49695889" contrib-type="author"><name name-style="western"><surname>Majdan</surname><given-names initials="M">Maria</given-names></name><xref rid="aff9" ref-type="aff">9</xref></contrib><contrib id="author-44245883" contrib-type="author"><name name-style="western"><surname>Irazoque-Palazuelos</surname><given-names initials="F">Fedra</given-names></name><xref rid="aff10" ref-type="aff">10</xref></contrib><contrib id="author-94367745" contrib-type="author"><name name-style="western"><surname>Terbrueggen</surname><given-names initials="R">Robert</given-names></name><xref rid="aff11" ref-type="aff">11</xref></contrib><contrib id="author-94367762" contrib-type="author"><name name-style="western"><surname>Delev</surname><given-names initials="N">Nikolay</given-names></name><xref rid="aff12" ref-type="aff">12</xref></contrib><contrib id="author-94367796" contrib-type="author"><name name-style="western"><surname>Weiswasser</surname><given-names initials="M">Michael</given-names></name><xref rid="aff12" ref-type="aff">12</xref></contrib><contrib id="author-94367814" contrib-type="author"><name name-style="western"><surname>Korish</surname><given-names initials="S">Shimon</given-names></name><xref rid="aff12" ref-type="aff">12</xref></contrib><contrib id="author-94367880" contrib-type="author"><name name-style="western"><surname>Stern</surname><given-names initials="M">Mark</given-names></name><xref rid="aff12" ref-type="aff">12</xref></contrib><contrib id="author-94367905" contrib-type="author"><name name-style="western"><surname>Hersey</surname><given-names initials="S">Sarah</given-names></name><xref rid="aff12" ref-type="aff">12</xref></contrib><contrib id="author-94367938" contrib-type="author"><name name-style="western"><surname>Ye</surname><given-names initials="Y">Ying</given-names></name><xref rid="aff12" ref-type="aff">12</xref></contrib><contrib id="author-94367990" contrib-type="author"><name name-style="western"><surname>Gaudy</surname><given-names initials="A">Allison</given-names></name><xref rid="aff12" ref-type="aff">12</xref></contrib><contrib id="author-94368000" contrib-type="author"><name name-style="western"><surname>Liu</surname><given-names initials="Z">Zhaohui</given-names></name><xref rid="aff12" ref-type="aff">12</xref></contrib><contrib id="author-94368031" contrib-type="author"><name name-style="western"><surname>Gagnon</surname><given-names initials="R">Robert</given-names></name><xref rid="aff12" ref-type="aff">12</xref></contrib><contrib id="author-94368044" contrib-type="author"><name name-style="western"><surname>Tang</surname><given-names initials="S">Shaojun</given-names></name><xref rid="aff12" ref-type="aff">12</xref></contrib><contrib id="author-84701509" contrib-type="author"><name name-style="western"><surname>Schafer</surname><given-names initials="PH">Peter H</given-names></name><xref rid="aff12" ref-type="aff">12</xref></contrib></contrib-group><aff id="aff1">
+<label>1</label>
+<institution>RILITE Foundation and AMPEL BioSolutions</institution>, <addr-line content-type="city">Charlottesville</addr-line>, <addr-line content-type="state">Virginia</addr-line>, <country>USA</country>
+</aff><aff id="aff2">
+<label>2</label>
+<institution>Amsterdam University Medical Centers</institution>, <addr-line content-type="city">Amsterdam</addr-line>, <country>The Netherlands</country>
+</aff><aff id="aff3">
+<label>3</label>
+<institution content-type="department">German Rheumatism Research Center</institution>, <institution>Charité University Hospital</institution>, <addr-line content-type="city">Berlin</addr-line>, <country>Germany</country>
+</aff><aff id="aff4">
+<label>4</label>
+<institution>University of Pennsylvania and the Michael J. Crescenz VA Medical Center</institution>, <addr-line content-type="city">Philadelphia</addr-line>, <addr-line content-type="state">Pennsylvania</addr-line>, <country>USA</country>
+</aff><aff id="aff5">
+<label>5</label>
+<institution>Oklahoma Medical Research Foundation</institution>, <addr-line content-type="city">Oklahoma City</addr-line>, <addr-line content-type="state">Oklahoma</addr-line>, <country>USA</country>
+</aff><aff id="aff6">
+<label>6</label>
+<institution content-type="department">Department of Rheumatology</institution>, <institution>Northwell Health</institution>, <addr-line content-type="city">Great Neck</addr-line>, <addr-line content-type="state">New York</addr-line>, <country>USA</country>
+</aff><aff id="aff7">
+<label>7</label>
+<institution>Military Medical Academy</institution>, <addr-line content-type="city">Belgrade</addr-line>, <country>Serbia</country>
+</aff><aff id="aff8">
+<label>8</label>
+<institution>Instituto CER S.A</institution>, <addr-line content-type="city">Buenos Aires</addr-line>, <country>Argentina</country>
+</aff><aff id="aff9">
+<label>9</label>
+<institution>Samodzielny Publiczny Szpital Kliniczny Nr 4 w Lublinie, Medical University of Lublin</institution>, <addr-line content-type="city">Lublin</addr-line>, <country>Poland</country>
+</aff><aff id="aff10">
+<label>10</label>
+<institution>Centro de Investigación y Tratamiento Reumatológico SC</institution>, <addr-line content-type="city">Mexico City</addr-line>, <country>Mexico</country>
+</aff><aff id="aff11">
+<label>11</label>
+<institution>DxTerity Diagnostics</institution>, <addr-line content-type="city">Rancho Dominguez</addr-line>, <addr-line content-type="state">California</addr-line>, <country>USA</country>
+</aff><aff id="aff12">
+<label>12</label>
+<institution>Bristol Myers Squibb</institution>, <addr-line content-type="city">Princeton</addr-line>, <addr-line content-type="state">New Jersey</addr-line>, <country>USA</country>
+</aff><author-notes><corresp>
+<label>Correspondence to</label> Dr Peter E Lipsky, RILITE Foundation, Charlottesville, USA; <email>peterlipsky@comcast.net</email>
+</corresp></author-notes><pub-date pub-type="ppub"><month>8</month><year>2022</year></pub-date><pub-date pub-type="epub"><day>27</day><month>4</month><year>2022</year></pub-date><volume>81</volume><issue>8</issue><issue-id pub-id-type="pmc-issue-id">412411</issue-id><fpage>1136</fpage><lpage>1142</lpage><history><date date-type="received"><day>21</day><month>1</month><year>2022</year></date><date date-type="accepted"><day>10</day><month>4</month><year>2022</year></date></history><pub-history><event event-type="pmc-release"><date><day>14</day><month>07</month><year>2022</year></date></event><event event-type="pmc-live"><date><day>01</day><month>08</month><year>2022</year></date></event><event event-type="pmc-last-change"><date iso-8601-date="2025-02-17 22:25:17.123"><day>17</day><month>02</month><year>2025</year></date></event></pub-history><permissions><copyright-statement>© Author(s) (or their employer(s)) 2022. Re-use permitted under CC BY. Published by BMJ.</copyright-statement><copyright-year>2022</copyright-year><ali:free_to_read xmlns:ali="http://www.niso.org/schemas/ali/1.0/"/><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense" start_date="2022-04-27">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>This is an open access article distributed in accordance with the Creative Commons Attribution 4.0 Unported (CC BY 4.0) license, which permits others to copy, redistribute, remix, transform and build upon this work for any purpose, provided the original work is properly cited, a link to the licence is given, and indication of whether changes were made. See: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</ext-link>.</license-p></license></permissions><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pmc-pdf" xlink:href="annrheumdis-2022-222212.pdf"/><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:title="pdf" xlink:href="annrheumdis-2022-222212.pdf"/><abstract><sec><title>Objectives</title><p>Iberdomide is a high-affinity cereblon ligand that promotes proteasomal degradation of transcription factors Ikaros (<italic toggle="yes">IKZF1</italic>) and Aiolos (<italic toggle="yes">IKZF3</italic>). Pharmacodynamics and pharmacokinetics of oral iberdomide were evaluated in a phase 2b study of patients with active systemic lupus erythematosus (SLE).</p></sec><sec><title>Methods</title><p>Adults with autoantibody-positive SLE were randomised to placebo (n=83) or once daily iberdomide 0.15 mg (n=42), 0.3 mg (n=82) or 0.45 mg (n=81). Pharmacodynamic changes in whole blood leucocytes were measured by flow cytometry, regulatory T cells (Tregs) by epigenetic assay, plasma cytokines by ultrasensitive cytokine assay and gene expression by Modular Immune Profiling.</p></sec><sec><title>Results</title><p>Iberdomide exhibited linear pharmacokinetics and dose-dependently modulated leucocytes and cytokines. Compared with placebo at week 24, iberdomide 0.45 mg significantly (p&lt;0.001) reduced B cells, including those expressing CD268 (TNFRSF13C) (−58.3%), and plasmacytoid dendritic cells (−73.9%), and increased Tregs (+104.9%) and interleukin 2 (IL-2) (+144.1%). Clinical efficacy was previously reported in patients with high <italic toggle="yes">IKZF3</italic> expression and high type I interferon (IFN) signature at baseline and confirmed here in those with an especially high IFN signature. Iberdomide decreased the type I IFN gene signature only in patients with high expression at baseline (−81.5%; p&lt;0.001) but decreased other gene signatures in all patients.</p></sec><sec><title>Conclusion</title><p>Iberdomide significantly reduced activity of type I IFN and B cell pathways, and increased IL-2 and Tregs, suggesting a selective rebalancing of immune abnormalities in SLE. Clinical efficacy corresponded to reduction of the type I IFN gene signature.</p></sec><sec><title>Trial registration number</title><p>
+<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="NCT03161483" ext-link-type="uri" specific-use="clinicaltrial pre-results">NCT03161483</ext-link>.</p></sec></abstract><kwd-group><kwd>lupus Erythematosus, Systemic</kwd><kwd>B-Lymphocytes</kwd><kwd>immune system diseases</kwd></kwd-group><funding-group specific-use="FundRef"><award-group id="funding-1"><funding-source>
+<institution-wrap><institution>Bristol Myers Squibb</institution></institution-wrap>
+</funding-source></award-group></funding-group><custom-meta-group><custom-meta><meta-name>pmc-status-qastatus</meta-name><meta-value>0</meta-value></custom-meta><custom-meta><meta-name>pmc-status-live</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-status-embargo</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-status-released</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-open-access</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-olf</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-manuscript</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-legally-suppressed</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-pdf</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-supplement</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-pdf-only</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-suppress-copyright</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-real-version</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-scanned-article</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-preprint</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-in-epmc</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-license-ref</meta-name><meta-value>CC BY</meta-value></custom-meta><custom-meta><meta-name>special-feature</meta-name><meta-value>unlocked</meta-value></custom-meta></custom-meta-group></article-meta></front><body><boxed-text id="BX1" position="float" orientation="portrait"><caption><title>Key messages</title></caption><sec><title>What is already known about this subject?</title><list list-type="bullet"><list-item><p>Iberdomide is a high-affinity cereblon ligand which promotes proteasomal degradation of Ikaros (<italic toggle="yes">IKZF1</italic>) and Aiolos (<italic toggle="yes">IKZF3</italic>) and is currently in development for the treatment of patients with systemic lupus erythematosus (SLE), multiple myeloma and lymphoma.</p></list-item><list-item><p>In a phase 2a trial in patients with active SLE, iberdomide significantly reduced B cells and plasmacytoid dendritic cells (pDCs) and showed trends of improvements in SLE disease severity.</p></list-item></list></sec><sec><title>What does this study add?</title><list list-type="bullet"><list-item><p>In this larger phase 2b study, iberdomide significantly improved lupus disease activity and reduced hallmarks of the immunopathogenesis of SLE by decreasing B cells, pDCs and myeloid dendritic cells, and by increasing interleukin 2 and regulatory T cells.</p></list-item><list-item><p>In patients with a high type I interferon (IFN) gene signature at baseline, iberdomide treatment reduced the IFN gene signature score by as much as 81% from the median at baseline, an effect that coincided with an improved SLE Responder Index-4 clinical response rate.</p></list-item></list></sec><sec><title>How might this impact on clinical practice or future developments?</title><list list-type="bullet"><list-item><p>This study confirmed the mechanism of action of iberdomide in vivo in patients with SLE and identified the high type I IFN gene signature as a predictive biomarker for evaluation as a selection tool in future clinical studies of iberdomide.</p></list-item></list></sec></boxed-text><sec sec-type="intro" id="s1"><title>Introduction</title><p>Systemic lupus erythematosus (SLE) is a heterogeneous autoimmune inflammatory disorder arising from the interaction of a genetically determined immune phenotype with environmental factors.<xref rid="R1" ref-type="bibr">1 2</xref> Disease susceptibility is influenced by genes related to immune response pathways and major histocompatibility complex classes I and II. Dysregulated immune responses lead to B cell hyperactivity and production of pathogenic autoantibodies. Immune complexes containing nucleic acids are potential stimuli of the innate immune system, leading to type I interferon (IFN) production in SLE.</p><p>Ikaros (<italic toggle="yes">IKZF1</italic>) and Aiolos (<italic toggle="yes">IKZF3</italic>) are zinc finger transcription factors involved in immune cell development and homeostasis.<xref rid="R3" ref-type="bibr">3–5</xref> Ikaros is required for development of B cells and plasmacytoid dendritic cells (pDCs), which are important producers of IFN-α. Ikaros also represses interleukin 2 (IL-2) transcription.<xref rid="R6" ref-type="bibr">6</xref> Aiolos is a B cell modulator and is required for maturation of plasma cells. <italic toggle="yes">IKZF1</italic> and <italic toggle="yes">IKZF3</italic> mRNA and proteins are overexpressed in the cells of patients with SLE.<xref rid="R4" ref-type="bibr">4 5 7–10</xref> Genetic variants in the <italic toggle="yes">IKZF1</italic> and <italic toggle="yes">IKZF3</italic> loci are associated with an increased risk of developing SLE.<xref rid="R2" ref-type="bibr">2 10</xref> In particular, the <italic toggle="yes">IKZF1</italic> polymorphism rs4917014 was identified as a trans-expression quantitative trait locus (eQTL) increasing expression of type I IFN response genes (<italic toggle="yes">HERC5</italic>, <italic toggle="yes">IFI6</italic>, <italic toggle="yes">IFIT1</italic>, <italic toggle="yes">MX1</italic> and <italic toggle="yes">TNFRSF21</italic>).<xref rid="R9" ref-type="bibr">9</xref>
+</p><p>Iberdomide (CC-220) is a high-affinity cereblon ligand, which promotes ubiquitination and proteasomal degradation of Ikaros and Aiolos.<xref rid="R4" ref-type="bibr">4 5 11</xref> The binding affinity of iberdomide to cereblon is higher than that of other related cereblon binders, such as lenalidomide or pomalidomide. In vitro studies have shown a potent effect of iberdomide in reducing Ikaros and Aiolos protein levels in B cells, T cells and monocytes from healthy donors. In peripheral blood mononuclear cells from patients with SLE, iberdomide inhibited autoantibody production and B cell differentiation. Iberdomide also increased T cell-derived IL-2 production in the whole blood of healthy volunteers owing to an iberdomide-mediated decrease in the repressive activity of Ikaros and Aiolos.<xref rid="R5" ref-type="bibr">5</xref> In a pilot phase 2 trial of ascending doses of iberdomide in patients with SLE, strong correlations were observed between iberdomide exposure and reductions in the numbers of B cells and pDCs.<xref rid="R12" ref-type="bibr">12</xref>
+</p><p>A phase 2 randomised, controlled trial evaluated the efficacy and safety of iberdomide compared with placebo over 24 weeks in patients with active SLE. As reported elsewhere,<xref rid="R13" ref-type="bibr">13</xref> the primary efficacy endpoint of SLE Responder Index-4 (SRI-4) response was met with 54% of patients receiving iberdomide 0.45 mg once daily having achieved an SRI-4 response versus 35% in the placebo group (stratified difference: 19.4%; 95% CI 4.1 to 33.4; p=0.01) at week 24. Furthermore, the treatment effect of iberdomide 0.45 mg compared with placebo for SRI-4 response was greater in the prespecified biomarker-defined subsets of patients with high expression of <italic toggle="yes">IKZF3</italic> at baseline (64% vs 33%; p=0.011) and high expression of type I IFN at baseline (60% vs 33%; p=0.006). As understanding of SLE pathophysiology increases, the precise biological impact of therapeutic agents is of great interest and may be useful in identifying biomarkers of clinical response. Therefore, the effects of iberdomide on immunologic biomarkers in patients with active SLE were further evaluated in this phase 2 study.</p></sec><sec id="s2"><title>Patients and methods</title><sec id="s2-1"><title>Study design</title><p>The study design of the phase 2, multinational, randomised, placebo-controlled, double-blind study has been reported.<xref rid="R13" ref-type="bibr">13</xref> Briefly, patients with active SLE were randomised (2:2:1:2) to receive oral iberdomide (0.45 mg, 0.3 mg or 0.15 mg) or placebo once daily for 24 weeks while continuing standard-of-care medications.</p></sec><sec id="s2-2"><title>Patients</title><p>Eligible patients were adults (≥18 years of age) with a diagnosis of SLE for at least 6 months, a Systemic Lupus Erythematosus Disease Activity Index 2000 score ≥6 points and positive for autoantibodies associated with SLE. Stable doses of corticosteroids (≤20 mg prednisone or equivalent daily) were allowed. Exclusion criteria were active, severe or unstable neuropsychiatric lupus disease, antiphospholipid syndrome or history of thrombosis, estimated glomerular filtration rate &lt;45 mL/min/1.7 m<sup>2</sup> or proteinuria &gt;2000 mg/d, or active lupus nephritis, which may require induction therapy.</p></sec><sec id="s2-3"><title>Pharmacokinetic assessments</title><p>One predose blood sample was collected at week 4, week 12 and week 24 for pharmacokinetic analysis. Iberdomide concentration was determined by a validated assay.<xref rid="R14" ref-type="bibr">14</xref> A population pharmacokinetic analysis was performed (see <xref rid="SP4" ref-type="supplementary-material">online supplemental methods</xref>), and individual oral clearance values were used to calculate area under the concentration–time curve.</p><supplementary-material id="SP4" position="float" content-type="local-data" orientation="portrait"><object-id pub-id-type="doi">10.1136/annrheumdis-2022-222212.supp4</object-id><label>Supplementary data</label><p>
+<inline-supplementary-material xmlns:xlink="http://www.w3.org/1999/xlink" id="SS4" xlink:href="annrheumdis-2022-222212supp004.pdf" content-type="local-data"/>
+</p></supplementary-material></sec><sec id="s2-4"><title>Pharmacodynamic assessments</title><p>Blood samples were collected at baseline, week 4, week 12 and week 24 for analysis of whole blood leucocytes, plasma proteins and whole blood gene expression. Flow cytometry (Covance, Indianapolis, Indiana, USA) was used to analyse B cells (CD19+ and CD20+), T cells (including CD4+ and CD8+), plasmablasts, pDCs and myeloid dendritic cells (mDCs). T helper 17 (Th17) cells, regulatory T cells (Tregs) and T follicular helper (Tfh) cells were measured by epigenetic assays (Epiontis ID; Epiontis GmbH, Berlin, Germany), an approach that correlates strongly with flow cytometry.<xref rid="R15" ref-type="bibr">15–17</xref>
+</p><p>Plasma cytokines, IL-2, IL-10, IL-17A, IL-17F and the B lymphocyte stimulator (BLyS; <italic toggle="yes">TNFSF13b</italic>) were determined by the ultrasensitive Singulex assay (Erenna; EMD Millipore, Burlington, Massachusetts, USA). The DxTerity Autoimmune Profiler (DxTerity, Rancho Dominguez, California, USA) was used to analyse whole blood stabilised through direct collection into DxCollect tubes for subsequent gene expression using chemical ligation probe amplification technology for generating PCR products. The resultant PCR amplicons were then separated by capillary electrophoresis on the ABI 3500xL Dx Genetic Analyzer (ThermoFisher Scientific, Waltham, Massachusetts, USA) for the following gene modules: B cell (<italic toggle="yes">CD19</italic>, <italic toggle="yes">BACH2</italic> and <italic toggle="yes">CD22</italic>), type I IFN (<italic toggle="yes">IFI27</italic>, <italic toggle="yes">IFI44</italic>, <italic toggle="yes">IFI44L</italic> and <italic toggle="yes">RSAD2</italic>
+<xref rid="R18" ref-type="bibr">18</xref>), Ikaros (eQTL) type I IFN (<italic toggle="yes">HERC5</italic>, <italic toggle="yes">IFI6</italic>, <italic toggle="yes">IFIT1</italic>, <italic toggle="yes">MX1</italic> and <italic toggle="yes">TNFRSF21</italic>
+<xref rid="R9" ref-type="bibr">9</xref>) and T cell exhaustion (<italic toggle="yes">CTLA4</italic>, <italic toggle="yes">IL7R</italic>, <italic toggle="yes">LAG3</italic>, <italic toggle="yes">PDCD1</italic> and <italic toggle="yes">ABCE1</italic>
+<xref rid="R19" ref-type="bibr">19</xref>). Samples were also tested for <italic toggle="yes">IKZF1</italic> (Ikaros) and <italic toggle="yes">IKZF3</italic> (Aiolos) gene expression levels.</p><p>Cut-off values for each gene expression module were determined a priori based on an independent training data set from the peripheral blood samples of 96 patients with SLE who were receiving standard-of-care medications but not biologics (DxTerity). An exploratory analysis was conducted on study data for the type I IFN and Aiolos signatures using a bootstrapping and aggregating of thresholds from trees procedure (see <xref rid="SP4" ref-type="supplementary-material">online supplemental methods</xref>).<xref rid="R20" ref-type="bibr">20</xref>
+</p><p>Given that greater clinical treatment effect was observed in patient subsets with elevated expression of type I IFN and Aiolos modules, we analysed biomarkers in these subsets at baseline and as median per cent change from baseline.</p></sec><sec id="s2-5"><title>Statistical analyses</title><p>Pharmacokinetic analyses were performed for all patients who were randomised and received ≥1 dose of iberdomide with ≥1 quantifiable plasma concentration. Pharmacodynamic analyses included patients with a baseline value and a value at the time point reported. Data were reported as adjusted mean per cent changes from baseline. Treatment comparison of adjusted means was based on multiple imputation in conjunction with a regression model that used M-estimation, had the absolute value or change from baseline at a given time point as the response variable and adjusted for treatment group, baseline value and stratification factors. There was no correction for multiple comparisons.</p></sec></sec><sec sec-type="results" id="s3"><title>Results</title><sec id="s3-1"><title>Patients</title><p>A total of 288 patients received treatment. As reported elsewhere, baseline patient demographics and disease characteristics were balanced between treatment groups.<xref rid="R13" ref-type="bibr">13</xref> The proportions of patients with expression of specific gene modules were generally similar between the treatment groups (<xref rid="SP4" ref-type="supplementary-material">online supplemental table 1</xref>). High Aiolos gene expression was more common in the iberdomide 0.3 mg and 0.45 mg dose groups, and type I IFN module high expression was more common in the 0.45 mg group.</p></sec><sec id="s3-2"><title>Pharmacokinetics</title><p>Iberdomide exhibited linear pharmacokinetics (<xref rid="SP1" ref-type="supplementary-material">online supplemental figure 1A</xref>). Exposure increased in a dose-related manner over the dose range of 0.15–0.45 mg once daily, with a 3-fold dose increase resulting in an approximately 2.5-fold increase in the area under the concentration–time curve at steady state. Age, body weight, creatinine clearance, race, sex, ethnicity and disease status did not have a clinically significant effect on iberdomide exposure. There were no differences in iberdomide pharmacokinetics between patients with low and high type I IFN signature or Aiolos expression at baseline (<xref rid="SP1" ref-type="supplementary-material">online supplemental figure 1BC</xref>).</p><supplementary-material id="SP1" position="float" content-type="local-data" orientation="portrait"><object-id pub-id-type="doi">10.1136/annrheumdis-2022-222212.supp1</object-id><label>Supplementary data</label><p>
+<inline-supplementary-material xmlns:xlink="http://www.w3.org/1999/xlink" id="SS1" xlink:href="annrheumdis-2022-222212supp001.eps" content-type="local-data"/>
+</p></supplementary-material></sec><sec id="s3-3"><title>Pharmacodynamics</title><p>At week 24, iberdomide significantly decreased CD19+ and CD20+ B cells and increased CD8+ cytotoxic T cells from baseline in a dose-dependent manner compared with placebo (<xref rid="F1" ref-type="fig">figure 1</xref>). Iberdomide had no effect on the numbers of CD4+ Th cells or natural killer cells. The difference in adjusted mean per cent change from baseline to week 24 in B cells expressing CD268 (<italic toggle="yes">TNFRSF13C</italic>, encoding BLyS receptor) for iberdomide 0.45 mg compared with placebo was −58.3% (p&lt;0.001) and for post-switched memory B cells was −40.8% (p&lt;0.001). Significant treatment differences for iberdomide 0.45 mg were also noted for pDCs (−73.9%; p&lt;0.001) and mDC 1 cells (−36.8%; p=0.004), Tregs (104.9%; p&lt;0.001) and Tfh cells (+32.6%; p&lt;0.001) at week 24 (<xref rid="F1" ref-type="fig">figure 1</xref>). No significant changes were noted for plasmablasts or plasma cells, which were not significantly elevated at baseline, or Th17 cells.</p><fig position="float" id="F1" orientation="portrait"><label>Figure 1</label><caption><p>Time course of change from baseline during iberdomide treatment in whole blood leucocyte counts and selected B cells, T cells and NK cells by flow cytometry (Covance, Indianapolis, Indiana, USA) (A), CD268, plasma blasts, switched memory B cells DC subset counts and plasma cells by flow cytometry (B) and Tregs, Tfh cells and Th17 cells by epigenetic assay (Epiontis ID, Epiontis GmbH, Berlin, Germany) (C). *p≤0.05; **p≤0.01; ***p≤0.001 vs placebo. Values shown are the treatment comparison vs placebo of adjusted mean per cent change from baseline. See <xref rid="SP4" ref-type="supplementary-material">online supplemental table 2</xref> for numeric data. BLyS, B lymphocyte stimulator; DC, dendritic cell; NK, natural killer; Tfh, T follicular helper; Th17, T helper 17; Tregs, regulatory T cells.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="annrheumdis-2022-222212f01.jpg"/></fig><p>Iberdomide increased IL-2 levels from baseline compared with placebo (<xref rid="F2" ref-type="fig">figure 2</xref>). Iberdomide treatment resulted in a dose-dependent increase in IL-2, reaching +144.1% for the 0.45 mg dose (p&lt;0.001), +91.7% for the 0.3 mg dose and +75.2% for the 0.15 mg dose versus placebo. No dose-dependent changes in IL-10, IL-17A, IL-17F, IL-21 or BLyS were noted.</p><fig position="float" id="F2" orientation="portrait"><label>Figure 2</label><caption><p>Change from baseline in plasma cytokines during iberdomide treatment by ultrasensitive cytokine assays (Erenna, EMD Millipore, Burlington, Massachusetts, USA). *p≤0.05; **p≤0.01; ***p≤0.001 vs placebo. Values shown are the treatment comparison vs placebo of adjusted mean per cent change from baseline. See <xref rid="SP4" ref-type="supplementary-material">online supplemental table 3</xref> for numeric data. BLyS, B lymphocyte stimulator; IL, interleukin.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="annrheumdis-2022-222212f02.jpg"/></fig><p>Iberdomide decreased expression of gene modules representing the type I IFN, Ikaros eQTL type I IFN gene signature and B cell pathways and increased expression of Ikaros and Aiolos genes (<xref rid="F3" ref-type="fig">figure 3</xref>). A dose–response relationship was noted for the B cell gene module but not for the type I IFN module.</p><fig position="float" id="F3" orientation="portrait"><label>Figure 3</label><caption><p>Change from baseline in whole blood gene expression during iberdomide treatment by multiplex PCR-based chemical ligation probe amplification target capture on the ThermoFisher ABI 3500xL DX Genetic Analyzer (DxTerity CLIA-certified laboratory)<sup>a</sup>. *p≤0.05; **p≤0.01; ***p≤0.001. <sup>a</sup>B cell module: <italic toggle="yes">CD19</italic>, <italic toggle="yes">BACH2</italic> and <italic toggle="yes">CD22</italic>; type I IFN module: <italic toggle="yes">IFI27</italic>, <italic toggle="yes">IFI44</italic>, <italic toggle="yes">IFI44L</italic> and <italic toggle="yes">RSAD2</italic>
+<xref rid="R18" ref-type="bibr">18</xref>; Ikaros type I IFN module: <italic toggle="yes">HERC5</italic>, <italic toggle="yes">IFI6</italic>, <italic toggle="yes">IFIT1</italic>, <italic toggle="yes">MX1</italic> and <italic toggle="yes">TNFRSF21</italic>
+<xref rid="R9" ref-type="bibr">9</xref>; and T cell exhaustion module: <italic toggle="yes">CTLA4</italic>, <italic toggle="yes">IL7R</italic>, <italic toggle="yes">LAG3</italic>, <italic toggle="yes">PDCD1</italic> and <italic toggle="yes">ABCE1</italic>.<xref rid="R19" ref-type="bibr">19</xref> Values shown are the treatment comparison vs placebo of adjusted mean per cent change from baseline. See <xref rid="SP4" ref-type="supplementary-material">online supplemental table 4</xref> for numeric data. IFN, interferon.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="annrheumdis-2022-222212f03.jpg"/></fig><p>The distribution of patient subsets by gene expression at baseline is shown in <xref rid="F4" ref-type="fig">figure 4</xref> with the type I IFN signature showing a biphasic distribution. Greater SRI-4 responses were noted in subsets having a high level of Aiolos and type I IFN gene expression at baseline (<xref rid="F5" ref-type="fig">figure 5</xref>). In an exploratory analysis, the subset of patients in the 0.45 mg group with the highest expression of the type I IFN signature (baseline type I IFN gene signature &gt;0.615) was found to have an SRI-4 response rate treatment difference of 54% at week 24 versus placebo (<xref rid="F6" ref-type="fig">figure 6</xref>). Response rate plots (<xref rid="F7" ref-type="fig">figure 7</xref>) showed that as the baseline IFN gene signature increased in magnitude, the week 24 SRI-4 response increased for iberdomide 0.45 mg up to 100% but decreased for placebo.</p><fig position="float" id="F4" orientation="portrait"><label>Figure 4</label><caption><p>Patient subsets based on peripheral blood gene expression at baseline. The cut-offs were set a priori based on an independent training data set (96 samples from patients with SLE, data not shown). The type I IFN module and the Ikaros type I IFN (eQTL) module had bimodal distributions and the cut-offs were set at the antimode: type I IFN module (<italic toggle="yes">IFI27</italic>, <italic toggle="yes">IFI44</italic>, <italic toggle="yes">IFI44L</italic> and <italic toggle="yes">RSAD2</italic>)=−1.38; Ikaros type I IFN module (<italic toggle="yes">HERC5</italic>, <italic toggle="yes">IFI6</italic>, <italic toggle="yes">IFIT1</italic>, <italic toggle="yes">MX1</italic> and <italic toggle="yes">TNFRSF21</italic>)=−0.76. The distributions of Ikaros, Aiolos and B cell module were unimodal, and the cut-offs were set at the median: Ikaros (<italic toggle="yes">IKZF1</italic>)=−0.58; Aiolos (<italic toggle="yes">IKZF3</italic>)=−0.49; B cell module (<italic toggle="yes">CD19</italic>, <italic toggle="yes">BACH2</italic> and <italic toggle="yes">CD22</italic>)=−0.3; T cell exhaustion module (<italic toggle="yes">CTLA4</italic>, <italic toggle="yes">IL7R</italic>, <italic toggle="yes">LAG3</italic>, <italic toggle="yes">PDCD1</italic> and <italic toggle="yes">ABCE1</italic>)=−0.51. eQTL, expression quantitative trait locus; IFN, interferon.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="annrheumdis-2022-222212f04.jpg"/></fig><fig position="float" id="F5" orientation="portrait"><label>Figure 5</label><caption><p>Clinical efficacy treatment comparison (week 24 SRI-4 response rate, iberdomide 0.45 mg—placebo) within prespecified patient subsets defined by gene expression at baseline. Gene module score cut-offs were set as described in <xref rid="F5" ref-type="fig">figure 5</xref>. See <xref rid="SP4" ref-type="supplementary-material">online supplemental table 5</xref> for numeric data. IFN, interferon; SLE, systemic lupus erythematosus; SRI-4, SLE Responder Index-4.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="annrheumdis-2022-222212f05.jpg"/></fig><fig position="float" id="F6" orientation="portrait"><label>Figure 6</label><caption><p>SRI-4 response rate at week 24 in the patient subsets defined by type I IFN gene signature at baseline. Δ=stratified difference from placebo (95% CI); n=number of responders; N=number of patients per subset within each treatment group. IFN, interferon; SLE, systemic lupus erythematosus; SRI-4, SLE Responder Index-4.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="annrheumdis-2022-222212f06.jpg"/></fig><fig position="float" id="F7" orientation="portrait"><label>Figure 7</label><caption><p>Relationship between baseline type I IFN signature and SRI-4 response rates at week 24 comparing placebo and iberdomide 0.45 mg treated SRI-4 cumulative response rates across the range of baseline type I IFN signature values (<italic toggle="yes">IFI27</italic>, <italic toggle="yes">IFI44</italic>, <italic toggle="yes">IFI44L</italic> and <italic toggle="yes">RSAD2</italic>). In exploratory analysis using bootstrapping and aggregating of thresholds from trees, the type I IFN signature optimal cut point was at 0.615 (interaction p=0.0037), SRI-4 at 0.45 mg=74% vs placebo=20%, OR=11.3 (2.9–43.8). this ‘IFN-Superhigh’ cut point captured 90/288 (31%) patients. At the extreme IFN &gt;1.31 (top 14% of patients), in the iberdomide 0.45 mg group, 11/11 (100%) patients had an SRI-4 response. IFN, interferon; SLE, systemic lupus erythematosus; SRI-4, SLE Responder Index-4.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="annrheumdis-2022-222212f07.jpg"/></fig><p>Analysis of changes in pharmacodynamic markers showed that patients with a high baseline type I IFN signature manifested a significant reduction in the IFN signature as a result of active treatment, whereas those with low baseline IFN signature did not. In contrast, both groups exhibited a significant reduction in B cells and pDCs and significant increases in IL-2 and Tregs (<xref rid="SP2" ref-type="supplementary-material">online supplemental figure 2</xref>). Baseline Aiolos expression had no impact on changes in type I IFN signature or any other pharmacodynamic parameter (<xref rid="SP3" ref-type="supplementary-material">online supplemental figure 3</xref>).</p><supplementary-material id="SP2" position="float" content-type="local-data" orientation="portrait"><object-id pub-id-type="doi">10.1136/annrheumdis-2022-222212.supp2</object-id><label>Supplementary data</label><p>
+<inline-supplementary-material xmlns:xlink="http://www.w3.org/1999/xlink" id="SS2" xlink:href="annrheumdis-2022-222212supp002.eps" content-type="local-data"/>
+</p></supplementary-material><supplementary-material id="SP3" position="float" content-type="local-data" orientation="portrait"><object-id pub-id-type="doi">10.1136/annrheumdis-2022-222212.supp3</object-id><label>Supplementary data</label><p>
+<inline-supplementary-material xmlns:xlink="http://www.w3.org/1999/xlink" id="SS3" xlink:href="annrheumdis-2022-222212supp003.eps" content-type="local-data"/>
+</p></supplementary-material></sec></sec><sec sec-type="discussion" id="s4"><title>Discussion</title><p>Pharmacodynamic analyses showed that iberdomide treatment reduced activity of the B cell and type I IFN pathways. These effects were evident in reductions in total B cells and B cells expressing the gene for the BLyS receptor and in switched memory B cells. Elevated BLyS levels have been documented in patients with SLE and shown to correlate with disease activity.<xref rid="R21" ref-type="bibr">21</xref> BLyS also induces plasmablast differentiation and drives autoantibody production in SLE.<xref rid="R4" ref-type="bibr">4 21</xref> Among patients with elevated anti-dsDNA antibodies at baseline, higher doses of iberdomide (0.3 mg and 0.45 mg) resulted in dose-dependent reductions versus placebo at week 24. Although there was no change in plasma cells in the blood, there may have been a change in plasma cell production of autoantibodies and/or plasma cells located in tissues. Treatment with iberdomide was associated with a significant, dose-dependent reduction in pDCs and mDCs, which are primary sources of type I IFNs.<xref rid="R1" ref-type="bibr">1</xref>
+</p><p>In patients with SLE, levels of IL-2 have been reported to vary.<xref rid="R4" ref-type="bibr">4 22</xref> A reduction in IL-2 production from T cells has been associated with impaired Treg development. Iberdomide has been shown to increase IL-2 production from T cells<xref rid="R5" ref-type="bibr">5</xref> and, in this clinical trial of SLE patients, iberdomide increased serum levels of IL-2 and expanded the Treg population in the blood. Ikaros is a repressor of IL-2 gene transcription,<xref rid="R6" ref-type="bibr">6 23</xref> and, therefore, reduction of Ikaros protein would be expected to result in transcriptional de-repression and an increase in IL-2 production. Because IL-2 is a major driver of Treg expansion and maintenance,<xref rid="R24" ref-type="bibr">24</xref> the observed increase in Tregs (up to +104.9%) could be explained by the increase in IL-2 (+144.1%). Besides the increase in IL-2, there were no dose-dependent effects of iberdomide on the other cytokines measured (IL-10, IL-17A, IL-17F, IL-21 and BLyS). No effect of iberdomide was observed on IL-17 plasma levels or Th17 cells, consistent with a lack of effect on the Th17 immune response in patients with lupus. These effects confirm the unique mechanism of action of iberdomide, suppressing dendritic cells and the type I IFN response, reducing B cells and anti-dsDNA antibodies, and augmenting IL-2 and Tregs, consistent with the role of Ikaros and Aiolos in immune homeostasis and with prior studies in healthy volunteers and patients with SLE.<xref rid="R4" ref-type="bibr">4 5</xref> The increase in <italic toggle="yes">IKZF1</italic> and <italic toggle="yes">IKZF3</italic> gene expression by iberdomide may be explained by the negative feedback each transcription factor can have on its own expression.<xref rid="R25" ref-type="bibr">25</xref>
+</p><p>The majority of patients enrolled in this trial had elevated expression of genes in the type I IFN and Ikaros pathways, which are typical of the SLE population.<xref rid="R26" ref-type="bibr">26</xref> Dysregulation of the type I IFN pathway can contribute to clinical features, immune dysregulation and laboratory manifestations in SLE.<xref rid="R27" ref-type="bibr">27</xref> However, the strongest association to gene expression changes is found with autoantibodies, which are influenced by patient ancestry.<xref rid="R28" ref-type="bibr">28</xref> In addition, patients with active SLE have decreased Treg numbers and function, as excess IFN prevents normal activation and expansion of Tregs in response to inflammation.<xref rid="R26" ref-type="bibr">26</xref> In the current study, a correlation analysis of baseline variations in gene expression with clinical features found that the type I IFN gene module was directly proportional to SLEDAI and Cutaneous Lupus Erythematosus Disease Area and Severity Index (CLASI) score, and was higher in patients on oral corticosteroids or azathioprine. This is consistent with previous literature associating the type I IFN gene signature with more severe disease and use of corticosteroids and immunosuppressants.<xref rid="R29" ref-type="bibr">29</xref> Baseline Aiolos (<italic toggle="yes">IKZF3</italic>) gene expression was not proportional to SLEDAI or CLASI score and was not different in any subgroups based on medication (data not shown).</p><p>As previously reported,<xref rid="R13" ref-type="bibr">13</xref> iberdomide decreased anti-dsDNA antibodies among patients with high levels at baseline (≥8 IU/mL), with 0.45 mg decreasing levels by 61.2% (p=0.008) and 0.3 mg decreasing levels by 56.1% (p=0.027) compared with placebo. The clinical efficacy of iberdomide in patients with active SLE in this phase 2 study was greater among subgroups who had high expression of the type I IFN or Aiolos gene signature at baseline.<xref rid="R13" ref-type="bibr">13</xref> Moreover, exploratory analysis indicates that the highest cut point for the type I IFN subgroup (representing 31% of the total study population) was associated with the most enhanced relationship with response, providing a treatment difference of 54% versus placebo. At the extreme high IFN gene signature (expressed by 14% of patients), 100% (11/11) of patients had an SRI-4 response to iberdomide 0.45 mg, suggesting that the SRI-4 clinical response rate to iberdomide is proportionate to the baseline expression level of the type I IFN gene signature. Iberdomide significantly decreased the type I IFN gene signature only in the IFN-high patient subgroup, which corresponded to stratified treatment differences for SRI-4 in the IFN-high group ranging from 25.6% to 26.8% versus placebo. Iberdomide did not significantly reduce the type I IFN gene signature in the IFN-low patient population, with no significant differences in SRI-4 from placebo in this subgroup. In other studies, the relationship between IFN gene signature and disease activity has varied, a finding that is likely a result of disease and gene expression heterogeneity as well as differences in the methods used to define gene signatures across studies. In several cross-sectional gene expression studies, the type I IFN gene signature has identified a distinct subset of lupus patients who have greater disease severity and a worse clinical prognosis.<xref rid="R30" ref-type="bibr">30 31</xref> In a recent longitudinal study, the type I IFN gene signature was prognostic for early development of lupus nephritis after adjusting for age at SLE diagnosis, gender and race (HR: 3.36).<xref rid="R32" ref-type="bibr">32</xref>
+</p><p>The pharmacodynamic and pharmacokinetic analyses were conducted based on 24 weeks of iberdomide treatment. Longer-term treatment or discontinuation effects were not evaluated. Patients continued to receive standard-of-care medications, including corticosteroids with no mandatory tapering, but the results of iberdomide pharmacodynamic analyses were as predicted, suggesting that background treatment did not impact results. Other factors, including concomitant medication use (antimalarials and immunosuppressants) and ancestral diversity, may impact our findings. Additional analyses of the pharmacodynamic effects could examine the influence of baseline disease characteristics and other response measurements. Results of exploratory cut point analyses require validation in future studies.</p><p>The most common adverse events with iberdomide (urinary tract infection, upper respiratory tract infection, neutropenia, influenza, nasopharyngitis and diarrhoea)<xref rid="R13" ref-type="bibr">13</xref> might be related to the modulatory effects of iberdomide on innate or adaptive immunity.</p><p>In conclusion, iberdomide showed significant improvement in the treatment of patients with active SLE.<xref rid="R12" ref-type="bibr">12 13</xref> Predominant pharmacologic activity was observed on the type I IFN and B cell/plasma cell pathways, leading to reductions in B cells, pDCs and autoantibody levels. Increased levels of Tregs and IL-2 suggest immune system rebalancing. An elevated type I IFN gene signature was associated with improved response and the largest change from baseline to week 24 in the gene signature expression. These findings may provide an opportunity to implement precision medicine to evaluate therapy on a molecular basis and potentially identify biomarkers associated with response to iberdomide for evaluation in future clinical studies.</p></sec></body><back><ack><p>Thank you to the patients and families who have made the study possible and the associated clinical trial teams.</p><p>Professional medical writing from Michelle McDermott, PharmD, and editorial assistance were provided by Peloton Advantage, LLC, an OPEN Health company, Parsippany, New Jersey, USA, and were funded by Bristol Myers Squibb.</p></ack><fn-group><fn fn-type="other"><p><bold>Handling editor:</bold> Josef S Smolen</p></fn><fn fn-type="other"><p><bold>Contributors:</bold> Conception or design of the work: PEL, RvV, TD, VPW, JTM, RAF, ND, MW, SK, YY, AG, ZL and PHS. Acquisition, analysis or interpretation of data and drafted or substantially revised the work: all authors. Author acting as guarantor: PHS.</p></fn><fn fn-type="other"><p><bold>Funding:</bold> This study was sponsored by Bristol Myers Squibb.</p></fn><fn fn-type="COI-statement"><p><bold>Competing interests:</bold> PEL: RILITE Foundation—grant support. RvV: Bristol Myers Squibb, GlaxoSmithKline and Eli Lilly—research support; UCB—research support, consultancy and speaker; Pfizer—support for educational programmes, consultancy and speaker; Roche—support for educational programmes; AbbVie, Galapagos and Janssen—consultancy and speaker; AstraZeneca, Biogen, Biotest, Celgene, Gilead and Servier—consultancy. TD: Charite Universitätsmedizin Berlin and DRFZ Berlin, Germany; AbbVie, Bristol Myers Squibb, Bristol Myers Squibb/Celgene, Eli Lilly, EMD Serono, Janssen, Novartis, Roche and Samsung—support for clinical studies and honoraria for scientific advice. VPW: Celgene, MedImmune, Resolve, Genentech, Idera, Janssen, Lilly, Biogen, Bristol Myers Squibb, Gilead, Amgen, Medscape, Nektar, Incyte, EMD Serono, CSL Behring, Principia, Crisalis, Viela Bio, Argenx, Kirin, AstraZeneca, AbbVie, GlaxoSmithKline, AstraZeneca, Cugene, UCB, Corcept and Beacon Bioscience—consultancy; and Celgene, Janssen, Biogen, Gilead, AstraZeneca, Viela, Amgen and Lupus Research Alliance/Bristol Myers Squibb—research support. JTM: UCB, GlaxoSmithKline, AbbVie, EMD Serono, RemeGen, Celgene/Bristol Myers Squibb, AstraZeneca, Lilly, Daiichi Sankyo, Servier, ImmuPharma, Amgen, Janssen, Lilly, Genentech, Resolve, Alpine, Aurinia, Astellas, Alexion and Provention—consultancy; and GlaxoSmithKline and AstraZeneca—conducts research. RAF: Bristol Myers Squibb—research/grant support and consultancy. MP and JVZ: Bristol Myers Squibb, Janssen, Pfizer, Roche and Takeda—consultancy. MM: Bristol Myers Squibb, Novartis, Lilly, Amgen, UCB and Medac—speaker. FI-P: Bristol Myers Squibb, Janssen, Pfizer, Roche and Takeda—speaker and advisor. RT: DxTerity Diagnostics—stock ownership and officer. ND, MW, SK, MS, YY, AG, ZL, RG and PHS: Bristol Myers Squibb—employment and shareholder. SH: Bristol Myers Squibb—employment; and Bristol Myers Squibb, JNJ and Novartis—shareholder. ST: Bristol Myers Squibb – employment (at the time of the study) and shareholder.</p></fn><fn fn-type="other"><p><bold>Patient and public involvement:</bold> Patients and/or the public were not involved in the design, or conduct, or reporting, or dissemination plans of this research.</p></fn><fn fn-type="other"><p><bold>Provenance and peer review:</bold> Not commissioned; externally peer reviewed.</p></fn><fn fn-type="other"><p><bold>Supplemental material:</bold> This content has been supplied by the author(s). It has not been vetted by BMJ Publishing Group Limited (BMJ) and may not have been peer-reviewed. Any opinions or recommendations discussed are solely those of the author(s) and are not endorsed by BMJ. BMJ disclaims all liability and responsibility arising from any reliance placed on the content. Where the content includes any translated material, BMJ does not warrant the accuracy and reliability of the translations (including but not limited to local regulations, clinical guidelines, terminology, drug names and drug dosages), and is not responsible for any error and/or omissions arising from translation and adaptation or otherwise.</p></fn></fn-group><sec sec-type="data-availability"><title>Data availability statement</title><p>The Bristol Myers Squibb policy on data sharing may be found at <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.bms.com/researchers-and-partners/independent-research/data-sharing-request-process.html" ext-link-type="uri">https://www.bms.com/researchers-and-partners/independent-research/data-sharing-request-process.html</ext-link>
+</p></sec><sec sec-type="ethics-statement"><title>Ethics statements</title><sec><title>Patient consent for publication</title><p content-type="ethics-consent-to-publish">Not applicable.</p></sec><sec><title>Ethics approval</title><p content-type="ethics-approval">Study procedures were conducted in accordance with the general ethical principles of the International Conference on Harmonisation guidelines and the Declaration of Helsinki for Good Clinical Practice. All patients provided written informed consent. The study was approved by an institutional review board at each site.</p></sec></sec><ref-list><title>References</title><ref id="R1"><label>1</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Kaul</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gordon</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Crow</surname>
+<given-names>MK</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Systemic lupus erythematosus</article-title>. <source>Nat Rev Dis Primers</source>
+<year>2016</year>;<volume>2</volume>:<fpage>16039</fpage>. <pub-id pub-id-type="doi">10.1038/nrdp.2016.39</pub-id>
+<pub-id pub-id-type="pmid">27306639</pub-id></mixed-citation></ref><ref id="R2"><label>2</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Wang</surname>
+<given-names>Y-F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lin</surname>
+<given-names>Z</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Identification of 38 novel loci for systemic lupus erythematosus and genetic heterogeneity between ancestral groups</article-title>. <source>Nat Commun</source>
+<year>2021</year>;<volume>12</volume>:<elocation-id>772</elocation-id>. <pub-id pub-id-type="doi">10.1038/s41467-021-21049-y</pub-id>
+<pub-id pub-id-type="pmid">33536424</pub-id><pub-id pub-id-type="pmcid">PMC7858632</pub-id></mixed-citation></ref><ref id="R3"><label>3</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>John</surname>
+<given-names>LB</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ward</surname>
+<given-names>AC</given-names>
+</string-name>
+</person-group>. <article-title>The Ikaros gene family: transcriptional regulators of hematopoiesis and immunity</article-title>. <source>Mol Immunol</source>
+<year>2011</year>;<volume>48</volume>:<fpage>1272</fpage>–<lpage>8</lpage>. <pub-id pub-id-type="doi">10.1016/j.molimm.2011.03.006</pub-id>
+<pub-id pub-id-type="pmid">21477865</pub-id></mixed-citation></ref><ref id="R4"><label>4</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Nakayama</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kosek</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Capone</surname>
+<given-names>L</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Aiolos overexpression in systemic lupus erythematosus B cell subtypes and BAFF-induced memory B cell differentiation are reduced by CC-220 modulation of cereblon activity</article-title>. <source>J Immunol</source>
+<year>2017</year>;<volume>199</volume>:<fpage>2388</fpage>–<lpage>407</lpage>. <pub-id pub-id-type="doi">10.4049/jimmunol.1601725</pub-id>
+<pub-id pub-id-type="pmid">28848067</pub-id><pub-id pub-id-type="pmcid">PMC5602157</pub-id></mixed-citation></ref><ref id="R5"><label>5</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Schafer</surname>
+<given-names>PH</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ye</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wu</surname>
+<given-names>L</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Cereblon modulator iberdomide induces degradation of the transcription factors Ikaros and Aiolos: immunomodulation in healthy volunteers and relevance to systemic lupus erythematosus</article-title>. <source>Ann Rheum Dis</source>
+<year>2018</year>;<volume>77</volume>:<fpage>1516</fpage>–<lpage>23</lpage>. <pub-id pub-id-type="doi">10.1136/annrheumdis-2017-212916</pub-id>
+<pub-id pub-id-type="pmid">29945920</pub-id><pub-id pub-id-type="pmcid">PMC6161670</pub-id></mixed-citation></ref><ref id="R6"><label>6</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Bandyopadhyay</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Duré</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Paroder</surname>
+<given-names>M</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Interleukin 2 gene transcription is regulated by Ikaros-induced changes in histone acetylation in anergic T cells</article-title>. <source>Blood</source>
+<year>2007</year>;<volume>109</volume>:<fpage>2878</fpage>–<lpage>86</lpage>. <pub-id pub-id-type="doi">10.1182/blood-2006-07-037754</pub-id>
+<pub-id pub-id-type="pmid">17148585</pub-id><pub-id pub-id-type="pmcid">PMC1852212</pub-id></mixed-citation></ref><ref id="R7"><label>7</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Lessard</surname>
+<given-names>CJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Adrianto</surname>
+<given-names>I</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ice</surname>
+<given-names>JA</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Identification of IRF8, TMEM39A, and IKZF3-ZPBP2 as susceptibility loci for systemic lupus erythematosus in a large-scale multiracial replication study</article-title>. <source>Am J Hum Genet</source>
+<year>2012</year>;<volume>90</volume>:<fpage>648</fpage>–<lpage>60</lpage>. <pub-id pub-id-type="doi">10.1016/j.ajhg.2012.02.023</pub-id>
+<pub-id pub-id-type="pmid">22464253</pub-id><pub-id pub-id-type="pmcid">PMC3322228</pub-id></mixed-citation></ref><ref id="R8"><label>8</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Wang</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ahlford</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Järvinen</surname>
+<given-names>TM</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Genes identified in Asian SLE GWASs are also associated with SLE in Caucasian populations</article-title>. <source>Eur J Hum Genet</source>
+<year>2013</year>;<volume>21</volume>:<fpage>994</fpage>–<lpage>9</lpage>. <pub-id pub-id-type="doi">10.1038/ejhg.2012.277</pub-id>
+<pub-id pub-id-type="pmid">23249952</pub-id><pub-id pub-id-type="pmcid">PMC3746253</pub-id></mixed-citation></ref><ref id="R9"><label>9</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Westra</surname>
+<given-names>H-J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Peters</surname>
+<given-names>MJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Esko</surname>
+<given-names>T</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Systematic identification of trans eQTLs as putative drivers of known disease associations</article-title>. <source>Nat Genet</source>
+<year>2013</year>;<volume>45</volume>:<fpage>1238</fpage>–<lpage>43</lpage>. <pub-id pub-id-type="doi">10.1038/ng.2756</pub-id>
+<pub-id pub-id-type="pmid">24013639</pub-id><pub-id pub-id-type="pmcid">PMC3991562</pub-id></mixed-citation></ref><ref id="R10"><label>10</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Vyse</surname>
+<given-names>TJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Cunninghame Graham</surname>
+<given-names>DS</given-names>
+</string-name>
+</person-group>. <article-title>Trans-ancestral fine-mapping and epigenetic annotation as tools to delineate functionally relevant risk alleles at IKZF1 and IKZF3 in systemic lupus erythematosus</article-title>. <source>Int J Mol Sci</source>
+<year>2020</year>;<volume>21</volume>. <pub-id pub-id-type="doi">10.3390/ijms21218383</pub-id>. [Epub ahead of print: <comment>09 Nov 2020</comment>].
+<pub-id pub-id-type="pmcid">PMC7664943</pub-id><pub-id pub-id-type="pmid">33182226</pub-id></mixed-citation></ref><ref id="R11"><label>11</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Matyskiela</surname>
+<given-names>ME</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>W</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Man</surname>
+<given-names>H-W</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>A cereblon modulator (CC-220) with improved degradation of Ikaros and Aiolos</article-title>. <source>J Med Chem</source>
+<year>2018</year>;<volume>61</volume>:<fpage>535</fpage>–<lpage>42</lpage>. <pub-id pub-id-type="doi">10.1021/acs.jmedchem.6b01921</pub-id>
+<pub-id pub-id-type="pmid">28425720</pub-id></mixed-citation></ref><ref id="R12"><label>12</label><mixed-citation publication-type="confproc">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Furie</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Werth</surname>
+<given-names>VP</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gaudy</surname>
+<given-names>A</given-names>
+</string-name>
+</person-group>. <article-title>A randomized, placebo-controlled, double-blind ascending-dose, safety, efficacy, pharmacokinetics and pharmacodynamics study of CC-220 in subjects with systemic lupus erythematosus [presentation]</article-title>. <conf-name>Annual Meeting of the American College of Rheumatology</conf-name>, <conf-loc>San Diego, CA</conf-loc>, <year>2017</year>.</mixed-citation></ref><ref id="R13"><label>13</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Merrill</surname>
+<given-names>JT</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Werth</surname>
+<given-names>VP</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Furie</surname>
+<given-names>R</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Phase 2 trial of iberdomide in systemic lupus erythematosus</article-title>. <source>N Engl J Med</source>
+<year>2022</year>;<volume>386</volume>:<fpage>1034</fpage>–<lpage>45</lpage>. <pub-id pub-id-type="doi">10.1056/NEJMoa2106535</pub-id>
+<pub-id pub-id-type="pmid">35294813</pub-id></mixed-citation></ref><ref id="R14"><label>14</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Ye</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gaudy</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Schafer</surname>
+<given-names>P</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>First-in-human, single- and multiple-ascending-dose studies in healthy subjects to assess pharmacokinetics, pharmacodynamics, and safety/tolerability of iberdomide, a novel cereblon E3 ligase modulator</article-title>. <source>Clin Pharmacol Drug Dev</source>
+<year>2021</year>;<volume>10</volume>:<fpage>471</fpage>–<lpage>85</lpage>. <pub-id pub-id-type="doi">10.1002/cpdd.869</pub-id>
+<pub-id pub-id-type="pmid">32969202</pub-id><pub-id pub-id-type="pmcid">PMC8246954</pub-id></mixed-citation></ref><ref id="R15"><label>15</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Baron</surname>
+<given-names>U</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Werner</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Schildknecht</surname>
+<given-names>K</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Epigenetic immune cell counting in human blood samples for immunodiagnostics</article-title>. <source>Sci Transl Med</source>
+<year>2018</year>;<volume>10</volume>. <pub-id pub-id-type="doi">10.1126/scitranslmed.aan3508</pub-id>. [Epub ahead of print: <comment>01 08 2018</comment>].
+<pub-id pub-id-type="pmid">30068569</pub-id></mixed-citation></ref><ref id="R16"><label>16</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Burska</surname>
+<given-names>AN</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Thu</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Parmar</surname>
+<given-names>R</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Quantifying circulating Th17 cells by qPCR: potential as diagnostic biomarker for rheumatoid arthritis</article-title>. <source>Rheumatology</source>
+<year>2019</year>;<volume>58</volume>:<fpage>2015</fpage>–<lpage>24</lpage>. <pub-id pub-id-type="doi">10.1093/rheumatology/kez162</pub-id>
+<pub-id pub-id-type="pmid">31081041</pub-id></mixed-citation></ref><ref id="R17"><label>17</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>van Roon</surname>
+<given-names>JAG</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Moret</surname>
+<given-names>FM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Blokland</surname>
+<given-names>SLM</given-names>
+</string-name>
+</person-group>. <article-title>Epigenetic cell counting: a novel tool to quantify immune cells in salivary glands detects robust correlations of T follicular helper cells with immunopathology [abstract]</article-title>. <source>Arthritis Rheumatol</source>
+<year>2017</year>;<volume>69</volume>:<fpage>2830</fpage>.</mixed-citation></ref><ref id="R18"><label>18</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Furie</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Khamashta</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Merrill</surname>
+<given-names>JT</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Anifrolumab, an anti-interferon-α receptor monoclonal antibody, in moderate-to-severe systemic lupus erythematosus</article-title>. <source>Arthritis Rheumatol</source>
+<year>2017</year>;<volume>69</volume>:<fpage>376</fpage>–<lpage>86</lpage>. <pub-id pub-id-type="doi">10.1002/art.39962</pub-id>
+<pub-id pub-id-type="pmid">28130918</pub-id><pub-id pub-id-type="pmcid">PMC5299497</pub-id></mixed-citation></ref><ref id="R19"><label>19</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>McKinney</surname>
+<given-names>EF</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lee</surname>
+<given-names>JC</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Jayne</surname>
+<given-names>DRW</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>T-cell exhaustion, co-stimulation and clinical outcome in autoimmunity and infection</article-title>. <source>Nature</source>
+<year>2015</year>;<volume>523</volume>:<fpage>612</fpage>–<lpage>6</lpage>. <pub-id pub-id-type="doi">10.1038/nature14468</pub-id>
+<pub-id pub-id-type="pmid">26123020</pub-id><pub-id pub-id-type="pmcid">PMC4623162</pub-id></mixed-citation></ref><ref id="R20"><label>20</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Huang</surname>
+<given-names>X</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sun</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Trow</surname>
+<given-names>P</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Patient subgroup identification for clinical drug development</article-title>. <source>Stat Med</source>
+<year>2017</year>;<volume>36</volume>:<fpage>1414</fpage>–<lpage>28</lpage>. <pub-id pub-id-type="doi">10.1002/sim.7236</pub-id>
+<pub-id pub-id-type="pmid">28147447</pub-id><pub-id pub-id-type="pmcid">PMC7704099</pub-id></mixed-citation></ref><ref id="R21"><label>21</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Morimoto</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nakano</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Watanabe</surname>
+<given-names>T</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Expression of B-cell activating factor of the tumour necrosis factor family (BAFF) in T cells in active systemic lupus erythematosus: the role of BAFF in T cell-dependent B cell pathogenic autoantibody production</article-title>. <source>Rheumatology</source>
+<year>2007</year>;<volume>46</volume>:<fpage>1083</fpage>–<lpage>6</lpage>. <pub-id pub-id-type="doi">10.1093/rheumatology/kem097</pub-id>
+<pub-id pub-id-type="pmid">17500077</pub-id></mixed-citation></ref><ref id="R22"><label>22</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Geginat</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Vasco</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gerosa</surname>
+<given-names>M</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>IL-10 producing regulatory and helper T-cells in systemic lupus erythematosus</article-title>. <source>Semin Immunol</source>
+<year>2019</year>;<volume>44</volume>:<elocation-id>101330</elocation-id>. <pub-id pub-id-type="doi">10.1016/j.smim.2019.101330</pub-id>
+<pub-id pub-id-type="pmid">31735515</pub-id></mixed-citation></ref><ref id="R23"><label>23</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Thomas</surname>
+<given-names>RM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chunder</surname>
+<given-names>N</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chen</surname>
+<given-names>C</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Ikaros enforces the costimulatory requirement for IL2 gene expression and is required for anergy induction in CD4+ T lymphocytes</article-title>. <source>J Immunol</source>
+<year>2007</year>;<volume>179</volume>:<fpage>7305</fpage>–<lpage>15</lpage>. <pub-id pub-id-type="doi">10.4049/jimmunol.179.11.7305</pub-id>
+<pub-id pub-id-type="pmid">18025173</pub-id></mixed-citation></ref><ref id="R24"><label>24</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Bell</surname>
+<given-names>CJM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sun</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nowak</surname>
+<given-names>UM</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Sustained in vivo signaling by long-lived IL-2 induces prolonged increases of regulatory T cells</article-title>. <source>J Autoimmun</source>
+<year>2015</year>;<volume>56</volume>:<fpage>66</fpage>–<lpage>80</lpage>. <pub-id pub-id-type="doi">10.1016/j.jaut.2014.10.002</pub-id>
+<pub-id pub-id-type="pmid">25457307</pub-id><pub-id pub-id-type="pmcid">PMC4298360</pub-id></mixed-citation></ref><ref id="R25"><label>25</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Perotti</surname>
+<given-names>EA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Georgopoulos</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yoshida</surname>
+<given-names>T</given-names>
+</string-name>
+</person-group>. <article-title>An Ikaros promoter element with dual epigenetic and transcriptional activities</article-title>. <source>PLoS One</source>
+<year>2015</year>;<volume>10</volume>:<elocation-id>e0131568</elocation-id>. <pub-id pub-id-type="doi">10.1371/journal.pone.0131568</pub-id>
+<pub-id pub-id-type="pmid">26135129</pub-id><pub-id pub-id-type="pmcid">PMC4489883</pub-id></mixed-citation></ref><ref id="R26"><label>26</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Brohawn</surname>
+<given-names>PZ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Streicher</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Higgs</surname>
+<given-names>BW</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Type I interferon gene signature test-low and -high patients with systemic lupus erythematosus have distinct gene expression signatures</article-title>. <source>Lupus</source>
+<year>2019</year>;<volume>28</volume>:<fpage>1524</fpage>–<lpage>33</lpage>. <pub-id pub-id-type="doi">10.1177/0961203319885447</pub-id>
+<pub-id pub-id-type="pmid">31660791</pub-id></mixed-citation></ref><ref id="R27"><label>27</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Hoffman</surname>
+<given-names>RW</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Merrill</surname>
+<given-names>JT</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Alarcón-Riquelme</surname>
+<given-names>MME</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Gene expression and pharmacodynamic changes in 1,760 systemic lupus erythematosus patients from two phase III trials of BAFF blockade with tabalumab</article-title>. <source>Arthritis Rheumatol</source>
+<year>2017</year>;<volume>69</volume>:<fpage>643</fpage>–<lpage>54</lpage>. <pub-id pub-id-type="doi">10.1002/art.39950</pub-id>
+<pub-id pub-id-type="pmid">27723281</pub-id><pub-id pub-id-type="pmcid">PMC6585752</pub-id></mixed-citation></ref><ref id="R28"><label>28</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Catalina</surname>
+<given-names>MD</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bachali</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yeo</surname>
+<given-names>AE</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Patient ancestry significantly contributes to molecular heterogeneity of systemic lupus erythematosus</article-title>. <source>JCI Insight</source>
+<year>2020</year>;<volume>5</volume>:<elocation-id>e140380</elocation-id>. <pub-id pub-id-type="doi">10.1172/jci.insight.140380</pub-id>
+<pub-id pub-id-type="pmcid">PMC7455079</pub-id><pub-id pub-id-type="pmid">32759501</pub-id></mixed-citation></ref><ref id="R29"><label>29</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Kirou</surname>
+<given-names>KA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lee</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>George</surname>
+<given-names>S</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Activation of the interferon-alpha pathway identifies a subgroup of systemic lupus erythematosus patients with distinct serologic features and active disease</article-title>. <source>Arthritis Rheum</source>
+<year>2005</year>;<volume>52</volume>:<fpage>1491</fpage>–<lpage>503</lpage>. <pub-id pub-id-type="doi">10.1002/art.21031</pub-id>
+<pub-id pub-id-type="pmid">15880830</pub-id></mixed-citation></ref><ref id="R30"><label>30</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Kirou</surname>
+<given-names>KA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mavragani</surname>
+<given-names>CP</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Crow</surname>
+<given-names>MK</given-names>
+</string-name>
+</person-group>. <article-title>Activation of type I interferon in systemic lupus erythematosus</article-title>. <source>Expert Rev Clin Immunol</source>
+<year>2007</year>;<volume>3</volume>:<fpage>579</fpage>–<lpage>88</lpage>. <pub-id pub-id-type="doi">10.1586/1744666X.3.4.579</pub-id>
+<pub-id pub-id-type="pmid">20477162</pub-id></mixed-citation></ref><ref id="R31"><label>31</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Feng</surname>
+<given-names>X</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wu</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Grossman</surname>
+<given-names>JM</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Association of increased interferon-inducible gene expression with disease activity and lupus nephritis in patients with systemic lupus erythematosus</article-title>. <source>Arthritis Rheum</source>
+<year>2006</year>;<volume>54</volume>:<fpage>2951</fpage>–<lpage>62</lpage>. <pub-id pub-id-type="doi">10.1002/art.22044</pub-id>
+<pub-id pub-id-type="pmid">16947629</pub-id></mixed-citation></ref><ref id="R32"><label>32</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Arriens</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Raja</surname>
+<given-names>Q</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Husain</surname>
+<given-names>SA</given-names>
+</string-name>
+</person-group>. <article-title>Increased risk of progression to lupus nephritis for lupus patients with elevated interferon signature [abstract]</article-title>. <source>Arthritis Rheumatol</source>
+<year>2019</year>;<volume>71</volume>:<fpage>1914</fpage>.</mixed-citation></ref></ref-list></back></article></pmc-articleset>
