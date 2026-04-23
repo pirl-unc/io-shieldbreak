@@ -49,16 +49,20 @@ For each kept column, confirm: name, type, where to look in the paper, how to ha
 
 If anything is ambiguous mid-elicitation, **ask before proceeding**. A small clarification beats a wrong table on a public site.
 
-## Search sources (priority order)
+## Search sources (priority order — NCBI-first)
 
-1. **PubMed** — NCBI E-utilities. Use WebFetch:
+1. **PubMed** (NCBI) — discovery layer. E-utilities via WebFetch:
    - esearch: `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=<query>&retmode=json&retmax=200`
-   - efetch: `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=<pmids>&retmode=xml`
-2. **ClinicalTrials.gov** — API v2: `https://clinicaltrials.gov/api/v2/studies?query.term=<q>&pageSize=100&format=json`
-3. **Europe PMC** — useful for full-text XML on open-access papers: `https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=<q>&format=json`
-4. **WebSearch** — general fallback for grey literature, conference abstracts, press releases. Treat results as leads, not sources.
+   - esummary: `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=<pmids>&retmode=json` — returns PMID, title, journal, pubdate, and (when available) the linked **PMCID**
+   - efetch: `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=<pmids>&retmode=xml` — abstracts and metadata
+2. **PubMed Central (PMC)** (NCBI) — primary source for open-access full text. Use the PMCID returned from esummary:
+   - efetch: `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=<pmcid>&retmode=xml` — JATS XML full text
+   - elink (PMID → PMCID, when esummary doesn't include it): `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&db=pmc&id=<pmid>&retmode=json`
+3. **ClinicalTrials.gov** — registry-side ground truth on design/status/results: `https://clinicaltrials.gov/api/v2/studies?query.term=<q>&pageSize=100&format=json`
+4. **Europe PMC** — fallback for full text when PMC lacks the article (e.g., some preprints, older OA records): `https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=<q>&format=json`
+5. **WebSearch** — last-resort fallback for grey literature, conference abstracts, press releases. Treat results as leads, not sources.
 
-Always record the exact URL and timestamp of every fetch in the per-run search log.
+Always record the exact URL and timestamp of every fetch in the per-run search log. NCBI politeness: include `&tool=trialist_screener&email=<user_email>` on E-utilities calls when known, and stay under 3 requests/sec without an API key.
 
 ## Workflow
 
@@ -66,9 +70,12 @@ Always record the exact URL and timestamp of every fetch in the per-run search l
 2. **Search**: build queries per source, run them, save raw responses to `data/searches/<query-slug>-<YYYY-MM-DD>.json`. Record query strings, hit counts, and source URLs in the file's metadata block.
 3. **Deduplicate** by NCT ID > DOI > PMID > normalized title. Note merges in the run log.
 4. **Screen** against the inclusion/exclusion in `prompts/search.md`. For each excluded hit, record a short reason. Cap kept items per run (default 30) to keep the work bounded; ask the user to raise the cap if needed.
-5. **Extract** per `prompts/extract.md`. For each kept paper:
-   - Prefer full text (Europe PMC OA XML) over abstract; fall back gracefully.
-   - For each field, record the source URL/PMID/DOI it came from.
+5. **Extract** per `prompts/extract.md`. For each kept paper, fetch full text in this order, stopping at the first that succeeds:
+   1. **PMC** via E-utilities (`efetch db=pmc`) using the PMCID from the PubMed esummary or elink response
+   2. **Europe PMC** OA XML — only if PMC has no record
+   3. **PubMed abstract** (`efetch db=pubmed`) — only if no OA full text exists anywhere
+   - Record which tier was used in the row's `source_type` field (`pmc_full_text`, `europepmc_full_text`, `pubmed_abstract`).
+   - For each extracted value, record the source URL/PMID/PMCID/DOI it came from.
    - If a field is not reported, write `null` and add a note to the row's `notes` field — never guess.
 6. **Append** validated rows to `data/trials.jsonl` (append-only — never rewrite or delete existing rows; corrections are new rows with `supersedes: <prior_id>`).
 7. **Rebuild** `docs/trials.md` from the JSONL using `scripts/build_table.py` (write this script if it doesn't exist; keep it pure-Python, no LLM calls).
@@ -90,8 +97,9 @@ If the user changes columns in `prompts/extract.md`:
 
 ## Quality bar (non-negotiable)
 
+- **Primary research only by default.** Exclude narrative reviews, editorials, commentaries, and letters that do not report primary data. Systematic reviews and meta-analyses are also excluded by default but are higher-value leads — list them separately for the user to scan if they want to follow up. The user can opt in to including any of these categories during the per-run elicitation; the agent must explicitly ask "include reviews?" rather than assuming.
 - **Never fabricate values.** A missing value is `null` plus a note. Wrong values published to a public site are worse than slow updates.
-- **Cite every extracted value.** Each row carries the source PMID, DOI, NCT ID, and fetch timestamp.
+- **Cite every extracted value.** Each row carries the source PMID, PMCID (when available), DOI, NCT ID, and fetch timestamp.
 - **Flag disagreements** when the same trial reports different values across publications (interim vs. final, abstract vs. full report). Surface both, mark the canonical one.
 - **Never push without confirmation.** Local commits are fine; pushes to `pirl-unc/io-shieldbreak` are user-authorized only.
 - **Append-only data.** No row is ever deleted. Corrections supersede.
