@@ -187,6 +187,48 @@
 .pill.assay-scrna     { background:#d9f2e5; color:#1d6b4a; border-color:#9fd4b7; }
 .pill.assay-qpcr      { background:#ececf2; color:#3f3f5c; border-color:#b4b4c4; }
 
+/* ---- Confidence pills ---- */
+.pill.conf-high         { background: #d9f2e5; color: #1d6b4a; border-color: #9fd4b7; }
+.pill.conf-moderate     { background: #dce6f7; color: #234f8c; border-color: #7ea5d4; }
+.pill.conf-low          { background: #fbeacb; color: #8a5510; border-color: #e0b87c; }
+.pill.conf-very-low     { background: #fde4d3; color: #8c4a1f; border-color: #e8b896; }
+[data-md-color-scheme="slate"] .pill.conf-high      { background:#1d4a36; color:#9fd4b7; border-color:#4a7a62; }
+[data-md-color-scheme="slate"] .pill.conf-moderate  { background:#2a3a5a; color:#7ea5d4; border-color:#3d5e8a; }
+[data-md-color-scheme="slate"] .pill.conf-low       { background:#4a3616; color:#e0b87c; border-color:#7a5c2e; }
+[data-md-color-scheme="slate"] .pill.conf-very-low  { background:#4a2a14; color:#e8b896; border-color:#7a4a2a; }
+
+/* ---- Risk-of-bias pills (smaller, secondary to confidence) ---- */
+.pill.rob-low               { background:#d9f2e5; color:#1d6b4a; border-color:#9fd4b7; font-size:0.68em; }
+.pill.rob-some-concerns     { background:#fbeacb; color:#8a5510; border-color:#e0b87c; font-size:0.68em; }
+.pill.rob-moderate          { background:#ececf2; color:#3f3f5c; border-color:#b4b4c4; font-size:0.68em; }
+.pill.rob-serious           { background:#fde4d3; color:#8c4a1f; border-color:#e8b896; font-size:0.68em; }
+.pill.rob-na                { background:#ececf2; color:#6b6b7f; border-color:#b4b4c4; font-size:0.68em; font-style:italic; }
+[data-md-color-scheme="slate"] .pill.rob-low           { background:#1d4a36; color:#9fd4b7; border-color:#4a7a62; }
+[data-md-color-scheme="slate"] .pill.rob-some-concerns { background:#4a3616; color:#e0b87c; border-color:#7a5c2e; }
+[data-md-color-scheme="slate"] .pill.rob-moderate      { background:#2a2a38; color:#b4b4c4; border-color:#4e4e64; }
+[data-md-color-scheme="slate"] .pill.rob-serious       { background:#4a2a14; color:#e8b896; border-color:#7a4a2a; }
+[data-md-color-scheme="slate"] .pill.rob-na            { background:#2a2a38; color:#8a8a9e; border-color:#4e4e64; }
+
+/* ---- Bias / confounding flag pills ---- */
+.bias-flags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2em;
+  margin-top: 0.25em;
+  max-width: 22ch;
+}
+.pill.bias-flag {
+  font-size: 0.62em;
+  padding: 0.02em 0.4em;
+  white-space: nowrap;
+}
+.pill.bias-flag.bias-confound { background:#fde4d3; color:#8c4a1f; border-color:#e8b896; }
+.pill.bias-flag.bias-caveat   { background:#ececf2; color:#3f3f5c; border-color:#b4b4c4; }
+[data-md-color-scheme="slate"] .pill.bias-flag.bias-confound { background:#4a2a14; color:#e8b896; border-color:#7a4a2a; }
+[data-md-color-scheme="slate"] .pill.bias-flag.bias-caveat   { background:#2a2a38; color:#b4b4c4; border-color:#4e4e64; }
+
+.pd-table td.col-bias { max-width: 24ch; }
+
 /* ---- Change mechanism chips (smaller) ---- */
 .pill.mech-depletion  { background:#d9f2e5; color:#1d6b4a; border-color:#9fd4b7; font-size:0.65em; }
 .pill.mech-frac-shift { background:#dce6f7; color:#234f8c; border-color:#7ea5d4; font-size:0.65em; }

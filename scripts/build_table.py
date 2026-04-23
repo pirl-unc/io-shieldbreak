@@ -167,6 +167,98 @@ def render_change_cell(row: dict) -> tuple[str, str]:
     return ("—", "")
 
 
+# bias tags that represent structural confounds / methodological red flags (amber).
+# everything else renders as a neutral caveat.
+_BIAS_CONFOUND_TAGS = {
+    "cd25-gating-confound",
+    "surface-marker-gating",
+    "foxp3-ihc-single-marker",
+    "spin-abstract-vs-results",
+    "baseline-imbalance",
+    "mechanism-endpoint-not-measured",
+    "underpowered",
+    "responder-subset-reporting",
+}
+
+_BIAS_TAG_TOOLTIPS = {
+    "cd25-gating-confound": "CD25-based Treg gating during CD25-targeting therapy (structural confound)",
+    "surface-marker-gating": "Treg defined by surface markers only (no FoxP3 confirmation)",
+    "foxp3-ihc-single-marker": "Single-marker FOXP3 IHC (can't distinguish Tregs from activated effectors)",
+    "open-label": "Unblinded trial",
+    "single-arm-no-control": "No concurrent control arm",
+    "small-n": "N < 10 evaluable for Treg readout",
+    "very-small-n": "N < 5 evaluable for Treg readout",
+    "underpowered": "No power calculation for Treg endpoint or clearly underpowered",
+    "figure-only-data": "Key numeric lives in a figure panel, no text quantification",
+    "abstract-only": "Full text not accessed; critique is from abstract + registry",
+    "responder-subset-reporting": "Headline magnitude reported only in responder subset",
+    "no-multiplicity-correction": "Multiple endpoints, no Bonferroni/FDR/pre-specified hierarchy",
+    "exploratory-endpoint": "Treg readout is exploratory/incidental, not pre-specified",
+    "retrospective-analysis": "Retrospective analysis on archival cohort",
+    "pbmc-only-generalized": "Tumor-compartment inferences from PBMC-only data",
+    "compartment-dissociation": "Opposite-direction results across compartments",
+    "industry-sponsored": "Study funded by sponsor of investigational agent",
+    "author-coi-sponsor": "≥1 author has financial relationship with sponsor",
+    "baseline-imbalance": "Randomization did not balance a prognostic feature",
+    "schedule-dependent": "Efficacy reported as schedule-dependent",
+    "dose-mixed-analysis": "Results pooled across doses with heterogeneity flagged",
+    "short-follow-up": "Follow-up too short to assess durability",
+    "spin-abstract-vs-results": "Abstract framing diverges from what results support",
+    "mechanism-endpoint-not-measured": "Presumed mechanism affects function but paper only measures counts (or vice versa)",
+    "case-report-n-of-few": "Case report or small case series with no trial-level analysis",
+}
+
+
+def _confidence_pill(conf: str | None) -> str:
+    if not conf:
+        return "—"
+    slug = conf.lower().replace(" ", "-")  # "Very low" -> "very-low"
+    return f'<span class="pill conf-{escape(slug)}">{escape(conf)}</span>'
+
+
+def _rob_pill(rating: str | None, tool: str | None) -> str:
+    if not rating:
+        return ""
+    slug = rating.lower().replace(" ", "-").replace("—", "").strip()
+    if slug.startswith("not-amenable"):
+        slug = "na"
+    tooltip = f"Risk of bias ({tool or 'RoB'})" if tool else "Risk of bias"
+    return f'<span class="pill rob-{escape(slug)}" title="{escape(tooltip)}">{escape(rating)}</span>'
+
+
+def _bias_flag_pills(flags: list[str] | None, limit: int = 4) -> str:
+    if not flags:
+        return ""
+    parts: list[str] = []
+    shown = flags[:limit]
+    extra = len(flags) - len(shown)
+    for tag in shown:
+        cls = "bias-confound" if tag in _BIAS_CONFOUND_TAGS else "bias-caveat"
+        tooltip = _BIAS_TAG_TOOLTIPS.get(tag, tag)
+        parts.append(
+            f'<span class="pill bias-flag {cls}" title="{escape(tooltip)}">{escape(tag)}</span>'
+        )
+    if extra > 0:
+        parts.append(f'<span class="pill bias-flag bias-caveat" title="{extra} more">+{extra}</span>')
+    return '<div class="bias-flags">' + "".join(parts) + "</div>"
+
+
+def build_confidence_cell(critique: dict | None) -> str:
+    if not critique:
+        return "—"
+    return _confidence_pill(critique.get("per_trial_confidence"))
+
+
+def build_bias_cell(critique: dict | None) -> str:
+    if not critique:
+        return "—"
+    rob = _rob_pill(critique.get("rob_rating"), critique.get("rob_tool"))
+    flags = _bias_flag_pills(critique.get("bias_flags"))
+    if not rob and not flags:
+        return "—"
+    return (rob + flags) or "—"
+
+
 def cite_links(row: dict, critique_pmids: set[str] | None = None) -> str:
     links: list[str] = []
     if row.get("pmid"):
@@ -200,7 +292,12 @@ def intervention_cell(row: dict) -> str:
     return escape(primary)
 
 
-def build_row_html(row: dict, group_idx: int, critique_pmids: set[str] | None = None) -> str:
+def build_row_html(
+    row: dict,
+    group_idx: int,
+    critique_pmids: set[str] | None = None,
+    critiques_by_pmid: dict[str, dict] | None = None,
+) -> str:
     pct_html, _ = render_change_cell(row)
     sf_cls, sf_label = classify_success(row)
     sf_badge = f'<span class="pill {sf_cls}">{escape(sf_label)}</span>'
@@ -217,6 +314,8 @@ def build_row_html(row: dict, group_idx: int, critique_pmids: set[str] | None = 
         ("", assay_chip(row.get("gating_quality"), row.get("readout_type"))),
         ('style="text-align:right"', pct_html),
         ("", sf_badge + (f'<br>{mech_html}' if mech_html else "")),
+        ("", build_confidence_cell((critiques_by_pmid or {}).get(row.get("pmid") or ""))),
+        ('class="col-bias"', build_bias_cell((critiques_by_pmid or {}).get(row.get("pmid") or ""))),
         ("", cite_links(row, critique_pmids)),
     ]
 
@@ -254,7 +353,11 @@ def build_row_html(row: dict, group_idx: int, critique_pmids: set[str] | None = 
     return tr
 
 
-def build_table_html(rows: list[dict], critique_pmids: set[str] | None = None) -> str:
+def build_table_html(
+    rows: list[dict],
+    critique_pmids: set[str] | None = None,
+    critiques_by_pmid: dict[str, dict] | None = None,
+) -> str:
     # Sort: pmid, tissue, timepoint_cluster so multi-row studies group contiguously
     tp_order = {
         "baseline": 0,
@@ -283,10 +386,10 @@ def build_table_html(rows: list[dict], critique_pmids: set[str] | None = None) -
     body_rows = []
     for r in rows_sorted:
         pid = r.get("pmid") or r.get("row_id")
-        body_rows.append(build_row_html(r, first_seen[pid], critique_pmids))
+        body_rows.append(build_row_html(r, first_seen[pid], critique_pmids, critiques_by_pmid))
 
     # Thead: primary + expanded headers
-    primary_headers = ["Intervention", "Disease", "N", "Tissue", "Assay", "Treg change", "Result", "Source"]
+    primary_headers = ["Intervention", "Disease", "N", "Tissue", "Assay", "Treg change", "Result", "Confidence", "Bias & confounding", "Source"]
     expanded_headers = [
         "PMID", "Design", "Dose/schedule", "Treg defn", "Readout",
         "Timepoint", "Timing detail", "Baseline", "Post", "Magnitude",
@@ -405,6 +508,7 @@ def build_index_md(slug: str) -> str:
     meta = _read_shieldbreak_meta(slug)
     critiques = read_jsonl(DATA_DIR / slug / "critiques.jsonl")
     critique_pmids = {c["pmid"] for c in critiques if c.get("pmid")}
+    critiques_by_pmid = {c["pmid"]: c for c in critiques if c.get("pmid")}
     n_rows = len(rows)
     n_studies = len({r.get("pmid") for r in rows if r.get("pmid")})
     n_success = sum(1 for r in rows if r.get("depletion_success") == "succeeded")
@@ -457,7 +561,7 @@ See `prompts/shieldbreaks/{slug}/search.md` for the full search specification an
 
 """
 
-    table_html = build_table_html(rows, critique_pmids)
+    table_html = build_table_html(rows, critique_pmids, critiques_by_pmid)
     reviews_md = build_reviews_section(reviews)
 
     return header + table_html + "\n" + reviews_md
@@ -654,6 +758,48 @@ def build_css() -> str:
 .pill.assay-bulk-rna  { background:#e8ebc7; color:#5a6a1d; border-color:#bac28a; }
 .pill.assay-scrna     { background:#d9f2e5; color:#1d6b4a; border-color:#9fd4b7; }
 .pill.assay-qpcr      { background:#ececf2; color:#3f3f5c; border-color:#b4b4c4; }
+
+/* ---- Confidence pills ---- */
+.pill.conf-high         { background: #d9f2e5; color: #1d6b4a; border-color: #9fd4b7; }
+.pill.conf-moderate     { background: #dce6f7; color: #234f8c; border-color: #7ea5d4; }
+.pill.conf-low          { background: #fbeacb; color: #8a5510; border-color: #e0b87c; }
+.pill.conf-very-low     { background: #fde4d3; color: #8c4a1f; border-color: #e8b896; }
+[data-md-color-scheme="slate"] .pill.conf-high      { background:#1d4a36; color:#9fd4b7; border-color:#4a7a62; }
+[data-md-color-scheme="slate"] .pill.conf-moderate  { background:#2a3a5a; color:#7ea5d4; border-color:#3d5e8a; }
+[data-md-color-scheme="slate"] .pill.conf-low       { background:#4a3616; color:#e0b87c; border-color:#7a5c2e; }
+[data-md-color-scheme="slate"] .pill.conf-very-low  { background:#4a2a14; color:#e8b896; border-color:#7a4a2a; }
+
+/* ---- Risk-of-bias pills (smaller, secondary to confidence) ---- */
+.pill.rob-low               { background:#d9f2e5; color:#1d6b4a; border-color:#9fd4b7; font-size:0.68em; }
+.pill.rob-some-concerns     { background:#fbeacb; color:#8a5510; border-color:#e0b87c; font-size:0.68em; }
+.pill.rob-moderate          { background:#ececf2; color:#3f3f5c; border-color:#b4b4c4; font-size:0.68em; }
+.pill.rob-serious           { background:#fde4d3; color:#8c4a1f; border-color:#e8b896; font-size:0.68em; }
+.pill.rob-na                { background:#ececf2; color:#6b6b7f; border-color:#b4b4c4; font-size:0.68em; font-style:italic; }
+[data-md-color-scheme="slate"] .pill.rob-low           { background:#1d4a36; color:#9fd4b7; border-color:#4a7a62; }
+[data-md-color-scheme="slate"] .pill.rob-some-concerns { background:#4a3616; color:#e0b87c; border-color:#7a5c2e; }
+[data-md-color-scheme="slate"] .pill.rob-moderate      { background:#2a2a38; color:#b4b4c4; border-color:#4e4e64; }
+[data-md-color-scheme="slate"] .pill.rob-serious       { background:#4a2a14; color:#e8b896; border-color:#7a4a2a; }
+[data-md-color-scheme="slate"] .pill.rob-na            { background:#2a2a38; color:#8a8a9e; border-color:#4e4e64; }
+
+/* ---- Bias / confounding flag pills ---- */
+.bias-flags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2em;
+  margin-top: 0.25em;
+  max-width: 22ch;
+}
+.pill.bias-flag {
+  font-size: 0.62em;
+  padding: 0.02em 0.4em;
+  white-space: nowrap;
+}
+.pill.bias-flag.bias-confound { background:#fde4d3; color:#8c4a1f; border-color:#e8b896; }
+.pill.bias-flag.bias-caveat   { background:#ececf2; color:#3f3f5c; border-color:#b4b4c4; }
+[data-md-color-scheme="slate"] .pill.bias-flag.bias-confound { background:#4a2a14; color:#e8b896; border-color:#7a4a2a; }
+[data-md-color-scheme="slate"] .pill.bias-flag.bias-caveat   { background:#2a2a38; color:#b4b4c4; border-color:#4e4e64; }
+
+.pd-table td.col-bias { max-width: 24ch; }
 
 /* ---- Change mechanism chips (smaller) ---- */
 .pill.mech-depletion  { background:#d9f2e5; color:#1d6b4a; border-color:#9fd4b7; font-size:0.65em; }
