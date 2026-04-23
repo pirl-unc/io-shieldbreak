@@ -187,6 +187,12 @@
 .pill.assay-scrna     { background:#d9f2e5; color:#1d6b4a; border-color:#9fd4b7; }
 .pill.assay-qpcr      { background:#ececf2; color:#3f3f5c; border-color:#b4b4c4; }
 
+/* ---- Report (authorship + venue) cell ---- */
+.pd-table td.col-report { max-width: 18ch; }
+.report-cell { line-height: 1.25; }
+.report-authors { font-weight: 600; font-size: 0.92em; }
+.report-venue { font-size: 0.78em; opacity: 0.75; font-style: italic; margin-top: 0.1em; }
+
 /* ---- Confidence pills ---- */
 .pill.conf-high         { background: #d9f2e5; color: #1d6b4a; border-color: #9fd4b7; }
 .pill.conf-moderate     { background: #dce6f7; color: #234f8c; border-color: #7ea5d4; }

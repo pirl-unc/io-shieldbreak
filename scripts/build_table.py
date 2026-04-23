@@ -284,6 +284,29 @@ def cite_links(row: dict, critique_pmids: set[str] | None = None) -> str:
     return '<span class="cite-links">' + " ".join(links) + "</span>"
 
 
+def report_cell(row: dict) -> str:
+    """Compact authorship + venue + year block."""
+    first = row.get("first_author") or ""
+    last = row.get("last_author") or ""
+    if first and last and first != last:
+        authors = f"{escape(first)} &middot;&middot;&middot; {escape(last)}"
+    elif first:
+        authors = escape(first)
+    else:
+        authors = "—"
+    journal = row.get("journal") or ""
+    year = row.get("year")
+    year_str = str(year) if year else ""
+    venue_parts = [p for p in (escape(journal) if journal else "", year_str) if p]
+    venue = ", ".join(venue_parts)
+    return (
+        f'<div class="report-cell">'
+        f'<div class="report-authors">{authors}</div>'
+        + (f'<div class="report-venue">{venue}</div>' if venue else "")
+        + "</div>"
+    )
+
+
 def intervention_cell(row: dict) -> str:
     primary = safe(row.get("intervention"))
     combo = row.get("combo_partners")
@@ -310,6 +333,7 @@ def build_row_html(
         ("", intervention_cell(row)),
         ("", escape(safe(row.get("indication")))),
         ('style="text-align:right"', escape(str(row.get("n_treated_with_treg_measurement") or ""))),
+        ('class="col-report"', report_cell(row)),
         ("", tissue_chip(tissue)),
         ("", assay_chip(row.get("gating_quality"), row.get("readout_type"))),
         ('style="text-align:right"', pct_html),
@@ -389,7 +413,7 @@ def build_table_html(
         body_rows.append(build_row_html(r, first_seen[pid], critique_pmids, critiques_by_pmid))
 
     # Thead: primary + expanded headers
-    primary_headers = ["Intervention", "Disease", "N", "Tissue", "Assay", "Treg change", "Result", "Confidence", "Bias & confounding", "Source"]
+    primary_headers = ["Intervention", "Disease", "N", "Report", "Tissue", "Assay", "Treg change", "Result", "Confidence", "Bias & confounding", "Source"]
     expanded_headers = [
         "PMID", "Design", "Dose/schedule", "Treg defn", "Readout",
         "Timepoint", "Timing detail", "Baseline", "Post", "Magnitude",
@@ -758,6 +782,12 @@ def build_css() -> str:
 .pill.assay-bulk-rna  { background:#e8ebc7; color:#5a6a1d; border-color:#bac28a; }
 .pill.assay-scrna     { background:#d9f2e5; color:#1d6b4a; border-color:#9fd4b7; }
 .pill.assay-qpcr      { background:#ececf2; color:#3f3f5c; border-color:#b4b4c4; }
+
+/* ---- Report (authorship + venue) cell ---- */
+.pd-table td.col-report { max-width: 18ch; }
+.report-cell { line-height: 1.25; }
+.report-authors { font-weight: 600; font-size: 0.92em; }
+.report-venue { font-size: 0.78em; opacity: 0.75; font-style: italic; margin-top: 0.1em; }
 
 /* ---- Confidence pills ---- */
 .pill.conf-high         { background: #d9f2e5; color: #1d6b4a; border-color: #9fd4b7; }

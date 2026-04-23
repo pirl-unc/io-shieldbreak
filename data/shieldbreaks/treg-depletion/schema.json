@@ -46,6 +46,7 @@
     {"name": "pmcid", "type": "string|null"},
     {"name": "doi", "type": "string|null"},
     {"name": "first_author", "type": "string"},
+    {"name": "last_author", "type": "string|null"},
     {"name": "year", "type": "integer"},
     {"name": "journal", "type": "string"},
     {"name": "title", "type": "string"},
