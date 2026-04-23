@@ -6,7 +6,7 @@ A "shieldbreak" is a single project query — one research question about a mech
 
 | Shieldbreak | Rows | Last updated | Critique |
 |---|---|---|---|
-| [Treg Depletion and/or Inhibition](treg-depletion/index.md) | 38 | 2026-04-23 | — |
+| [Treg Depletion and/or Inhibition](treg-depletion/index.md) | 51 | 2026-04-23 | — |
 
 ## Adding a shieldbreak
 

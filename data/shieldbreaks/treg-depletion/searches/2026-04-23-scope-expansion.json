@@ -1,0 +1,100 @@
+{
+  "run_date_utc": "2026-04-23T19:00:00Z",
+  "run_mode": "scope-expansion",
+  "parent_run": "20260423-171530-treg-depletion-backfill",
+  "agent": "trialist_screener",
+  "shieldbreak": "treg-depletion",
+  "scope_change_summary": "Broadened from Treg-depletion-only to Treg-depletion-OR-inhibition-OR-destabilization. New intervention families searched: anti-TNFR2, anti-TIGIT, EP4 antagonists, DNMTi/HMA (Treg-focused), HDACi (Treg-focused), Helios/IKZF2/cereblon degraders (iberdomide, mezigdomide), PI3Kδ inhibitors (function-focused), NRP1, anti-GITR/OX40 (function-focused), IL-1/IL-6/TNF blockers (Treg-focused), CAR-T/bispecifics targeting Tregs, FoxP3/TSDR destabilization endpoints.",
+  "queries": [
+    {
+      "family": "anti-TNFR2",
+      "source": "pubmed",
+      "query": "(\"anti-TNFR2\"[tiab] OR \"TNFR2 antagonist\"[tiab] OR \"TNFR2 antibody\"[tiab] OR \"BAT2506\"[tiab] OR \"HFB200301\"[tiab]) AND (\"Treg\"[tiab] OR \"regulatory T\"[tiab] OR \"FOXP3\"[tiab])",
+      "hits": 30,
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=...&retmode=json"
+    },
+    {
+      "family": "anti-TIGIT",
+      "source": "pubmed",
+      "query": "(\"tiragolumab\"[tiab] OR \"vibostolimab\"[tiab] OR \"domvanalimab\"[tiab] OR \"ociperlimab\"[tiab] OR \"anti-TIGIT\"[tiab]) AND (\"Treg\"[tiab] OR \"regulatory T\"[tiab] OR \"FOXP3\"[tiab] OR \"suppressive function\"[tiab])",
+      "hits": 44
+    },
+    {
+      "family": "DNMTi/HMA (Treg-focused)",
+      "source": "pubmed",
+      "query": "(\"azacitidine\"[tiab] OR \"decitabine\"[tiab] OR \"guadecitabine\"[tiab] OR \"DNMT inhibitor\"[tiab] OR \"hypomethylating\"[tiab]) AND (\"Treg\"[tiab] OR \"regulatory T\"[tiab] OR \"FOXP3\"[tiab] OR \"TSDR\"[tiab]) AND (\"patient\"[tiab] OR \"clinical\"[tiab] OR \"trial\"[tiab])",
+      "hits": 34
+    },
+    {
+      "family": "HDACi (Treg-focused)",
+      "source": "pubmed",
+      "query": "(\"romidepsin\"[tiab] OR \"vorinostat\"[tiab] OR \"panobinostat\"[tiab] OR \"entinostat\"[tiab] OR \"mocetinostat\"[tiab] OR \"HDAC inhibitor\"[tiab]) AND (\"Treg\"[tiab] OR \"regulatory T\"[tiab] OR \"FOXP3\"[tiab] OR \"suppressive function\"[tiab]) AND (\"patient\"[tiab] OR \"clinical\"[tiab] OR \"trial\"[tiab])",
+      "hits": 35
+    },
+    {
+      "family": "Helios/IKZF2/cereblon (CELMoD)",
+      "source": "pubmed",
+      "query": "(\"mezigdomide\"[tiab] OR \"iberdomide\"[tiab] OR \"CC-220\"[tiab] OR \"CC-92480\"[tiab] OR \"CELMoD\"[tiab] OR \"IKZF2\"[tiab]) AND (\"Treg\"[tiab] OR \"regulatory T\"[tiab] OR \"FOXP3\"[tiab])",
+      "hits": 57
+    },
+    {
+      "family": "EP4 antagonists",
+      "source": "pubmed",
+      "query": "(\"grapiprant\"[tiab] OR \"ONO-4578\"[tiab] OR \"EP4 antagonist\"[tiab]) AND (\"Treg\"[tiab] OR \"regulatory T\"[tiab] OR \"FOXP3\"[tiab])",
+      "hits": 4
+    },
+    {
+      "family": "PI3Kδ inhibitors (function)",
+      "source": "pubmed",
+      "query": "(\"idelalisib\"[tiab] OR \"copanlisib\"[tiab] OR \"umbralisib\"[tiab] OR \"duvelisib\"[tiab] OR \"parsaclisib\"[tiab] OR \"PI3K delta\"[tiab]) AND (\"Treg\"[tiab] OR \"regulatory T\"[tiab] OR \"suppressive function\"[tiab]) AND (\"patient\"[tiab] OR \"clinical\"[tiab] OR \"trial\"[tiab])",
+      "hits": 14
+    },
+    {
+      "family": "NRP1 / CAR-T Treg-selective",
+      "source": "pubmed",
+      "query": "(\"CCR8 CAR\"[tiab] OR \"Treg CAR\"[tiab] OR \"Treg depleting\"[tiab] OR \"neuropilin-1\"[tiab]) AND (\"Treg\"[tiab] OR \"regulatory T\"[tiab] OR \"FOXP3\"[tiab]) AND (\"patient\"[tiab] OR \"clinical\"[tiab] OR \"trial\"[tiab])",
+      "hits": 36
+    },
+    {
+      "family": "FoxP3 destabilization / fragility",
+      "source": "pubmed",
+      "query": "(\"FoxP3 instability\"[tiab] OR \"FOXP3 loss\"[tiab] OR \"TSDR methylation\"[tiab] OR \"Treg destabilization\"[tiab] OR \"Treg fragility\"[tiab] OR \"Treg conversion\"[tiab]) AND (\"clinical\"[tiab] OR \"patient\"[tiab] OR \"trial\"[tiab])",
+      "hits": 26
+    },
+    {
+      "family": "anti-GITR/OX40 (function-focused)",
+      "source": "pubmed",
+      "query": "(\"TRX518\"[tiab] OR \"MK-4166\"[tiab] OR \"BMS-986156\"[tiab] OR \"PF-04518600\"[tiab] OR \"MEDI6469\"[tiab] OR \"MOXR0916\"[tiab] OR \"anti-OX40\"[tiab] OR \"anti-GITR\"[tiab]) AND (\"suppressive function\"[tiab] OR \"Treg function\"[tiab])",
+      "hits": 8
+    },
+    {
+      "family": "iberdomide follow-up",
+      "source": "pubmed",
+      "query": "(\"iberdomide\"[tiab] OR \"CC-220\"[tiab] OR \"mezigdomide\"[tiab] OR \"CC-92480\"[tiab]) AND (\"patient\"[tiab] OR \"phase\"[tiab] OR \"clinical\"[tiab]) AND (\"Treg\"[tiab] OR \"regulatory T\"[tiab] OR \"immune\"[tiab] OR \"pharmacodynamic\"[tiab])",
+      "hits": 18
+    }
+  ],
+  "total_hits": 306,
+  "unique_new_candidates_after_dedup": 285,
+  "overlap_with_existing": 0,
+  "kept_for_extraction": 12,
+  "excluded_preclinical_or_review": 273,
+  "key_findings": [
+    "Anti-TNFR2 clinical literature is essentially non-existent in indexed journals — Torrey 2019 Sézary study is EX VIVO only, not clinical infusion.",
+    "Anti-TIGIT: Guan 2024 Nature (CITYSCAPE + GO30103) provides the cleanest PBMC Treg-frequency decrease on tiragolumab + atezolizumab; all other anti-TIGIT Treg data are preclinical or ex-vivo.",
+    "DNMT inhibitors: decitabine and azacitidine INCREASE Treg quantity and function in most clinical contexts (Han 2021 ITP; Penter 2023 post-ipilimumab). This is opposite to our initial hypothesis. The ONE clinical exception where they DECREASE Tregs is in combination with panobinostat (Govindaraj 2014) targeting TNFR2+ Tregs specifically.",
+    "HDAC inhibitors have heterogeneous Treg effects: entinostat decreases Tregs (Pili 2017 RCC; Terranova-Barberio 2020 breast cancer — the latter is vorinostat+pembro+tamoxifen) BUT panobinostat in HIV INCREASES Tregs +40% (Brinkmann 2018). Entinostat+nivo±ipi (Roussos Torres 2021) shifts CD8:FoxP3 ratio but only after ICI addition.",
+    "Iberdomide in SLE INCREASES Tregs +104.9% (Lipsky 2022) — opposite hypothesis. Iberdomide in MM (Amatangelo 2024) shows baseline Treg elevation in non-responders but no clear longitudinal Treg depletion.",
+    "PI3Kδ: idelalisib uniformly decreases Tregs in CLL (Gadi 2022 n=9), but absolute numerics not reported in abstract/paper.",
+    "Helios degrader literature is dominated by preclinical (Bonazzi 2023 Cell Chem Biol selective IKZF2 glue); no first-in-human Helios-selective data indexed in PubMed as of 2026-04-23.",
+    "EP4 antagonists, CAR-T/NRP1: all preclinical, no human Treg PD."
+  ],
+  "honest_coverage_gaps": [
+    "TNFR2 antagonists in humans with Treg PD: 0 clinical rows. BAT2506 and HFB200301 are in early trials but no peer-reviewed PD readouts.",
+    "IKZF2-selective (Helios) degraders: 0 clinical rows. Preclinical only.",
+    "EP4 antagonists in humans with Treg PD: 0 clinical rows.",
+    "Anti-CCR8 clinical PD with Treg functional impairment: 0 new rows (already searched in prior run; none with suppressive-function readouts).",
+    "Mezigdomide (MM): efficacy trials reported but no Treg-specific PD extracted yet.",
+    "NRP1 blockade in humans with Treg PD: 0 rows."
+  ]
+}
