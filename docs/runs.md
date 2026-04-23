@@ -2,11 +2,9 @@
 
 > _Auto-generated from `data/runs.jsonl`. One row per successful agent run, newest first._
 
-_No runs logged yet._
-
 | Date (UTC) | Agent | Shieldbreak | Action | Hits → Kept | Rows added | Source tiers (PMC / EPMC / abstract) | Notes | Commit |
 |------------|-------|-------------|--------|-------------|------------|--------------------------------------|-------|--------|
-| _no rows yet_ | | | | | | | | |
+| 2026-04-23 16:36 | trialist_screener | [treg-depletion](shieldbreaks/treg-depletion/index.md) | new | 1178 → 27 | 40 | 0 / 0 / 40 | New shieldbreak; 27 studies screened; 40 rows at (study × tissue × timepoint-cluster) granularity; numeric values often abstract-only with notes; Attia-vs-Dannull DD conflict surfaced. | [6da20c2](https://github.com/pirl-unc/io-shieldbreak/commit/6da20c2) |
 
 ## What this page is
 
