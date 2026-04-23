@@ -119,11 +119,18 @@
 .filter-chip.active { opacity: 1; outline: 2px solid var(--md-primary-fg-color); }
 .filter-chip:hover { opacity: 0.9; }
 
-/* ---- Signed change ---- */
+/* ---- Signed change (typed pct_change) ---- */
 .change-neg { color: #1d6b4a; font-weight: 600; }
 .change-pos { color: #8c4a1f; font-weight: 600; }
 [data-md-color-scheme="slate"] .change-neg { color: #9fd4b7; }
 [data-md-color-scheme="slate"] .change-pos { color: #e8b896; }
+
+/* ---- Directional change (qualitative fallback, no typed pct_change) ---- */
+.change-neg-qual { color: #1d6b4a; font-weight: 500; font-style: italic; opacity: 0.85; }
+.change-pos-qual { color: #8c4a1f; font-weight: 500; font-style: italic; opacity: 0.85; }
+.change-null { color: var(--md-default-fg-color--light); font-style: italic; }
+[data-md-color-scheme="slate"] .change-neg-qual { color: #9fd4b7; }
+[data-md-color-scheme="slate"] .change-pos-qual { color: #e8b896; }
 
 /* ---- Success flag badges ---- */
 .pill.sf-sig-reduction {

@@ -175,8 +175,8 @@ flags, not biological outcomes).
 
 | Class | Meaning | Light | Dark |
 |---|---|---|---|
-| `.change-neg` | value < 0, Treg reduction (good) | `color: #1d6b4a` | `color: #9fd4b7` |
-| `.change-pos` | value > 0, Treg increase (bad) | `color: #8c4a1f` | `color: #e8b896` |
+| `.change-neg` | typed pct_change < 0, Treg reduction (good) | `color: #1d6b4a` | `color: #9fd4b7` |
+| `.change-pos` | typed pct_change > 0, Treg increase (bad) | `color: #8c4a1f` | `color: #e8b896` |
 | `.change-zero` | value = 0 or not-significant | `color: var(--md-default-fg-color)` | same |
 
 No background fill on signed change cells — color alone is sufficient signal.
@@ -185,6 +185,29 @@ A unicode arrow prefix is added by the table builder: `↓` (U+2193) for negativ
 class so they read as one unit.
 
 Example rendered cell: `<span class="change-neg">↓ −38%</span>`
+
+**Qualitative (directional-only) change — fallback when pct_change is null:**
+
+Many studies report Treg direction and significance but no clean single-number
+magnitude (e.g. "significantly reduced", "drastic decrease", "Treg expansion"
+with numbers only in figures). The renderer falls back to a directional label
+rather than showing em-dash, preserving signal at lower visual weight:
+
+| Class | Meaning | Style |
+|---|---|---|
+| `.change-neg-qual` | change_direction = decrease, no typed pct_change | `.change-neg` hue, `font-weight: 500; font-style: italic; opacity: 0.85` |
+| `.change-pos-qual` | change_direction = increase, no typed pct_change | `.change-pos` hue, same weight/style/opacity |
+| `.change-null` | change_direction = no-change, mixed, or not-reported | `color: var(--md-default-fg-color--light); font-style: italic` |
+
+Example rendered cells:
+- `<span class="change-neg-qual">↓ sig.</span>` — paper reports significant reduction but no clean % figure
+- `<span class="change-neg-qual">↓ qual.</span>` — paper reports reduction qualitatively, no p-value
+- `<span class="change-null">≈ n.s.</span>` — authors state no significant change
+- `<span class="change-null">mixed</span>` — mixed direction across patients
+
+The italic + lower-weight styling makes qualitative labels read as secondary
+information vs. the bold typed pct_change values, so a reader scanning the
+column sees "real numbers" pop visually.
 
 **Tissue filter chips:**
 

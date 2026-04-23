@@ -126,33 +126,44 @@ def assay_chip(gating_quality: str | None, readout_type: str | None) -> str:
     return f'<span class="pill {cls}">{escape(label)}</span>'
 
 
-def percent_from_magnitude(magnitude: str | None) -> tuple[str, str]:
-    """Extract a signed percent change string from free-text change_magnitude.
-    Returns (rendered_html_fragment, plain_value_for_sort). Falls back to em-dash."""
-    if not magnitude:
-        return ("—", "")
-    m = magnitude
-    # Try "X% reduction" / "X% decrease"
-    down = re.search(r"([~≥]?\s*\d+(?:\.\d+)?)\s*%\s*(?:reduction|decrease|decline)", m, re.I)
-    if down:
-        num = down.group(1).replace("~", "").replace("≥", "").strip()
-        return (f'<span class="change-neg">↓ −{num}%</span>', f"-{num}")
-    up = re.search(r"([~≥]?\s*\d+(?:\.\d+)?)\s*%\s*(?:increase|rise|expansion)", m, re.I)
-    if up:
-        num = up.group(1).replace("~", "").replace("≥", "").strip()
-        return (f'<span class="change-pos">↑ +{num}%</span>', f"+{num}")
-    # "median X% reduction"
-    med = re.search(r"median\s+(\d+(?:\.\d+)?)\s*%\s*reduction", m, re.I)
-    if med:
-        num = med.group(1)
-        return (f'<span class="change-neg">↓ −{num}%</span>', f"-{num}")
-    # Fold
-    fold_down = re.search(r"(\d+(?:\.\d+)?)\s*[×x]\s*(?:decrease|reduction)", m, re.I)
-    if fold_down:
-        return (f'<span class="change-neg">↓ {fold_down.group(1)}×</span>', f"-{fold_down.group(1)}")
-    fold_up = re.search(r"(\d+(?:\.\d+)?)\s*[×x]\s*increase", m, re.I)
-    if fold_up:
-        return (f'<span class="change-pos">↑ {fold_up.group(1)}×</span>', f"+{fold_up.group(1)}")
+def _format_pct(v: float) -> str:
+    """Trim trailing zeros so 61.0 → "61", 56.3 → "56.3"."""
+    return f"{v:.1f}".rstrip("0").rstrip(".")
+
+
+def render_change_cell(row: dict) -> tuple[str, str]:
+    """Render the Treg change cell. Prefers typed pct_change; falls back to
+    directional labeling from change_direction + change_significance.
+    Returns (rendered_html, sort_key)."""
+    pct = row.get("pct_change")
+    if pct is not None:
+        v = float(pct)
+        cls = "change-neg" if v < 0 else "change-pos"
+        arrow = "↓" if v < 0 else "↑"
+        sign = "−" if v < 0 else "+"
+        return (
+            f'<span class="{cls}">{arrow} {sign}{_format_pct(abs(v))}%</span>',
+            f"{v:+09.2f}",
+        )
+
+    direction = (row.get("change_direction") or "").lower()
+    sig = (row.get("change_significance") or "").lower()
+    is_significant = (
+        any(tok in sig for tok in ("p<", "p=", "significant"))
+        and "n.s." not in sig
+        and "not tested" not in sig
+    )
+
+    if direction == "decrease":
+        label = "↓ sig." if is_significant else "↓ qual."
+        return (f'<span class="change-neg-qual">{label}</span>', "-0.5")
+    if direction == "increase":
+        label = "↑ sig." if is_significant else "↑ qual."
+        return (f'<span class="change-pos-qual">{label}</span>', "+0.5")
+    if direction == "no-change":
+        return ('<span class="change-null">≈ n.s.</span>', "0.0")
+    if direction == "mixed":
+        return ('<span class="change-null">mixed</span>', "0.1")
     return ("—", "")
 
 
@@ -186,7 +197,7 @@ def intervention_cell(row: dict) -> str:
 
 
 def build_row_html(row: dict, group_idx: int) -> str:
-    pct_html, _ = percent_from_magnitude(row.get("change_magnitude"))
+    pct_html, _ = render_change_cell(row)
     sf_cls, sf_label = classify_success(row)
     sf_badge = f'<span class="pill {sf_cls}">{escape(sf_label)}</span>'
     mech_html = mech_chip(row.get("change_mechanism"))
@@ -562,11 +573,18 @@ def build_css() -> str:
 .filter-chip.active { opacity: 1; outline: 2px solid var(--md-primary-fg-color); }
 .filter-chip:hover { opacity: 0.9; }
 
-/* ---- Signed change ---- */
+/* ---- Signed change (typed pct_change) ---- */
 .change-neg { color: #1d6b4a; font-weight: 600; }
 .change-pos { color: #8c4a1f; font-weight: 600; }
 [data-md-color-scheme="slate"] .change-neg { color: #9fd4b7; }
 [data-md-color-scheme="slate"] .change-pos { color: #e8b896; }
+
+/* ---- Directional change (qualitative fallback, no typed pct_change) ---- */
+.change-neg-qual { color: #1d6b4a; font-weight: 500; font-style: italic; opacity: 0.85; }
+.change-pos-qual { color: #8c4a1f; font-weight: 500; font-style: italic; opacity: 0.85; }
+.change-null { color: var(--md-default-fg-color--light); font-style: italic; }
+[data-md-color-scheme="slate"] .change-neg-qual { color: #9fd4b7; }
+[data-md-color-scheme="slate"] .change-pos-qual { color: #e8b896; }
 
 /* ---- Success flag badges ---- */
 .pill.sf-sig-reduction {
@@ -653,7 +671,7 @@ def update_shieldbreaks_index(slug: str, row_count: int) -> None:
     lines = [
         "# Shieldbreaks",
         "",
-        'A "shieldbreak" is a single project query — one research question with its own search parameters, extraction schema, and trial table. Each lives in its own subdirectory so it can evolve independently of the others.',
+        'A "shieldbreak" is a single project query — one research question about a mechanism of resistance to a cancer immunotherapy (checkpoint blockade, adoptive cell therapy, vaccine, cytokine, bispecific, oncolytic virus, or other immuno-oncology modality), with its own search parameters, extraction schema, trial table, and manuscript critique. Each lives in its own subdirectory so it can evolve independently of the others.',
         "",
         "## Active shieldbreaks",
         "",
@@ -679,8 +697,9 @@ def update_shieldbreaks_index(slug: str, row_count: int) -> None:
         "5. Generate `docs/shieldbreaks/<slug>/index.md` with the trial table",
         "6. Add a row to this index page linking to the new project",
         "",
+        "Once a shieldbreak has trial rows, the companion `trialist_skeptic` subagent reads the ingested manuscripts in full, verifies the extracted fields against the source, and publishes `docs/shieldbreaks/<slug>/critique.md` — a per-paper and cross-paper methodological appraisal.",
     ]
-    (DOCS_DIR / "index.md").write_text("\n".join(lines))
+    (DOCS_DIR / "index.md").write_text("\n".join(lines) + "\n")
 
 
 # ---------- main ----------
