@@ -1,12 +1,12 @@
-# Treg depletion
+# Treg Depletion and/or Inhibition
 
 [← back to shieldbreaks](../index.md)
 
-**Last updated:** 2026-04-23  **Rows:** 38 across 33 studies  **Depletion outcomes:** 15 succeeded / 5 partial / 8 failed / 10 not-assessed (ratio-shift)
+**Last updated:** 2026-04-23  **Rows:** 38 across 33 studies  **Outcomes:** 15 succeeded / 5 partial / 8 failed / 10 not-assessed (ratio-shift)
 
 ## Research question
 
-Which clinical interventions reduce regulatory T cells (Tregs) — in absolute number, frequency, or functional dominance — in humans, and how durable / context-dependent is that effect?
+Which clinical interventions reduce regulatory T cells (Tregs) — in absolute number, frequency, functional dominance, or suppressive capacity — in humans, and how durable / context-dependent is that effect?
 
 ## Scope summary
 

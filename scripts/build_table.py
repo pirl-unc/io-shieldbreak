@@ -384,9 +384,21 @@ def build_reviews_section(reviews: list[dict]) -> str:
 # ---------- page ----------
 
 
+def _read_shieldbreak_meta(slug: str) -> dict:
+    """Read top-level meta fields from schema.json. Returns empty dict if missing."""
+    schema_path = DATA_DIR / slug / "schema.json"
+    if not schema_path.exists():
+        return {}
+    try:
+        return json.loads(schema_path.read_text())
+    except json.JSONDecodeError:
+        return {}
+
+
 def build_index_md(slug: str) -> str:
     rows = read_jsonl(DATA_DIR / slug / "trials.jsonl")
     reviews = read_jsonl(DATA_DIR / slug / "reviews.jsonl")
+    meta = _read_shieldbreak_meta(slug)
     n_rows = len(rows)
     n_studies = len({r.get("pmid") for r in rows if r.get("pmid")})
     n_success = sum(1 for r in rows if r.get("depletion_success") == "succeeded")
@@ -395,12 +407,8 @@ def build_index_md(slug: str) -> str:
     n_not_assessed = sum(1 for r in rows if r.get("depletion_success") == "not-assessed")
 
     today = datetime.now(timezone.utc).date().isoformat()
-    title = "Treg depletion"
-    research_question = (
-        "Which clinical interventions reduce regulatory T cells (Tregs) — in absolute number, "
-        "frequency, or functional dominance — in humans, and how durable / context-dependent "
-        "is that effect?"
-    )
+    title = meta.get("display_title") or slug.replace("-", " ").title()
+    research_question = meta.get("research_question") or ""
 
     class_counts: dict[str, int] = {}
     for r in rows:
@@ -422,7 +430,7 @@ def build_index_md(slug: str) -> str:
 
 [← back to shieldbreaks]({"../index.md"})
 
-**Last updated:** {today}  **Rows:** {n_rows} across {n_studies} studies  **Depletion outcomes:** {n_success} succeeded / {n_partial} partial / {n_failed} failed / {n_not_assessed} not-assessed (ratio-shift)
+**Last updated:** {today}  **Rows:** {n_rows} across {n_studies} studies  **Outcomes:** {n_success} succeeded / {n_partial} partial / {n_failed} failed / {n_not_assessed} not-assessed (ratio-shift)
 
 ## Research question
 
@@ -436,8 +444,8 @@ def build_index_md(slug: str) -> str:
 - **Row grain:** one row per (study × tissue × timepoint-cluster × dose-cohort)
 - **Primary-research-only;** reviews / meta-analyses live in the [side-list](#side-list-systematic-reviews-and-meta-analyses) below.
 
-See `prompts/shieldbreaks/treg-depletion/search.md` for the full search specification and
-`prompts/shieldbreaks/treg-depletion/extract.md` for the extraction schema.
+See `prompts/shieldbreaks/{slug}/search.md` for the full search specification and
+`prompts/shieldbreaks/{slug}/extract.md` for the extraction schema.
 
 ## Pharmacodynamic results
 
@@ -655,7 +663,8 @@ def build_css() -> str:
 
 def update_shieldbreaks_index(slug: str, row_count: int) -> None:
     """Regenerate the cross-shieldbreak directory page from data/shieldbreaks/*/trials.jsonl."""
-    entries: list[tuple[str, int, str]] = []  # (slug, row_count, last_updated)
+    # (slug, display_title, row_count, last_updated, has_critique)
+    entries: list[tuple[str, str, int, str, bool]] = []
     for sb_dir in sorted(DATA_DIR.iterdir()):
         if not sb_dir.is_dir():
             continue
@@ -666,7 +675,10 @@ def update_shieldbreaks_index(slug: str, row_count: int) -> None:
         if not rows:
             continue
         last_upd = datetime.fromtimestamp(jsonl.stat().st_mtime, timezone.utc).date().isoformat()
-        entries.append((sb_dir.name, len(rows), last_upd))
+        meta = _read_shieldbreak_meta(sb_dir.name)
+        display_title = meta.get("display_title") or sb_dir.name.replace("-", " ").title()
+        has_critique = (DOCS_DIR / sb_dir.name / "critique.md").exists()
+        entries.append((sb_dir.name, display_title, len(rows), last_upd, has_critique))
 
     lines = [
         "# Shieldbreaks",
@@ -679,11 +691,11 @@ def update_shieldbreaks_index(slug: str, row_count: int) -> None:
     if not entries:
         lines.append("_(no shieldbreaks yet — the first will appear here once `trialist_screener` runs)_")
     else:
-        lines.append("| Shieldbreak | Rows | Last updated |")
-        lines.append("|---|---|---|")
-        for name, n, upd in entries:
-            title = name.replace("-", " ").title()
-            lines.append(f"| [{title}]({name}/index.md) | {n} | {upd} |")
+        lines.append("| Shieldbreak | Rows | Last updated | Critique |")
+        lines.append("|---|---|---|---|")
+        for name, title, n, upd, has_critique in entries:
+            critique_cell = f"[critique]({name}/critique.md)" if has_critique else "—"
+            lines.append(f"| [{title}]({name}/index.md) | {n} | {upd} | {critique_cell} |")
     lines += [
         "",
         "## Adding a shieldbreak",
