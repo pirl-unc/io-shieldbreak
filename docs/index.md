@@ -1,16 +1,14 @@
 # io-shieldbreak
 
-A curated, regularly-refreshed table of clinical trial reports relevant to **immune-checkpoint shield-breaking** strategies — combinations and modalities aimed at restoring response in tumors that resist single-agent checkpoint blockade.
+A curated collection of clinical trial tables on **immune-checkpoint shield-breaking** strategies — combinations and modalities aimed at restoring response in tumors that resist single-agent checkpoint blockade.
+
+The site is organized by **shieldbreak** — each shieldbreak is one research question with its own search parameters, extraction schema, and sortable trial table.
 
 ## What's here
 
-- **[Trials](trials.md)** — the table. Sortable, searchable, with source citations on every row.
-- **[Methods](methods.md)** — search sources, inclusion criteria, and extraction schema.
+- **[Shieldbreaks](shieldbreaks/index.md)** — directory of all project queries
+- **[Methods](methods.md)** — search sources, screening defaults, extraction conventions
 
 ## How it's maintained
 
-Each row is screened and extracted by the `trialist_screener` Claude Code subagent against criteria the principal investigator sets in `prompts/search.md` and `prompts/extract.md`. Raw search responses are archived per run; the data file is append-only; corrections supersede prior rows rather than overwriting them.
-
-## Status
-
-Phase A — scaffold deployed; data set empty pending first run with real search parameters.
+Each shieldbreak is screened and extracted by the `trialist_screener` Claude Code subagent against criteria the principal investigator sets per project. Raw search responses are archived per run, data files are append-only, and corrections supersede prior rows rather than overwriting them.

@@ -1,0 +1,18 @@
+# Shieldbreaks
+
+A "shieldbreak" is a single project query — one research question with its own search parameters, extraction schema, and trial table. Each lives in its own subdirectory so it can evolve independently of the others.
+
+## Active shieldbreaks
+
+_(no shieldbreaks yet — the first will appear here once `trialist_screener` runs)_
+
+## Adding a shieldbreak
+
+Invoke the `trialist_screener` Claude Code subagent and answer "new shieldbreak" when prompted. The agent will:
+
+1. Ask for a project name and propose a slug (kebab-case)
+2. Elicit the search parameters → write to `prompts/shieldbreaks/<slug>/search.md`
+3. Elicit the extraction schema → write to `prompts/shieldbreaks/<slug>/extract.md` and `data/shieldbreaks/<slug>/schema.json`
+4. Run the search, screen, extract → append to `data/shieldbreaks/<slug>/trials.jsonl`
+5. Generate `docs/shieldbreaks/<slug>/index.md` with the trial table
+6. Add a row to this index page linking to the new project
