@@ -2,6 +2,17 @@
 
 Methods are shared across all shieldbreaks; per-shieldbreak parameters live with each project under `prompts/shieldbreaks/<slug>/`.
 
+## Scope
+
+Each shieldbreak targets a mechanism of resistance to a specific class of cancer immunotherapy. The site is not limited to immune checkpoint inhibitors: shieldbreaks may cover resistance and combination strategies for adoptive cell therapies (CAR-T, TIL, TCR-T), cancer vaccines, cytokine therapies, bispecific antibodies, oncolytic viruses, and other immuno-oncology modalities. The per-shieldbreak `search.md` defines exactly which interventions are in scope for that project.
+
+## Two agents, two outputs
+
+- **`trialist_screener`** — searches the literature, screens hits, extracts structured rows into `data/shieldbreaks/<slug>/trials.jsonl`, and publishes the sortable trial table at `docs/shieldbreaks/<slug>/index.md`.
+- **`trialist_skeptic`** — reads the ingested manuscripts in full, verifies that extracted values match the source, critically appraises each paper's methods and claims, and publishes `docs/shieldbreaks/<slug>/critique.md` with per-paper critiques and a cross-paper synthesis. Persistent critique rows live in `data/shieldbreaks/<slug>/critiques.jsonl`.
+
+The division of labor is strict: the screener owns `trials.jsonl`; the skeptic owns `critiques.jsonl` and `critique.md`. When the skeptic finds a discrepancy between an extracted value and the source, it flags the discrepancy in the critique rather than editing `trials.jsonl` directly.
+
 ## Search sources (NCBI-first)
 
 In priority order:
