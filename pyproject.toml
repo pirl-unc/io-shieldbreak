@@ -1,0 +1,12 @@
+[project]
+name = "io-shieldbreak"
+version = "0.0.1"
+description = "Curated table of clinical trial reports for immune-checkpoint shield-breaking strategies"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "httpx>=0.27",
+    "pydantic>=2.7",
+    "mkdocs-material>=9.5",
+    "pymdown-extensions>=10.0",
+]
