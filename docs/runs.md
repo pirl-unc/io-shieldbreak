@@ -2,9 +2,10 @@
 
 > _Auto-generated from `data/runs.jsonl`. One row per successful agent run, newest first._
 
-| Date (UTC) | Agent | Shieldbreak | Action | Hits → Kept | Rows added | Source tiers (PMC / EPMC / abstract) | Notes | Commit |
-|------------|-------|-------------|--------|-------------|------------|--------------------------------------|-------|--------|
-| 2026-04-23 16:36 | trialist_screener | [treg-depletion](shieldbreaks/treg-depletion/index.md) | new | 1178 → 27 | 40 | 0 / 0 / 40 | New shieldbreak; 27 studies screened; 40 rows at (study × tissue × timepoint-cluster) granularity; numeric values often abstract-only with notes; Attia-vs-Dannull DD conflict surfaced. | [6da20c2](https://github.com/pirl-unc/io-shieldbreak/commit/6da20c2) |
+| Date (UTC) | Agent | Shieldbreak | Action | Hits → Kept | Rows added / updated | Source tiers (PMC / EPMC / abstract) | Notes | Commit |
+|------------|-------|-------------|--------|-------------|----------------------|--------------------------------------|-------|--------|
+| 2026-04-23 17:15 | trialist_screener | [treg-depletion](shieldbreaks/treg-depletion/index.md) | backfill | — | 0 / 38 | 28 / 0 / 10 | Full-text backfill pass; 28/38 rows now have baseline+post numerics (74%); 2 rows excluded to `excluded.jsonl` (Telang 2011 no Treg measurement; Galsky 2025 PORTER not Treg-targeted); Liao-ascites reclassified `succeeded`→`partial`; Hamid intent reclassified to `incidental-but-measured`; 6 new PMCIDs; new conflict Ager-vs-Sharma (Fc engineering reconciles) and Huang tremelimumab quantitative INCREASE in TI-Tregs corroborates Sharma null. | [0dd399c](https://github.com/pirl-unc/io-shieldbreak/commit/0dd399c) |
+| 2026-04-23 16:36 | trialist_screener | [treg-depletion](shieldbreaks/treg-depletion/index.md) | new | 1178 → 27 | 40 / 0 | 0 / 0 / 40 | New shieldbreak; 27 studies screened; 40 rows at (study × tissue × timepoint-cluster) granularity; numeric values often abstract-only with notes; Attia-vs-Dannull DD conflict surfaced. | [6da20c2](https://github.com/pirl-unc/io-shieldbreak/commit/6da20c2) |
 
 ## What this page is
 
