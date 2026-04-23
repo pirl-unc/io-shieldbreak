@@ -27,6 +27,16 @@
   white-space: nowrap;
 }
 .cite-links a:hover { text-decoration: underline; }
+.cite-links a.critique-link {
+  color: var(--md-default-fg-color);
+  background: var(--md-default-fg-color--lightest, rgba(0,0,0,0.05));
+  padding: 0.05em 0.4em;
+  border-radius: 0.3em;
+  font-style: italic;
+}
+[data-md-color-scheme="slate"] .cite-links a.critique-link {
+  background: rgba(255,255,255,0.08);
+}
 
 /* ---- Booktabs-style table ---- */
 .pd-table-wrapper { overflow-x: auto; margin: 1em 0; }

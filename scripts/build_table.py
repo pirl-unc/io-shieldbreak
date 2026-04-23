@@ -167,7 +167,7 @@ def render_change_cell(row: dict) -> tuple[str, str]:
     return ("—", "")
 
 
-def cite_links(row: dict) -> str:
+def cite_links(row: dict, critique_pmids: set[str] | None = None) -> str:
     links: list[str] = []
     if row.get("pmid"):
         links.append(
@@ -183,6 +183,10 @@ def cite_links(row: dict) -> str:
         links.append(
             f'<a href="https://clinicaltrials.gov/study/{escape(row["nct_id"])}">NCT</a>'
         )
+    if critique_pmids and row.get("pmid") and row["pmid"] in critique_pmids:
+        links.append(
+            f'<a class="critique-link" href="critiques/{escape(row["pmid"])}.md">critique</a>'
+        )
     if not links:
         return "—"
     return '<span class="cite-links">' + " ".join(links) + "</span>"
@@ -196,7 +200,7 @@ def intervention_cell(row: dict) -> str:
     return escape(primary)
 
 
-def build_row_html(row: dict, group_idx: int) -> str:
+def build_row_html(row: dict, group_idx: int, critique_pmids: set[str] | None = None) -> str:
     pct_html, _ = render_change_cell(row)
     sf_cls, sf_label = classify_success(row)
     sf_badge = f'<span class="pill {sf_cls}">{escape(sf_label)}</span>'
@@ -213,7 +217,7 @@ def build_row_html(row: dict, group_idx: int) -> str:
         ("", assay_chip(row.get("gating_quality"), row.get("readout_type"))),
         ('style="text-align:right"', pct_html),
         ("", sf_badge + (f'<br>{mech_html}' if mech_html else "")),
-        ("", cite_links(row)),
+        ("", cite_links(row, critique_pmids)),
     ]
 
     # Expanded cells
@@ -250,7 +254,7 @@ def build_row_html(row: dict, group_idx: int) -> str:
     return tr
 
 
-def build_table_html(rows: list[dict]) -> str:
+def build_table_html(rows: list[dict], critique_pmids: set[str] | None = None) -> str:
     # Sort: pmid, tissue, timepoint_cluster so multi-row studies group contiguously
     tp_order = {
         "baseline": 0,
@@ -279,7 +283,7 @@ def build_table_html(rows: list[dict]) -> str:
     body_rows = []
     for r in rows_sorted:
         pid = r.get("pmid") or r.get("row_id")
-        body_rows.append(build_row_html(r, first_seen[pid]))
+        body_rows.append(build_row_html(r, first_seen[pid], critique_pmids))
 
     # Thead: primary + expanded headers
     primary_headers = ["Intervention", "Disease", "N", "Tissue", "Assay", "Treg change", "Result", "Source"]
@@ -399,6 +403,8 @@ def build_index_md(slug: str) -> str:
     rows = read_jsonl(DATA_DIR / slug / "trials.jsonl")
     reviews = read_jsonl(DATA_DIR / slug / "reviews.jsonl")
     meta = _read_shieldbreak_meta(slug)
+    critiques = read_jsonl(DATA_DIR / slug / "critiques.jsonl")
+    critique_pmids = {c["pmid"] for c in critiques if c.get("pmid")}
     n_rows = len(rows)
     n_studies = len({r.get("pmid") for r in rows if r.get("pmid")})
     n_success = sum(1 for r in rows if r.get("depletion_success") == "succeeded")
@@ -451,7 +457,7 @@ See `prompts/shieldbreaks/{slug}/search.md` for the full search specification an
 
 """
 
-    table_html = build_table_html(rows)
+    table_html = build_table_html(rows, critique_pmids)
     reviews_md = build_reviews_section(reviews)
 
     return header + table_html + "\n" + reviews_md
@@ -489,6 +495,16 @@ def build_css() -> str:
   white-space: nowrap;
 }
 .cite-links a:hover { text-decoration: underline; }
+.cite-links a.critique-link {
+  color: var(--md-default-fg-color);
+  background: var(--md-default-fg-color--lightest, rgba(0,0,0,0.05));
+  padding: 0.05em 0.4em;
+  border-radius: 0.3em;
+  font-style: italic;
+}
+[data-md-color-scheme="slate"] .cite-links a.critique-link {
+  background: rgba(255,255,255,0.08);
+}
 
 /* ---- Booktabs-style table ---- */
 .pd-table-wrapper { overflow-x: auto; margin: 1em 0; }
@@ -714,6 +730,115 @@ def update_shieldbreaks_index(slug: str, row_count: int) -> None:
     (DOCS_DIR / "index.md").write_text("\n".join(lines) + "\n")
 
 
+# ---------- per-paper critique pages ----------
+
+
+DIMENSION_SECTIONS = [
+    ("Design", "design_notes"),
+    ("Sample size", "sample_size_notes"),
+    ("Effect magnitude calibration", "effect_calibration_notes"),
+    ("Missing data", "missing_data_notes"),
+    ("Multiplicity", "multiplicity_notes"),
+    ("Generalizability", "generalizability_notes"),
+    ("Treg gating / definition", "treg_gating_notes"),
+    ("Conflict of interest & funding", "coi_funding_notes"),
+    ("Spin / framing", "spin_notes"),
+]
+
+
+def build_critique_page(slug: str, critique: dict) -> str:
+    """Render a single per-paper critique as standalone markdown."""
+    pmid = critique.get("pmid") or ""
+    author = critique.get("first_author") or "Unknown"
+    year = critique.get("year") or ""
+    title = critique.get("title") or ""
+
+    header_ids = []
+    if pmid:
+        header_ids.append(f'**PMID:** [{pmid}](https://pubmed.ncbi.nlm.nih.gov/{pmid}/)')
+    if critique.get("pmcid"):
+        pmcid = critique["pmcid"]
+        header_ids.append(
+            f'**PMCID:** [{pmcid}](https://europepmc.org/article/PMC/{pmcid.replace("PMC", "")})'
+        )
+    if critique.get("doi"):
+        doi = critique["doi"]
+        header_ids.append(f'**DOI:** [{doi}](https://doi.org/{doi})')
+
+    lines: list[str] = [
+        f"# {author} {year} — critique",
+        "",
+        f"> {title}",
+        "",
+        f"[← back to critique report](../critique.md) · [← back to shieldbreak](../index.md)",
+        "",
+    ]
+    if header_ids:
+        lines += [" · ".join(header_ids), ""]
+
+    lines += [
+        f"**Risk of bias ({critique.get('rob_tool', '—')}):** {critique.get('rob_rating', '—')}  ",
+        f"**Per-trial confidence:** {critique.get('per_trial_confidence', '—')}  ",
+        f"**Source tier:** {critique.get('source_tier', '—')}",
+        "",
+        "## Key critique",
+        "",
+        critique.get("key_critique") or "_(not recorded)_",
+        "",
+        "## Per-dimension findings",
+        "",
+    ]
+
+    for label, field in DIMENSION_SECTIONS:
+        val = critique.get(field) or "_(not assessed)_"
+        lines += [f"### {label}", "", val, ""]
+
+    discrepancies = critique.get("extraction_discrepancies") or []
+    lines += ["## Extraction fidelity", ""]
+    if not discrepancies:
+        lines += ["No discrepancies noted — the screener's extracted values match the source.", ""]
+    else:
+        for d in discrepancies:
+            if isinstance(d, dict):
+                field = d.get("field", "—")
+                expected = d.get("source_value", d.get("expected", "—"))
+                extracted = d.get("extracted_value", d.get("extracted", "—"))
+                note = d.get("note", "")
+                lines += [f"- **{field}**: source says `{expected}`; extraction has `{extracted}`. {note}"]
+            else:
+                lines += [f"- {d}"]
+        lines.append("")
+
+    lines += ["## Risk of bias — rationale", "", critique.get("rob_rationale") or "_(not recorded)_", ""]
+    lines += ["## Confidence — rationale", "", critique.get("confidence_rationale") or "_(not recorded)_", ""]
+
+    status = critique.get("retraction_status") or "none"
+    retract_notes = critique.get("retraction_notes") or ""
+    lines += ["## Retraction status", "", f"**{status}**"]
+    if retract_notes:
+        lines += ["", retract_notes]
+    lines.append("")
+
+    return "\n".join(lines) + "\n"
+
+
+def build_per_paper_critique_pages(slug: str) -> int:
+    """Split critiques.jsonl into docs/shieldbreaks/<slug>/critiques/<pmid>.md. Returns count written."""
+    critiques = read_jsonl(DATA_DIR / slug / "critiques.jsonl")
+    if not critiques:
+        return 0
+    out_dir = DOCS_DIR / slug / "critiques"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    written = 0
+    for c in critiques:
+        pmid = c.get("pmid")
+        if not pmid:
+            continue
+        (out_dir / f"{pmid}.md").write_text(build_critique_page(slug, c))
+        written += 1
+    return written
+
+
 # ---------- main ----------
 
 
@@ -737,12 +862,17 @@ def main(argv: list[str]) -> int:
     css_dir.mkdir(parents=True, exist_ok=True)
     (css_dir / f"{slug}.css").write_text(build_css())
 
+    # Per-paper critique pages (skipped if critiques.jsonl doesn't exist)
+    n_critiques = build_per_paper_critique_pages(slug)
+
     # Update cross-shieldbreak index
     rows = read_jsonl(sb_data / "trials.jsonl")
     update_shieldbreaks_index(slug, len(rows))
 
     print(f"built docs/shieldbreaks/{slug}/index.md — {len(rows)} rows")
     print(f"built docs/stylesheets/{slug}.css")
+    if n_critiques:
+        print(f"built docs/shieldbreaks/{slug}/critiques/ — {n_critiques} per-paper pages")
     return 0
 
 
