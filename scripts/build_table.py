@@ -40,7 +40,10 @@ STYLE_DIR = REPO_ROOT / "styles"
 _H2_RE = re.compile(r"^## (?!#)")
 
 
-def wrap_sections_in_details(markdown_text: str) -> str:
+def wrap_sections_in_details(
+    markdown_text: str,
+    skip_headings: frozenset[str] = frozenset(),
+) -> str:
     """Wrap each `##` section's body in a collapsed `<details>` block.
 
     The `##` heading stays visible above the collapsed body (so the
@@ -48,26 +51,33 @@ def wrap_sections_in_details(markdown_text: str) -> str:
     Show/hide summary button below each heading toggles visibility of
     that section's content. Content before the first `##` (title,
     backlink, last-updated line) is left untouched.
+
+    Sections whose heading text (after `## `) is in `skip_headings`
+    are left bare — no `<details>` wrapper, no toggle button.
     """
     lines = markdown_text.split("\n")
     out: list[str] = []
     in_fence = False
     section_buf: list[str] = []
-    in_section = False
+    in_section = False  # False, or True (wrap), or "skip" (passthrough)
 
     def flush() -> None:
         nonlocal section_buf, in_section
-        if not in_section:
+        if in_section is False:
             return
         while section_buf and section_buf[-1].strip() == "":
             section_buf.pop()
-        out.append('<details class="sb-section" open markdown="1">')
-        out.append("<summary>Show / hide</summary>")
-        out.append("")
-        out.extend(section_buf)
-        out.append("")
-        out.append("</details>")
-        out.append("")
+        if in_section == "skip":
+            out.extend(section_buf)
+            out.append("")
+        else:
+            out.append('<details class="sb-section" open markdown="1">')
+            out.append("<summary>Show / hide</summary>")
+            out.append("")
+            out.extend(section_buf)
+            out.append("")
+            out.append("</details>")
+            out.append("")
         section_buf = []
         in_section = False
 
@@ -82,8 +92,9 @@ def wrap_sections_in_details(markdown_text: str) -> str:
             flush()
             out.append(line)
             out.append("")
-            in_section = True
-        elif in_section:
+            heading_text = line[3:].strip()
+            in_section = "skip" if heading_text in skip_headings else True
+        elif in_section is not False:
             section_buf.append(line)
         else:
             out.append(line)
@@ -666,7 +677,10 @@ See `prompts/shieldbreaks/{slug}/search.md` for the full search specification an
     table_html = build_table_html(rows, critique_pmids, critiques_by_pmid)
     reviews_md = build_reviews_section(reviews)
 
-    return wrap_sections_in_details(header + table_html + "\n" + reviews_md)
+    return wrap_sections_in_details(
+        header + table_html + "\n" + reviews_md,
+        skip_headings=frozenset({"Pharmacodynamic results"}),
+    )
 
 
 def build_css() -> str:

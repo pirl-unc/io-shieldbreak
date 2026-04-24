@@ -596,9 +596,6 @@ See `prompts/shieldbreaks/treg-depletion/search.md` for the full search specific
 
 ## Pharmacodynamic results
 
-<details class="sb-section" open markdown="1">
-<summary>Show / hide</summary>
-
 
 <div class="pd-table-wrapper" markdown="0">
 <div class="filter-row">
@@ -695,8 +692,6 @@ See `prompts/shieldbreaks/treg-depletion/search.md` for the full search specific
   });
 })();
 </script>
-
-</details>
 
 ## Side-list: systematic reviews and meta-analyses
 
