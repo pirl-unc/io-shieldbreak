@@ -560,6 +560,33 @@ def build_index_md(slug: str) -> str:
         f"{k} ({v})" for k, v in sorted(tissue_counts.items(), key=lambda kv: -kv[1])
     )
 
+    # Prescriber-owned narrative synthesis. When present, it replaces the
+    # default class/tissue bullets under a single "## Scope summary" heading.
+    scope_summary_path = DOCS_DIR / slug / "scope_summary.md"
+    if scope_summary_path.exists():
+        scope_summary_block = (
+            "## Scope summary\n\n"
+            + scope_summary_path.read_text().strip()
+            + "\n\n"
+            + "### Scope inventory\n\n"
+            + f"- **Intervention classes:** {class_summary}\n"
+            + f"- **Tissue compartments:** {tissue_summary}\n"
+            + "- **Design types:** paired pre/post, treated-vs-untreated, single-arm, window-of-opportunity, case series (all flagged per row)\n"
+            + "- **Row grain:** one row per (study × tissue × timepoint-cluster × dose-cohort)\n"
+            + "- **Primary-research-only;** reviews / meta-analyses live in the "
+              "[side-list](#side-list-systematic-reviews-and-meta-analyses) below.\n"
+        )
+    else:
+        scope_summary_block = (
+            "## Scope summary\n\n"
+            + f"- **Intervention classes:** {class_summary}\n"
+            + f"- **Tissue compartments:** {tissue_summary}\n"
+            + "- **Design types:** paired pre/post, treated-vs-untreated, single-arm, window-of-opportunity, case series (all flagged per row)\n"
+            + "- **Row grain:** one row per (study × tissue × timepoint-cluster × dose-cohort)\n"
+            + "- **Primary-research-only;** reviews / meta-analyses live in the "
+              "[side-list](#side-list-systematic-reviews-and-meta-analyses) below.\n"
+        )
+
     header = f"""# {title}
 
 [← back to shieldbreaks]({"../index.md"})
@@ -570,14 +597,7 @@ def build_index_md(slug: str) -> str:
 
 {research_question}
 
-## Scope summary
-
-- **Intervention classes:** {class_summary}
-- **Tissue compartments:** {tissue_summary}
-- **Design types:** paired pre/post, treated-vs-untreated, single-arm, window-of-opportunity, case series (all flagged per row)
-- **Row grain:** one row per (study × tissue × timepoint-cluster × dose-cohort)
-- **Primary-research-only;** reviews / meta-analyses live in the [side-list](#side-list-systematic-reviews-and-meta-analyses) below.
-
+{scope_summary_block}
 See `prompts/shieldbreaks/{slug}/search.md` for the full search specification and
 `prompts/shieldbreaks/{slug}/extract.md` for the extraction schema.
 
