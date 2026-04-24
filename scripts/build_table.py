@@ -1048,6 +1048,7 @@ DIMENSION_SECTIONS = [
     ("Multiplicity", "multiplicity_notes"),
     ("Generalizability", "generalizability_notes"),
     ("Treg gating / definition", "treg_gating_notes"),
+    ("Counter-productive mechanisms", "counter_productive_mechanisms"),
     ("Conflict of interest & funding", "coi_funding_notes"),
     ("Spin / framing", "spin_notes"),
 ]
@@ -1083,9 +1084,15 @@ def build_critique_page(slug: str, critique: dict) -> str:
     if header_ids:
         lines += [" · ".join(header_ids), ""]
 
+    cpm_sev = critique.get("counter_productive_severity") or "—"
+    cpm_tags = critique.get("counter_productive_tags") or []
+    cpm_tags_str = ", ".join(f"`{t}`" for t in cpm_tags) if cpm_tags else ""
     lines += [
         f"**Risk of bias ({critique.get('rob_tool', '—')}):** {critique.get('rob_rating', '—')}  ",
         f"**Per-trial confidence:** {critique.get('per_trial_confidence', '—')}  ",
+        f"**Counter-productive MoA:** {cpm_sev}"
+        + (f" ({cpm_tags_str})" if cpm_tags_str else "")
+        + "  ",
         f"**Source tier:** {critique.get('source_tier', '—')}",
         "",
         "## Key critique",

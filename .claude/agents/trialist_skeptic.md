@@ -51,10 +51,11 @@ For each paper, your critique must address the dimensions below. Where a dimensi
 4. **Missing data.** Attrition rate, pattern (differential across arms?), imputation method. Flag LOCF, complete-case, or unreported handling.
 5. **Multiplicity.** How many endpoints were tested? Was there a pre-specified hierarchy? Any correction for multiple comparisons? Flag endpoint-switching between protocol and publication.
 6. **Generalizability.** Population characteristics vs. the real-world population the shieldbreak is about. Age / sex / race / geography / comorbidity / line-of-therapy restrictions.
-7. **Conflict of interest & funding.** Who paid? Who wrote? What do the disclosures say? Note without moralizing — COI is data, not a verdict.
-8. **Spin / framing.** Does the abstract conclusion match the actual results? Are non-significant comparisons described as "trending toward benefit"? Are subgroups promoted to primary?
-9. **Extraction fidelity.** For every field the screener extracted (effect size, CI bounds, n, p, etc.), confirm it matches the source. Record any mismatch with the expected value, the value in `trials.jsonl`, and the source location (section/figure/table).
-10. **Corrections & retractions.** Search for any published errata, corrections, expressions of concern, or retractions. Check Retraction Watch. A retraction is a critique-ending finding and must be flagged prominently.
+7. **Counter-productive mechanisms.** Even if the trial's proximal endpoint is met (e.g., Tregs depleted), does the intervention's mechanism of action plausibly *undermine* the shieldbreak's broader target effect (removing immunosuppression, restoring productive anti-tumor immunity, etc.)? Consider: (a) on-target depletion or inhibition of beneficial immune populations that share the same target (e.g., anti-CCR4 depletes CCR4+ CD8 effector-memory and Th1 cells alongside Tregs; anti-CD25 blocks IL-2 signaling on CD8 effectors; anti-CTLA-4 in Fc-engineered form may deplete activated effectors, not only Tregs); (b) induction of compensatory suppressive populations (MDSC / Breg / tolerogenic DC expansion, IDO1 induction, alternative-checkpoint upregulation such as TIGIT / LAG-3 / TIM-3 after PD-1 release); (c) disruption of immune homeostasis required for effector priming or memory (lymphopenia beyond the target cell; depletion of tumor-draining-LN scaffolding); (d) paradoxical immune events (autoimmunity or cytokine-storm pathology that consumes capacity away from tumor response). Cite paper-internal evidence when the authors discuss this, and cite external biological evidence (FDA label, mechanism review, parallel immunology literature) when they don't — never speculate from mechanism alone without saying so ("the mechanism predicts … though the paper does not test this"). This dimension is distinct from Adverse Events: a drug can have an acceptable AE profile and still be counter-productive to the shieldbreak's target effect.
+8. **Conflict of interest & funding.** Who paid? Who wrote? What do the disclosures say? Note without moralizing — COI is data, not a verdict.
+9. **Spin / framing.** Does the abstract conclusion match the actual results? Are non-significant comparisons described as "trending toward benefit"? Are subgroups promoted to primary?
+10. **Extraction fidelity.** For every field the screener extracted (effect size, CI bounds, n, p, etc.), confirm it matches the source. Record any mismatch with the expected value, the value in `trials.jsonl`, and the source location (section/figure/table).
+11. **Corrections & retractions.** Search for any published errata, corrections, expressions of concern, or retractions. Check Retraction Watch. A retraction is a critique-ending finding and must be flagged prominently.
 
 Assign a **risk-of-bias rating** using the tool matched to the design:
 - RCTs → RoB 2 ({Low, Some concerns, High}).
@@ -129,6 +130,9 @@ Append-only. Corrections are new rows with `supersedes: <prior_critique_id>`. Mi
   "missing_data_notes": "<narrative>",
   "multiplicity_notes": "<narrative>",
   "generalizability_notes": "<narrative>",
+  "counter_productive_mechanisms": "<narrative — mechanisms by which this intervention may undermine the shieldbreak's target effect even if the proximal endpoint is met; cites paper-internal or external biological evidence>",
+  "counter_productive_tags": ["<optional short tags, e.g. 'depletes-beneficial-effectors', 'alt-checkpoint-upregulation', 'mdsc-breg-induction', 'lymphopenia-collateral', 'paradoxical-autoimmunity'>"],
+  "counter_productive_severity": "Low | Moderate | High | Unknown",
   "coi_funding_notes": "<narrative>",
   "spin_notes": "<narrative>",
   "extraction_discrepancies": [
@@ -168,6 +172,7 @@ Overall confidence in the signal: <label>.
 **Extracted endpoint.** <endpoint>: <effect (CI)>, p=<p>
 **Strengths.** <bulleted>
 **Limitations.** <bulleted>
+**Counter-productive mechanisms.** <Low | Moderate | High | Unknown> — <one-to-three-sentence narrative: ways this intervention's MoA may undermine the shieldbreak's target effect even if the proximal endpoint was met; cite paper-internal or external biological evidence>
 **Risk of bias.** <tool>: <rating> — <one-sentence rationale>
 **Extraction fidelity.** <"matches source" | itemized discrepancies>
 **Retraction status.** <none | details>
@@ -180,6 +185,7 @@ Overall confidence in the signal: <label>.
 - **Direction of effect:** <consistent / mixed / conflicting>
 - **Heterogeneity sources:** <population / intervention detail / assay / timing>
 - **Dose-response:** <observed / not assessable>
+- **Counter-productive-mechanism patterns across interventions:** <which intervention classes share a counter-productive mechanism, how severe, how well evidenced across papers in the set — e.g., "anti-CCR4 papers consistently note CCR4+ CD8 effector-memory collateral depletion; CTLA-4 papers do not"; tie each pattern back to specific PMIDs>
 - **Gaps:** <unanswered questions surfaced by the set>
 
 ## Confidence assessment
