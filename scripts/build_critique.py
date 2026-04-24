@@ -78,7 +78,12 @@ def build_per_paper_md(crit: dict, trial_rows_for_paper: list[dict]) -> str:
     lines.append(f"**Missing data.** {safe(crit.get('missing_data_notes'))}")
     lines.append(f"**Multiplicity.** {safe(crit.get('multiplicity_notes'))}")
     lines.append(f"**Generalizability.** {safe(crit.get('generalizability_notes'))}")
-    lines.append(f"**Treg definition / gating.** {safe(crit.get('treg_gating_notes'))}")
+    gating = (
+        crit.get("gating_notes")
+        or crit.get("treg_gating_notes")
+        or crit.get("tam_gating_notes")
+    )
+    lines.append(f"**Gating / definition.** {safe(gating)}")
     cpm_sev = crit.get("counter_productive_severity") or "—"
     cpm_tags = crit.get("counter_productive_tags") or []
     cpm_tags_str = f" ({', '.join(f'`{t}`' for t in cpm_tags)})" if cpm_tags else ""

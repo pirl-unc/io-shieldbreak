@@ -1,0 +1,734 @@
+<?xml version="1.0"  ?><!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd"><pmc-articleset><article article-type="research-article" xml:lang="en" dtd-version="1.4"><front><journal-meta><journal-id journal-id-type="nlm-ta">Clin Cancer Res</journal-id><journal-id journal-id-type="iso-abbrev">Clin. Cancer Res.</journal-id><journal-id journal-id-type="pmc-domain-id">319</journal-id><journal-id journal-id-type="pmc-domain">nihpa</journal-id><journal-title-group><journal-title>Clinical cancer research : an official journal of the American Association for Cancer Research</journal-title></journal-title-group><issn pub-type="ppub">1078-0432</issn><issn pub-type="epub">1557-3265</issn><custom-meta-group><custom-meta><meta-name>pmc-is-collection-domain</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-collection-title</meta-name><meta-value>NIHPA Author Manuscripts</meta-value></custom-meta></custom-meta-group></journal-meta><article-meta><article-id pub-id-type="pmcid">PMC6368904</article-id><article-id pub-id-type="pmcid-ver">PMC6368904.1</article-id><article-id pub-id-type="pmcaid">6368904</article-id><article-id pub-id-type="pmcaiid">6368904</article-id><article-id pub-id-type="manuscript-id">NIHMS1503517</article-id><article-id pub-id-type="pmid">30093453</article-id><article-id pub-id-type="doi">10.1158/1078-0432.CCR-18-0469</article-id><article-id pub-id-type="manuscript-id-alternative">NIHMS1503517</article-id><article-id pub-id-type="manuscript-id-alternative">NIHPA1503517</article-id><article-version article-version-type="pmc-version">1</article-version><article-categories><subj-group subj-group-type="heading"><subject>Article</subject></subj-group></article-categories><title-group><article-title>Intratumoral G100, a TLR4 agonist, induces anti-tumor immune
+responses and tumor regression in patients with Merkel cell
+carcinoma</article-title></title-group><contrib-group><contrib contrib-type="author"><name name-style="western"><surname>Bhatia</surname><given-names initials="S">Shailender</given-names></name><xref ref-type="aff" rid="A1">1</xref><xref ref-type="aff" rid="A2">2</xref></contrib><contrib contrib-type="author"><name name-style="western"><surname>Miller</surname><given-names initials="NJ">Natalie J.</given-names></name><xref ref-type="aff" rid="A1">1</xref><xref ref-type="aff" rid="A3">3</xref></contrib><contrib contrib-type="author"><name name-style="western"><surname>Lu</surname><given-names initials="H">Hailing</given-names></name><xref ref-type="aff" rid="A4">4</xref></contrib><contrib contrib-type="author"><name name-style="western"><surname>Vandeven</surname><given-names initials="N">Natalie</given-names></name><xref ref-type="aff" rid="A1">1</xref><xref ref-type="aff" rid="A3">3</xref></contrib><contrib contrib-type="author"><name name-style="western"><surname>Ibrani</surname><given-names initials="D">Dafina</given-names></name><xref ref-type="aff" rid="A1">1</xref><xref ref-type="aff" rid="A3">3</xref></contrib><contrib contrib-type="author"><name name-style="western"><surname>Shinohara</surname><given-names initials="MM">Michi M.</given-names></name><xref ref-type="aff" rid="A1">1</xref><xref ref-type="aff" rid="A2">2</xref><xref ref-type="aff" rid="A3">3</xref></contrib><contrib contrib-type="author"><name name-style="western"><surname>Byrd</surname><given-names initials="DR">David R.</given-names></name><xref ref-type="aff" rid="A2">2</xref><xref ref-type="aff" rid="A5">5</xref></contrib><contrib contrib-type="author"><name name-style="western"><surname>Parvathaneni</surname><given-names initials="U">Upendra</given-names></name><xref ref-type="aff" rid="A6">6</xref></contrib><contrib contrib-type="author"><name name-style="western"><surname>Kulikauskas</surname><given-names initials="R">Rima</given-names></name><xref ref-type="aff" rid="A1">1</xref><xref ref-type="aff" rid="A3">3</xref></contrib><contrib contrib-type="author"><name name-style="western"><surname>Meulen</surname><given-names initials="J">Janter</given-names></name><xref ref-type="aff" rid="A4">4</xref></contrib><contrib contrib-type="author"><name name-style="western"><surname>Hsu</surname><given-names initials="FJ">Frank J.</given-names></name><xref ref-type="aff" rid="A4">4</xref></contrib><contrib contrib-type="author"><name name-style="western"><surname>Koelle</surname><given-names initials="DM">David M.</given-names></name><xref ref-type="aff" rid="A1">1</xref><xref ref-type="aff" rid="A2">2</xref><xref ref-type="aff" rid="A7">7</xref><xref ref-type="aff" rid="A8">8</xref><xref ref-type="aff" rid="A9">9</xref></contrib><contrib contrib-type="author"><name name-style="western"><surname>Nghiem</surname><given-names initials="P">Paul</given-names></name><xref ref-type="aff" rid="A1">1</xref><xref ref-type="aff" rid="A2">2</xref><xref ref-type="aff" rid="A3">3</xref></contrib></contrib-group><aff id="A1"><label>1</label>Department of Medicine, University of Washington Medical
+Center, Seattle, WA</aff><aff id="A2"><label>2</label>Clinical Research Division, Fred Hutchinson Cancer Research
+Center, Seattle, WA</aff><aff id="A3"><label>3</label>Division of Dermatology, University of Washington Medical
+Center, Seattle, WA</aff><aff id="A4"><label>4</label>Immune Design, Seattle, WA and South San Francisco,
+CA</aff><aff id="A5"><label>5</label>Department of Surgery, University of Washington Medical
+Center, Seattle, WA</aff><aff id="A6"><label>6</label>Department of Radiation Oncology, University of Washington
+Medical Center, Seattle, WA</aff><aff id="A7"><label>7</label>Department of Global Health, University of Washington
+Medical Center, Seattle, WA</aff><aff id="A8"><label>8</label>Department of Laboratory Medicine, University of Washington
+Medical Center, Seattle, WA</aff><aff id="A9"><label>9</label>Benaroya Research Institute, Seattle, WA</aff><author-notes><corresp id="CR1"><bold>Corresponding Author:</bold> Shailender Bhatia, MD,
+Associate Professor, Medical Oncology, Department of Medicine, University of
+Washington/Fred Hutchinson Cancer Research Center, Seattle, WA, 825 Eastlake Ave
+E., Mailstop # CE2-102, Seattle, WA 98109, Tel: (206) 606-6765; Fax: (206)
+606-1314, <email>sbhatia@uw.edu</email></corresp></author-notes><pub-date pub-type="epub"><day>09</day><month>8</month><year>2018</year></pub-date><pub-date pub-type="ppub"><day>15</day><month>2</month><year>2019</year></pub-date><volume>25</volume><issue>4</issue><issue-id pub-id-type="pmc-issue-id">329247</issue-id><fpage>1185</fpage><lpage>1195</lpage><pub-history><event event-type="nihms-submitted"><date><day>31</day><month>08</month><year>2018</year></date></event><event event-type="pmc-release"><date><day>15</day><month>02</month><year>2020</year></date></event><event event-type="pmc-live"><date><day>15</day><month>02</month><year>2020</year></date></event><event event-type="pmc-released-under-embargo"><date><day>17</day><month>02</month><year>2019</year></date></event><event event-type="pmc-last-change"><date iso-8601-date="2024-06-15 21:25:12.960"><day>15</day><month>06</month><year>2024</year></date></event></pub-history><permissions><license><license-p>This file is available for text mining. It may also be used consistent with the principles of fair use under the copyright law.</license-p></license></permissions><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pmc-pdf" xlink:href="nihms-1503517.pdf"/><abstract id="ABS1"><sec id="S1"><title>Purpose:</title><p id="P1">G100 is a toll-like receptor 4 (TLR4) agonist that triggers innate
+and adaptive anti-tumor immune responses in preclinical models. This pilot
+study assessed the safety, efficacy, and immunologic activity of
+intratumoral (IT) administration of G100 in patients with Merkel cell
+carcinoma (MCC).</p></sec><sec id="S2"><title>Experimental Design:</title><p id="P2">Patients with loco-regional MCC (n=3; Cohort A) received neoadjuvant
+IT G100 (2 weekly doses at 5 μg/dose) followed by surgery and
+radiotherapy; patients with metastatic MCC (n=7; Cohort B) received 3 doses
+in a 6-week cycle and could receive additional cycles with/without
+radiotherapy.</p></sec><sec id="S3"><title>Results:</title><p id="P3">IT G100 was safe and feasible in both neoadjuvant and metastatic
+settings. Treatment-related adverse events were mostly grade 1 or 2
+injection site reactions. IT G100 led to increased inflammation in the
+injected tumors with infiltration of CD8<sup>+</sup> and CD4<sup>+</sup> T
+cells and activation of immune-related genes. These pro-inflammatory changes
+were associated with local tumor regression and appeared to promote systemic
+immunity. All 3 Cohort A patients successfully completed therapy; 2 patients
+remain recurrence-free at 44+ and 41+ months, including one with a
+pathologic complete response after G100 alone. In Cohort B, 2 patients
+achieved sustained partial responses, both lasting 33+ months after 2 cycles
+of therapy.</p></sec><sec id="S4"><title>Conclusions:</title><p id="P4">In this first-in-human study, IT G100 induced anti-tumor immune
+responses, demonstrated acceptable safety, and showed encouraging clinical
+activity.</p></sec></abstract><kwd-group><kwd>immunotherapy</kwd><kwd>cancer vaccines</kwd><kwd>clinical trials</kwd><kwd>skin cancers</kwd><kwd>toll-like receptor agonist</kwd><kwd>tumor microenvironment</kwd><kwd>glucopyranosyl lipid A</kwd></kwd-group><custom-meta-group><custom-meta><meta-name>pmc-status-qastatus</meta-name><meta-value>0</meta-value></custom-meta><custom-meta><meta-name>pmc-status-live</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-status-embargo</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-status-released</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-open-access</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-olf</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-manuscript</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-open-manuscript</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-legally-suppressed</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-pdf</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-supplement</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-pdf-only</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-suppress-copyright</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-real-version</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-scanned-article</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-preprint</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-in-epmc</meta-name><meta-value>yes</meta-value></custom-meta></custom-meta-group></article-meta></front><body><sec id="S5"><title>Introduction</title><p id="P5">Malignant tumors are a complex collection of cancer cells, stromal cells and
+immune cells that exist in a supportive microenvironment built around a
+tumor-induced scaffold of fibrous matrix, blood and lymphatic vessels.<sup><xref rid="R1" ref-type="bibr">1</xref></sup> Cells within the tumor
+microenvironment (TME) inhibit anti-tumor immune function through multiple
+mechanisms, including production of suppressive cytokines, modulation of chemokines
+required for T-cell trafficking, inhibition of dendritic cells, induction of
+checkpoint regulators, and physical barriers such as fibrosis.<sup><xref rid="R1" ref-type="bibr">1</xref>–<xref rid="R3" ref-type="bibr">3</xref></sup> Novel treatment approaches are needed to overcome the complex
+mechanisms of immune suppression within the TME and promote effective antigen
+presentation and immune system activation. Inducing a transformation from a
+“cold” (immunologically suppressed) to a “hot” (inflamed
+and immunologically active) environment within the TME could potentially induce
+primary local and systemic immune responses to previously unrecognized tumor
+antigens and boost existing immunity.</p><p id="P6">Several agents designed to modify the TME are currently being investigated,
+including cytokines, oncolytic viruses, and toll-like receptor (TLR) agonists.
+Toll-like receptors are a family of receptor molecules that can detect
+pathogen-associated molecular patterns (PAMPs) present on bacterial, fungal, or
+viral pathogens and initiate innate and adaptive immune responses against these
+targets. Various TLR agonists are in clinical development for cancer immunotherapy,
+either as an adjuvant component of a cancer vaccine, or as monotherapy.<sup><xref rid="R4" ref-type="bibr">4</xref>, <xref rid="R5" ref-type="bibr">5</xref></sup> The current study evaluates the safety and efficacy of G100, a
+potent TLR4 agonist, administered as an intratumoral (IT) injection for the
+treatment of patients with Merkel cell carcinoma (MCC).</p><p id="P7">TLR4 is expressed on the cell surface of dendritic cells, monocytes,
+macrophages, T cells, and B cells, as well as some non-immune cells, and recognizes
+lipopolysaccharide (LPS), a polysaccharide that is anchored in the outer bacterial
+membrane by lipid A.<sup><xref rid="R6" ref-type="bibr">6</xref>–<xref rid="R9" ref-type="bibr">9</xref></sup> Activation of TLR4 can stimulate
+dendritic cells and promote Th1-type responses.<sup><xref rid="R10" ref-type="bibr">10</xref></sup> G100 contains the TLR4 agonist glucopyranosyl lipid A
+(GLA), a synthetic analog of naturally-derived lipid A, formulated in a stable
+oil-in-water emulsion (SE). Naturally-occurring lipid A exists in various chemical
+forms (e.g., with varying number of acyl chains) and this variation can affect its
+immune and other properties; the synthetic analog GLA was developed to decrease
+product heterogeneity and minimize the potential for systemic toxicity.</p><p id="P8">Stimulation of TLR4 by GLA activates immune cells primarily by inducing the
+production of chemokines and cytokines that mediate adaptive immune responses
+through multiple signaling pathways.<sup><xref rid="R11" ref-type="bibr">11</xref>–<xref rid="R15" ref-type="bibr">15</xref></sup> GLA
+rapidly stimulates the maturation of DCs<sup><xref rid="R11" ref-type="bibr">11</xref>, <xref rid="R12" ref-type="bibr">12</xref>, <xref rid="R16" ref-type="bibr">16</xref></sup> and is hypothesized to facilitate
+development of anti-tumor CD8 T-cell responses by enhancing cross-presentation of
+endogenous tumor antigens released by dead or dying cells. In preclinical models of
+lymphoma and other cancers, IT injection of G100 alone led to local and systemic
+tumor regression, including regression of distal non-injected/treated lesions
+(abscopal responses).<sup><xref rid="R17" ref-type="bibr">17</xref></sup></p><p id="P9">MCC is a highly immunogenic cancer. Approximately 80% of MCC tumors are
+associated with the Merkel cell polyomavirus (MCPyV).<sup><xref rid="R18" ref-type="bibr">18</xref></sup> Viral antigens are expressed by tumor cells,
+and MCPyV-specific T cells and antibody responses can be detected in MCC
+patients.<sup><xref rid="R19" ref-type="bibr">19</xref>, <xref rid="R20" ref-type="bibr">20</xref></sup> Indeed, intratumoral infiltration of
+MCPyV-specific CD8<sup>+</sup> T cells correlates with longer survival.<sup><xref rid="R21" ref-type="bibr">21</xref></sup> Unfortunately, MCC tumors are able
+to evade the immune system.<sup><xref rid="R22" ref-type="bibr">22</xref>, <xref rid="R23" ref-type="bibr">23</xref></sup> The MCC TME typically has reduced
+MHC-I expression, sparse intratumoral CD8<sup>+</sup> T-cells, and immune cells
+showing an exhausted phenotype with expression of programmed cell death protein 1
+(PD-1/PDCD1) and Tim-3.<sup><xref rid="R24" ref-type="bibr">24</xref></sup> While
+the recent reports of PD-1 pathway blockade (with pembrolizumab, avelumab, and
+nivolumab) in metastatic MCC appear promising, approximately 50% of patients do not
+respond persistently to these agents.<sup><xref rid="R25" ref-type="bibr">25</xref>–<xref rid="R27" ref-type="bibr">27</xref></sup> IT
+immunotherapy may overcome the local immune-suppressive mechanisms in the MCC TME
+and complement the activity of systemic immunotherapy.</p><p id="P10">This study represents the first investigation of G100 administered IT in a
+human tumor. In this pilot clinical trial, we evaluated the safety, efficacy, and
+immunologic effects of IT G100 alone and in combination with RT in patients with
+MCC.</p></sec><sec id="S6"><title>Materials and Methods</title><sec id="S7"><title>Study design</title><p id="P11">This was an open-label pilot trial of IT G100 in 10 patients with MCC
+conducted at the University of Washington (UW) in accordance with International
+Conference on Harmonization guidelines for Good Clinical Practice and the code
+of Federal Regulations and guided by the ethical principles of the Belmont
+Report. The protocol was approved by the local Institutional Review Board. All
+patients provided written, informed consent.</p><p id="P12">The primary objective was to assess the safety and feasibility of IT
+G100 as neoadjuvant therapy in local disease and both as monotherapy and in
+conjunction with RT in the metastatic setting. Secondary objectives were to
+assess the clinical efficacy and the immunologic effects of this treatment
+approach.</p></sec><sec id="S8"><title>Patients</title><p id="P13">Eligible patients were ≥18 years of age with
+histologically-confirmed MCC and at least one injectable lesion, defined as a
+superficial (cutaneous, subcutaneous or nodal) tumor amenable to IT injection in
+the outpatient setting. MCPyV-positive status was not required. Patients were
+required to have measurable disease per Response Evaluation Criteria in Solid
+Tumors (RECIST) version 1.1,<sup><xref rid="R28" ref-type="bibr">28</xref></sup>
+an Eastern Cooperative Oncology group (ECOG) performance score 0–2, and
+adequate hematologic, renal, and hepatic function. Patients judged to be
+immunosuppressed or with any major comorbidities were excluded. Patients were
+enrolled onto one of two cohorts: patients with loco-regional disease who were
+candidates for definitive therapy (surgery +/− RT) were enrolled in
+cohort A (N=3) and patients with metastatic disease in cohort B (N=7).</p></sec><sec id="S9"><title>Treatment</title><p id="P14">The treatment schema is provided in <xref rid="SD1" ref-type="supplementary-material">Fig. S1</xref>. All IT injections were
+performed in an outpatient clinic setting following administration of a local
+anesthetic and under direct palpation of the tumor mass. No radiologic imaging
+or special services were used. The 5 μg dose was selected based on
+acceptable safety in prior clinical studies of GLA administered as an adjuvant
+for standard protein-adjuvant vaccines (intramuscular or subcutaneous
+administration) for infectious diseases such as influenza.<sup><xref rid="R29" ref-type="bibr">29</xref></sup></p><p id="P15">In Cohort A, patients with locoregional MCC received neoadjuvant G100 at
+5 μg/day injected IT into superficial MCC tumor(s) on days 1 and 8
+followed by definitive therapy starting in week 4. Definitive treatment included
+surgery and/or RT per standard care guidelines as determined by the team of
+treating physicians. Tumor biopsies were collected at baseline and following
+G100 treatments on day 22 prior to surgery or at the time of definitive surgery
+in week 4.</p><p id="P16">In Cohort B, patients with metastatic MCC received G100 at 5
+μg/day injected IT into superficial MCC tumor(s) on days 1, 8, and 22 of
+the first 6-week cycle. All patients had a pre-treatment tumor biopsy on Day 1
+and a post-treatment biopsy on day 22 of cycle 1. If no significant toxicity was
+observed during cycle 1, cohort B patients could receive up to 3 additional
+treatment. In cycles 2 through 4, G100 was administered in combination with RT
+when feasible and indicated for local control/palliation. Patients received a
+single-fraction of high-dose RT (usually 8 Gy) to the injectable tumor (and
+other tumors, if clinically indicated), followed by IT injection of 5 μg
+G100 within 72 hours of RT, then weekly IT G100 injections (at 5 μg/day)
+beginning on Day 8 of a 6-week cycle (i.e., Days 8, 15, 22, 29, and 36). The
+combination regimen was based on preclinical evidence of additive or synergistic
+effects of radiation in combination with G100<sup><xref rid="R30" ref-type="bibr">30</xref></sup> and evidence that increasing from 3 to 6
+doses led to increased abscopal tumor shrinkage in animal models (unpublished
+data).</p></sec><sec id="S10"><title>Clinical assessments</title><p id="P17">Clinical assessment of tumor responses was performed for both injected
+and non-injected (distant) lesions according to RECIST v1.1. The first clinical
+response assessment of injected lesions in both cohorts was on day 22 of cycle
+1, at the time of the post-treatment biopsy. For Cohort B patients with distant
+disease, assessment of overall response via radiologic imaging studies was
+carried out at baseline and at week 6, and then as clinically indicated. In
+addition to site interpretation, radiologic imaging studies were reviewed
+independently. Adverse events (AEs) were graded according to National Cancer
+Institute Common Terminology Criteria for Adverse Events (v4.03). After
+completion of treatment, patients were followed at least annually for relapse or
+disease progression and overall survival.</p></sec><sec id="S11"><title>Immune response analyses</title><p id="P18">All 10 patients had a pre-treatment tumor biopsy on Day 1 and
+post-treatment tumor collection on day 22 (or at the time of surgery in week 4
+in Cohort A patients). Tumor samples were divided in three: 1)
+formaldehyde-fixed paraffin embedded (FFPE) blocks for immunohistochemistry
+(IHC), 2) flash-frozen for genomic and transcriptomic studies, and 3) processed
+immediately for isolation and culture of tumor-infiltrating lymphocytes (TIL) as
+previously described.<sup><xref rid="R19" ref-type="bibr">19</xref></sup> Whole
+blood samples for immune response analysis were collected at baseline, on day
+22, and at week 6 of each cycle. Peripheral blood mononuclear cells (PBMC) were
+isolated at the above time points using routine Ficoll gradient centrifugation
+and were cryopreserved.</p><sec id="S12"><title>MCPyV status.</title><p id="P19">Tumor-MCPyV status was assessed by T-Ag IHC (CM2B4 antibody, Santa
+Cruz Biotechnology)<sup><xref rid="R31" ref-type="bibr">31</xref></sup> and
+T-Ag serology, as previously described.<sup><xref rid="R20" ref-type="bibr">20</xref>, <xref rid="R32" ref-type="bibr">32</xref></sup></p></sec><sec id="S13"><title>IHC analyses.</title><p id="P20">Slides from the FFPE tumor blocks were stained with H&amp;E, and
+with antibodies to CK20/KRT20 (KS20.8, Dako), CD8/CD8a (C8/144B, Dako), CD4
+(SP35, Cell Marque), CM2B4 (MCPyV T-antigen staining; sc-136172, Santa
+Cruz), MHC class I/HLA-1/HLA-A,B,C (EMR8–5, MBL), PDL-1/CD274 (E1L3N,
+Cell Signaling), FOXP3 (14–5773-82, eBioscience), and TLR4 (MAB14783,
+R&amp;D systems). The intratumoral CD8<sup>+</sup> lymphocyte infiltrate was
+scored on a 0 (absent) to 5 (strong) scale.<sup><xref rid="R32" ref-type="bibr">32</xref></sup></p><p id="P21">For multispectral IHC staining, FFPE slides were deparaffinized and
+rehydrated, subjected to heat-induced antigen retrieval, and stained as
+described previously<sup><xref rid="R33" ref-type="bibr">33</xref></sup>
+with the following antibodies: PD-1 (EPR4877, AbCam), PD-L1/CD274 (SP142,
+Spring Bio), CD4 (RBT-CD4, BioSB), CD8 (C8/144B, Dako), and CD68 (PG-M1;
+Dako). Slides were imaged with a Vectra Automated Quantitative Pathology
+Imaging System (Perkin Elmer). Images were analyzed using inForm Software
+(Perkin Elmer) and evaluated by a pathologist.</p></sec><sec id="S14"><title>Functional analysis of TIL.</title><p id="P22">Effector cytokine secretion from TIL in response to relevant MCPyV
+peptides was determined as described previously.<sup><xref rid="R19" ref-type="bibr">19</xref></sup> TIL were derived from minced MCC
+tissue and non-specifically expanded using phytohaemagglutinin (PHA; Remel),
+natural human interleukin-2 (IL2R/nIL-2; Hemagen Diagnostics), recombinant
+human interleukin-15 (IL15R/rIL-15; R&amp;D Systems), and
+allogeneic-irradiated PBMC. nIL-2 and rIL-15 in fresh T-cell medium was
+added every second day for 14 to 20 days. TIL samples were stimulated with
+peptide pools in the presence of anti-CD28, anti-CD49d/ITGA4, brefeldin A,
+and autologous carboxyfluorescein succinimidyl ester (CFSE)-labeled
+autologous PBMC as antigen-presenting cells (APC). After 12–18 hrs,
+cells were stained for CD4, CD8, and intracellular IFN-γ/IFNG, and
+between 100,000 and 600,000 cells were assessed via flow cytometry. Each
+peptide pool contained approximately 25 peptides, each 13 amino acids (AA)
+in length, that overlapped by 9 AA and corresponded to the persistently
+expressed region of MCPyV.<sup><xref rid="R19" ref-type="bibr">19</xref></sup> Specifically, Pool 1 covered the common T antigen (CT;
+AA 1–77), Pools 2 and 3 covered AA 69–181 and 173–281,
+respectively, of the large T antigen (LT), and Pool 10 covered AA
+69–186 of the small T antigen (ST). Final concentration of each
+peptide was approximately 1 μg/mL. Samples with &gt;0.01%
+CD8<sup>+</sup> or CD4<sup>+</sup> cells secreting IFN-γ were
+considered positive.</p></sec><sec id="S15"><title>MCPyV-specific Tetramer Staining.</title><p id="P23">Subjects were HLA-I typed at Bloodworks Northwest (Seattle, WA).
+PBMC and/or TIL from patients with HLA-I types corresponding to available
+MCPyV-specific tetramers (A*0201 [peptide CT 15–23], A*2402 [peptide
+LT 92–101], B*3502 [peptide ST 83–91]; n = 8 patients) were
+expanded, stained with appropriate tetramers, and analyzed by flow
+cytometry. At least 2 million PBMC or TIL were stained with
+anti-CD8-phycoerythrin (PE) conjugated antibody (Clone 3B5, Life
+Technologies), 7-AAD viability dye (BioLegend), and the tetramers (as above)
+labeled with either APC or PE (Immune Monitoring Lab at Fred Hutchinson
+Cancer Research Center) and the percentage of cells in the
+tetramer<sup>+</sup>, CD8<sup>+</sup> region was determined. Samples
+with &gt;0.01% CD8<sup>+</sup> T cells co-staining with tetramers were
+considered positive.</p></sec><sec id="S16"><title>T cell receptor (TCR) sequencing and analysis.</title><p id="P24">Total genomic DNA was extracted from whole flash-frozen tumor
+biopsies using the spin column method and the DNeasy kit (Qiagen).
+High-throughput deep sequencing was used to analyze the
+<italic toggle="yes">TCRβ/TCRB</italic> complementarity-determining region 3
+(CDR3) with the Illumina Genome Analyzer (Adaptive Biotechnologies, Seattle,
+WA) using the immunoSEQ immune-profiling system.<sup><xref rid="R34" ref-type="bibr">34</xref></sup> In-frame unique sequences without
+stop codons, referred to as unique productive sequences, were used for the
+repertoire analysis. Identification of the Vβ, Dβ, and
+Jβ gene segments contributing to each TCRβ CDR3 sequence was
+performed using the published algorithm.<sup><xref rid="R34" ref-type="bibr">34</xref></sup> To determine T-cell receptor clonality of tumor
+samples, Shannon entropy was calculated on the estimated number of genomes
+of all productive TCRs and normalized by dividing by the log<sub>2</sub> of
+unique productive sequences in each sample. Clonality was calculated as 1-
+normalized entropy. Computationally identified clones were analyzed for
+significantly different abundances between two samples using a binomial test
+with Benjamini-Hochberg corrected p-values, such that false-discovery-rates
+were held at 5%.<sup><xref rid="R35" ref-type="bibr">35</xref></sup></p></sec><sec id="S17"><title>Gene expression analysis.</title><p id="P25">Total RNA was isolated using the AllPrep kit (Qiagen, Valencia, CA)
+from snap-frozen biopsy tissue. RNA concentration was quantified using UV
+spectroscopy with a Nanodrop device (NanoDrop Products, Wilmington, DE). A
+total of 200 ng RNA was used for gene expression analysis using the human
+nCounter PanCancer Immune Profiling Panel (Nanostring Technologies, Seattle,
+WA), which includes 770 genes. Sample preparation and hybridization was
+carried out using the nCounter Preparation Station according to the
+manufacturer’s instructions. Data were collected using the nCounter
+Digital Analyzer and data normalization and analysis were carried out using
+the nSolver software.</p></sec></sec><sec id="S18"><title>Statistical analyses</title><p id="P26">All enrolled patients who received at least one dose of G100 were
+included in the safety analysis. Descriptive statistics were used to summarize
+baseline patient characteristics, safety, clinical response, and immunological
+response variables. Objective response rate (ORR) was calculated as the
+proportion of evaluable lesions classified as a complete response (CR) or a
+partial response (PR). The overall ORR per standard RECIST v1.1 guidelines is
+also reported for those patients with distant metastases. PFS and time to next
+treatment were calculated from the day of treatment initiation.</p><p id="P27">Logistic regression analyses were performed to identify genes for which
+the post-treatment:pre-treatment gene expression ratio was predictive of a
+positive response to G100 treatment. For each of the 770 genes, an odds ratio
+for response was estimated from a logistic regression with response as the
+dependent variable and the log<sub>2</sub> of fold change in gene expression as
+the explanatory variable. Significance was evaluated with a likelihood ratio
+test, and raw p-values were adjusted for multiplicity using false discovery
+rates<sup><xref rid="R35" ref-type="bibr">35</xref></sup> as implemented
+in Proc Multtest in SAS® 9.4. Because none of the false discovery rates
+were &lt;0.05, the raw p-values are reported to indicate potential signals
+for relevant genes warranting further study.</p></sec></sec><sec id="S19"><title>Results</title><sec id="S20"><title>Patients</title><p id="P28">Ten patients were enrolled between January 2014 and May 2015; 3 patients
+had loco-regional MCC (Cohort A) and 7 patients had metastatic disease (Cohort
+B). Median patient age at enrollment was 67 years. All patients had an ECOG
+status of 0, except one patient (G7) in Cohort B who had an ECOG status of 1.
+Most patients (80%) had undergone prior surgery, 60% had received prior RT, 50%
+had received prior systemic chemotherapy, and 40% had received prior biologic
+therapy (<xref rid="T1" ref-type="table">Table 1</xref>).</p></sec><sec id="S21"><title>Safety and Tolerability of Intratumoral G100</title><p id="P29">All 10 patients completed at least 1 cycle of IT G100. All three
+patients in cohort A received 2 doses of G100 and successfully completed
+definitive surgery and RT without any delays. Four of 7 patients with metastatic
+disease in cohort B received a second cycle of therapy (in conjunction with
+hypofractionated RT to the injected lesion). The median number of G100 doses
+administered in cohort B was 7 (range 3–8). No patients in either cohort
+required dose reductions, dose interruptions, or treatment discontinuation due
+to AEs.</p><p id="P30">Adverse events considered related to G100 are presented in <xref rid="T2" ref-type="table">Table 2</xref>. AEs consisted primarily of mild
+local toxicity (e.g., injection-site reactions [ISR]); patients experienced
+minimal systemic toxicity. The majority of AEs were mild and transient. One
+patient in cohort A experienced a non-serious grade 3 ISR involving localized
+skin breakdown at the site of injection and biopsy. All other AEs were grades
+1–2. No serious adverse events (SAEs) were observed.</p></sec><sec id="S22"><title>Clinical Outcomes</title><p id="P31">All 10 patients were alive and in continued follow-up at the time of
+this analysis, with a median follow-up time of 33.7 months (range,
+20.6–44.6 months). Treatment and clinical outcomes are summarized in
+<xref rid="T1" ref-type="table">Table 1</xref> and <xref rid="F1" ref-type="fig">Fig. 1</xref>. In cohort A, all 3 patients with locoregional
+MCC successfully completed surgery and adjuvant RT after neoadjuvant G100. Two
+of three patients continue to be recurrence-free at 44+ months (patient G2) and
+41+ months (patient G4) after initiation of study treatment; the third patient
+(patient G9) had disease recurrence at 5 months. Patient G2 achieved a
+pathologic complete response (CR) from neoadjuvant IT G100. This patient, who
+had biopsy-proven MCC in an enlarged right inguinal lymph node (LN) without a
+known primary lesion, developed clinical inflammation of the injected tumor
+after two doses of IT G100. The injected LN and a proximal draining LN were
+surgically removed in week 4, and upon pathologic assessment there was no
+evidence of residual MCC as demonstrated by histologic review and by
+immunohistochemical (IHC) staining for cytokeratin 20 (CK20) (<xref rid="F2" ref-type="fig">Fig. 2</xref>).</p><p id="P32">In cohort B, two of seven patients with metastatic disease had objective
+responses and five patients had progressive disease (PD). Patient G6 with
+palpable right inguinal lymphadenopathy and biopsy-proven distant disease (bone
+metastasis) received G100 to the enlarged inguinal LN in cycle 1. Following G100
+treatment alone in cycle 1, the patient experienced a 28% regression in the size
+of the injected LN per RECIST v1.1. The patient then received a second cycle of
+treatment consisting of a single dose of 8 Gy RT to the inguinal LN and the bone
+lesion followed by weekly IT G100 injection (5 doses total) to the inguinal LN,
+after which a complete resolution of the injected inguinal LN was achieved. This
+patient remains in an ongoing remission 33+ months after initiation of study
+treatment, with maintained resolution of the target lesion, no new lesions and
+bone scan showing no residual uptake in the biopsy-proven bone metastasis.
+Patient G8, who had confirmed disease progression after prior chemotherapy and
+immunotherapy with a 4–1BB agonist, also achieved a partial response (PR)
+after treatment with G100 in combination with RT in cycle 2. G100 therapy was
+initiated after approximately 5–7 half-lives of the 4–1BB agonist
+(per published PK data for this antibody).<sup><xref rid="R36" ref-type="bibr">36</xref>, <xref rid="R37" ref-type="bibr">37</xref></sup> This patient
+remains in an ongoing PR after 33+ months. In both of the cohort B patients with
+ongoing responses, no additional therapy has been given since G100.</p></sec><sec id="S23"><title>Immune Response Analyses</title><p id="P33">The ability of G100 to alter the TME was evaluated in tumor samples
+obtained at baseline and post-G100 treatment (the sample obtained during
+definitive surgery during week 4 in cohort A or the day 22 biopsy in Cohort B,
+prior to any RT). Multispectral IHC demonstrated intra-tumoral T-cell
+infiltration post-G100 therapy in two patients with durable benefit (Patients G2
+and G6), but not in a clinical non-responder (Patient G1). As shown for patient
+G6 in <xref rid="F3" ref-type="fig">Fig. 3A</xref>, the vast majority of
+CD4<sup>+</sup> and CD8<sup>+</sup> T cells in the TME were peri-tumoral
+prior to treatment (in the tumor vasculature and at the tumor edge). After
+treatment with G100, increased infiltration of CD4<sup>+</sup> and
+CD8<sup>+</sup> T-cells into the injected tumor was observed, which was
+accompanied by clinical reduction in tumor size. Multispectral IHC also
+demonstrated co-localization of CD4<sup>+</sup> T cells, CD8<sup>+</sup> T
+cells, CD68 (monocytes/macrophages), and PD-1/PD-L1 expressing cells within the
+TME (<xref rid="F3" ref-type="fig">Fig. 3B</xref>). These data are consistent
+with an increased general inflammatory response within the TME and
+co-localization of immune cells required for effective anti-tumor immune
+responses. Additionally, single antigen IHC for CD4 T cells, CD8 T cells, MHC-I,
+FoxP3+ and PD-L1 expression was performed in all patients and while there was
+evidence for increased IT inflammation post-G100 in some other patients as well,
+there was no clear correlation between baseline expression status and
+clinical/pathological responses in this small cohort (data not shown).</p><p id="P34">The expression profile of 770 immune response-related genes in baseline
+and post-treatment tumor biopsies were compared using mRNA hybridization gene
+expression analysis. Gene expression data demonstrated induction of multiple
+genes related to innate and adaptive immune responses in the TME of injected
+tumors following G100 therapy; an example of gene expression data is shown in
+<xref rid="F4" ref-type="fig">Fig. 4A</xref>. Across all 10 patients, the
+genes with the greatest increase in expression after normalization included
+genes coding for chemokines/chemo-attractants and immune modulatory cytokines
+(<xref rid="SD5" ref-type="supplementary-material">Table S1</xref>). Of
+note, these genes were not uniformly induced in all patients. To investigate
+differences in the upregulation of immune response-related genes between
+responders versus non-responders, gene expression was analyzed by clinical
+outcome groups. Patients G2, G4, G6, and G8 were classified as
+“responders” for these analyses based on successful clinical
+and/or pathologic outcomes (prolonged relapse-free survival in Cohort A and
+durable objective responses in Cohort B). Specific differences were observed
+between responders and non-responders (<xref rid="SD5" ref-type="supplementary-material">Table S1</xref>). Comparison of gene
+induction (post-treatment:pre-treatment expression ratio) in clinical responders
+versus non-responders revealed a trend for greater induction (≥2-fold
+higher) in responders for genes linked to macrophage and T-cell chemotaxis
+(<italic toggle="yes">SPP1</italic> [osteopontin]), adhesion of macrophages
+(<italic toggle="yes">MSR1</italic>), activation of T-cells and monocytes
+(<italic toggle="yes">ALCAM/CD166</italic>), activation of dendritic cells
+(<italic toggle="yes">TREM2</italic>), neutrophil chemotaxis (<italic toggle="yes">CXCL8/IL8</italic>,
+<italic toggle="yes">CXCL5</italic>), and others (<xref rid="SD6" ref-type="supplementary-material">Table S2</xref>). Due to the small number
+of patients, the fold-difference in the induction of specific genes in
+responders versus non-responders represent trends that do not reach statistical
+significance when adjusted for multiple testing. When analyzed statistically
+using logistic regression analyses with genes as predictors of response,
+immune-response genes whose induction was most significantly associated with
+response (ranked according to unadjusted p-value) are shown in <xref rid="SD7" ref-type="supplementary-material">Table S3</xref> and partially overlap with
+the genes that showed ≥2-fold higher induction in responders. Genes whose
+induction was most significantly associated with a lack of response are also
+shown. Overall, these data suggest the ability of IT G100 to induce broad
+activation of chemokine- and cytokine-related genes in injected tumors promoting
+increased immune cell infiltration in the TME, with greater activation of a
+specific set of genes related to T-cell, macrophage, and dendritic cell
+functions in the tumors of patients with clinical responses.</p><p id="P35">In an attempt to identify pre-treatment biomarkers that might predict
+clinical response to G100, we analyzed differentially expressed genes at
+baseline in clinical responders versus non-responders. While broad immune
+activation was noted in the TME of responding patients post-G100, there were no
+clear predictors of clinical response identified in pre-treatment biopsies.
+Baseline expression of TLR4 mRNA and that of its associated co-receptors, LY96
+(MD2) and CD180, measured from all cells within the tumor biopsy, did not appear
+to correlate with response (<xref rid="SD2" ref-type="supplementary-material">Fig. S2</xref>). Analyses of protein expression by IHC revealed high levels
+of TLR4 expression in the TME of all baseline MCC biopsy samples. Expression was
+noted in MCC cancer cells, inflammatory cells, endothelial cells, and to a
+lesser extent, fibroblasts.</p><p id="P36">Analyses of TIL by TCR sequencing were performed on pre- and
+post-treatment biopsies, including those from 3 responding patients (G2, G4,
+G6). In general, TCR sequencing results demonstrated an increase in TCR clones
+post-treatment, indicating the development of an inflammatory response following
+G100. In patient G6, who had metastatic disease and achieved an ongoing clinical
+PR, there was an overall shift toward greater clone frequencies post-treatment,
+with multiple new (not detectable pre-treatment) unique T-cell clones detected
+and multiple pre-existing (identified at baseline) clones increased within the
+TME following G100 therapy (<xref rid="F4" ref-type="fig">Fig. 4B</xref>). These
+data suggest that G100 increases the inflammatory response both by expanding
+reactive TIL as well as by inducing or attracting newly reactive T-cell
+responses.</p><p id="P37">A detailed TCR clone analysis was performed on patient G2 who had a
+pathologic CR in the injected lesion. When TCR clones were analyzed in tumor and
+blood samples, 601 independent TCR clones that were initially not detected in
+the <bold><italic toggle="yes">baseline</italic></bold> pre-G100 tumor biopsies and PBMC were
+detected for the first time in post-G100 tumor and blood, indicating that many
+previously undetected T cell clones were likely being induced as newly reactive
+T cells (or were not initially present due to sampling)(<xref rid="SD3" ref-type="supplementary-material">Fig. S3</xref>). Of these TCR clones that
+were not detected in baseline tumor or blood, 225 were also found in the
+draining normal lymph node of this patient post-G100. In addition to these
+apparently newly-induced T cells, there were 865 TCR clones that were detectable
+in the blood but <bold>not</bold> in the tumor at baseline and increased in
+blood and became detectable in tumor post-G100. These data indicate an expansion
+of pre-existing clones that now appear to have been drawn into the tumor.
+Similar results were seen for Patient G6.</p><p id="P38">Specific immune responses against the tumor associated MCPyV virus were
+measured by MCPyV-specific tetramer staining and by intracellular cytokine
+staining of T cells from pre- and post-G100 tumor and blood samples exposed to
+viral antigens (<xref rid="SD8" ref-type="supplementary-material">Table
+S4</xref>). In patient G2, who achieved a pathologic CR and has remained
+recurrence-free for 44+ months, IFN-γ secretion following stimulation
+with MCPyV peptides was detected in CD8<sup>+</sup> T cells from the draining
+non-cancerous lymph node (<xref rid="SD4" ref-type="supplementary-material">Fig.
+S4A</xref>), suggesting the presence of an anti-tumor immune response beyond
+the injected TME. Similarly, in patient G4, MCPyV-specific CD4<sup>+</sup>
+T-cell reactivity in the injected tumor was detected post-G100 treatment but not
+pre-treatment (<xref rid="SD4" ref-type="supplementary-material">Fig.
+S4B</xref>). In contrast, MCPyV-specific T-cell reactivity was not detected in
+patient G9, who had NED after definitive treatment but experienced disease
+recurrence 5 months after initiation of study treatment. Thus, reactivity to
+tumor-specific antigens was induced in some patients after treatment with
+G100.</p></sec></sec><sec id="S24"><title>Discussion</title><p id="P39">This pilot study represents the first-in-human investigation of IT
+administration of G100, a novel synthetic TLR4 agonist. The results highlight the
+ability of this approach to overcome immune suppressive mechanisms of the TME, to
+stimulate immune responses against tumor-associated antigens (i.e. <italic toggle="yes">in
+situ</italic> immunization), and to improve clinical outcomes in patients with
+MCC. G100 administered IT at the 5 μg dose was well-tolerated in patients
+with MCC, with mostly mild local injection-site reactions and no serious systemic
+toxicity. Neoadjuvant administration prior to surgery and RT in loco-regional MCC
+was feasible, and the combination with RT in metastatic MCC was well tolerated.
+Repeated weekly administration did not lead to cumulative toxicity or to any reports
+of autoimmune events.</p><p id="P40">IT G100 resulted in the reversal of immune suppression and re-establishment
+of an active immune response within the TME as evidenced by the induction of immune
+response-related genes, the induction of MCPyV-reactive T-cells, the co-localization
+of CD4<sup>+</sup> T cells, CD8<sup>+</sup> T cells and macrophages in the TME, and
+the increased number of unique clones observed within the tumor and PBMC following
+treatment. Differences in post-treatment gene expression were observed in the 4
+patients with clinical responses versus non-responders, and some differences were
+statistically significant (<xref rid="SD7" ref-type="supplementary-material">Table
+S3</xref>); however, these data represent the outcome of a small group of
+patients and a number of factors may underlie the likelihood of response, including
+differences in the TME, other unexplained immune suppression, or TLR4 responsiveness
+(e.g., polymorphisms). Immune responses in the TME were associated with meaningful
+clinical activity including a pathologic CR in an injected tumor mass after just two
+G100 injections, which was accompanied by an ongoing recurrence-free survival
+lasting 44+ months following surgery and RT, and ongoing objective responses lasting
+33+ months in two patients with metastatic disease. The durability of systemic
+disease control in these two patients with documented metastatic disease is
+clinically meaningful, given the typical aggressive clinical course of metastatic
+MCC patients.<sup><xref rid="R38" ref-type="bibr">38</xref></sup> The results
+highlight the ability of local immunotherapy to overcome immune suppression and
+induce anti-tumor immune and clinical responses. The results of the current study
+are supported by initial results of a larger, ongoing study in patients with
+non-Hodgkin lymphoma (NHL), where G100 therapy in combination with low dose local
+radiation to the injection site significantly increased CD8 TILs in post-treatment
+tumor biopsies compared with pre-treatment biopsies and induced objective clinical
+responses as well as tumor inflammation and shrinkage in abscopal tumor
+sites.<sup><xref rid="R39" ref-type="bibr">39</xref></sup> In the NHL study,
+a significant correlation between CD8 TILs post G100 compared to baseline was
+associated with the development of an objective tumor response.</p><p id="P41">While it is not feasible to fully discern the relative contributions of RT
+and G100 to the overall responses in this small study, the pathologic CR (Patient
+G2) and tumor regression (patient G6) that occurred following G100 alone highlight
+the activity of G100 monotherapy. Furthermore, the G100 dose of 5 μg was
+chosen as an initial dose for this pilot study based on its use as an adjuvant for
+standard antigen-based vaccines such as for influenza<sup><xref rid="R29" ref-type="bibr">29</xref></sup> and is considered a low dose. In patients
+with NHL, G100 doses of 10 μg and 20 μg appeared to induce higher
+rates of objective and abscopal responses with a similar safety profile, although
+only a small number of patient were treated at 5μg.<sup><xref rid="R39" ref-type="bibr">39</xref>, <xref rid="R40" ref-type="bibr">40</xref></sup></p><p id="P42">In this study, there was no apparent correlation between clinical responses
+and baseline TLR4 mRNA expression. When analyzed by IHC, all baseline MCC tumor
+samples expressed high levels of TLR4, and so the ability to discriminate between
+responders and non-responders was not feasible with this assay. In contrast,
+recently presented data demonstrated that TLR4 expression on follicular B cell
+lymphomas, as detected by IHC, was significantly associated with the development of
+objective clinical responses.<sup><xref rid="R40" ref-type="bibr">40</xref></sup>
+The different findings in the lymphoma study and the current study could reflect
+differences in the biology of these malignancies. It is important to note that
+exposure to GLA can increase the expression of co-stimulatory molecules (e.g., CD40,
+CD80, CD86) on the cell surface of B-cell lymphoma cells, which can increase their
+ability to be effective APC as well as immune targets.<sup><xref rid="R17" ref-type="bibr">17</xref></sup></p><p id="P43">The excellent safety profile of IT G100 makes it an attractive partner for
+combination with other emerging immunotherapies as well as standard cancer
+therapeutics including cytokines, checkpoint inhibitors and other novel biologic
+agents. Recently, PD-1 pathway blockade has emerged as a promising therapeutic
+option for patients with metastatic MCC, but unfortunately over half of patients do
+not persistently respond to PD-1/PD-L1 blockade.<sup><xref rid="R25" ref-type="bibr">25</xref>, <xref rid="R26" ref-type="bibr">26</xref>, <xref rid="R41" ref-type="bibr">41</xref></sup> The overlap of the observed immune cell
+infiltration with PD-1/L1 expression in our study indicates a potential for synergy
+of G100 with anti-PD1/L1 agents. G100 appears to increase the inflammatory response
+by inducing or attracting new T-cell clones into the TME as well as by expansion of
+pre-existing reactive TIL; this may increase the activity of anti-PD-1 agents, which
+are thought to act predominantly on pre-existing T cell populations.</p><p id="P44">The ability of G100 to favorably alter the tumors towards a
+“hot” inflammatory environment has important implications not just for
+MCC, but for other tumor types as well. This treatment can be administered in the
+outpatient setting, does not have the biosafety concerns associated with other
+emerging IT approaches (such as oncolytic viruses), and appears suitable for
+combination therapy with systemic immunotherapy and RT. Based on the encouraging
+results of this pilot trial, additional studies of G100, both as a single agent and
+in combination with RT and checkpoint inhibitors are ongoing in several indications,
+including sarcoma (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmc:clinical-trial" xlink:href="NCT02180698">NCT 02180698</ext-link>) and non-Hodgkin lymphoma (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmc:clinical-trial" xlink:href="NCT02501473">NCT 02501473</ext-link>).</p><p id="P45">Investigations are ongoing with G100 to understand the optimal dose and
+treatment schedule, the synergistic effect of combining with radiation or other
+immune modulators, the ability to induce long-lasting immune memory, and the
+effectiveness in other cancer indications. While IT administration is a relatively
+simple procedure in superficial cancers like MCC or melanoma, other cancers where
+deep-seated tumors are more common may require ultrasound or computer tomography
+(CT) guided injections; clinical studies are ongoing to demonstrate the feasibility
+of G100 treatment in such tumors. Despite these remaining questions, this pilot
+trial confirms IT G100 is capable of stimulating an effective anti-tumor immune
+response that is potentially applicable to a wide variety of cancers.</p><p id="P46">This first report of clinical efficacy and safety of IT administration of
+G100, a synthetic TLR4 agonist, indicates this therapy was well-tolerated with
+minimal systemic toxicity and no immune-related adverse events. Administration of IT
+G100 as a neo-adjuvant therapy prior to surgery and RT was safe and feasible. IT
+G100 induced inflammatory changes within the TME, which appeared to induce systemic
+anti-tumor immune responses and were correlated with clinically meaningful responses
+in patients with advanced MCC. The data suggest IT G100 to be a promising agent for
+further investigation in cancer therapy, either as a monotherapy or in combination
+with other immunotherapies.</p></sec><sec sec-type="supplementary-material" id="SM1"><title>Supplementary Material</title><supplementary-material content-type="local-data" id="SD1" position="float" orientation="portrait"><label>1</label><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="NIHMS1503517-supplement-1.pdf" orientation="portrait" id="d36e762" position="anchor"/></supplementary-material><supplementary-material content-type="local-data" id="SD2" position="float" orientation="portrait"><label>2</label><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="NIHMS1503517-supplement-2.pdf" orientation="portrait" id="d36e766" position="anchor"/></supplementary-material><supplementary-material content-type="local-data" id="SD3" position="float" orientation="portrait"><label>3</label><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="NIHMS1503517-supplement-3.pdf" orientation="portrait" id="d36e770" position="anchor"/></supplementary-material><supplementary-material content-type="local-data" id="SD4" position="float" orientation="portrait"><label>4</label><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="NIHMS1503517-supplement-4.pdf" orientation="portrait" id="d36e774" position="anchor"/></supplementary-material><supplementary-material content-type="local-data" id="SD5" position="float" orientation="portrait"><label>5</label><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="NIHMS1503517-supplement-5.pdf" orientation="portrait" id="d36e778" position="anchor"/></supplementary-material><supplementary-material content-type="local-data" id="SD6" position="float" orientation="portrait"><label>6</label><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="NIHMS1503517-supplement-6.pdf" orientation="portrait" id="d36e782" position="anchor"/></supplementary-material><supplementary-material content-type="local-data" id="SD7" position="float" orientation="portrait"><label>7</label><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="NIHMS1503517-supplement-7.pdf" orientation="portrait" id="d36e786" position="anchor"/></supplementary-material><supplementary-material content-type="local-data" id="SD8" position="float" orientation="portrait"><label>8</label><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="NIHMS1503517-supplement-8.pdf" orientation="portrait" id="d36e790" position="anchor"/></supplementary-material></sec></body><back><ack id="S25"><title>Acknowledgments</title><p id="P47">The authors would like to acknowledge the patients and families; Seattle
+Cancer Care Alliance clinical care team; Mike Donahue and the University of
+Washington Institute of Translational Health Sciences for research coordination and
+regulatory support; Mark Hertle (Life Sciences Discovery Fund) for grant management;
+Acteris, Inc for multispectral IHC analyses; Adaptive Biotechnologies for TCR
+repertoire analyses; NanoString Technologies for analysis of gene expression; Don
+Johns, PhD for statistical assistance, and Janis Leonoudakis, PhD for medical
+writing assistance.</p><p id="P48"><bold>Financial Support:</bold> This study was funded by the Washington
+state Life Sciences Discovery Fund, the NIH/NCI Cancer Center Support Grant P30
+CA015704, NIH-K24-CA139052, and Immune Design. Medical writing assistance was funded
+by Immune Design.</p><p id="P49">SB has received research support (to his institution) from Immune Design,
+Bristol-Myers Squibb, EMD Serono, Merck, NantKwest, and Oncosec, and has received
+honoraria for participation in advisory boards for EMD Serono and Genentech. NJM and
+DMK are co-inventors on an institution-owned patent concerning T-cell receptors
+recognizing Merkel cell polyomavirus (PCT/US2017/061645). PN has served as a
+consultant for EMD Serono and Pfizer and has received research support from EMD
+Serono and from Bristol-Myers Squibb. HL is a full-time employee and shareholder and
+JtM and FJH are full-time employees, officers, and shareholders of Immune Design,
+which owns a patent for GLA monotherapy for use in cancer treatment (PCT/US
+2015/0359811 A1).</p></ack><fn-group><fn fn-type="COI-statement" id="FN1"><p id="P50"><bold>Disclosure of conflicts of interest:</bold> NV, DI, MMS, DRB, UP,
+and RK declare no conflicts of interest.</p></fn></fn-group><ref-list><title>References</title><ref id="R1"><label>1.</label><mixed-citation publication-type="journal"><name name-style="western"><surname>Balkwill</surname><given-names>FR</given-names></name>, <name name-style="western"><surname>Capasso</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Hagemann</surname><given-names>T</given-names></name>. <article-title>The tumor microenvironment at a glance</article-title>.
+<source>J Cell Sci</source>.
+<year>2012</year>;<volume>125</volume>:<fpage>5591</fpage>–<lpage>6</lpage>.<pub-id pub-id-type="pmid">23420197</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1242/jcs.116392</pub-id></mixed-citation></ref><ref id="R2"><label>2.</label><mixed-citation publication-type="journal"><name name-style="western"><surname>Fridman</surname><given-names>WH</given-names></name>, <name name-style="western"><surname>Pagès</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Sautès-Fridman</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Galon</surname><given-names>J</given-names></name>. <article-title>The immune contexture in human tumours: impact on
+clinical outcome</article-title>. <source>Nat Rev Cancer</source>.
+<year>2012</year>;<volume>12</volume>:<fpage>298</fpage>–<lpage>306</lpage>.<pub-id pub-id-type="pmid">22419253</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/nrc3245</pub-id></mixed-citation></ref><ref id="R3"><label>3.</label><mixed-citation publication-type="journal"><name name-style="western"><surname>Hanahan</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Weinberg</surname><given-names>RA</given-names></name>. <article-title>Hallmarks of cancer: The next
+generation</article-title>. <source>Cell</source>. <year>2011</year> page
+<fpage>646</fpage>–<lpage>74</lpage>.<pub-id pub-id-type="pmid">21376230</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.cell.2011.02.013</pub-id></mixed-citation></ref><ref id="R4"><label>4.</label><mixed-citation publication-type="journal"><name name-style="western"><surname>Iribarren</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Bloy</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Buqué</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Cremer</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Eggermont</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Fridman</surname><given-names>WH</given-names></name>, <etal/> - <article-title>Trial Watch - Immunostimulation with Toll-like
+receptor agonists in cancer therapy</article-title>.
+<source>Oncoimmunology</source>.
+<year>2015</year>;<volume>5</volume>:<fpage>00</fpage>–<lpage>00</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1080/2162402X.2015.1088631</pub-id><pub-id pub-id-type="pmcid">PMC4839356</pub-id><pub-id pub-id-type="pmid">27141345</pub-id></mixed-citation></ref><ref id="R5"><label>5.</label><mixed-citation publication-type="journal"><name name-style="western"><surname>Aznar</surname><given-names>MA</given-names></name>, <name name-style="western"><surname>Tinari</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Rullán</surname><given-names>AJ</given-names></name>, <name name-style="western"><surname>Sánchez-Paulete</surname><given-names>AR</given-names></name>, <name name-style="western"><surname>Rodriguez-Ruiz</surname><given-names>ME</given-names></name>, <name name-style="western"><surname>Melero</surname><given-names>I</given-names></name>. <article-title>Intratumoral Delivery of Immunotherapy-Act Locally,
+Think Globally</article-title>. <source>J Immunol</source>
+<year>2017</year>;<volume>198</volume>:<fpage>31</fpage>–<lpage>9</lpage>.<pub-id pub-id-type="pmid">27994166</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.4049/jimmunol.1601145</pub-id></mixed-citation></ref><ref id="R6"><label>6.</label><mixed-citation publication-type="journal"><name name-style="western"><surname>Lien</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Means</surname><given-names>TK</given-names></name>, <name name-style="western"><surname>Heine</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Yoshimura</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Kusumoto</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Fukase</surname><given-names>K</given-names></name>, <etal/>
+<article-title>Toll-like receptor 4 imparts ligand-specific recognition of
+bacterial lipopolysaccharide</article-title>. <source>J Clin
+Invest</source>.
+<year>2000</year>;<volume>105</volume>:<fpage>497</fpage>–<lpage>504</lpage>.<pub-id pub-id-type="pmid">10683379</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1172/JCI8541</pub-id><pub-id pub-id-type="pmcid">PMC289161</pub-id></mixed-citation></ref><ref id="R7"><label>7.</label><mixed-citation publication-type="journal"><name name-style="western"><surname>Vaure</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Liu</surname><given-names>Y</given-names></name>. <article-title>A comparative review of toll-like receptor 4 expression
+and functionality in different animal species</article-title>. <source>Front
+Immunol</source>.
+<year>2014</year>;<volume>5</volume>:<fpage>1</fpage>–<lpage>15</lpage>.<pub-id pub-id-type="pmid">25071777</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.3389/fimmu.2014.00316</pub-id><pub-id pub-id-type="pmcid">PMC4090903</pub-id></mixed-citation></ref><ref id="R8"><label>8.</label><mixed-citation publication-type="journal"><name name-style="western"><surname>Zanin-Zhorov</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Tal-Lapidot</surname><given-names>G</given-names></name>, <name name-style="western"><surname>Cahalon</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Cohen-Sfady</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Pevsner-Fischer</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Lider</surname><given-names>O</given-names></name>, <etal/>
+<article-title>Cutting Edge: T Cells Respond to Lipopolysaccharide Innately via
+TLR4 Signaling</article-title>. <source>J Immunol</source>.
+<year>2007</year>;<volume>179</volume>:<fpage>41</fpage>–<lpage>4</lpage>.<pub-id pub-id-type="pmid">17579019</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.4049/jimmunol.179.1.41</pub-id></mixed-citation></ref><ref id="R9"><label>9.</label><mixed-citation publication-type="journal"><name name-style="western"><surname>Komia-Koma</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Gildchrist</surname><given-names>DS</given-names></name>, <name name-style="western"><surname>Xu</surname><given-names>D</given-names></name>. <article-title>Direct recognition of LPS by human but not murine CD8+ T
+cells via TLR4 complex</article-title>. <source>Eur J Immunol</source>.
+<year>2009</year>;<volume>39</volume>:<fpage>1564</fpage>–<lpage>72</lpage>.<pub-id pub-id-type="pmid">19405031</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/eji.200838866</pub-id></mixed-citation></ref><ref id="R10"><label>10.</label><mixed-citation publication-type="journal"><name name-style="western"><surname>Re</surname><given-names>F</given-names></name>, <name name-style="western"><surname>Strominger</surname><given-names>JL</given-names></name>. <article-title>Toll-like Receptor 2 (TLR2) and TLR4 Differentially
+Activate Human Dendritic Cells</article-title>. <source>J Biol
+Chem</source>.
+<year>2001</year>;<volume>276</volume>:<fpage>37692</fpage>–<lpage>9</lpage>.<pub-id pub-id-type="pmid">11477091</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1074/jbc.M105927200</pub-id></mixed-citation></ref><ref id="R11"><label>11.</label><mixed-citation publication-type="journal"><name name-style="western"><surname>Coler</surname><given-names>RN</given-names></name>, <name name-style="western"><surname>Bertholet</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Moutaftsi</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Guderian</surname><given-names>JA</given-names></name>, <name name-style="western"><surname>Windish</surname><given-names>HP</given-names></name>, <name name-style="western"><surname>Baldwin</surname><given-names>SL</given-names></name>, <etal/>
+<article-title>Development and characterization of synthetic glucopyranosyl
+lipid adjuvant system as a vaccine adjuvant</article-title>. <source>PLoS
+One</source>.
+<year>2011</year>;<volume>6</volume>:<fpage>1</fpage>–<lpage>12</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1371/journal.pone.0016333</pub-id><pub-id pub-id-type="pmcid">PMC3027669</pub-id><pub-id pub-id-type="pmid">21298114</pub-id></mixed-citation></ref><ref id="R12"><label>12.</label><mixed-citation publication-type="journal"><name name-style="western"><surname>Pantel</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Cheong</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Dandamudi</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Shrestha</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Mehandru</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Brane</surname><given-names>L</given-names></name>, <etal/>
+<article-title>A new synthetic TLR4 agonist, GLA, allows dendritic cells
+targeted with antigen to elicit Th1 T-cell immunity in vivo</article-title>.
+<source>Eur J Immunol</source>.
+<year>2012</year>;<volume>42</volume>:<fpage>101</fpage>–<lpage>9</lpage>.<pub-id pub-id-type="pmid">22002164</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/eji.201141855</pub-id><pub-id pub-id-type="pmcid">PMC3517108</pub-id></mixed-citation></ref><ref id="R13"><label>13.</label><mixed-citation publication-type="journal"><name name-style="western"><surname>Shi</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Zhao</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Wang</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Gao</surname><given-names>W</given-names></name>, <name name-style="western"><surname>Ding</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Li</surname><given-names>P</given-names></name>, <etal/>
+<article-title>Inflammatory caspases are innate immune receptors for
+intracellular LPS</article-title>. <source>Nature</source>.
+<year>2014</year>;<volume>514</volume>:<fpage>187</fpage>–<lpage>92</lpage>.<pub-id pub-id-type="pmid">25119034</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/nature13683</pub-id></mixed-citation></ref><ref id="R14"><label>14.</label><mixed-citation publication-type="journal"><name name-style="western"><surname>Kayagaki</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Wong</surname><given-names>MT</given-names></name>, <name name-style="western"><surname>Stowe</surname><given-names>IB</given-names></name>, <name name-style="western"><surname>Ramani</surname><given-names>SR</given-names></name>, <name name-style="western"><surname>Gonzalez</surname><given-names>LC</given-names></name>, <name name-style="western"><surname>Akashi-Takamura</surname><given-names>S</given-names></name>, <etal/>
+<article-title>Noncanonical inflammasome activation by intracellular LPS
+independent of TLR4</article-title>. <source>Science</source>.
+<year>2013</year>;<volume>341</volume>:<fpage>1246</fpage>–<lpage>9</lpage>.<pub-id pub-id-type="pmid">23887873</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1126/science.1240248</pub-id></mixed-citation></ref><ref id="R15"><label>15.</label><mixed-citation publication-type="journal"><name name-style="western"><surname>Desbien</surname><given-names>AL</given-names></name>, <name name-style="western"><surname>Reed</surname><given-names>SJ</given-names></name>, <name name-style="western"><surname>Bailor</surname><given-names>HR</given-names></name>, <name name-style="western"><surname>Cauwelaert</surname><given-names>ND</given-names></name>, <name name-style="western"><surname>Laurance</surname><given-names>JD</given-names></name>, <name name-style="western"><surname>Orr</surname><given-names>MT</given-names></name>, <etal/>
+<article-title>Squalene emulsion potentiates the adjuvant activity of the TLR4
+agonist, GLA, via inflammatory caspases, IL-18, and
+IFN-γ</article-title>. <source>Eur J Immunol</source>.
+<year>2015</year>;<volume>45</volume>:<fpage>407</fpage>–<lpage>17</lpage>.<pub-id pub-id-type="pmid">25367751</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/eji.201444543</pub-id></mixed-citation></ref><ref id="R16"><label>16.</label><mixed-citation publication-type="journal"><name name-style="western"><surname>Shen</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Tesar</surname><given-names>BM</given-names></name>, <name name-style="western"><surname>Walker</surname><given-names>WE</given-names></name>, <name name-style="western"><surname>Goldstein</surname><given-names>DR</given-names></name>. <article-title>Dual signaling of MyD88 and TRIF is critical for maximal
+TLR4-induced dendritic cell maturation</article-title>. <source>J
+Immunol</source>.
+<year>2008</year>;<volume>181</volume>:<fpage>1849</fpage>–<lpage>58</lpage>.<pub-id pub-id-type="pmid">18641322</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.4049/jimmunol.181.3.1849</pub-id><pub-id pub-id-type="pmcid">PMC2507878</pub-id></mixed-citation></ref><ref id="R17"><label>17.</label><mixed-citation publication-type="journal"><name name-style="western"><surname>Sagiv-Barfi</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Lu</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Hewitt</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Hsu</surname><given-names>FJ</given-names></name>, <name name-style="western"><surname>Meulen</surname><given-names>J ter</given-names></name>, <name name-style="western"><surname>Levy</surname><given-names>R</given-names></name>. <article-title>Intratumoral Injection of TLR4 Agonist (G100) Leads to
+Tumor Regression of A20 Lymphoma and Induces Abscopal
+Responses</article-title>. <source>Blood</source>.
+<year>2015</year>;<volume>126</volume>:<fpage>820</fpage>.</mixed-citation></ref><ref id="R18"><label>18.</label><mixed-citation publication-type="journal"><name name-style="western"><surname>Feng</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Shuda</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Chang</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Moore</surname><given-names>PS</given-names></name>. <article-title>Clonal integration of a polyomavirus in human Merkel
+cell carcinoma</article-title>. <source>Science</source>.
+<year>2008</year>;<volume>319</volume>:<fpage>1096</fpage>–<lpage>100</lpage>.<pub-id pub-id-type="pmid">18202256</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1126/science.1152586</pub-id><pub-id pub-id-type="pmcid">PMC2740911</pub-id></mixed-citation></ref><ref id="R19"><label>19.</label><mixed-citation publication-type="journal"><name name-style="western"><surname>Iyer</surname><given-names>JG</given-names></name>, <name name-style="western"><surname>Afanasiev</surname><given-names>OK</given-names></name>, <name name-style="western"><surname>McClurkan</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Paulson</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Nagase</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Jing</surname><given-names>L</given-names></name>, <etal/>
+<article-title>Merkel cell polyomavirus-specific CD8+and CD4+ T-cell responses
+identified in Merkel cell carcinomas and blood</article-title>. <source>Clin
+Cancer Res</source>.
+<year>2011</year>;<volume>17</volume>:<fpage>6671</fpage>–<lpage>80</lpage>.<pub-id pub-id-type="pmid">21908576</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1158/1078-0432.CCR-11-1513</pub-id><pub-id pub-id-type="pmcid">PMC3207011</pub-id></mixed-citation></ref><ref id="R20"><label>20.</label><mixed-citation publication-type="journal"><name name-style="western"><surname>Paulson</surname><given-names>KG</given-names></name>, <name name-style="western"><surname>Carter</surname><given-names>JJ</given-names></name>, <name name-style="western"><surname>Johnson</surname><given-names>LG</given-names></name>, <name name-style="western"><surname>Cahill</surname><given-names>KW</given-names></name>, <name name-style="western"><surname>Iyer</surname><given-names>JG</given-names></name>, <name name-style="western"><surname>Schrama</surname><given-names>D</given-names></name>, <etal/>
+<article-title>Antibodies to merkel cell polyomavirus T antigen oncoproteins
+reflect tumor burden in merkel cell carcinoma patients</article-title>.
+<source>Cancer Res</source>.
+<year>2010</year>;<volume>70</volume>:<fpage>8388</fpage>–<lpage>97</lpage>.<pub-id pub-id-type="pmid">20959478</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1158/0008-5472.CAN-10-2128</pub-id><pub-id pub-id-type="pmcid">PMC2970647</pub-id></mixed-citation></ref><ref id="R21"><label>21.</label><mixed-citation publication-type="journal"><name name-style="western"><surname>Miller</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Church</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Dong</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Crispin</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Fitzgibbon</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Lachance</surname><given-names>K</given-names></name>, <etal/>
+<article-title>Tumor-Infiltrating Merkel Cell Polyomavirus-Specific T Cells Are
+Diverse and Associated with Improved Patient Survival</article-title>.
+<source>Cancer Immunol Res</source>.
+<year>2017</year>;<volume>5</volume>:<fpage>137</fpage>–<lpage>47</lpage>.<pub-id pub-id-type="pmid">28093446</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1158/2326-6066.CIR-16-0210</pub-id><pub-id pub-id-type="pmcid">PMC5421625</pub-id></mixed-citation></ref><ref id="R22"><label>22.</label><mixed-citation publication-type="journal"><name name-style="western"><surname>Bhatia</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Afanasiev</surname><given-names>O</given-names></name>, <name name-style="western"><surname>Nghiem</surname><given-names>P</given-names></name>. <article-title>Immunobiology of Merkel cell carcinoma: Implications for
+immunotherapy of a polyomavirus-associated cancer</article-title>.
+<source>Curr Oncol Rep</source>.
+<year>2011</year>;<volume>13</volume>:<fpage>488</fpage>–<lpage>97</lpage>.<pub-id pub-id-type="pmid">21953511</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s11912-011-0197-5</pub-id><pub-id pub-id-type="pmcid">PMC4112947</pub-id></mixed-citation></ref><ref id="R23"><label>23.</label><mixed-citation publication-type="journal"><name name-style="western"><surname>Vandeven</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Nghiem</surname><given-names>P</given-names></name>. <article-title>Rationale for immune-based therapies in Merkel
+polyomavirus-positive and -negative Merkel cell carcinomas</article-title>.
+<source>Immunotherapy</source>.
+<year>2016</year>;<volume>8</volume>:<fpage>907</fpage>–<lpage>21</lpage>.<pub-id pub-id-type="pmid">27381685</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.2217/imt-2016-0009</pub-id><pub-id pub-id-type="pmcid">PMC5827814</pub-id></mixed-citation></ref><ref id="R24"><label>24.</label><mixed-citation publication-type="journal"><name name-style="western"><surname>Afanasiev</surname><given-names>OK</given-names></name>, <name name-style="western"><surname>Yelistratova</surname><given-names>L</given-names></name>, <name name-style="western"><surname>Miller</surname><given-names>N</given-names></name>, <name name-style="western"><surname>Nagase</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Paulson</surname><given-names>K</given-names></name>, <name name-style="western"><surname>Iyer</surname><given-names>JG</given-names></name>, <etal/>
+<article-title>Merkel polyomavirus-specific T cells fluctuate with merkel cell
+carcinoma burden and express therapeutically targetable PD-1 and tim-3
+exhaustion markers</article-title>. <source>Clin Cancer Res</source>.
+<year>2013</year>;<volume>19</volume>:<fpage>5351</fpage>–<lpage>60</lpage>.<pub-id pub-id-type="pmid">23922299</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1158/1078-0432.CCR-13-0035</pub-id><pub-id pub-id-type="pmcid">PMC3790865</pub-id></mixed-citation></ref><ref id="R25"><label>25.</label><mixed-citation publication-type="journal"><name name-style="western"><surname>Nghiem</surname><given-names>PT</given-names></name>, <name name-style="western"><surname>Bhatia</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Lipson</surname><given-names>EJ</given-names></name>, <name name-style="western"><surname>Kudchadkar</surname><given-names>RR</given-names></name>, <name name-style="western"><surname>Miller</surname><given-names>NJ</given-names></name>, <name name-style="western"><surname>Annamalai</surname><given-names>L</given-names></name>, <etal/>
+<article-title>PD-1 Blockade with Pembrolizumab in Advanced Merkel-Cell
+Carcinoma</article-title>. <source>N Engl J Med</source>.
+<year>2016</year>;<volume>374</volume>:<fpage>2542</fpage>–<lpage>52</lpage>.<pub-id pub-id-type="pmid">27093365</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1056/NEJMoa1603702</pub-id><pub-id pub-id-type="pmcid">PMC4927341</pub-id></mixed-citation></ref><ref id="R26"><label>26.</label><mixed-citation publication-type="journal"><name name-style="western"><surname>Kaufman</surname><given-names>HL</given-names></name>, <name name-style="western"><surname>Russell</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Hamid</surname><given-names>O</given-names></name>, <name name-style="western"><surname>Bhatia</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Terheyden</surname><given-names>P</given-names></name>, <name name-style="western"><surname>D’Angelo</surname><given-names>SP</given-names></name>, <etal/>
+<article-title>Avelumab in patients with chemotherapy-refractory metastatic
+Merkel cell carcinoma: a multicentre, single-group, open-label, phase 2
+trial</article-title>. <source>Lancet Oncol</source>.
+<year>2016</year>;<volume>17</volume>:<fpage>1374</fpage>–<lpage>85</lpage>.<pub-id pub-id-type="pmid">27592805</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/S1470-2045(16)30364-3</pub-id><pub-id pub-id-type="pmcid">PMC5587154</pub-id></mixed-citation></ref><ref id="R27"><label>27.</label><mixed-citation publication-type="journal"><name name-style="western"><surname>Topalian</surname><given-names>SL</given-names></name>, <name name-style="western"><surname>Bhatia</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Hollebecque</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Awada</surname><given-names>A</given-names></name>, <name name-style="western"><surname>De Boer</surname><given-names>JP</given-names></name>, <name name-style="western"><surname>Kudchadkar</surname><given-names>RR</given-names></name>, <etal/>
+<article-title>Non-comparative, open-label, multiple cohort, phase 1/2 study to
+evaluate nivolumab (NIVO) in patients with virus-associated tumors
+(CheckMate 358): Efficacy and safety in Merkel cell carcinoma (MCC)
+[abstract]</article-title>. <source>Proc 107th Annu Meet Am Assoc Cancer
+Res</source>. <year>2017</year>
+<comment>page Abs
+CT074.</comment></mixed-citation></ref><ref id="R28"><label>28.</label><mixed-citation publication-type="journal"><name name-style="western"><surname>Eisenhauer</surname><given-names>EA</given-names></name>, <name name-style="western"><surname>Therasse</surname><given-names>P</given-names></name>, <name name-style="western"><surname>Bogaerts</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Schwartz</surname><given-names>LH</given-names></name>, <name name-style="western"><surname>Sargent</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Ford</surname><given-names>R</given-names></name>, <etal/>
+<article-title>New response evaluation criteria in solid tumours: Revised RECIST
+guideline (version 1.1)</article-title>. <source>Eur J Cancer</source>.
+<year>2009</year>;<volume>45</volume>:<fpage>228</fpage>–<lpage>47</lpage>.<pub-id pub-id-type="pmid">19097774</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.ejca.2008.10.026</pub-id></mixed-citation></ref><ref id="R29"><label>29.</label><mixed-citation publication-type="journal"><name name-style="western"><surname>Pillet</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Aubin</surname><given-names>É</given-names></name>, <name name-style="western"><surname>Trépanier</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Poulin</surname><given-names>JF</given-names></name>, <name name-style="western"><surname>Yassine-Diab</surname><given-names>B</given-names></name>, <name name-style="western"><surname>Ter Meulen</surname><given-names>J</given-names></name>, <etal/>
+<article-title>Humoral and cell-mediated immune responses to H5N1 plant-made
+virus-like particle vaccine are differentially impacted by alum
+and</article-title>
+<source>GLA-SE adjuvants in a Phase 2 clinical trial. npj Vaccines</source>.
+<year>2018</year>;<fpage>3</fpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/s41541-017-0043-3</pub-id><pub-id pub-id-type="pmcid">PMC5780465</pub-id><pub-id pub-id-type="pmid">29387473</pub-id></mixed-citation></ref><ref id="R30"><label>30.</label><mixed-citation publication-type="journal"><name name-style="western"><surname>Tong</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Song</surname><given-names>W</given-names></name>, <name name-style="western"><surname>Crystal</surname><given-names>RG</given-names></name>. <article-title>Combined intratumoral injection of bone marrow-derived
+dendritic cells and systemic chemotherapy to treat pre-existing murine
+tumors</article-title>. <source>Cancer Res</source>.
+<year>2001</year>;<volume>61</volume>:<fpage>7530</fpage>–<lpage>5</lpage>.<pub-id pub-id-type="pmid">11606390</pub-id></mixed-citation></ref><ref id="R31"><label>31.</label><mixed-citation publication-type="journal"><name name-style="western"><surname>Shuda</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Arora</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Hyun</surname><given-names>JK</given-names></name>, <name name-style="western"><surname>Feng</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Sarid</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Fernández-Figueras</surname><given-names>MT</given-names></name>, <etal/>
+<article-title>Human Merkel cell polyomavirus infection I. MCV T antigen
+expression in Merkel cell carcinoma, lymphoid tissues and lymphoid
+tumors</article-title>. <source>Int J Cancer</source>.
+<year>2009</year>;<volume>125</volume>:<fpage>1243</fpage>–<lpage>9</lpage>.<pub-id pub-id-type="pmid">19499546</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/ijc.24510</pub-id><pub-id pub-id-type="pmcid">PMC6388400</pub-id></mixed-citation></ref><ref id="R32"><label>32.</label><mixed-citation publication-type="journal"><name name-style="western"><surname>Paulson</surname><given-names>KG</given-names></name>, <name name-style="western"><surname>Iyer</surname><given-names>JG</given-names></name>, <name name-style="western"><surname>Tegeder</surname><given-names>AR</given-names></name>, <name name-style="western"><surname>Thibodeau</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Schelter</surname><given-names>J</given-names></name>, <name name-style="western"><surname>Koba</surname><given-names>S</given-names></name>, <etal/>
+<article-title>Transcriptome-wide studies of merkel cell carcinoma and
+validation of intratumoral cd8+ lymphocyte invasion as an independent
+predictor of survival</article-title>. <source>J Clin Oncol</source>.
+<year>2011</year>;<volume>29</volume>:<fpage>1539</fpage>–<lpage>46</lpage>.<pub-id pub-id-type="pmid">21422430</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1200/JCO.2010.30.6308</pub-id><pub-id pub-id-type="pmcid">PMC3082974</pub-id></mixed-citation></ref><ref id="R33"><label>33.</label><mixed-citation publication-type="journal"><name name-style="western"><surname>Zaretsky</surname><given-names>JM</given-names></name>, <name name-style="western"><surname>Garcia-Diaz</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Shin</surname><given-names>DS</given-names></name>, <name name-style="western"><surname>Escuin-Ordinas</surname><given-names>H</given-names></name>, <name name-style="western"><surname>Hugo</surname><given-names>W</given-names></name>, <name name-style="western"><surname>Hu-Lieskovan</surname><given-names>S</given-names></name>, <etal/>
+<article-title>Mutations Associated with Acquired Resistance to PD-1 Blockade in
+Melanoma</article-title>. <source>N Engl J Med</source>.
+<year>2016</year>;<volume>375</volume>:<fpage>819</fpage>–<lpage>29</lpage>.<pub-id pub-id-type="pmid">27433843</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1056/NEJMoa1604958</pub-id><pub-id pub-id-type="pmcid">PMC5007206</pub-id></mixed-citation></ref><ref id="R34"><label>34.</label><mixed-citation publication-type="journal"><name name-style="western"><surname>Robins</surname><given-names>HS</given-names></name>, <name name-style="western"><surname>Campregher P</surname><given-names>V</given-names></name>, <name name-style="western"><surname>Srivastava</surname><given-names>SK</given-names></name>, <name name-style="western"><surname>Wacher</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Turtle</surname><given-names>CJ</given-names></name>, <name name-style="western"><surname>Kahsai</surname><given-names>O</given-names></name>, <etal/>
+<article-title>Comprehensive assessment of T-cell receptor beta-chain diversity
+in alphabeta T cells</article-title>. <source>Blood</source>.
+<year>2009</year>;<volume>114</volume>:<fpage>4099</fpage>–<lpage>107</lpage>.<pub-id pub-id-type="pmid">19706884</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1182/blood-2009-04-217604</pub-id><pub-id pub-id-type="pmcid">PMC2774550</pub-id></mixed-citation></ref><ref id="R35"><label>35.</label><mixed-citation publication-type="journal"><name name-style="western"><surname>Benjamini</surname><given-names>Y</given-names></name>, <name name-style="western"><surname>Hochberg</surname><given-names>Y</given-names></name>. <article-title>Controlling the false discovery rate: a practical and
+powerful approach to multiple testing</article-title>. <source>J. R. Stat.
+Soc. B</source>
+<year>1995</year> page
+<fpage>289</fpage>–<lpage>300</lpage>.</mixed-citation></ref><ref id="R36"><label>36.</label><mixed-citation publication-type="journal"><name name-style="western"><surname>Segal</surname><given-names>NH</given-names></name>, <name name-style="western"><surname>Gopal</surname><given-names>AK</given-names></name>, <name name-style="western"><surname>Bhatia</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Kohrt</surname><given-names>HE</given-names></name>, <name name-style="western"><surname>Levy</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Pishvaian</surname><given-names>MJ</given-names></name>, <etal/>
+<article-title>A phase 1 study of PF‑05082566 (anti-4–1BB) in
+patients with advanced cancer</article-title>. <source>J Clin
+Oncol</source>. <year>2014</year>;<volume>32</volume>:<fpage>5s</fpage>
+<comment>(abstract 3007).</comment></mixed-citation></ref><ref id="R37"><label>37.</label><mixed-citation publication-type="journal"><name name-style="western"><surname>Tolcher</surname><given-names>AW</given-names></name>, <name name-style="western"><surname>Sznol</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Hu-Lieskovan</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Papadopoulos</surname><given-names>KP</given-names></name>, <name name-style="western"><surname>Patnaik</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Rasco</surname><given-names>DW</given-names></name>, <etal/>
+<article-title>Phase Ib study of utomilumab (PF-05082566), a 4–1BB/CD137
+agonist, in combination with pembrolizumab (MK-3475) in patients with
+advanced solid tumors</article-title>. <source>Clin Cancer Res</source>.
+<year>2017</year>;<volume>23</volume>:<fpage>5349</fpage>–<lpage>57</lpage>.<pub-id pub-id-type="pmid">28634283</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1158/1078-0432.CCR-17-1243</pub-id></mixed-citation></ref><ref id="R38"><label>38.</label><mixed-citation publication-type="journal"><name name-style="western"><surname>Iyer</surname><given-names>JG</given-names></name>, <name name-style="western"><surname>Blom</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Doumani</surname><given-names>R</given-names></name>, <name name-style="western"><surname>Lewis</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Tarabadkar</surname><given-names>ES</given-names></name>, <name name-style="western"><surname>Anderson</surname><given-names>A</given-names></name>, <etal/>
+<article-title>Response rates and durability of chemotherapy among 62 patients
+with metastatic Merkel cell carcinoma</article-title>. <source>Cancer
+Med</source>.
+<year>2016</year>;<volume>5</volume>:<fpage>2294</fpage>–<lpage>301</lpage>.<pub-id pub-id-type="pmid">27431483</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/cam4.815</pub-id><pub-id pub-id-type="pmcid">PMC5055152</pub-id></mixed-citation></ref><ref id="R39"><label>39.</label><mixed-citation publication-type="journal"><name name-style="western"><surname>Flowers</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Isufi</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Francisco Herrera</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Okada</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Cull</surname><given-names>EH</given-names></name>, <name name-style="western"><surname>Kis</surname><given-names>B</given-names></name>, <etal/>
+<article-title>Intratumoral G100 to induce systemic immune responses and
+abscopal tumor regression in patients with follicular
+lymphoma</article-title>. <source>J Clin Oncol</source>.
+<year>2017</year>;<fpage>35</fpage>:<comment>abstr
+7537.</comment></mixed-citation></ref><ref id="R40"><label>40.</label><mixed-citation publication-type="journal"><name name-style="western"><surname>Flowers</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Panizo</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Isufi</surname><given-names>I</given-names></name>, <name name-style="western"><surname>Herrera</surname><given-names>AF</given-names></name>, <name name-style="western"><surname>Okada</surname><given-names>C</given-names></name>, <name name-style="western"><surname>Cull</surname><given-names>EH</given-names></name>, <etal/>
+<article-title>Intratumoral G100 Induces Systemic Immunity and Abscopal Tumor
+Regression in Patients with Follicular Lymphoma: Results of a Phase 1/ 2
+Study Examining G100 Alone and in Combination with
+Pembrolizumab</article-title>. <source>Blood</source>.
+<year>2017</year>;<volume>130</volume>:<fpage>2771</fpage>.</mixed-citation></ref><ref id="R41"><label>41.</label><mixed-citation publication-type="journal"><name name-style="western"><surname>Lipson</surname><given-names>EJ</given-names></name>, <name name-style="western"><surname>Vincent</surname><given-names>JG</given-names></name>, <name name-style="western"><surname>Loyo</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Kagohara</surname><given-names>LT</given-names></name>, <name name-style="western"><surname>Luber</surname><given-names>BS</given-names></name>, <name name-style="western"><surname>Wang</surname><given-names>H</given-names></name>, <etal/>
+<article-title>PD-L1 expression in the Merkel cell carcinoma microenvironment:
+association with inflammation, Merkel cell polyomavirus and overall
+survival</article-title>. <source>Cancer Immunol Res</source>.
+<year>2013</year>;<volume>1</volume>:<fpage>54</fpage>–<lpage>63</lpage>.<pub-id pub-id-type="pmid">24416729</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1158/2326-6066.CIR-13-0034</pub-id><pub-id pub-id-type="pmcid">PMC3885978</pub-id></mixed-citation></ref></ref-list></back><floats-group><fig id="F1" orientation="portrait" position="float"><label>Fig. 1.</label><caption><title>Patient characteristics, treatment details and clinical outcomes in 10
+patients with MCC treated with intratumoral G100.</title><p id="P51">Each horizontal bar represents a patient. All patients were alive at
+last follow-up. All 3 patients with locoregional disease had no evidence of
+disease (NED) after definitive treatment with surgery/radiation therapy. Two
+patients with metastatic disease achieved partial response (PR) and 5 had
+progressive disease (PD).</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="nihms-1503517-f0001.jpg"/></fig><fig id="F2" orientation="portrait" position="float"><label>Fig. 2.</label><caption><title>Pathologic complete response (CR) with single-agent G100 (Patient
+G2).</title><p id="P52">Representative H&amp;E staining and IHC staining for CK20 is shown for
+pre-treatment biopsy samples (baseline) and for the residual mass that was
+surgically removed post-treatment with 2 doses of G100. Absence of staining for
+CK20 post-treatment demonstrates pathologic complete response after G100 alone.
+Scale bars denote a 100 μm region at 20x magnification.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="nihms-1503517-f0002.jpg"/></fig><fig id="F3" orientation="portrait" position="float"><label>Fig. 3.</label><caption><title>Immunohistochemical (IHC) pre- and post-treatment with intratumoral G100 in a
+patient with MCC (Patient G6).</title><p id="P53">(A) Fluorescent IHC staining for CD4<sup>+</sup> and CD8<sup>+</sup> T
+cells demonstrates restriction of T cells to tumor vasculature and tumor edges
+prior to treatment, contrasted with diffuse tumor infiltration after treatment
+with G100. (B) Multispectral IHC staining for CD4<sup>+</sup> T cells,
+CD8<sup>+</sup> T cells, CD68 (monocytes/macrophages), and PD-1/L1
+expressing cells within tumors before and after treatment demonstrates increased
+inflammatory response within the tumor environment post-treatment. Scale bars
+denote a 50 μm region at 20x magnification.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="nihms-1503517-f0003.jpg"/></fig><fig id="F4" orientation="portrait" position="float"><label>Fig. 4.</label><caption><title>Treatment-inducted changes in gene expression and T-cell receptor (TCR)
+clonotypes.</title><p id="P54">The heatmap in <bold>Panel A</bold> depicts gene expression levels for
+770 genes related to innate and adaptive immune responses in biopsy samples from
+a responding patient (Patient G2). Expression levels in the tumor mass
+(biopsy-proven, tumor-involved right superficial inguinal lymph node; SN) at
+baseline and post-G100 treatment are shown as well as post-treatment levels in a
+deeper, untreated draining lymph node (DN). <bold>Panel B</bold> displays the
+frequency of clonotypes in pre-treatment (A; x-axis) and post-treatment (B;
+y-axis) tumor biopsies from patient G6, who achieved an overall partial response
+to therapy. Both newly identified clones and expansion of previously detected
+TCR clones were observed in post-treatment tumor biopsies compared with
+pre-treatment biopsies. New clones are shown along the y-axis (undetected in the
+pre-treatment sample but present post-treatment). Clones that were present in
+the pre-treatment sample but were expanded post-treatment are shown above the
+45° line. TCR clones with similar or decreased frequency post-treatment
+are shown on or below the 45° line. Clones shown on the x-axis indicate T
+cells that were below the limit of detection post-treatment. There was an
+overall shift toward greater clone frequencies post-treatment, with 21
+clonotypes significantly enriched in the post-treatment sample compared with 8
+in the pre-treatment sample.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="nihms-1503517-f0004.jpg"/></fig><table-wrap id="T1" position="float" orientation="landscape"><label>Table 1.</label><caption><p id="P55">Baseline Characteristics, Treatment, and Response in 10 Patients with
+MCC Treated with Intratumoral G100.</p></caption><table frame="box" rules="all"><colgroup span="1"><col align="left" valign="middle" span="1"/><col align="left" valign="middle" span="1"/><col align="left" valign="middle" span="1"/><col align="left" valign="middle" span="1"/><col align="left" valign="middle" span="1"/><col align="left" valign="middle" span="1"/><col align="left" valign="middle" span="1"/><col align="left" valign="middle" span="1"/><col align="left" valign="middle" span="1"/><col align="left" valign="middle" span="1"/><col align="left" valign="middle" span="1"/><col align="left" valign="middle" span="1"/></colgroup><thead><tr><th rowspan="2" align="center" valign="bottom" colspan="1">Patient No.</th><th rowspan="2" align="center" valign="bottom" colspan="1">Gender /Age<sup><xref rid="TFN2" ref-type="table-fn">†</xref></sup></th><th rowspan="2" align="center" valign="bottom" colspan="1">Primary Lesion Site</th><th rowspan="2" align="center" valign="bottom" colspan="1">Prior Treatment</th><th colspan="2" align="center" valign="top" rowspan="1">Viral Status<sup><xref rid="TFN6" ref-type="table-fn">¶</xref></sup></th><th colspan="4" align="center" valign="top" rowspan="1">Study Treatment</th><th colspan="2" align="center" valign="top" rowspan="1">Response</th></tr><tr><th align="center" valign="bottom" rowspan="1" colspan="1">IHC</th><th align="center" valign="bottom" rowspan="1" colspan="1">T-Ag Serology</th><th align="center" valign="bottom" rowspan="1" colspan="1">Treated/ Target<sup><xref rid="TFN4" ref-type="table-fn">§</xref></sup> Lesions, n</th><th align="center" valign="bottom" rowspan="1" colspan="1">Cycles, n</th><th align="center" valign="bottom" rowspan="1" colspan="1">G100 Doses, n</th><th align="center" valign="bottom" rowspan="1" colspan="1">Other Planned Treatment</th><th align="center" valign="bottom" rowspan="1" colspan="1">Best Response</th><th align="center" valign="bottom" rowspan="1" colspan="1">Response Duration, months</th></tr></thead><tbody><tr><td colspan="12" align="left" valign="top" rowspan="1"><bold>Cohort A</bold></td></tr><tr><td align="center" valign="middle" rowspan="1" colspan="1">G2</td><td align="center" valign="middle" rowspan="1" colspan="1">M/70y</td><td align="center" valign="middle" rowspan="1" colspan="1">Right inguinal lymph node</td><td align="center" valign="middle" rowspan="1" colspan="1">None</td><td align="center" valign="middle" rowspan="1" colspan="1">Positive</td><td align="center" valign="middle" rowspan="1" colspan="1">Positive</td><td align="center" valign="middle" rowspan="1" colspan="1">1/1</td><td align="center" valign="middle" rowspan="1" colspan="1">1</td><td align="center" valign="middle" rowspan="1" colspan="1">2</td><td align="center" valign="middle" rowspan="1" colspan="1">Surgery, adjuvant RT</td><td align="center" valign="middle" rowspan="1" colspan="1">Pathologic CR after G100 alone; NED after
+planned treatment</td><td align="center" valign="middle" rowspan="1" colspan="1">44+ (ongoing)</td></tr><tr><td align="center" valign="middle" rowspan="1" colspan="1">G4</td><td align="center" valign="middle" rowspan="1" colspan="1">M/67y</td><td align="center" valign="middle" rowspan="1" colspan="1">Lower right abdomen</td><td align="center" valign="middle" rowspan="1" colspan="1">Surgery</td><td align="center" valign="middle" rowspan="1" colspan="1">Negative</td><td align="center" valign="middle" rowspan="1" colspan="1">Positive</td><td align="center" valign="middle" rowspan="1" colspan="1">1/1</td><td align="center" valign="middle" rowspan="1" colspan="1">1</td><td align="center" valign="middle" rowspan="1" colspan="1">2</td><td align="center" valign="middle" rowspan="1" colspan="1">Surgery, adjuvant RT</td><td align="center" valign="middle" rowspan="1" colspan="1">NED after planned treatment</td><td align="center" valign="middle" rowspan="1" colspan="1">41+ (ongoing)</td></tr><tr><td align="center" valign="middle" rowspan="1" colspan="1">G9</td><td align="center" valign="middle" rowspan="1" colspan="1">M/55y</td><td align="center" valign="middle" rowspan="1" colspan="1">Left buttock</td><td align="center" valign="middle" rowspan="1" colspan="1">Surgery, RT</td><td align="center" valign="middle" rowspan="1" colspan="1">Positive</td><td align="center" valign="middle" rowspan="1" colspan="1">Positive</td><td align="center" valign="middle" rowspan="1" colspan="1">1/1</td><td align="center" valign="middle" rowspan="1" colspan="1">1</td><td align="center" valign="middle" rowspan="1" colspan="1">2</td><td align="center" valign="middle" rowspan="1" colspan="1">Surgery, adjuvant RT</td><td align="center" valign="middle" rowspan="1" colspan="1">NED after planned treatment</td><td align="center" valign="middle" rowspan="1" colspan="1">5</td></tr><tr><td colspan="12" align="left" valign="top" rowspan="1"><bold>Cohort B</bold></td></tr><tr><td align="center" valign="middle" rowspan="1" colspan="1">G1</td><td align="center" valign="middle" rowspan="1" colspan="1">M/67y</td><td align="center" valign="middle" rowspan="1" colspan="1">Left buttock</td><td align="center" valign="middle" rowspan="1" colspan="1">Surgery, CT, RT, Biologic<sup><xref rid="TFN5" ref-type="table-fn">‖</xref></sup></td><td align="center" valign="middle" rowspan="1" colspan="1">Positive</td><td align="center" valign="middle" rowspan="1" colspan="1">Positive</td><td align="center" valign="middle" rowspan="1" colspan="1">1/3</td><td align="center" valign="middle" rowspan="1" colspan="1">1</td><td align="center" valign="middle" rowspan="1" colspan="1">3</td><td align="center" valign="middle" rowspan="1" colspan="1">None</td><td align="center" valign="middle" rowspan="1" colspan="1">Progressive disease</td><td align="center" valign="middle" rowspan="1" colspan="1">N/A</td></tr><tr><td align="center" valign="middle" rowspan="1" colspan="1">G3</td><td align="center" valign="middle" rowspan="1" colspan="1">M/82y</td><td align="center" valign="middle" rowspan="1" colspan="1">Right elbow</td><td align="center" valign="middle" rowspan="1" colspan="1">Surgery, CT, RT</td><td align="center" valign="middle" rowspan="1" colspan="1">Positive</td><td align="center" valign="middle" rowspan="1" colspan="1">Positive</td><td align="center" valign="middle" rowspan="1" colspan="1">2/2</td><td align="center" valign="middle" rowspan="1" colspan="1">1</td><td align="center" valign="middle" rowspan="1" colspan="1">3</td><td align="center" valign="middle" rowspan="1" colspan="1">None</td><td align="center" valign="middle" rowspan="1" colspan="1">Progressive disease</td><td align="center" valign="middle" rowspan="1" colspan="1">N/A</td></tr><tr><td align="center" valign="middle" rowspan="1" colspan="1">G5</td><td align="center" valign="middle" rowspan="1" colspan="1">M/56y</td><td align="center" valign="middle" rowspan="1" colspan="1">Unknown<sup><xref rid="TFN3" ref-type="table-fn">‡</xref></sup></td><td align="center" valign="middle" rowspan="1" colspan="1">RT</td><td align="center" valign="middle" rowspan="1" colspan="1">Positive</td><td align="center" valign="middle" rowspan="1" colspan="1">Positive</td><td align="center" valign="middle" rowspan="1" colspan="1">1/5</td><td align="center" valign="middle" rowspan="1" colspan="1">2</td><td align="center" valign="middle" rowspan="1" colspan="1">8</td><td align="center" valign="middle" rowspan="1" colspan="1">RT</td><td align="center" valign="middle" rowspan="1" colspan="1">Progressive disease</td><td align="center" valign="middle" rowspan="1" colspan="1">N/A</td></tr><tr><td align="center" valign="middle" rowspan="1" colspan="1">G6</td><td align="center" valign="middle" rowspan="1" colspan="1">M/67y</td><td align="center" valign="middle" rowspan="1" colspan="1">Unknown<sup><xref rid="TFN3" ref-type="table-fn">‡</xref></sup></td><td align="center" valign="middle" rowspan="1" colspan="1">Surgery</td><td align="center" valign="middle" rowspan="1" colspan="1">Positive</td><td align="center" valign="middle" rowspan="1" colspan="1">Positive</td><td align="center" valign="middle" rowspan="1" colspan="1">1/1</td><td align="center" valign="middle" rowspan="1" colspan="1">2</td><td align="center" valign="middle" rowspan="1" colspan="1">8</td><td align="center" valign="middle" rowspan="1" colspan="1">RT</td><td align="center" valign="middle" rowspan="1" colspan="1">PR (28% regression in treated lesion
+after G100 alone and then PR following 2<sup>nd</sup> cycle G100 plus
+radiation)</td><td align="center" valign="middle" rowspan="1" colspan="1">33+ (ongoing)</td></tr><tr><td align="center" valign="middle" rowspan="1" colspan="1">G7</td><td align="center" valign="middle" rowspan="1" colspan="1">M/64y</td><td align="center" valign="middle" rowspan="1" colspan="1">Chest</td><td align="center" valign="middle" rowspan="1" colspan="1">Surgery, CT, RT, Biologic<sup><xref rid="TFN5" ref-type="table-fn">‖</xref></sup></td><td align="center" valign="middle" rowspan="1" colspan="1">Positive</td><td align="center" valign="middle" rowspan="1" colspan="1">Negative</td><td align="center" valign="middle" rowspan="1" colspan="1">2/4</td><td align="center" valign="middle" rowspan="1" colspan="1">1</td><td align="center" valign="middle" rowspan="1" colspan="1">3</td><td align="center" valign="middle" rowspan="1" colspan="1">None</td><td align="center" valign="middle" rowspan="1" colspan="1">Progressive disease</td><td align="center" valign="middle" rowspan="1" colspan="1">N/A</td></tr><tr><td align="center" valign="middle" rowspan="1" colspan="1">G8</td><td align="center" valign="middle" rowspan="1" colspan="1">M/64y</td><td align="center" valign="middle" rowspan="1" colspan="1">Left abdominal wall</td><td align="center" valign="middle" rowspan="1" colspan="1">Surgery, CT, Biologic<sup><xref rid="TFN5" ref-type="table-fn">‖</xref></sup></td><td align="center" valign="middle" rowspan="1" colspan="1">Positive</td><td align="center" valign="middle" rowspan="1" colspan="1">Positive</td><td align="center" valign="middle" rowspan="1" colspan="1">1/2</td><td align="center" valign="middle" rowspan="1" colspan="1">2</td><td align="center" valign="middle" rowspan="1" colspan="1">7</td><td align="center" valign="middle" rowspan="1" colspan="1">RT</td><td align="center" valign="middle" rowspan="1" colspan="1">PR (48% regression in tumor-involved
+lymph nodes following G100 plus radiation)</td><td align="center" valign="middle" rowspan="1" colspan="1">33+ (ongoing)</td></tr><tr><td align="center" valign="middle" rowspan="1" colspan="1">G10</td><td align="center" valign="middle" rowspan="1" colspan="1">M/80y</td><td align="center" valign="middle" rowspan="1" colspan="1">Left parietal scalp</td><td align="center" valign="middle" rowspan="1" colspan="1">Surgery, CT, RT, Biologic<sup><xref rid="TFN5" ref-type="table-fn">‖</xref></sup></td><td align="center" valign="middle" rowspan="1" colspan="1">Negative</td><td align="center" valign="middle" rowspan="1" colspan="1">Negative</td><td align="center" valign="middle" rowspan="1" colspan="1">2/5</td><td align="center" valign="middle" rowspan="1" colspan="1">2</td><td align="center" valign="middle" rowspan="1" colspan="1">8</td><td align="center" valign="middle" rowspan="1" colspan="1">RT</td><td align="center" valign="middle" rowspan="1" colspan="1">Progressive disease</td><td align="center" valign="middle" rowspan="1" colspan="1">N/A</td></tr></tbody></table><table-wrap-foot><fn id="TFN1"><p id="P56">Abbreviations: CR, complete response, CT, chemotherapy; IHC,
+immunohistochemistry; M, male; NED, no evidence of disease; PD, progressive
+disease; PR, partial response; RT, radiotherapy; y, years.</p></fn><fn id="TFN2"><label>†</label><p id="P57">At enrollment</p></fn><fn id="TFN3"><label>‡</label><p id="P58">No identified primary or occult</p></fn><fn id="TFN4"><label>§</label><p id="P59">Target lesions include both injected and non-injected (distant)
+lesions</p></fn><fn id="TFN5"><label>‖</label><p id="P60">Eighty percent (80%) of patients had undergone prior surgery; 50%
+had received prior systemic chemotherapy, 60% had received prior RT, and 40%
+had received prior biology. Biologic therapy consisted of CD137/4–1BB
+agonist and IL-12 electroporation in patient G1, anti-LAG-3 therapy in
+patient G7, CD137/4–1BB agonist (with confirmed PD on the same) in
+patient G8, and anti-PD-1 therapy and intratumoral interferon in patient
+G10.</p></fn><fn id="TFN6"><label>¶</label><p id="P61">Viral status results by IHC with CM2B4 antibody and serology were
+discordant in 2 patients. Patient G4 in Cohort A was IHC negative but was
+sero-positive at multiple timepoints and tumor infiltrating lymphocytes from
+this patient contained CD4<sup>+</sup> and CD8<sup>+</sup> T cells reactive
+to MCPyV peptides; this patient was most likely virus positive. Patient G7
+in Cohort B was considered IHC positive, but with a borderline score,
+serology was negative, and tumor-infiltrating lymphocytes were tetramer
+negative with no detectable MCPyV-reactive cells; this patient was most
+likely virus negative.</p></fn></table-wrap-foot></table-wrap><table-wrap id="T2" position="float" orientation="portrait"><label>Table 2.</label><caption><p id="P62">Treatment-Emergent Adverse Events Considered Related to G100</p></caption><table frame="box" rules="rows"><colgroup span="1"><col align="left" valign="middle" span="1"/><col align="left" valign="middle" span="1"/><col align="left" valign="middle" span="1"/><col align="left" valign="middle" span="1"/><col align="left" valign="middle" span="1"/></colgroup><thead><tr><th rowspan="2" align="left" valign="top" colspan="1"/><th colspan="4" align="center" valign="bottom" rowspan="1">Patients with Adverse Event
+(N = 10)</th></tr><tr><th align="center" valign="top" rowspan="1" colspan="1">Grade 1,n (%)</th><th align="center" valign="top" rowspan="1" colspan="1">Grade 2,n (%)</th><th align="center" valign="top" rowspan="1" colspan="1">Grade 3,n (%)</th><th align="center" valign="top" rowspan="1" colspan="1">Any Grade,n (%)</th></tr></thead><tbody><tr><td align="left" valign="top" rowspan="1" colspan="1">Any Treatment-Related Adverse Event</td><td align="center" valign="top" rowspan="1" colspan="1">6 (60)</td><td align="center" valign="top" rowspan="1" colspan="1">2 (20)</td><td align="center" valign="top" rowspan="1" colspan="1">1 (10)</td><td align="center" valign="top" rowspan="1" colspan="1">9 (90)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">    Injection Site
+Reaction</td><td align="center" valign="top" rowspan="1" colspan="1">6 (60)</td><td align="center" valign="top" rowspan="1" colspan="1">1 (10)</td><td align="center" valign="top" rowspan="1" colspan="1">1<sup><xref rid="TFN7" ref-type="table-fn">a</xref></sup> (10)</td><td align="center" valign="top" rowspan="1" colspan="1">8 (80)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">    Influenza-like
+Illness</td><td align="center" valign="top" rowspan="1" colspan="1">4 (40)</td><td align="center" valign="top" rowspan="1" colspan="1">1 (10)</td><td align="center" valign="top" rowspan="1" colspan="1">0</td><td align="center" valign="top" rowspan="1" colspan="1">5 (50)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">    Bruising</td><td align="center" valign="top" rowspan="1" colspan="1">2 (20)</td><td align="center" valign="top" rowspan="1" colspan="1">0</td><td align="center" valign="top" rowspan="1" colspan="1">0</td><td align="center" valign="top" rowspan="1" colspan="1">2 (20)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">    Constipation</td><td align="center" valign="top" rowspan="1" colspan="1">1 (10)</td><td align="center" valign="top" rowspan="1" colspan="1">0</td><td align="center" valign="top" rowspan="1" colspan="1">0</td><td align="center" valign="top" rowspan="1" colspan="1">1 (10)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">    Fatigue</td><td align="center" valign="top" rowspan="1" colspan="1">1 (10)</td><td align="center" valign="top" rowspan="1" colspan="1">0</td><td align="center" valign="top" rowspan="1" colspan="1">0</td><td align="center" valign="top" rowspan="1" colspan="1">1 (10)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">    Pyrexia</td><td align="center" valign="top" rowspan="1" colspan="1">1 (10)</td><td align="center" valign="top" rowspan="1" colspan="1">0</td><td align="center" valign="top" rowspan="1" colspan="1">0</td><td align="center" valign="top" rowspan="1" colspan="1">1 (10)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">    Skin
+Infection</td><td align="center" valign="top" rowspan="1" colspan="1">0</td><td align="center" valign="top" rowspan="1" colspan="1">1 (10)</td><td align="center" valign="top" rowspan="1" colspan="1">0</td><td align="center" valign="top" rowspan="1" colspan="1">1 (10)</td></tr></tbody></table><table-wrap-foot><fn id="TFN7"><label>a</label><p id="P63">Grade 3 injection site reaction consisted of localized skin
+breakdown at the site of injection and pre-treatment biopsy.</p></fn></table-wrap-foot></table-wrap><boxed-text id="BX1" position="float" orientation="portrait"><caption><title>Statement of Translational Relevance:</title></caption><p id="P64">In this first-in-human investigation, intratumoral (IT) administration of
+G100, a synthetic toll-like receptor 4 agonist, induced inflammatory changes within
+the tumor microenvironment (TME) including increased infiltration of CD8<sup>+</sup>
+and CD4<sup>+</sup> in the injected tumors and activation of immune-related genes,
+thus transforming the TME from a “cold” (immunologically suppressed)
+to a “hot” (inflamed and immunologically active) environment. These
+changes facilitated local and systemic immune responses against tumor-associated
+antigens that translated into clinically meaningful responses in patients with
+advanced Merkel cell carcinoma, including a pathologic complete remission in the
+neo-adjuvant setting and durable objective responses in the metastatic setting.
+Administration of IT G100 as a neo-adjuvant therapy prior to surgery and
+radiotherapy was safe and feasible. IT G100 had minimal systemic toxicity and no
+immune-related adverse events. These data indicate that IT G100 is a promising
+cancer immunotherapy warranting further investigation both as a monotherapy and in
+combination with other immunotherapies.</p></boxed-text></floats-group></article></pmc-articleset>

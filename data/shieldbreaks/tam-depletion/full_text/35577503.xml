@@ -1,0 +1,782 @@
+<?xml version="1.0"  ?><!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd"><pmc-articleset><article xml:lang="en" article-type="research-article" dtd-version="1.4"><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">J Immunother Cancer</journal-id><journal-id journal-id-type="iso-abbrev">J Immunother Cancer</journal-id><journal-id journal-id-type="pmc-domain-id">2348</journal-id><journal-id journal-id-type="pmc-domain">jimmthercanc</journal-id><journal-id journal-id-type="publisher-id">jitc</journal-id><journal-title-group><journal-title>Journal for Immunotherapy of Cancer</journal-title></journal-title-group><issn pub-type="epub">2051-1426</issn><publisher><publisher-name>BMJ Publishing Group</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmcid">PMC9114963</article-id><article-id pub-id-type="pmcid-ver">PMC9114963.1</article-id><article-id pub-id-type="pmcaid">9114963</article-id><article-id pub-id-type="pmcaiid">9114963</article-id><article-id pub-id-type="pmid">35577503</article-id><article-id pub-id-type="doi">10.1136/jitc-2021-004076</article-id><article-id pub-id-type="publisher-id">jitc-2021-004076</article-id><article-version article-version-type="pmc-version">1</article-version><article-categories><subj-group subj-group-type="heading"><subject>Clinical/Translational Cancer Immunotherapy</subject></subj-group><subj-group subj-group-type="hwp-journal-coll"><subject>1506</subject><subject>2435</subject></subj-group><series-title>Original research</series-title></article-categories><title-group><article-title>Anti-CSF-1R emactuzumab in combination with anti-PD-L1 atezolizumab in advanced solid tumor patients naïve or experienced for immune checkpoint blockade</article-title></title-group><contrib-group><contrib id="author-79008882" contrib-type="author" corresp="yes"><name name-style="western"><surname>Gomez-Roca</surname><given-names initials="C">Carlos</given-names></name><xref rid="aff1" ref-type="aff">1</xref></contrib><contrib id="author-73323878" contrib-type="author"><name name-style="western"><surname>Cassier</surname><given-names initials="P">Philippe</given-names></name><xref rid="aff2" ref-type="aff">2</xref></contrib><contrib id="author-74471289" contrib-type="author"><contrib-id contrib-id-type="orcid" authenticated="false">http://orcid.org/0000-0002-0094-0161</contrib-id><name name-style="western"><surname>Zamarin</surname><given-names initials="D">Dmitriy</given-names></name><xref rid="aff3" ref-type="aff">3</xref></contrib><contrib id="author-78899065" contrib-type="author"><contrib-id contrib-id-type="orcid" authenticated="false">http://orcid.org/0000-0001-6369-9742</contrib-id><name name-style="western"><surname>Machiels</surname><given-names initials="JP">Jean-Pascal</given-names></name><xref rid="aff4" ref-type="aff">4</xref></contrib><contrib id="author-73322787" contrib-type="author"><name name-style="western"><surname>Luis Perez Gracia</surname><given-names initials="J">Jose</given-names></name><xref rid="aff5" ref-type="aff">5</xref></contrib><contrib id="author-73323337" contrib-type="author"><name name-style="western"><surname>Stephen Hodi</surname><given-names initials="F">F</given-names></name><xref rid="aff6" ref-type="aff">6</xref></contrib><contrib id="author-92937710" contrib-type="author"><name name-style="western"><surname>Taus</surname><given-names initials="A">Alvaro</given-names></name><xref rid="aff7" ref-type="aff">7</xref></contrib><contrib id="author-92937744" contrib-type="author"><name name-style="western"><surname>Martinez Garcia</surname><given-names initials="M">Maria</given-names></name><xref rid="aff7" ref-type="aff">7</xref></contrib><contrib id="author-84514233" contrib-type="author"><name name-style="western"><surname>Boni</surname><given-names initials="V">Valentina</given-names></name><xref rid="aff8" ref-type="aff">8</xref></contrib><contrib id="author-73323570" contrib-type="author"><name name-style="western"><surname>Eder</surname><given-names initials="JP">Joseph P</given-names></name><xref rid="aff9" ref-type="aff">9</xref></contrib><contrib id="author-92937816" contrib-type="author"><name name-style="western"><surname>Hafez</surname><given-names initials="N">Navid</given-names></name><xref rid="aff9" ref-type="aff">9</xref></contrib><contrib id="author-74310505" contrib-type="author"><contrib-id contrib-id-type="orcid" authenticated="false">http://orcid.org/0000-0001-5344-6645</contrib-id><name name-style="western"><surname>Sullivan</surname><given-names initials="R">Ryan</given-names></name><xref rid="aff10" ref-type="aff">10</xref></contrib><contrib id="author-73323248" contrib-type="author"><name name-style="western"><surname>Mcdermott</surname><given-names initials="D">David</given-names></name><xref rid="aff11" ref-type="aff">11</xref></contrib><contrib id="author-75274818" contrib-type="author"><name name-style="western"><surname>Champiat</surname><given-names initials="S">Stephane</given-names></name><xref rid="aff12" ref-type="aff">12</xref></contrib><contrib id="author-76681729" contrib-type="author"><name name-style="western"><surname>Aspeslagh</surname><given-names initials="S">Sandrine</given-names></name><xref rid="aff12" ref-type="aff">12</xref></contrib><contrib id="author-92938024" contrib-type="author"><name name-style="western"><surname>Terret</surname><given-names initials="C">Catherine</given-names></name><xref rid="aff2" ref-type="aff">2</xref></contrib><contrib id="author-79009052" contrib-type="author"><name name-style="western"><surname>Jegg</surname><given-names initials="AM">Anna-Maria</given-names></name><xref rid="aff13" ref-type="aff">13</xref></contrib><contrib id="author-79009027" contrib-type="author"><contrib-id contrib-id-type="orcid" authenticated="false">http://orcid.org/0000-0002-8171-7542</contrib-id><name name-style="western"><surname>Jacob</surname><given-names initials="W">Wolfgang</given-names></name><xref rid="aff13" ref-type="aff">13</xref></contrib><contrib id="author-79009065" contrib-type="author"><name name-style="western"><surname>Cannarile</surname><given-names initials="MA">Michael A</given-names></name><xref rid="aff13" ref-type="aff">13</xref></contrib><contrib id="author-79009195" contrib-type="author"><name name-style="western"><surname>Ries</surname><given-names initials="C">Carola</given-names></name><xref rid="aff13" ref-type="aff">13</xref></contrib><contrib id="author-73508740" contrib-type="author"><name name-style="western"><surname>Korski</surname><given-names initials="K">Konstanty</given-names></name><xref rid="aff13" ref-type="aff">13</xref></contrib><contrib id="author-79009228" contrib-type="author"><name name-style="western"><surname>Michielin</surname><given-names initials="F">Francesca</given-names></name><xref rid="aff14" ref-type="aff">14</xref></contrib><contrib id="author-79009249" contrib-type="author"><name name-style="western"><surname>Christen</surname><given-names initials="R">Randolph</given-names></name><xref rid="aff14" ref-type="aff">14</xref></contrib><contrib id="author-79009095" contrib-type="author"><name name-style="western"><surname>Babitzki</surname><given-names initials="G">Galina</given-names></name><xref rid="aff13" ref-type="aff">13</xref></contrib><contrib id="author-79009079" contrib-type="author"><name name-style="western"><surname>Watson</surname><given-names initials="C">Carl</given-names></name><xref rid="aff15" ref-type="aff">15</xref></contrib><contrib id="author-79009208" contrib-type="author"><name name-style="western"><surname>Meneses-Lorente</surname><given-names initials="G">Georgina</given-names></name><xref rid="aff16" ref-type="aff">16</xref></contrib><contrib id="author-79009286" contrib-type="author"><name name-style="western"><surname>Weisser</surname><given-names initials="M">Martin</given-names></name><xref rid="aff13" ref-type="aff">13</xref></contrib><contrib id="author-79009266" contrib-type="author"><name name-style="western"><surname>Rüttinger</surname><given-names initials="D">Dominik</given-names></name><xref rid="aff13" ref-type="aff">13</xref></contrib><contrib id="author-74980609" contrib-type="author"><name name-style="western"><surname>Delord</surname><given-names initials="JP">Jean-Pierre</given-names></name><xref rid="aff1" ref-type="aff">1</xref></contrib><contrib id="author-73323095" contrib-type="author"><contrib-id contrib-id-type="orcid" authenticated="false">http://orcid.org/0000-0002-5816-3019</contrib-id><name name-style="western"><surname>Marabelle</surname><given-names initials="A">Aurelien</given-names></name><xref rid="aff12" ref-type="aff">12</xref></contrib></contrib-group><aff id="aff1">
+<label>1</label>
+<institution content-type="department">Department of Medical Oncology and Clinical Research Unit</institution>, <institution>Institut Claudius Regaud</institution>, <addr-line content-type="city">Toulouse</addr-line>, <country>France</country>
+</aff><aff id="aff2">
+<label>2</label>
+<institution content-type="department">Department of Medicine</institution>, <institution>Centre Leon Berard</institution>, <addr-line content-type="city">Lyon</addr-line>, <country>France</country>
+</aff><aff id="aff3">
+<label>3</label>
+<institution content-type="department">Department of Medicine</institution>, <institution>Memorial Sloan Kettering Cancer Center</institution>, <addr-line content-type="city">New York City</addr-line>, <addr-line content-type="state">New York</addr-line>, <country>USA</country>
+</aff><aff id="aff4">
+<label>4</label>
+<institution content-type="department">Department of Medical Oncology</institution>, <institution>Cliniques Universitaires Saint-Luc</institution>, <addr-line content-type="city">Bruxelles</addr-line>, <country>Belgium</country>
+</aff><aff id="aff5">
+<label>5</label>
+<institution content-type="department">Department of Oncology</institution>, <institution>Universidad de Navarra</institution>, <addr-line content-type="city">Pamplona</addr-line>, <country>UK</country>
+</aff><aff id="aff6">
+<label>6</label>
+<institution content-type="department">Center for Immuno-Oncology</institution>, <institution>Dana-Farber Cancer Institute</institution>, <addr-line content-type="city">Boston</addr-line>, <addr-line content-type="state">Massachusetts</addr-line>, <country>USA</country>
+</aff><aff id="aff7">
+<label>7</label>
+<institution content-type="department">Department of Medical Oncology</institution>, <institution>Hospital del Mar</institution>, <addr-line content-type="city">Barcelona</addr-line>, <country>Spain</country>
+</aff><aff id="aff8">
+<label>8</label>
+<institution content-type="department">Medical Oncology</institution>, <institution>Hospital Universitario HM Sanchinarro</institution>, <addr-line content-type="city">Madrid</addr-line>, <country>Spain</country>
+</aff><aff id="aff9">
+<label>9</label>
+<institution content-type="department">Department of Medical Oncology</institution>, <institution>Yale University Yale Cancer Center</institution>, <addr-line content-type="city">New Haven</addr-line>, <addr-line content-type="state">Connecticut</addr-line>, <country>USA</country>
+</aff><aff id="aff10">
+<label>10</label>
+<institution content-type="department">Department of Medicine</institution>, <institution>Massachusetts General Hospital Cancer Center</institution>, <addr-line content-type="city">Boston</addr-line>, <addr-line content-type="state">Massachusetts</addr-line>, <country>USA</country>
+</aff><aff id="aff11">
+<label>11</label>
+<institution content-type="department">Division of Hematology/Oncology</institution>, <institution>Beth Israel Deaconess Medical Center</institution>, <addr-line content-type="city">Boston</addr-line>, <addr-line content-type="state">Massachusetts</addr-line>, <country>USA</country>
+</aff><aff id="aff12">
+<label>12</label>
+<institution content-type="department">Drug Development Department</institution>, <institution>Gustave Roussy Institute</institution>, <addr-line content-type="city">Villejuif</addr-line>, <country>France</country>
+</aff><aff id="aff13">
+<label>13</label>
+<institution>Roche Innovation Center Munich</institution>, <addr-line content-type="city">Penzberg</addr-line>, <country>Germany</country>
+</aff><aff id="aff14">
+<label>14</label>
+<institution>Roche Innovation Center Basel</institution>, <addr-line content-type="city">Basel</addr-line>, <country>Switzerland</country>
+</aff><aff id="aff15">
+<label>15</label>
+<institution>A4P Ltd</institution>, <addr-line content-type="city">Sandwich</addr-line>, <country>UK</country>
+</aff><aff id="aff16">
+<label>16</label>
+<institution>Roche Innovation Center Welwyn</institution>, <addr-line content-type="city">Welwyn Garden City</addr-line>, <country>UK</country>
+</aff><author-notes><corresp>
+<label>Correspondence to</label> Dr Carlos Gomez-Roca; <email>gomez-roca.carlos@iuct-oncopole.fr</email>
+</corresp></author-notes><pub-date pub-type="collection"><year>2022</year></pub-date><pub-date pub-type="epub"><day>16</day><month>5</month><year>2022</year></pub-date><volume>10</volume><issue>5</issue><issue-id pub-id-type="pmc-issue-id">407057</issue-id><elocation-id>e004076</elocation-id><history><date date-type="accepted"><day>08</day><month>3</month><year>2022</year></date></history><pub-history><event event-type="pmc-release"><date><day>16</day><month>05</month><year>2022</year></date></event><event event-type="pmc-live"><date><day>04</day><month>06</month><year>2022</year></date></event><event event-type="pmc-last-change"><date iso-8601-date="2022-06-12 00:16:43.063"><day>12</day><month>06</month><year>2022</year></date></event></pub-history><permissions><copyright-statement>© Author(s) (or their employer(s)) 2022. Re-use permitted under CC BY-NC. No commercial re-use. See rights and permissions. Published by BMJ.</copyright-statement><copyright-year>2022</copyright-year><ali:free_to_read xmlns:ali="http://www.niso.org/schemas/ali/1.0/"/><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbynclicense" start_date="2022-05-16">https://creativecommons.org/licenses/by-nc/4.0/</ali:license_ref><license-p>This is an open access article distributed in accordance with the Creative Commons Attribution Non Commercial (CC BY-NC 4.0) license, which permits others to distribute, remix, adapt, build upon this work non-commercially, and license their derivative works on different terms, provided the original work is properly cited, appropriate credit is given, any changes made indicated, and the use is non-commercial. See <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by-nc/4.0/">http://creativecommons.org/licenses/by-nc/4.0/</ext-link>.</license-p></license></permissions><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pmc-pdf" xlink:href="jitc-2021-004076.pdf"/><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:title="pdf" xlink:href="jitc-2021-004076.pdf"/><abstract><sec><title>Background</title><p>This phase 1b study (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmc:clinical-trial" xlink:href="NCT02323191">NCT02323191</ext-link>) evaluated the safety, antitumor activity, pharmacokinetics, and pharmacodynamics of colony-stimulating factor-1 receptor-blocking monoclonal antibody (mAb) emactuzumab in combination with the programmed cell death-1 ligand (PD-L1)-blocking mAb atezolizumab in patients with advanced solid tumors naïve or experienced for immune checkpoint blockers (ICBs).</p></sec><sec><title>Methods</title><p>Emactuzumab (500–1350 mg flat) and atezolizumab (1200 mg flat) were administered intravenously every 3 weeks. Dose escalation of emactuzumab was conducted using the 3+3 design up to the maximum tolerated dose (MTD) or optimal biological dose (OBD). Extension cohorts to evaluate pharmacodynamics and clinical activity were conducted in metastatic ICB-naive urothelial bladder cancer (UBC) and ICB-pretreated melanoma (MEL), non-small cell lung cancer (NSCLC) and UBC patients.</p></sec><sec><title>Results</title><p>Overall, 221 patients were treated. No MTD was reached and the OBD was determined at 1000 mg of emactuzumab in combination with 1200 mg of atezolizumab. Grade ≥3 treatment-related adverse events occurred in 25 (11.3%) patients of which fatigue and rash were the most common (14 patients (6.3%) each). The confirmed objective response rate (ORR) was 9.8% for ICB-naïve UBC, 12.5% for ICB-experienced NSCLC, 8.3% for ICB-experienced UBC and 5.6% for ICB-experienced MEL patients, respectively. Tumor biopsy analyses demonstrated increased activated CD8 +tumor infiltrating T lymphocytes (TILs) associated with clinical benefit in ICB-naïve UBC patients and less tumor-associated macrophage (TAM) reduction in ICB-experienced compared with ICB-naïve patients.</p></sec><sec><title>Conclusion</title><p>Emactuzumab in combination with atezolizumab demonstrated a manageable safety profile with increased fatigue and skin rash over usual atezolizumab monotherapy. A considerable ORR was particularly seen in ICB-experienced NSCLC patients. Increase ofCD8 +TILs under therapy appeared to be associated with persistence of a TAM subpopulation.</p></sec></abstract><kwd-group><kwd>Clinical Trials as Topic</kwd><kwd>Drug Therapy, Combination</kwd><kwd>Immunotherapy</kwd><kwd>Macrophages</kwd><kwd>T-Lymphocytes</kwd></kwd-group><custom-meta-group><custom-meta><meta-name>pmc-status-qastatus</meta-name><meta-value>0</meta-value></custom-meta><custom-meta><meta-name>pmc-status-live</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-status-embargo</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-status-released</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-open-access</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-olf</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-manuscript</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-legally-suppressed</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-pdf</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-supplement</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-pdf-only</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-suppress-copyright</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-real-version</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-scanned-article</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-preprint</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-in-epmc</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-license-ref</meta-name><meta-value>CC BY-NC</meta-value></custom-meta><custom-meta><meta-name>special-feature</meta-name><meta-value>unlocked</meta-value></custom-meta></custom-meta-group></article-meta></front><body><boxed-text id="BX1" position="float" orientation="portrait"><caption><title>Key messages</title></caption><sec><title>What is already known on this topic</title><list list-type="bullet"><list-item><p>The presence of tumor-associated macrophages is generally associated with a poor prognosis in solid tumors and mediates intrinsic/acquired resistance to PD-1 inhibitors.</p></list-item></list></sec><sec><title>What this study adds</title><list list-type="bullet"><list-item><p>To evaluate new treatments for relapsed/refractory solid tumors, patients were treated with anti-colony-stimulating factor-1 receptor (CSF-1R) emactuzumab combined with anti-PD-L1 atezolizumab. The combination showed a manageable safety profile and increased activated CD8 +tumor-infiltrating T lymphocytes associated with clinical benefit. A considerable objective response rate was seen in immune checkpoint blocker-experienced non-small cell lung cancer patients.</p></list-item></list></sec><sec><title>How this study might affect research, practice or policy</title><list list-type="bullet"><list-item><p>Response predication markers are needed to unfold the full potential of concomitant CSF-1R and PD-L1 blockade in relapsed/refractory solid tumors.</p></list-item></list></sec></boxed-text><sec sec-type="intro" id="s1"><title>Introduction</title><p>Anti-programmed death-1 (PD-1) and anti-programmed death-1 ligand (PD-L1) therapies are part of the standard-of-care for various tumor types including melanoma (MEL), non-small cell lung cancer (NSCLC), urothelial bladder cancer (UBC), renal cell cancer (RCC) and others. However, many patients fail to respond to these treatments. Therefore, the search for synergistic combination partners is ongoing. Anti-cytotoxic T-lymphocyte-associated protein 4 (CTLA-4) together with anti-PD-1 agents have shown improved efficacy in certain indications such as RCC and MEL but is not considered suitable for all patients due to increased rates of toxicity. Alternative options are needed to increase the rates and durability of antitumor responses, induce clinical remissions, and ultimately improve survival.<xref rid="R1" ref-type="bibr">1–3</xref>
+</p><p>The presence of tumor-associated macrophages (TAMs) is generally associated with a poor prognosis in solid tumors.<xref rid="R4" ref-type="bibr">4 5</xref> Colony stimulating factor 1 receptor (CSF-1R) signaling supports recruitment, development, and maintenance of immunosuppressive TAMs.<xref rid="R6" ref-type="bibr">6</xref> TAMs mediate intrinsic/acquired resistance to PD-1 inhibitors, for example, by block of T cell proliferation or their cytotoxic activities.<xref rid="R7" ref-type="bibr">7–9</xref> In fact, anti-PD-1 therapy alone seems to even promote the occurrence of immunosuppressive TAMs<xref rid="R10" ref-type="bibr">10</xref> and activation of CD8 +T cells leads to release of CSF-1 and may contribute to non-responsiveness to PD-1 therapy.<xref rid="R11" ref-type="bibr">11</xref> Combining anti-CSF-1R with anti-PD-(L)1 led to enhanced CD8 +T cell migration and infiltration<xref rid="R12" ref-type="bibr">12</xref> and showed enhanced efficacy in preclinical models.<xref rid="R11" ref-type="bibr">11 13 14</xref>
+</p><p>Emactuzumab is a recombinant, humanized monoclonal antibody (mAb) of the immunoglobulin G1 subclass directed against CSF-1R expressed on macrophages.<xref rid="R6" ref-type="bibr">6 15</xref> Emactuzumab has been previously studied in patients with diffuse-type giant cell tumor and demonstrated a profound anti-tumor effect through blockade of the CSF-1/CSF-1R axis<xref rid="R6" ref-type="bibr">6 16 17</xref> as well as in solid tumor patients for which only limited efficacy was seen, in spite of a consistent depletion of immunosuppressive TAMs.<xref rid="R18" ref-type="bibr">18</xref> Atezolizumab is a humanized monoclonal immunoglobulin G1 antibody that binds selectively to PD-L1 and prevents its interaction with PD-1 and B7-1<xref rid="R19" ref-type="bibr">19</xref> and is an approved treatment, alone or in combination, for UBC,<xref rid="R20" ref-type="bibr">20</xref> SCLC,<xref rid="R21" ref-type="bibr">21</xref> triple-negative breast cancer (TNBC),<xref rid="R22" ref-type="bibr">22</xref> hepatocellular cancer<xref rid="R23" ref-type="bibr">23</xref> and NSCLC.<xref rid="R24" ref-type="bibr">24</xref>
+</p><p>To investigate a new treatment strategy for improving responsiveness and outcomes in patients with solid malignancies in which immune checkpoint blockers (ICBs) alone may have limited clinical activity or previously failed, this phase Ib study evaluated the safety, antitumor activity, pharmacokinetics (PK) and pharmacodynamics of emactuzumab in combination with atezolizumab in patients with advanced solid tumors naïve or experienced to prior ICB therapy.</p></sec><sec sec-type="methods" id="s2"><title>Methods</title><sec id="s2-1"><title>Study design and treatment</title><p>This was a phase 1b, open-label, non-randomized, dose-escalation, multicenter study (ClinicalTrials.gov Identifier: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmc:clinical-trial" xlink:href="NCT02323191">NCT02323191</ext-link>). The primary objective was to evaluate the safety and tolerability of the combination of emactuzumab and atezolizumab and to determine the maximum tolerated dose (MTD) by observing dose-limiting toxicities (DLTs) in patients with metastatic or advanced solid tumors. Secondary objectives included the investigation of PK, pharmacodynamics and clinical activity. The study was conducted in two parts: a dose escalation part following a 3+3 study design and an extension part to further evaluate the MTD and/or optimal biological dose (OBD) defined by monocyte depletion as well as CSF-1 increase in the periphery and macrophage reduction in skin and tumor tissue for emactuzumab monotherapy as shown previously.<xref rid="R18" ref-type="bibr">18 25</xref>
+</p><p>Emactuzumab was administered intravenously every 3 weeks (q3w) at an infusion rate of 167 mL/hour over 90 min if well tolerated. Atezolizumab was administered intravenously q3w at a flat dose of 1200 mg over 60 min at Cycle 1 and 30 min for subsequent cycles. Atezolizumab infusion was started at least 1 hour after the emactuzumab infusion has ended.</p></sec><sec id="s2-2"><title>Patients</title><p>For dose escalation and extension cohorts 1, 2 and 3, patients had histologically confirmed diagnosis of locally advanced and/or metastatic TNBC, ovarian cancer (OvCa), UBC, gastric cancer (GC) soft tissue sarcoma (STS), NSCLC, colorectal cancer (CRC) or were patients with solid tumor and liver metastases with no standard treatment options. Extension cohort 4 solely included patients with advanced UBC naïve for ICB treatment. Extension cohort 5 consisted of patients with UBC, MEL and NSCLC who experienced documented disease progression on or after anti-PD-L1 or PD-1 therapy as the most recent anti-cancer therapy (investigational or approved, as monotherapy or in combination) (<xref rid="F1" ref-type="fig">figure 1</xref>). Eligible patients were ≥18 years of age, had an Eastern Cooperative Oncology Group performance status of 0 to 1 and had adequate hematology, blood chemistry, renal and liver function. Patients continued treatment until disease progression, unacceptable toxicity or consent withdrawal.</p><fig position="float" id="F1" orientation="portrait"><label>Figure 1</label><caption><p>Flow diagram of study design, patient enrolment and emactuzumab dose. All patients received 1200 mg of atezolizumab in combination with emactuzumab q3w. AE, adverse event; GC, gastric cancer; MEL, melanoma; n, number of patients; NSCLC, non-small cell lung cancer; OvCa, ovarian carcinoma; PD, progressive disease; STS, soft tissue sarcoma; TNBC, triple-negative breast cancer; UBC, urothelial bladder cancer cancer.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="jitc-2021-004076f01.jpg"/></fig></sec><sec id="s2-3"><title>Tumor response and safety</title><p>Tumor response assessment using Response Evaluation Criteria in Solid Tumors 1.1<xref rid="R26" ref-type="bibr">26</xref> was conducted at screening and every 6 weeks thereafter by CT or MRI.</p><p>Safety was monitored at regular clinical visits throughout the study including physical examination, vital signs, review of concurrent medications, triplicate 12-lead ECG and laboratory evaluations. Reported adverse events (AEs) were characterized by type, frequency, relationship to study drugs, and severity (graded by the NCI Common Terminology Criteria for Adverse Events V.4.03).</p><p>A DLT was defined as an AE occurring during the first cycle of treatment (ie, 21 days) with emactuzumab and atezolizumab that was considered to be study drug-related and was either: febrile neutropenia (ie, absolute neutrophil count (ANC)&lt;1.0×10<sup>9</sup> cells/L and fever ≥38.5°C) and/or documented infection with ANC&lt;1.0×10<sup>9</sup> cells/L; Grade 4 thrombocytopenia or bleeding requiring platelet transfusion; or Grade≥3 non-hematological toxicity. Any Grade three immune-related AE that resolved to ≤Grade 1 within 3 weeks of its onset was not considered a DLT. Additional exceptions for DLT definitions are provided in <xref rid="SP1" ref-type="supplementary-material">online supplemental material</xref>.</p><supplementary-material id="SP1" position="float" content-type="local-data" orientation="portrait"><object-id pub-id-type="doi">10.1136/jitc-2021-004076.supp1</object-id><label>Supplementary data</label><p>
+<inline-supplementary-material xmlns:xlink="http://www.w3.org/1999/xlink" id="SS1" xlink:href="jitc-2021-004076supp001.pdf" content-type="local-data"/>
+</p></supplementary-material><p>Antibodies against emactuzumab were measured in human serum using a bridging format-based ELISA. Assay sensitivity was 4.43 ng/mL (concentration in 100% human serum) and was validated by ICON Laboratory Services, Inc. (USA) according to regulatory guidelines.</p></sec><sec id="s2-4"><title>Pharmacodynamics and biomarker analysis</title><p>Fresh tumor biopsies were collected during screening and on Day 1 of Cycle 2. Consecutive 2.5 µm sections of formalin-fixed paraffin-embedded tumor tissues were stained with the following in-house developed immunohistochemistry assays using Ventana Benchmark XT or Discovery Ultra-automated platforms (Ventana Medical Systems; Tucson, AZ): PD-L1, Ki67/CD8, CD163/CD68, CSF-1R and FOXP3. Further details on used assays are provided in <xref rid="SP1" ref-type="supplementary-material">online supplemental material</xref>.</p></sec><sec id="s2-5"><title>Statistical considerations</title><p>All patients who received at least one dose of study treatment were included in the safety population. Descriptive statistics were used for demographics, safety and clinical activity.</p><p>For pharmacodynamic analysis SAS JMP PRO (V.15.0.0) was used. The comparison between groups was performed using Wilcoxon rank sums test or in case of multiple group comparisons the Dunn method for joint ranking. Linear association between changes of biomarker values was investigated by calculation of Pearson correlation coefficient on log-transformed data. Statistical differences were considered significant at a 0.05 significance level.</p></sec></sec><sec sec-type="results" id="s3"><title>Results</title><sec id="s3-1"><title>Patients</title><p>Altogether 221 patients were enrolled into the study (<xref rid="T1" ref-type="table">table 1</xref>). Across treatment groups, median age was 62 (range: 18 to 86) years and 65.2% were male. The majority of patients (52%) had received a median of three prior lines of systemic therapy (range: 0–10).</p><table-wrap position="float" id="T1" orientation="portrait"><label>Table 1</label><caption><p>Baseline patient demographics and characteristics</p></caption><table frame="hsides" rules="groups"><thead><tr><td align="left" valign="bottom" rowspan="3" colspan="1">Characteristic</td><td align="left" valign="bottom" rowspan="2" colspan="1">All patients</td><td align="left" valign="bottom" rowspan="1" colspan="1">ICB-naïve</td><td align="left" valign="bottom" colspan="3" rowspan="1">ICB-experienced</td></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">UBC</td><td align="left" valign="bottom" rowspan="1" colspan="1">MEL</td><td align="left" valign="bottom" rowspan="1" colspan="1">NSCLC</td><td align="left" valign="bottom" rowspan="1" colspan="1">UBC</td></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">N=221</td><td align="left" valign="bottom" rowspan="1" colspan="1">N=41</td><td align="left" valign="bottom" rowspan="1" colspan="1">N=18</td><td align="left" valign="bottom" rowspan="1" colspan="1">N=40</td><td align="left" valign="bottom" rowspan="1" colspan="1">N=12</td></tr></thead><tbody><tr><td align="left" valign="top" rowspan="1" colspan="1">Sex, n (%)</td><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1"/></tr><tr><td align="left" valign="top" rowspan="1" colspan="1"> Male</td><td align="char" char="." valign="top" rowspan="1" colspan="1">144 (65.2)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">32 (78.0)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">12 (66.7)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">31 (77.5)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">10 (83.3)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1"> Female</td><td align="char" char="." valign="top" rowspan="1" colspan="1">77 (34.8)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">9 (22.0)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">6 (33.3)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">9 (22.5)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">2 (16.7)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Age (years), median (range)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">62 (18–86)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">67.0 (49–83)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">60 (36–83)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">63 (29–80)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">66 (59–86)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">ECOG score at baseline, n (%)</td><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1"/></tr><tr><td align="char" char="." valign="top" rowspan="1" colspan="1"> 0</td><td align="char" char="." valign="top" rowspan="1" colspan="1">101 (45.7)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">20 (48.8)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">10 (55.6)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">17 (42.5)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">7 (58.3)</td></tr><tr><td align="char" char="." valign="top" rowspan="1" colspan="1"> 1</td><td align="char" char="." valign="top" rowspan="1" colspan="1">116 (52.5)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">21 (51.2)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">8 (44.4)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">23 (57.5)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">5 (41.7)</td></tr><tr><td align="char" char="." valign="top" rowspan="1" colspan="1"> 2</td><td align="char" char="." valign="top" rowspan="1" colspan="1">2 (0.9)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">0</td><td align="char" char="." valign="top" rowspan="1" colspan="1">0</td><td align="char" char="." valign="top" rowspan="1" colspan="1">0</td><td align="char" char="." valign="top" rowspan="1" colspan="1">0</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Median LDH at baseline (range, U/L)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">224 (93, 8147)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">207 (113, 8147)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">284 (134, 3515)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">246 (155, 754)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">196 (118, 391)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Patients with liver metastases, n (%)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">87 (39.4)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">14 (34.1)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">8 (44.4)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">7 (17.5)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">4 (33.3)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Patients’ PD-L1 IHC status from available tumor tissue</td><td align="left" valign="top" rowspan="1" colspan="1"/><td align="char" char="." valign="top" rowspan="1" colspan="1">34</td><td align="char" char="." valign="top" rowspan="1" colspan="1">14</td><td align="char" char="." valign="top" rowspan="1" colspan="1">23</td><td align="char" char="." valign="top" rowspan="1" colspan="1">9</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">IC</td><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1"/></tr><tr><td align="char" char="." valign="top" rowspan="1" colspan="1"> 0</td><td align="left" valign="top" rowspan="1" colspan="1">–</td><td align="char" char="." valign="top" rowspan="1" colspan="1">29 (85.3)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">6 (42.9)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">10 (43.5)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">2 (22.2)</td></tr><tr><td align="char" char="." valign="top" rowspan="1" colspan="1"> 1</td><td align="left" valign="top" rowspan="1" colspan="1">–</td><td align="char" char="." valign="top" rowspan="1" colspan="1">5 (14.7)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">3 (21.4)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">7 (30.4)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">4 (44.4)</td></tr><tr><td align="char" char="." valign="top" rowspan="1" colspan="1"> 2</td><td align="left" valign="top" rowspan="1" colspan="1">–</td><td align="char" char="." valign="top" rowspan="1" colspan="1">0</td><td align="char" char="." valign="top" rowspan="1" colspan="1">2 (14.3)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">3 (13.0)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">1 (11.1)</td></tr><tr><td align="char" char="." valign="top" rowspan="1" colspan="1"> 3</td><td align="left" valign="top" rowspan="1" colspan="1">–</td><td align="char" char="." valign="top" rowspan="1" colspan="1">0</td><td align="char" char="." valign="top" rowspan="1" colspan="1">0</td><td align="char" char="." valign="top" rowspan="1" colspan="1">3 (13.0)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">0</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1"> NA</td><td align="left" valign="top" rowspan="1" colspan="1">–</td><td align="char" char="." valign="top" rowspan="1" colspan="1">0</td><td align="char" char="." valign="top" rowspan="1" colspan="1">3 (21.4)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">0</td><td align="char" char="." valign="top" rowspan="1" colspan="1">2 (22.2)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">TC</td><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1"/></tr><tr><td align="char" char="." valign="top" rowspan="1" colspan="1"> 0</td><td align="left" valign="top" rowspan="1" colspan="1">–</td><td align="char" char="." valign="top" rowspan="1" colspan="1">29 (85.3)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">7 (50.0)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">12 (52.2)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">5 (55.6)</td></tr><tr><td align="char" char="." valign="top" rowspan="1" colspan="1"> 1</td><td align="left" valign="top" rowspan="1" colspan="1">–</td><td align="char" char="." valign="top" rowspan="1" colspan="1">3 (8.8)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">2 (14.3)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">3 (13.0)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">1 (11.1)</td></tr><tr><td align="char" char="." valign="top" rowspan="1" colspan="1"> 2</td><td align="left" valign="top" rowspan="1" colspan="1">–</td><td align="char" char="." valign="top" rowspan="1" colspan="1">2 (5.9)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">2 (14.3)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">6 (26.1)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">1 (11.1)</td></tr><tr><td align="char" char="." valign="top" rowspan="1" colspan="1"> 3</td><td align="left" valign="top" rowspan="1" colspan="1">–</td><td align="char" char="." valign="top" rowspan="1" colspan="1">0</td><td align="char" char="." valign="top" rowspan="1" colspan="1">0</td><td align="char" char="." valign="top" rowspan="1" colspan="1">2 (8.7)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">0</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1"> NA</td><td align="left" valign="top" rowspan="1" colspan="1">–</td><td align="char" char="." valign="top" rowspan="1" colspan="1">0</td><td align="char" char="." valign="top" rowspan="1" colspan="1">3 (21.4)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">0</td><td align="char" char="." valign="top" rowspan="1" colspan="1">2 (22.2)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Prior anti-cancer therapy lines median no (range)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">3 (0–10)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">2 (1– 6)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">2 (1–7)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">2 (1–9)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">2 (1–5)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Duration of prior immunotherapy, median and range (days)</td><td align="left" valign="top" rowspan="1" colspan="1">–</td><td align="left" valign="top" rowspan="1" colspan="1">–</td><td align="char" char="." valign="top" rowspan="1" colspan="1">98 (35–807)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">126 (14–854)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">102 (48–634)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Time from prior immunotherapy to study treatment, median and range (days)</td><td align="left" valign="top" rowspan="1" colspan="1">–</td><td align="left" valign="top" rowspan="1" colspan="1">–</td><td align="char" char="." valign="top" rowspan="1" colspan="1">182.5 (82–911)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">205 (89–902)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">168 (97–698)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">ORR to prior immunotherapy, n (%)</td><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1"/><td align="char" char="." valign="top" rowspan="1" colspan="1">0</td><td align="char" char="." valign="top" rowspan="1" colspan="1">6 (15.0)*</td><td align="char" char="." valign="top" rowspan="1" colspan="1">4 (33.3)†</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Prior surgery, n (%)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">194 (87.8)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">38 (95.0)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">16 (88.9)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">24 (60.0)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">12 (100)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Prior radiotherapy</td><td align="char" char="." valign="top" rowspan="1" colspan="1">96 (43.4)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">13 (32.5)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">9 (50.0)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">22 (55.0)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">3 (25.0)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Tumor type, n (%)</td><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1"/></tr><tr><td align="left" valign="top" rowspan="1" colspan="1"> Urothelial bladder cancer</td><td align="char" char="." valign="top" rowspan="1" colspan="1">67 (30.3)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">41 (100)</td><td align="left" valign="top" rowspan="1" colspan="1">–</td><td align="left" valign="top" rowspan="1" colspan="1">–</td><td align="char" char="." valign="top" rowspan="1" colspan="1">12 (100)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1"> Non-small cell lung cancer</td><td align="char" char="." valign="top" rowspan="1" colspan="1">41 (18.6)</td><td align="left" valign="top" rowspan="1" colspan="1">–</td><td align="left" valign="top" rowspan="1" colspan="1">–</td><td align="char" char="." valign="top" rowspan="1" colspan="1">40 (100)</td><td align="left" valign="top" rowspan="1" colspan="1">–</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1"> Gastric cancer</td><td align="char" char="." valign="top" rowspan="1" colspan="1">20 (9.0)</td><td align="left" valign="top" rowspan="1" colspan="1">–</td><td align="left" valign="top" rowspan="1" colspan="1">–</td><td align="left" valign="top" rowspan="1" colspan="1">–</td><td align="left" valign="top" rowspan="1" colspan="1">–</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1"> Melanoma</td><td align="char" char="." valign="top" rowspan="1" colspan="1">18 (8.1)</td><td align="left" valign="top" rowspan="1" colspan="1">–</td><td align="char" char="." valign="top" rowspan="1" colspan="1">18 (100)</td><td align="left" valign="top" rowspan="1" colspan="1">–</td><td align="left" valign="top" rowspan="1" colspan="1">–</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1"> Ovarian cancer</td><td align="char" char="." valign="top" rowspan="1" colspan="1">17 (7.7)</td><td align="left" valign="top" rowspan="1" colspan="1">–</td><td align="left" valign="top" rowspan="1" colspan="1">–</td><td align="left" valign="top" rowspan="1" colspan="1">–</td><td align="left" valign="top" rowspan="1" colspan="1">–</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1"> Soft tissue sarcoma</td><td align="char" char="." valign="top" rowspan="1" colspan="1">17 (7.7)</td><td align="left" valign="top" rowspan="1" colspan="1">–</td><td align="left" valign="top" rowspan="1" colspan="1">–</td><td align="left" valign="top" rowspan="1" colspan="1">–</td><td align="left" valign="top" rowspan="1" colspan="1">–</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1"> Triple-negative breast cancer</td><td align="char" char="." valign="top" rowspan="1" colspan="1">17 (7.7)</td><td align="left" valign="top" rowspan="1" colspan="1">–</td><td align="left" valign="top" rowspan="1" colspan="1">–</td><td align="left" valign="top" rowspan="1" colspan="1">–</td><td align="left" valign="top" rowspan="1" colspan="1">–</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1"> Other</td><td align="char" char="." valign="top" rowspan="1" colspan="1">13 (5.9)</td><td align="left" valign="top" rowspan="1" colspan="1">–</td><td align="left" valign="top" rowspan="1" colspan="1">–</td><td align="left" valign="top" rowspan="1" colspan="1">–</td><td align="left" valign="top" rowspan="1" colspan="1">–</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1"> Colorectal</td><td align="char" char="." valign="top" rowspan="1" colspan="1">11 (5.0)</td><td align="left" valign="top" rowspan="1" colspan="1">–</td><td align="left" valign="top" rowspan="1" colspan="1">–</td><td align="left" valign="top" rowspan="1" colspan="1">–</td><td align="left" valign="top" rowspan="1" colspan="1">–</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">No of cycles of study treatment</td><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1"/></tr><tr><td align="left" valign="top" rowspan="1" colspan="1"> Atezolizumab, median (range)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">4 (1–68)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">4 (1–52)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">5 (1–21)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">4 (1–29)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">2 (1–44)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1"> Emactuzumab, median (range)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">3 (1–68)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">3 (1–52)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">4 (1–18)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">3.5 (1–19)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">2 (1–7)</td></tr></tbody></table><table-wrap-foot><fn id="T1_FN1"><p>*Two patients were not evaluable for prior response.</p></fn><fn id="T1_FN2"><p>†One patient was not evaluable for prior response.</p></fn><fn id="T1_FN3"><p>ECOG, Eastern Cooperative Oncology Group; IC, immune cells; ICB, immune checkpoint blocker; IHC, immunohistochemistry; LDH, lactate dehydrogenase; MEL, melanoma; NA, not applicable; NSCLC, non-small cell lung cancer; ORR, objective response rate; TC, tumor cells; UBC, urothelial bladder cancer.</p></fn></table-wrap-foot></table-wrap><p>In the dose escalation part, 17 patients were enrolled into three dose cohorts, that is, emactuzumab at 500 mg (n=5), 1000 mg (n=6) and 1350 mg (n=6). In the extension parts, 204 patients received 1000 mg of emactuzumab (<xref rid="F1" ref-type="fig">figure 1</xref>). All patients received combination treatment with atezolizumab (1200 mg q3w). The median number of treatment cycles received by patient across all dose levels was four cycles (range: 1–54) for atezolizumab and three cycles (range: 1–52) for emactuzumab. The majority of patients discontinued the study due to progressive disease (PD) (135 patients (61.1%)).</p></sec><sec id="s3-2"><title>Safety</title><p>No DLTs were observed. Dose escalation from 500 to 1350 mg of emactuzumab did not determine an MTD and the OBD was defined as 1000 mg of emactuzumab q3w when combined with 1200 mg atezolizumab q3w.</p><p>Overall, 218 patients (98.6%) experienced 2759 AEs of which 1303 events (47.2%) were considered related to study treatment, and and 157 patients (71.0%) experienced 424≥ grade 3 AEs of which 171 events (40.3%) were ≥grade 3 related AEs (<xref rid="T2" ref-type="table">table 2</xref>). Thirty-four patients (15.4%) discontinued emactuzumab and/or atezolizumab treatment due to an AE and 23 patients (10.4%) were withdrawn from both study dugs due to an AE (<xref rid="SP1" ref-type="supplementary-material">online supplemental table 1</xref>). Four patients (1.8%) died from an AE (generalized edema (unrelated), urinary bladder hemorrhage (unrelated), respiratory distress (unrelated), aspiration pneumonia (unrelated)). The most frequent related AEs included periorbital edema (63 patients (28.5%)), face edema (58 patients (26.2%)), rash (57 patients (25.8%)), fatigue (53 patients (24%)) and pruritus (53 patients (24.0%)). The most frequent related ≥grade 3 AEs included fatigue and rash (14 patients (6.3%) each), asthenia (13 patients (5.9%)) and anemia and aspartate aminotransferase (AST) increased (8 patients (3.6%) each). Additional information on infusion-related reactions, skin toxicity, and liver enzyme elevations is provided in <xref rid="SP1" ref-type="supplementary-material">online supplemental material</xref>.</p><table-wrap position="float" id="T2" orientation="portrait"><label>Table 2</label><caption><p>Summary of adverse events of any grade and of grade ≥3 adverse events</p></caption><table frame="hsides" rules="groups"><thead><tr><td align="left" valign="bottom" rowspan="3" colspan="1">Adverse event</td><td align="left" valign="bottom" colspan="4" rowspan="1">No of patients having an adverse event (%)<break/>N=221</td></tr><tr><td align="left" valign="bottom" colspan="2" rowspan="1">All grades</td><td align="left" valign="bottom" colspan="2" rowspan="1">Grade ≥3</td></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">Irrespective of relationship</td><td align="left" valign="bottom" rowspan="1" colspan="1">Related</td><td align="left" valign="bottom" rowspan="1" colspan="1">Irrespective of relationship</td><td align="left" valign="bottom" rowspan="1" colspan="1">Related</td></tr></thead><tbody><tr><td align="left" valign="top" rowspan="1" colspan="1">Total no of patients with an event</td><td align="char" char="." valign="top" rowspan="1" colspan="1">218 (98.6)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">196 (88.7)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">157 (71.0)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">111 (50.2)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Total no of events</td><td align="char" char="." valign="top" rowspan="1" colspan="1">2759</td><td align="char" char="." valign="top" rowspan="1" colspan="1">1303</td><td align="char" char="." valign="top" rowspan="1" colspan="1">424</td><td align="char" char="." valign="top" rowspan="1" colspan="1">171</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Decreased appetite</td><td align="char" char="." valign="top" rowspan="1" colspan="1">87 (39.4)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">44 (19.9)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">8 (3.6)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">5 (2.3)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Fever</td><td align="char" char="." valign="top" rowspan="1" colspan="1">80 (36.2)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">48 (21.7)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">3 (1.4)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">2 (0.9)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Fatigue</td><td align="char" char="." valign="top" rowspan="1" colspan="1">78 (35.3)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">53 (24.0)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">18 (8.1)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">14 (6.3)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Anemia</td><td align="char" char="." valign="top" rowspan="1" colspan="1">68 (30.8)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">15 (6.8)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">33 (14.9)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">8 (3.6)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Asthenia</td><td align="char" char="." valign="top" rowspan="1" colspan="1">66 (29.9)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">46 (20.8)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">18 (8.1)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">13 (5.9)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Periorbital edema</td><td align="char" char="." valign="top" rowspan="1" colspan="1">65 (29.4)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">63 (28.5)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">3 (1.4)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">3 (1.4)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Face edema</td><td align="char" char="." valign="top" rowspan="1" colspan="1">61 (27.6)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">58 (26.2)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">2 (0.9)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">2 (0.9)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Diarrhea</td><td align="char" char="." valign="top" rowspan="1" colspan="1">59 (26.7)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">33 (14.9)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">3 (1.4)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">3 (1.4)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Rash</td><td align="char" char="." valign="top" rowspan="1" colspan="1">59 (26.7)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">57 (25.8)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">14 (6.3)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">14 (6.3)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Nausea</td><td align="char" char="." valign="top" rowspan="1" colspan="1">56 (25.3)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">25 (11.3)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">4 (1.8)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">0</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Pruritus</td><td align="char" char="." valign="top" rowspan="1" colspan="1">56 (25.3)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">53 (24.0)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">5 (2.3)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">5 (2.3)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Dyspnea</td><td align="char" char="." valign="top" rowspan="1" colspan="1">51 (23.1)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">11 (5.0)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">7 (3.2)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">0</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Eyelid edema</td><td align="char" char="." valign="top" rowspan="1" colspan="1">43 (19.5)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">43 (19.5)</td><td align="left" valign="top" rowspan="1" colspan="1"/><td align="char" char="." valign="top" rowspan="1" colspan="1">3 (1.4)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Cough</td><td align="char" char="." valign="top" rowspan="1" colspan="1">42 (19.0)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">12 (5.4)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">1 (0.5)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">1 (0.5)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Aspartate aminotransferase increased</td><td align="char" char="." valign="top" rowspan="1" colspan="1">39 (17.6)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">28 (12.7)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">12 (5.4)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">8 (3.6)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Constipation</td><td align="char" char="." valign="top" rowspan="1" colspan="1">39 (17.6)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">6 (2.7)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">0</td><td align="char" char="." valign="top" rowspan="1" colspan="1">0</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Edema peripheral</td><td align="char" char="." valign="top" rowspan="1" colspan="1">34 (15.4)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">26 (11.8)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">3 (1.4)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">0</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Vomiting</td><td align="char" char="." valign="top" rowspan="1" colspan="1">31 (14.0)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">10 (4.5)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">1 (0.5)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">0</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Abdominal pain</td><td align="char" char="." valign="top" rowspan="1" colspan="1">27 (12.2)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">3 (1.4)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">3 (1.4)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">1 (0.5)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Headache</td><td align="char" char="." valign="top" rowspan="1" colspan="1">25 (11.3)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">12 (5.4)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">2 (0.9)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">1 (0.5)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Lacrimation increased</td><td align="char" char="." valign="top" rowspan="1" colspan="1">23 (10.4)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">21 (9.5)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">0</td><td align="char" char="." valign="top" rowspan="1" colspan="1">0</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Dry skin</td><td align="char" char="." valign="top" rowspan="1" colspan="1">23 (10.4)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">17 (7.7)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">0</td><td align="char" char="." valign="top" rowspan="1" colspan="1">0</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Chills</td><td align="char" char="." valign="top" rowspan="1" colspan="1">22 (10.0)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">13 (5.9)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">0</td><td align="char" char="." valign="top" rowspan="1" colspan="1">0</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Hypophosphatemia</td><td align="char" char="." valign="top" rowspan="1" colspan="1">22 (10.0)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">3 (1.4)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">18 (8.1)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">2 (0.9)</td></tr></tbody></table><table-wrap-foot><fn id="T2_FN1"><p>For overall adverse events, only adverse events of any grade reported by &gt;10% of patients are shown.</p></fn></table-wrap-foot></table-wrap><p>Altogether, 13 of 221 patients (6%) were tested positive for anti-emactuzumab antibodies. The development of antiemactuzumab antibodies was not dose-dependent and its presence was not associated with clinical signs or symptoms of immunogenicity, such as anaphylaxis, cytokine release syndrome, or non-acute reactions secondary to immune complex formation.</p></sec><sec id="s3-3"><title>PK analysis</title><p>Systemic exposure of emactuzumab following administration of emactuzumab (1000 mg and 1350 mg) in combination with atezolizumab, was similar to the systemic exposure observed for emactuzumab alone.<xref rid="R18" ref-type="bibr">18</xref> Systemic exposure (AUClast) showed a greater than dose-proportional increase from 500 mg to 1000 mg, accompanied by a decline in total clearance (range: 1000–510 mL/day), indicating that the elimination of emactuzumab was predominantly target-mediated following 500 mg q3w. Above 1000 mg, exposure increased in an approximately dose-proportional manner, indicating that target-mediated elimination was saturated. Additionally, PK data of atezolizumab showed no changes in systemic exposure when given with increasing doses of emactuzumab.</p></sec><sec id="s3-4"><title>Clinical activity</title><p>Overall, the objective response rate (ORR) for 221 enrolled patients was 7.7% and the disease control rate (ie, % stable disease (SD)+partial response (PR)+complete response (CR)) was 43.2% (<xref rid="T3" ref-type="table">table 3</xref>).</p><table-wrap position="float" id="T3" orientation="portrait"><label>Table 3</label><caption><p>Tumor response to treatment (per investigator assessment)</p></caption><table frame="hsides" rules="groups"><thead><tr><td align="left" valign="bottom" rowspan="2" colspan="1">No of patients (%) with respective assessment</td><td align="left" valign="bottom" rowspan="1" colspan="1">Overall</td><td align="left" valign="bottom" rowspan="1" colspan="1">Group 4:</td><td align="left" valign="bottom" colspan="3" rowspan="1">Group 5<break/>ICB-experienced patients</td></tr><tr><td align="left" valign="bottom" rowspan="1" colspan="1">N=221</td><td align="left" valign="bottom" rowspan="1" colspan="1">UBC<break/>N=40</td><td align="left" valign="bottom" rowspan="1" colspan="1">MEL<break/>N=18</td><td align="left" valign="bottom" rowspan="1" colspan="1">NSCLC*<break/>N=40</td><td align="left" valign="bottom" rowspan="1" colspan="1">UBC<break/>N=12</td></tr></thead><tbody><tr><td align="left" valign="top" rowspan="1" colspan="1">Complete response (CR)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">3 (1.4)†</td><td align="char" char="." valign="top" rowspan="1" colspan="1">1 (2.5)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">0</td><td align="char" char="." valign="top" rowspan="1" colspan="1">0</td><td align="char" char="." valign="top" rowspan="1" colspan="1">0</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Partial response (PR)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">14 (6.4)†</td><td align="char" char="." valign="top" rowspan="1" colspan="1">3 (7.5)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">1 (5.6)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">5 (12.5)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">1 (8.3)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Stable disease</td><td align="char" char="." valign="top" rowspan="1" colspan="1">78 (35.5)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">16 (40.0)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">8 (44.4)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">14 (35.0)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">4 (33.3)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Progressive disease</td><td align="char" char="." valign="top" rowspan="1" colspan="1">102 (46.4)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">18 (45.0)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">7 (38.9)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">20 (50.0)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">6 (50.0)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Missing or unevaluable‡</td><td align="char" char="." valign="top" rowspan="1" colspan="1">23 (10.5)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">2 (5.0)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">2 (11.1)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">1 (2.5)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">1 (8.3)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Objective response rate</td><td align="char" char="." valign="top" rowspan="1" colspan="1">17 (7.7)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">4 (10.0)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">1 (5.6)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">5 (12.5)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">1 (8.3)</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Disease control rate</td><td align="char" char="." valign="top" rowspan="1" colspan="1">95 (43.2)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">20 (50.0)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">9 (50.0)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">19 (47.5)</td><td align="char" char="." valign="top" rowspan="1" colspan="1">5 (41.7)</td></tr></tbody></table><table-wrap-foot><fn id="T3_FN1"><p>Investigator-based RECIST assessment</p></fn><fn id="T3_FN2"><p>*Histology was: 31 patients (77.5%) with adenocarcinoma, 7 patients (17.5%) with squamous carcinoma and 1 (2.5%) each with an undifferentiated or unspecified carcinoma.</p></fn><fn id="T3_FN3"><p>†Two additional patients experienced pseudoprogression but turned into responders afterwards with a PR and CR, respectively.</p></fn><fn id="T3_FN4"><p>‡Patients were classified as missing or unevaluable if no post-baseline response assessments were available or all postbaseline response assessments were unevaluable.</p></fn><fn id="T3_FN5"><p>ICB, immune checkpoint blocker; MEL, melanoma; N, number of patients; NSCLC, non-small cell lung cancer; UBC, urothelial bladder cancer.</p></fn></table-wrap-foot></table-wrap><p>After dose escalation, the study set out to determine the ORR in signal-seeking cohorts of dedicated tumor indications in extension cohorts 1–3. The response rates by tumor type were as follows: TNBC (0/17 patients), UBC (3/13 patients (23%)), OvCa (0/17 patients), GC (2/20 patients (10%)), CRC (0/11 patients) and STS (1/17 patients (5.9%)). Some patients achieved durable responses that lasted up to 47 months. Moreover, two patients developed a PR (OvCa) and a CR (UBC) after initial pseudoprogression (<xref rid="SP1" ref-type="supplementary-material">online supplemental figure 1a</xref>). Therefore, we decided to enroll a larger cohort of metastatic UBC patients naïve to ICB treatment. Here, the ORR was 9.8% in 40 patients (<xref rid="T3" ref-type="table">table 3</xref>, <xref rid="F2" ref-type="fig">figure 2A</xref>, <xref rid="SP1" ref-type="supplementary-material">online supplemental figure 1b</xref>). The response duration of the patient with a CR was 7.0 months and the median duration of the three PR patients was 5.6 months (range: 2.8–8.4 months) (<xref rid="SP1" ref-type="supplementary-material">online supplemental figure 1</xref>). Median progression-free survival (PFS) was 2.5 months (range: 0–28.4 months).</p><fig position="float" id="F2" orientation="portrait"><label>Figure 2</label><caption><p>Waterfall plot based on RECIST criteria per investigator assessment (A) ICB-naïve UBC patients (B) ICB-experienced melanoma patients (C) ICB-experienced NSCLC patients (D) ICB-experienced UBC patients. ICB, immune checkpoint blocker; NSCLC, non-small cell lung cancer; UBC, urothelial bladder cancer.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="jitc-2021-004076f02.jpg"/></fig><p>Interestingly, one PD-L1-negative (archival biopsy) UBC patient from the signal-seeking Expansion Cohort 1 who progressed on a previous atezolizumab treatment achieved a CR in this trial. Consequently, the protocol was amended to allow enrolment of ICB-experienced patients from three indications (MEL, NSCLC and UBC) in cohort 5. Response rates of prior ICB treatment were 0% (MEL), 15.0% NSCLC) and 33.3% (UBC), respectively (<xref rid="T1" ref-type="table">table 1</xref>). In the current study, the ORR was 5.6%, 12.5% and 8.3% for MEL (n=18), NSCLC (n=40) and UBC (n=12), respectively (<xref rid="T3" ref-type="table">table 3</xref>, <xref rid="F2" ref-type="fig">figure 2B–D</xref>, <xref rid="SP1" ref-type="supplementary-material">online supplemental figure 1c–e</xref>). The response duration of the MEL patient was 16.8 months, the median response duration of the five NSCLC patients 6.2 months (range: 2.7 to 14.5 months) and of the UBC patient 32.6 months (<xref rid="SP1" ref-type="supplementary-material">online supplemental figure 1c–e</xref>). Two patients with durable SD (9.2 and 7.0 months) were seen in the NSCLC cohort. Median PFS was 2.8 months (range: 0.7–23.6 months) for MEL, 2.6 months (range: 0.5–20.2 months) for NSCLC and 1.6 month (range: 0–35.1 months) for UBC. Based on the limited clinical activity seen in ICB-experienced patients further enrolment into cohort 5 was stopped prematurely.</p><p>To further assess covariates of response for the overall population, the presence of liver metastases, baseline lactate dehydrogenase levels, previous radiation therapy, PD-L1 status and response to previous anti-PD-1 therapy were explored (<xref rid="T1" ref-type="table">table 1</xref>) but did not show any prognostic relevance (data not shown).</p></sec><sec id="s3-5"><title>Biomarker analysis</title><p>An extensive pharmacodynamic analysis was performed within the extension cohorts of ICB-naïve UBC patients and in ICB-experienced MEL, NSCLC and UBC patients.</p><sec id="s3-5-1"><title>PD-L1 status in ICB-naïve Ubc patients and ICB-experienced patients</title><p>In ICB-naïve UBC patients, PD-L1 immune cell (IC) and PD-L1 tumor cell (TC) status was evaluated in 34 patients. PD-L1 expression was neither detectable on immune nor TCs in 85.3% of cases. The highest PD-L1 scores for IC expression were IC1 (5/34 patients (12.2%)), TC1 (3/34 patients (8.8%)) and TC2 (2/34 patients (5.9%)) (<xref rid="T1" ref-type="table">table 1</xref>).</p><p>ICB-experienced patients generally displayed higher PD-L1 IC scores: UBC patients (IC1 in 4/9 patients (44.4%) and IC2 in 1/9 patients (11.1%)), MEL patients (IC1 in 3/14 patients (21.4%) and IC2 in 2/14 patients (14.3%)) and NSCLC patients (IC1 in 7/23 patients (30.4%), IC2 in 3/23 patients (13.0%) and IC3 in 3/23 patients (13.0%)) (<xref rid="T1" ref-type="table">table 1</xref>).</p></sec><sec id="s3-5-2"><title>IC profile and pharmacodynamic changes in ICB-naïve Ubc patients</title><p>First, the baseline TAM and infiltrating T lymphocytes (TIL) densities were analyzed and the median percentage change of the PD group (PD) vs the non-PD group (non-PD defined as patients with SD, PR or CR) are reported. Pretreatment baseline TAM densities did not differ significantly (5.7% vs 6.3% for CSF-1R+TAM and 1.8% vs 2.9% for CD163 +TAM in the PD and non-PD, respectively; <xref rid="SP1" ref-type="supplementary-material">online supplemental figure 2a</xref>). Similarly, proliferating Ki67 +CD8+T cell densities remained unaltered (8.2 in the PD vs 11.1 cells/mm<sup>2</sup> in the non-PD; <xref rid="SP1" ref-type="supplementary-material">online supplemental figure 2b</xref>). However, the non-PD group was characterized by significantly higher total CD8 +T cell infiltrate at baseline (122.1 in the PD vs 300.8 cells/mm<sup>2</sup> in the non-PD; p=0.0201; <xref rid="SP1" ref-type="supplementary-material">online supplemental figure 2b</xref>). Notably, the single CR patient had the highest total CD8 +T cell density. The overall CD8 +T cell vs CD163 +TAM ratio was higher in the non-PD group at baseline (23.6% in the PD vs 70.5% in the non-PD) but this did not reach statistical significance (<xref rid="SP1" ref-type="supplementary-material">online supplemental figure 2c</xref>).</p><p>Next, we assessed pharmacodynamic activity of the combination treatment by comparing baseline to the matched on-treatment biopsy samples. We observed a marked decrease of CSF-1R+and CD163+TAMs (<xref rid="F3" ref-type="fig">figure 3A, B</xref>). The median change of CSF-1R+cells was comparable in the PD (−80%) and in the non-PD (−72%, p=0.11, <xref rid="F3" ref-type="fig">figure 3A</xref>). Interestingly, although not statistically significant, the median change of CD163 +TAMs was lower in the non-PD (−28%) compared with the PD (−63%; p=0.25; <xref rid="F3" ref-type="fig">figure 3B</xref>). We further assessed effects on proliferating Ki67 +CD8+and total CD8 +T cells. In contrast to single agent emactuzumab-treated patients,<xref rid="R18" ref-type="bibr">18</xref> we detected an increase in proliferating Ki67 +CD8+ and total CD8 +T cells in both groups (<xref rid="F3" ref-type="fig">figure 3C, D</xref>). The Ki67 +CD8+T cell density increased significantly in the non-PD (+396%) compared with the PD group (+85%, p=0.04) in contrast to the total CD8 +T cells (non-PD +131% vs PD +92%, p=0.70; <xref rid="F3" ref-type="fig">Figure 3C, D</xref> and <xref rid="SP1" ref-type="supplementary-material">online supplemental figure 3</xref>). The median change of FOXP3 +Treg cells in the PD was −2% and in the non-PD +31% (p=0.72, <xref rid="F3" ref-type="fig">figure 3E</xref> and <xref rid="SP1" ref-type="supplementary-material">online supplemental figure 3</xref>). Within the non-PD group, no relevant differences between PR/CR patients versus SD patients were detectable.</p><fig position="float" id="F3" orientation="portrait"><label>Figure 3</label><caption><p>Change from baseline of tumor-associated macrophages and tumor-infiltrating T cells in paired biopsies and comparison of progressive disease patients versus non-progressive disease patients in the UBC ICB-naïve cohort. Clinical responses are indicated. CR, complete response; ICB, immune checkpoint blocker; PD, progressive disease; PR, partial response; SD, stable disease; UBC, urothelial bladder cancer.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="jitc-2021-004076f03.jpg"/></fig><p>Next, we compared the ratios of proliferating Ki67 +CD8+or total CD8 +T cells vs CD163 +TAMs in pretreatment and on-treatment samples. An increase was observed for the total CD8 +T cell to TAM ratio (+179% in the PD and +277% in the non-PD) and an even more pronounced elevation of the proliferating Ki67 +CD8+T cell to TAM ratio (+576% in the PD and +586% in the non-PD, <xref rid="F3" ref-type="fig">figure 3F, G</xref> and <xref rid="SP1" ref-type="supplementary-material">online supplemental figure 3</xref>). Similar to the heightened total CD8 +T cell to TAM ratio, we also observed an increased total CD8+/FOXP3 +ratio in both groups (+92% in the PD and +63% in the non-PD, <xref rid="F3" ref-type="fig">figure 3I</xref>). Despite the numerical difference in proliferating Ki67 +CD8+T cells vs FOXP3 +Treg cells between the non-PD (+14%) and PD group (+144%, <xref rid="F3" ref-type="fig">figure 3H</xref> and <xref rid="SP1" ref-type="supplementary-material">online supplemental figure 3</xref>) statistical significance was not reached (p=0.56). Of note, when applying different response criteria, that is, time on treatment &lt;6 months versus &gt;6 months, we did not observe substantial differences or derive different conclusions as compared with the above described results (data not shown).</p></sec><sec id="s3-5-3"><title>IC profile and pharmacodynamic changes in ICB-experienced patients</title><p>Pretreatment biopsies of ICB-naïve UBC patients and ICB-experienced patients were analyzed to investigate if prior ICB treatment altered the tumor IC infiltrate. Indeed, we detected higher CD163 +TAM and total CD8 +T cell densities in ICB-experienced patients compared with ICB-naïve UBC patients at baseline (<xref rid="F4" ref-type="fig">figure 4</xref>) of which the increase in proliferating Ki67 +CD8+and total CD8 +T cells was more pronounced (<xref rid="F4" ref-type="fig">figure 4C, D</xref>). ICB-experienced NSCLC and MEL patients showed a trend for higher CSF1R+and CD163+TAM infiltrates compared with ICB-naïve UBC patients at baseline (<xref rid="F4" ref-type="fig">figure 4A, B</xref>). The Ki67 +CD8+versus the CD163 +TAM ratio was slightly elevated in ICB-experienced patients versus ICB-naïve UBC patients in contrast to the total CD8 +T cell versus CD163 +TAM ratio which was only elevated for the ICB-experienced UBC patients (<xref rid="F4" ref-type="fig">figure 4E, F</xref>). No overt differences were detected for proliferating Ki67 +CD8+versus FOXP3 +Treg cells and total CD8 +T cells versus FOXP3 +Treg cells (<xref rid="F4" ref-type="fig">figure 4G, H</xref>).</p><fig position="float" id="F4" orientation="portrait"><label>Figure 4</label><caption><p>Baseline comparison of tumor-associated macrophages and tumor-infiltrating T cells and comparison of progressive disease (PD) patients versus non-PD patients in the ICB-naïve UBC and in the ICB-experienced UBC, NSCLC and MEL cohort. Clinical responses are indicated. ICB, immune checkpoint blocker; MEL, melanoma; NSCLC, non-small cell lung cancer; PR, partial response; SD, stable disease; UBC, urothelial bladder cancer.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="jitc-2021-004076f04.jpg"/></fig><p>Due to the low number of evaluable on-treatment biopsies in the ICB-experienced MEL (n=9) and UBC (n=5) cohorts, an analysis of pharmacodynamic changes in the tumor tissue was not performed. Paired tumor biopsies of ICB-experienced NSCLC patients were compared between PD versus non-PD groups to discover potential response prediction markers (<xref rid="SP1" ref-type="supplementary-material">online supplemental figure 4</xref>). No significant difference between the two response groups in ICB-experienced NSCLC patients were observed. However, a less pronounced reduction of CSF-1R+TAMs (median change: −28% in the PD and −66% in the non-PD; <xref rid="SP1" ref-type="supplementary-material">online supplemental figure 4a</xref>), (<xref rid="SP1" ref-type="supplementary-material">online supplemental figure 5</xref>) and CD163 +TAMs (median change: −30% in the PD and −32% in non-PD; <xref rid="SP1" ref-type="supplementary-material">online supplemental figure 4b</xref>), (<xref rid="SP1" ref-type="supplementary-material">online supplemental figure 5</xref>) was seen compared with the ICB-naïve UBC patients (<xref rid="F3" ref-type="fig">figure 3A, B</xref> and <xref rid="SP1" ref-type="supplementary-material">online supplemental figure 3</xref>). Interestingly, patients with a PR showed an increase or almost stable number of CD163 +TAMs pretreatment and on-treatment in comparison to SD patients that showed a decrease (<xref rid="SP1" ref-type="supplementary-material">online supplemental figure 4b</xref>). For CSF-1R+TAMs, both evaluable PR patients showed a reduction from screening to on-treatment assessment (<xref rid="SP1" ref-type="supplementary-material">online supplemental figure 4a</xref>).</p><p>Proliferating Ki67 +CD8+T cells (+37% in the PD vs +128% in the non-PD, (<xref rid="SP1" ref-type="supplementary-material">online supplemental figure 4c</xref>, <xref rid="SP1" ref-type="supplementary-material">online supplemental figure 5</xref>) and total CD8 +infiltrates slightly increased on combination treatment (+23% in the PD vs +30% in the non-PD, (<xref rid="SP1" ref-type="supplementary-material">online supplemental figure 4d</xref>, <xref rid="SP1" ref-type="supplementary-material">online supplemental figure 5</xref>). FOXP3 +Treg cells decreased in the PD by −33% and increased in the non-PD by +142%. Notably, as observed for CD163 +TAMs, both patients with a PR showed stable numbers or an increase in FOXP3 +Treg cells on treatment (<xref rid="SP1" ref-type="supplementary-material">online supplemental figure 4e</xref>, <xref rid="SP1" ref-type="supplementary-material">online supplemental figure 5</xref>).</p><p>We did not observe a significant difference between the ratio of total CD8 +T cells or proliferating Ki67 +CD8+T cells to CD163 +TAM cell density in both the PD and non-PD (<xref rid="SP1" ref-type="supplementary-material">online supplemental figure 4f, g</xref>). The patients with PR in the non-PD showed no significant increase or even a decrease in total CD8 +vs CD163 +TAM ratios (<xref rid="SP1" ref-type="supplementary-material">online supplemental figure 4f, g</xref>). The total CD8 +T cells vs FOXP3 +cell ratio increased by +102% in the PD vs a decrease of −5% in the non-PD (<xref rid="SP1" ref-type="supplementary-material">online supplemental figure 4i</xref>). The proliferating Ki67 +CD8+vs FOXP3 cell ratio in the PD showed an increase of +785% vs a decrease of −12% in the non-PD (<xref rid="SP1" ref-type="supplementary-material">online supplemental figure 4h</xref>).</p></sec><sec id="s3-5-4"><title>The increase of total CD8+ T cells is associated with less CD163+ TAM reduction in ICB-naïve patients</title><p>To assess if the decrease of TAMs is directly associated with an increase of CD8 +T cells, we performed a pairwise comparison of the individual pharmacodynamic effects. We investigated the change of CD163 +or CSF-1R+TAMs versus total CD8 +T cells or proliferating Ki67 +CD8+T cells in the ICB-naïve UBC cancer patients (<xref rid="SP1" ref-type="supplementary-material">online supplemental figure 6</xref>). Surprisingly, those samples with less pronounced decrease in CD163 +TAMs showed more pronounced increases in the respective CD8 +T cell populations (<xref rid="SP1" ref-type="supplementary-material">online supplemental file 6a, b</xref>). The CSF-1R+TAM vs CD8 +T cell populations showed a moderate to strong correlation for the same effect (<xref rid="SP1" ref-type="supplementary-material">online supplemental figure 6c, d</xref>).</p></sec></sec></sec><sec sec-type="discussion" id="s4"><title>Discussion</title><p>This is the first study to investigate the concomitant blockade of CSF-1R and PD-L1 in advanced solid tumor patients naive or experienced to prior ICB treatment with a comprehensive biomarker program. The emactuzumab OBD was defined as 1000 mg in combination with 1200 mg atezolizumab every 3 weeks. This combination therapy appears to be safe and tolerable with manageable AEs. Overall 11.3% of patients experienced related Grade≥3 AEs. This is comparable to atezolizumab monotherapy for which 11% to 12.6% of patients experienced related grade ≥3 AEs<xref rid="R19" ref-type="bibr">19 27</xref> and emactuzumab monotherapy for which 14% of patients experienced related grade ≥3 AEs.<xref rid="R18" ref-type="bibr">18</xref> Events such as skin rash, liver enzyme elevation and edema were common and reversible in patients treated in this study as shown previously for emactuzumab monotherapy<xref rid="R17" ref-type="bibr">17 18 28</xref> and can be considered pharmacodynamic effects of the treatment with emactuzumab. Similar toxicities were seen for other anti-CSF-1R/PD-1 combination treatments.<xref rid="R29" ref-type="bibr">29–34</xref>
+</p><p>ICBs are now standard treatment options with response rates to single agent PD-1/PD-L1 mAbs ranging from 10% to 30% across a number of solid malignancies including NSCLC, UBC and MEL<xref rid="R35" ref-type="bibr">35–41</xref> but can be increased to 60% when combined with CTLA4 blockade in MEL. However, this increased therapeutic benefit comes at the price of significantly increased toxicity.<xref rid="R42" ref-type="bibr">42 43</xref>
+</p><p>Inflamed tumor types with pre-existing immunity such as UBC, OvCa, GC and STS derive durable clinical benefit from checkpoint blockade. ICB-naïve, platinum-pretreated UBC patients treated with atezolizumab achieved an ORR of 15%<xref rid="R20" ref-type="bibr">20</xref> compared with 9.8% in the current study. This difference in clinical activity may originate from a lack of PD-L1 expression in the current study while Rosenberg <italic toggle="yes">et al</italic> comprised patients with a 2 or 3 IC score in 33% of primary tumor and 28% in metastatic tumor samples.</p><p>After failure of ICBs, patients are in need of new treatment options. This is the first study to investigate an anti-PD-L1/CSF-1R combination in patients who progressed on a previous ICB therapy. As one of the UBC patients, initially refractory to atezolizumab therapy, achieved a CR with the addition of emactuzumab to atezolizumab, we initiated dedicated patient cohorts including altogether 70 ICB-experienced patients. ORRs of 5.6%, 12.5% and 8.3% for ICB-experienced MEL, NSCLC and UBC patients were achieved, respectively. Strikingly, some exceptional responses were very durable of up to 17 months. In particular, anti-PD-1/PD-L1 mAb-refractory or relapsed NSCLC patients showed a higher clinical benefit rate (5 out of 40 patients (12.5%) with a PR) than reported for other dual CSF1R/PD-1 blocking therapies for NSCLC in the PD-1/PD-L1 relapsed or refractory setting. While AMG 820 in combination with pembrolizumab reported 1 out of 19 patients (5.3%) with a PR,<xref rid="R32" ref-type="bibr">32</xref> LY3022855 combined with durvalumab lacked objective responses in 19 NSCLC patients.<xref rid="R34" ref-type="bibr">34</xref> For LY3022855 a threefold higher ADA rate was reported in comparison to emacutuzmab that may result in reduced clinical activity.<xref rid="R34" ref-type="bibr">34</xref> Another potential explanation for the higher clinical activity of the emactuzumab combination may lie in the PD-L1 rather than PD-1 mAb combination partner. In agreement with our observation that TAMs are less susceptible to depletion in ICB-experienced patients, it is conceivable that the PD-L1 and CSF-1R mAbs bind both to persisting TAMs and mediate downstream signaling and ultimately TAM reprogramming. In line with this hypothesis is the notion of increased activated TILs in patients who lacked CD163 +TAM depletion. It is important to note that ICB-experienced RCC, MEL and NSCLC patients who progressed and were later retreated with PD-1 or PD-L1 mAbs achieved no objective responses.<xref rid="R44" ref-type="bibr">44–46</xref>
+</p><p>Furthermore, we observed that tumors of ICB-experienced patients had higher baseline IC infiltrates though this comparison is limited to ICB-naïve UBC patients. This increased infiltrate together with less depletion of CD163 +TAMs tempts us to speculate that especially in the PD-1 mAb-treated NSCLC tissue T cell-derived cytokines and locally produced granulocyte-macrophage CSF may act in concert to shape the TAM infiltrate towards lower dependence on CSF-1 as a survival signal and a more proinflammatory phenotype.<xref rid="R47" ref-type="bibr">47</xref> However, we were not able to identify any concrete TAM marker or immunosuppressive cell populations that were predicting clinical response to the combination treatment. Also, the magnitude of TAM depletion in the tumor microenvironment was not associated with the magnitude of CD8 +TIL increase and clinical benefit of patients. When assessing TAMs in the ICB-naïve UBC cohort, we observed a trend for a less pronounced reduction of CD163 +TAMs in the responders compared with the non-responders while CSF-1R+TAM reduction was similar in all patients.</p><p>Despite the less pronounced TAM depletion observed for the emactuzumab and atezolizumab combination in contrast to emactuzumab monotherapy and emactuzumab plus chemotherapy combination,<xref rid="R18" ref-type="bibr">18</xref> this study has several limitations that restricted us to fully characterize the underlying biology and therapeutic contribution. First and foremost, we cannot clearly differentiate between specific pharmacodynamic and clinical effects of emactuzumab and atezolizumab as no monotherapy arm was part of this phase 1 study. The study was not designed for an in-depth comparison of potential additive effects of emactuzumab but, due to the nature of this phase 1 trial, aimed to demonstrate a preliminary signal of improved clinical activity as compared with historical single agent atezolizumab. Second, the study was an all comer study regarding the PD-L1 status and not powered for retrospective stratification based on PD-L1 positivity. Hence, the unexpectedly low overall PD-L1 positivity observed in this study confounds the interpretation of adding emactuzumab in a PD-L1-positive population that is known to have an increased clinical activity with atezolizumab monotherapy. Furthermore, this study lacks an in-depth profiling of the remaining TAMs to address if they displayed a reprogrammed M1-like TAM phenotype. Molecular reprogramming mechanisms may include emactuzumab-induced pro-inflammatory, type I interferon release<xref rid="R18" ref-type="bibr">18 48</xref> or atezolizumab-induced PD-L1-dependent M1 TAM polarization<xref rid="R49" ref-type="bibr">49 50</xref> or both. Furthermore, in pre-treatment samples, a higher number of CD8 +TILs was not correlated to the TAM content. Interestingly, the observed TIL increase on treatment was higher in the responding patients than in the non-responders reaching statistical significance for the proliferating CD8 +T cells. Whereas emactuzumab alone is unable to induce a substantial T cell infiltrate<xref rid="R18" ref-type="bibr">18</xref> in contrast to atezolizumab monotherapy,<xref rid="R51" ref-type="bibr">51 52</xref> it remains unknown whether the combination has potential additivity. In addition, anti-CSF-1R treatment could lead to better control of early, more undifferentiated peripheral CSF-1R-dependent myeloid cells such as CD14 +monocytes or MDSCs. The latter have been reported as a mechanism of resistance to immune checkpoint inhibitors.<xref rid="R53" ref-type="bibr">53</xref> While we also observed similar monocyte reduction in peripheral blood as in the emactuzumab monotherapy and chemotherapy combination study,<xref rid="R18" ref-type="bibr">18</xref> we did not analyze CD14 expression in the tumor tissue and lack therefore information about the impact of emactuzumab on less differentiated monocyte/MDSC populations as well as, for example, functional changes on CD8 +T cells beyond proliferation.</p><p>In conclusion, the extensive biomarker assessment of individual patient tumor samples at baseline and on treatment revealed a different pattern of TAM depletion compared with emactuzumab monotherapy or chemotherapy combination.<xref rid="R18" ref-type="bibr">18</xref> We observed for the first time a lower magnitude of TAM depletion in general and in particular persisting or minimally reduced CD163 +TAM infiltrates which were associated with clinical benefit. However, we have not yet fully understood why some patients retain their TAM infiltrate and which additional factors are involved that predict clinical benefit for this combination. Further understanding of the underlying biology is warranted in order to understand the full potential of anti-CSF-1R and myeloid cell targeting in the future. Specifically for anti-CSF-1R treatment, we may need to identify patients where CSF-1R-dependent macrophages are the key drivers of primary and secondary immunotherapy resistance. Furthermore, additional therapeutic interventions in combination therapies with PD-1/PD-L1 and CSF-1R inhibitors targeting additional immunosuppressive cells such as T regulatory cells or MDSCs as well as therapies that focus on the redirection and recruitment of new antitumor effector cells may offer new treatment options for patients resistant to checkpoint inhibition. However, since the clinical activity of dual PD-L1 and CSF1R blockade is restricted to a minority of patients in this clinical trial, and criteria are missing to enrich for responsive patients, no further clinical activities are warranted for this specific combination therapy.</p></sec></body><back><ack><p>The authors would like to thank the patients and their families for their participation in this study. Support from the study coordinators is gratefully acknowledged: Sandrine BergéMontamat (Lyon), Jessy Saffore ad Sophie Puech (Toulouse), Aline Lagache (Villejuif), Jennifer Wald, Michael Manos, Danielle Brazel (Harvard), Blessing Agunwamna, Priyanka Kaskebar, Ruthann Gordon, Cassie Pehrson, Nathaniel Gray (New York), Vicky Marler, Donna Brandt, Jackie Rollin (Yale), Jennifer Brown, Chris Pinto (Boston), Esther Ordonez (Madrid), Laia Cano, Andrea Edo Guimera (Barcelona).</p></ack><fn-group><fn fn-type="other"><p><bold>Twitter:</bold> @ValentinaBoni7</p></fn><fn fn-type="other"><p><bold>Contributors:</bold> CG-R, PC, J-PD, AM, MW and DR contributed to the study design, data collection, analyses and interpretation. CG-R, PC, DZ, J-PM, JLPG, FSH, AT, MMG, VB, JPE, NH, RS, DM, SC, SA, CT, J-PD and AM served as clinical investigators at the study sites and conducted the clinical study. A-MJ, WJ, MAC, CR, KK, FM, RC, GB, CW, GM-L, MW, and DR contributed to collection, analyses and interpretation of the data. WJ served as a guarantor for this publication. The primary data were made available to the investigators for independent central review and analyses. The first draft of the manuscript was written by WJ, MW, DR, MAC and CG-R with review and revision by the other coauthors. All authors had full access to all data in the study, made the decision to submit these data for publication, were involved in writing and revising the report, and agreed upon final content of the paper.</p></fn><fn fn-type="other"><p><bold>Funding:</bold> This study was funded by F. Hoffmann–La Roche.</p></fn><fn fn-type="COI-statement"><p><bold>Competing interests:</bold> CG-R: Invited Speaker: BMS, Eisai, Pierre Fabre, Roche/Genentech; Coordinating PI: BMS; Steering Committee Member: BMS; Local PI: Foundation Medicine; Steering Committee Member: Genentech; Research Grant: Roche/Genentech; AM: Stock ownership Pegascy, Hifibio Therapeutics, Shattuck Labs, Centessa Pharmaceuticals; Honoraria: BMS, AstraZeneca/MedImmune, Oncovir; Consulting and advisory activities: Lytix Biopharma, Eisai, Pierre Fabre, AstraZeneca, Servier, Roche, Redx Pharma, Sotio, Innate Pharma, ImCheck Therapeutics, MSD, OSE Immunotherapeutics, HIFIBIO Therapeutics, MedinCell, Centessa Pharmaceuticals; Speaker’s bureau: BMS; Research funding: BMS, Boehringer Ingelheim, Transgene, MSD; Travel expenses: MSD, AstraZeneca; SC: Honoraria: Amgen, AstraZeneca, BMS, EISAI, Janssen, MSD, Novartis and Roche; Principal Investigator of Clinical Trials for: Amgen, MSD, Sanofi Aventis, Transgene; Advisory Board: Alderaan Biotechnology, Amgen, AstraZeneca, Oncovita, Seagen, Ultrahuman; Travel and congress: AstraZeneca, MSD, Roche; Principal/sub-investigator of clinical trials for: Abbvie, Adaptimmune, Adlai Nortye USA Inc, Aduro Biotech, Agios Pharmaceuticals, Amgen, Argen-X Bvba, Astex Pharmaceuticals, Astra Zeneca Ab, Aveo, Basilea Pharmaceutica International Ltd, Bayer Healthcare Ag, Bbb Technologies Bv, Beigene, BicycleTx Ltd, Blueprint Medicines, Boehringer Ingelheim, Boston Pharmaceuticals, Bristol Myers Squibb, Ca, Celgene Corporation, Chugai Pharmaceutical Co, Clovis Oncology, Cullinan-Apollo, Curevac, Daiichi Sankyo, Debiopharm, Eisai, Eisai Limited, Eli Lilly, Exelixis, Faron Pharmaceuticals Ltd, Forma Tharapeutics, Gamamabs, Genentech, Glaxosmithkline, H3 Biomedicine, Hoffmann La Roche Ag, Imcheck Therapeutics, Innate Pharma, Institut De Recherche Pierre Fabre, Iris Servier, Iteos Belgium SA, Janssen Cilag, Janssen Research Foundation, Kura Oncology, Kyowa Kirin Pharm. Dev, Lilly France, Loxo Oncology, Lytix Biopharma As, Medimmune, Menarini Ricerche, Merck Sharp &amp; Dohme Chibret, Merrimack Pharmaceuticals, Merus, Millennium Pharmaceuticals, Molecular Partners Ag, Nanobiotix, Nektar Therapeutics, Novartis Pharma, Octimet Oncology Nv, Oncoethix, Oncopeptides, Orion Pharma, Ose Pharma, Pfizer, Pharma Mar, Pierre Fabre, Medicament, Roche, Sanofi Aventis, Seattle Genetics, Sotio A.S, Syros Pharmaceuticals, Taiho Pharma, Tesaro, Turning Point Therapeutics, Xencor; Research Grants from: Astrazeneca, BMS, Boehringer Ingelheim, GSK, INCA, Janssen Cilag, Merck, Novartis, Pfizer, Roche, SanofiNon-financial support (drug supplied) from Astrazeneca, Bayer, BMS, Boringher Ingelheim, GSK, Medimmune, Merck, NH TherAGuiX, Pfizer, Roche; SA: Speakers bureau: Pfizer, Roche, Sanofi and BMSAdvisory board: Sanofi; PC: Honoraria: Novartis, Roche/Genentech, Amgen, Astra Zeneca, Merck Serono; Research Funding: Novartis, Roche/Genentech, Lilly, lueprint Medicines, Bayer, Astra Zeneca, Celgene, Plexxikon, Abbvie, BMS, Merck Serono, Merck Sharp and Dohme, Taiho Pharmaceutical, Toray Industries, Transgene, Loxo, GSK, Innate Pharma, Janssen; Travel expenses: Roche, Amgen, Novartis, BMS, MSD, Netris Pharma, Bayer, Merck Serono; DZ: Reports research support from: Roche, Astra Zeneca, and Plexxikon; Personal/consultancy fees from Synlogic Therapeutics, GSK, Roche, Xencor, Memgen, Immunos, Celldex, Calidi, and Agenus; J-PM: Advisory board member or speaker with honoraria: Pfizer, Roche, Astra/Zeneca, Bayer, Innate, Merck Serono, Boerhinger, BMS, Novartis, Janssen, Incyte, Cue Biopharma, ALX Oncology, iTEOS, eTheRNATravel expenses: Amgen, BMS, Pfizer, MSDData safety monitoring board with honoraria: Debio, Nanobiotix, Psioxus; Uncompensated advisory role: MSD; JLPG; Research grants and support: Roche, BMS, MSD, Seattle Genetics. Speakers bureau and advisory boards: Roche, BMS, Ipsen, MSD, Seattle Genetics. Travel support: Roche, MSD, BMS; FSH: Consulting: BMS, Merck, EMD Serono, Novartis, Sanofi, Psioxus Therapeutics, Pieris Pharmacutical, Corner Therapeutics, Eisai, Idera, Takeda, Genentech/Roche; Advisory Board: Compass Therapeutics, Apricity Scientific, Pionyr, Torque, Rheos, Bicara, Checkpoint Therapeutics, Bioentre, Gossamer, Iovance; ATG: Personal fees from: Boehringer-Ingelheim, BMS, MSD, Roche, Pfizer, Astra Zeneca, Tesaro-GSK and non-financial support from Boehringer-Ingelheim, Lilly and RocheMaria Martinez Garcia; Research grants and support: Roche, BMS, MSD, Seattle Genetics; Speakers bureau and advisory boards: Roche, BMS, Ipsen, MSD, Seattle Genetics; Travel support: Roche, MSD, BMS; VB: Consulting or Advisory Role: Puma Biotechnology; Ideaya Biosciences; Loxo Therapeutics, CytomX Therapeutics; Guidepoint; Oncoart; Amunix; Institutional financial support for clinical trials from: Abbvie, ACEO, Adaptaimmune, Amcure, AMGEN, AstraZeneca, BMS, Cytomx, GSK, Genentech/Roche, H3, Incyte, Janssen, Kura, Lilly, Loxo, Nektar, Macrogenics, Menarini, Merck, Merus, Nanobiotix, Novartis, Pfizer, PharmaMar, Principia, PUMA, Sanofi, Taiho, Tesaro, BeiGene, Transgene, Takeda, Incyte, Innovio, MSD, PsiOxus, Seattle Genetics, Mersana, GSK, Daiichi, Nektar, Astellas, ORCA, Boston Therapeutics, Dynavax, DebioPharm, Boehringen Ingelheim, Regeneron, Millenium, Synthon, Spectrum, Rigontec, Zenith; JPE: The author declares no potential conflicts of interest. NH: The author declares no potential conflicts of interest. RS: Consultant/advisory boards: Asana Biosciences, AstraZeneca, Bristol-Myers Squibb, Eisai, Iovance, Merck, Novartis, OncoSec, Pfizer, Replimune; Research funding: Amgen, Merck; DM: Consulting and honoraria: BMS, Pfizer, Merck, Alkermes Inc., EMD Serono, Eli Lilly and Company, Iovance, Eisai Inc., Werewolf Therapeutics, Calithera Biosciences; Research support: BMS, Merck, Genentech, Pfizer, Exelixis, X4 Pharma, Alkermes Inc; MAC: Sponsor employee and sponsor stock ownership; A-MJ: Former sponsor employee and has patent issued in the use of emactuzumab; WJ: Sponsor employee and sponsor stock ownership; CR: Former Roche employee and has patent issued in the use of emactuzumab. Consultant for Verseau Therapeutics, Ridgeline Discovery, iOmx Therapeutics AG; KK: Sponsor employee and Roche stocks; GB: Sponsor employee; FM: Sponsor employee; RC: Sponsor employee and Roche stocks; CW: Sponsor consultantGeorgina Meneses-LorenteSponsor employee; MW: Sponsor employee, stock options, and has patent issued in the use of emactuzumab; DR: Sponsor employee, sponsor stock ownership and has patent issued in the use of emactuzumab; J-PD: Consulting/Advisory: Novartis, Roche/Genentech, BMS, MSD; Research funding: Genentech, BMS, MSD, Astra Zeneca, Transgene; CT: Research funding GSK, travel expenses Mundipharma.</p></fn><fn fn-type="other"><p><bold>Provenance and peer review:</bold> Not commissioned; externally peer reviewed.</p></fn><fn fn-type="other"><p><bold>Supplemental material:</bold> This content has been supplied by the author(s). It has not been vetted by BMJ Publishing Group Limited (BMJ) and may not have been peer-reviewed. Any opinions or recommendations discussed are solely those of the author(s) and are not endorsed by BMJ. BMJ disclaims all liability and responsibility arising from any reliance placed on the content. Where the content includes any translated material, BMJ does not warrant the accuracy and reliability of the translations (including but not limited to local regulations, clinical guidelines, terminology, drug names and drug dosages), and is not responsible for any error and/or omissions arising from translation and adaptation or otherwise.</p></fn></fn-group><sec sec-type="data-availability"><title>Data availability statement</title><p>All data relevant to the study are included in the article or uploaded as online supplemental information.</p></sec><sec sec-type="ethics-statement"><title>Ethics statements</title><sec><title>Patient consent for publication</title><p content-type="ethics-consent-to-publish">Not applicable.</p></sec><sec><title>Ethics approval</title><p content-type="ethics-approval">Local ethics committee approval was obtained in 12 centers in Belgium, France, Spain and the USA and all patients provided written informed consent.</p></sec></sec><ref-list><title>References</title><ref id="R1"><label>1</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Cohen</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sznol</surname>
+<given-names>M</given-names>
+</string-name>
+</person-group>. <article-title>Therapeutic combinations of immune-modulating antibodies in melanoma and beyond</article-title>. <source>Semin Oncol</source>
+<year>2015</year>;<volume>42</volume>:<fpage>488</fpage>–<lpage>94</lpage>. <pub-id pub-id-type="doi">10.1053/j.seminoncol.2015.02.014</pub-id>
+<pub-id pub-id-type="pmid">25965368</pub-id></mixed-citation></ref><ref id="R2"><label>2</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Pennock</surname>
+<given-names>GK</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chow</surname>
+<given-names>LQM</given-names>
+</string-name>
+</person-group>. <article-title>The evolving role of immune checkpoint inhibitors in cancer treatment</article-title>. <source>Oncologist</source>
+<year>2015</year>;<volume>20</volume>:<fpage>812</fpage>–<lpage>22</lpage>. <pub-id pub-id-type="doi">10.1634/theoncologist.2014-0422</pub-id>
+<pub-id pub-id-type="pmid">26069281</pub-id><pub-id pub-id-type="pmcid">PMC4492230</pub-id></mixed-citation></ref><ref id="R3"><label>3</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>West</surname>
+<given-names>HJ</given-names>
+</string-name>
+</person-group>. <article-title>JAMA oncology patient page</article-title>. <source>Immune Checkpoint Inhibitors. JAMA Oncol</source>
+<year>2015</year>;<volume>1</volume>:<fpage>115</fpage>.<pub-id pub-id-type="pmid">26182315</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1001/jamaoncol.2015.0137</pub-id></mixed-citation></ref><ref id="R4"><label>4</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>Q-wen</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Liu</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gong</surname>
+<given-names>C-yang</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Prognostic significance of tumor-associated macrophages in solid tumor: a meta-analysis of the literature</article-title>. <source>PLoS One</source>
+<year>2012</year>;<volume>7</volume>:<elocation-id>e50946</elocation-id>. <pub-id pub-id-type="doi">10.1371/journal.pone.0050946</pub-id>
+<pub-id pub-id-type="pmid">23284651</pub-id><pub-id pub-id-type="pmcid">PMC3532403</pub-id></mixed-citation></ref><ref id="R5"><label>5</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Komohara</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Jinushi</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Takeya</surname>
+<given-names>M</given-names>
+</string-name>
+</person-group>. <article-title>Clinical significance of macrophage heterogeneity in human malignant tumors</article-title>. <source>Cancer Sci</source>
+<year>2014</year>;<volume>105</volume>:<fpage>1</fpage>–<lpage>8</lpage>. <pub-id pub-id-type="doi">10.1111/cas.12314</pub-id>
+<pub-id pub-id-type="pmid">24168081</pub-id><pub-id pub-id-type="pmcid">PMC4317877</pub-id></mixed-citation></ref><ref id="R6"><label>6</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Ries</surname>
+<given-names>CH</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Cannarile</surname>
+<given-names>MA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hoves</surname>
+<given-names>S</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Targeting tumor-associated macrophages with anti-CSF-1R antibody reveals a strategy for cancer therapy</article-title>. <source>Cancer Cell</source>
+<year>2014</year>;<volume>25</volume>:<fpage>846</fpage>–<lpage>59</lpage>. <pub-id pub-id-type="doi">10.1016/j.ccr.2014.05.016</pub-id>
+<pub-id pub-id-type="pmid">24898549</pub-id></mixed-citation></ref><ref id="R7"><label>7</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Biswas</surname>
+<given-names>SK</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mantovani</surname>
+<given-names>A</given-names>
+</string-name>
+</person-group>. <article-title>Macrophage plasticity and interaction with lymphocyte subsets: cancer as a paradigm</article-title>. <source>Nat Immunol</source>
+<year>2010</year>;<volume>11</volume>:<fpage>889</fpage>–<lpage>96</lpage>. <pub-id pub-id-type="doi">10.1038/ni.1937</pub-id>
+<pub-id pub-id-type="pmid">20856220</pub-id></mixed-citation></ref><ref id="R8"><label>8</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Ruffell</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Coussens</surname>
+<given-names>LM</given-names>
+</string-name>
+</person-group>. <article-title>Macrophages and therapeutic resistance in cancer</article-title>. <source>Cancer Cell</source>
+<year>2015</year>;<volume>27</volume>:<fpage>462</fpage>–<lpage>72</lpage>. <pub-id pub-id-type="doi">10.1016/j.ccell.2015.02.015</pub-id>
+<pub-id pub-id-type="pmid">25858805</pub-id><pub-id pub-id-type="pmcid">PMC4400235</pub-id></mixed-citation></ref><ref id="R9"><label>9</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Yu</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Green</surname>
+<given-names>MD</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Li</surname>
+<given-names>S</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Liver metastasis restrains immunotherapy efficacy via macrophage-mediated T cell elimination</article-title>. <source>Nat Med</source>
+<year>2021</year>;<volume>27</volume>:<fpage>152</fpage>–<lpage>64</lpage>. <pub-id pub-id-type="doi">10.1038/s41591-020-1131-x</pub-id>
+<pub-id pub-id-type="pmid">33398162</pub-id><pub-id pub-id-type="pmcid">PMC8095049</pub-id></mixed-citation></ref><ref id="R10"><label>10</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Gubin</surname>
+<given-names>MM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Esaulova</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ward</surname>
+<given-names>JP</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>high-dimensional analysis delineates myeloid and lymphoid compartment remodeling during successful immune-checkpoint cancer therapy</article-title>. <source>Cell</source>
+<year>2018</year>;<volume>175</volume>:<elocation-id>1443</elocation-id>. <pub-id pub-id-type="doi">10.1016/j.cell.2018.11.003</pub-id>
+<pub-id pub-id-type="pmid">30445041</pub-id><pub-id pub-id-type="pmcid">PMC6541402</pub-id></mixed-citation></ref><ref id="R11"><label>11</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Neubert</surname>
+<given-names>NJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Schmittnaegel</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bordry</surname>
+<given-names>N</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>T cell-induced CSF1 promotes melanoma resistance to PD1 blockade</article-title>. <source>Sci Transl Med</source>
+<year>2018</year>;<volume>10</volume>. <pub-id pub-id-type="doi">10.1126/scitranslmed.aan3311</pub-id>. [Epub ahead of print: <comment>11 04 2018</comment>].
+<pub-id pub-id-type="pmcid">PMC5957531</pub-id><pub-id pub-id-type="pmid">29643229</pub-id></mixed-citation></ref><ref id="R12"><label>12</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Peranzoni</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lemoine</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Vimeux</surname>
+<given-names>L</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Macrophages impede CD8 T cells from reaching tumor cells and limit the efficacy of anti-PD-1 treatment</article-title>. <source>Proc Natl Acad Sci U S A</source>
+<year>2018</year>;<volume>115</volume>:<fpage>E4041</fpage>–<lpage>50</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.1720948115</pub-id>
+<pub-id pub-id-type="pmid">29632196</pub-id><pub-id pub-id-type="pmcid">PMC5924916</pub-id></mixed-citation></ref><ref id="R13"><label>13</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Zhu</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Knolhoff</surname>
+<given-names>BL</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Meyer</surname>
+<given-names>MA</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>CSF1/CSF1R blockade reprograms tumor-infiltrating macrophages and improves response to T-cell checkpoint immunotherapy in pancreatic cancer models</article-title>. <source>Cancer Res</source>
+<year>2014</year>;<volume>74</volume>:<fpage>5057</fpage>–<lpage>69</lpage>. <pub-id pub-id-type="doi">10.1158/0008-5472.CAN-13-3723</pub-id>
+<pub-id pub-id-type="pmid">25082815</pub-id><pub-id pub-id-type="pmcid">PMC4182950</pub-id></mixed-citation></ref><ref id="R14"><label>14</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Shi</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yang</surname>
+<given-names>Q</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>Y</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Modulating the tumor microenvironment via oncolytic viruses and CSF-1R inhibition synergistically enhances anti-PD-1 immunotherapy</article-title>. <source>Mol Ther</source>
+<year>2019</year>;<volume>27</volume>:<fpage>244</fpage>–<lpage>60</lpage>. <pub-id pub-id-type="doi">10.1016/j.ymthe.2018.11.010</pub-id>
+<pub-id pub-id-type="pmid">30527756</pub-id><pub-id pub-id-type="pmcid">PMC6319306</pub-id></mixed-citation></ref><ref id="R15"><label>15</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Ries</surname>
+<given-names>CH</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hoves</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Cannarile</surname>
+<given-names>MA</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>CSF-1/CSF-1R targeting agents in clinical development for cancer therapy</article-title>. <source>Curr Opin Pharmacol</source>
+<year>2015</year>;<volume>23</volume>:<fpage>45</fpage>–<lpage>51</lpage>. <pub-id pub-id-type="doi">10.1016/j.coph.2015.05.008</pub-id>
+<pub-id pub-id-type="pmid">26051995</pub-id></mixed-citation></ref><ref id="R16"><label>16</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Cassier</surname>
+<given-names>PA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Italiano</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gomez-Roca</surname>
+<given-names>CA</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>CSF1R inhibition with emactuzumab in locally advanced diffuse-type tenosynovial giant cell tumours of the soft tissue: a dose-escalation and dose-expansion phase 1 study</article-title>. <source>Lancet Oncol</source>
+<year>2015</year>;<volume>16</volume>:<fpage>949</fpage>–<lpage>56</lpage>. <pub-id pub-id-type="doi">10.1016/S1470-2045(15)00132-1</pub-id>
+<pub-id pub-id-type="pmid">26179200</pub-id></mixed-citation></ref><ref id="R17"><label>17</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Cassier</surname>
+<given-names>PA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Italiano</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gomez-Roca</surname>
+<given-names>C</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Long-term clinical activity, safety and patient-reported quality of life for emactuzumab-treated patients with diffuse-type tenosynovial giant-cell tumour</article-title>. <source>Eur J Cancer</source>
+<year>2020</year>;<volume>141</volume>:<fpage>162</fpage>–<lpage>70</lpage>. <pub-id pub-id-type="doi">10.1016/j.ejca.2020.09.038</pub-id>
+<pub-id pub-id-type="pmid">33161240</pub-id></mixed-citation></ref><ref id="R18"><label>18</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Gomez-Roca</surname>
+<given-names>CA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Italiano</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Le Tourneau</surname>
+<given-names>C</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Phase I study of emactuzumab single agent or in combination with paclitaxel in patients with advanced/metastatic solid tumors reveals depletion of immunosuppressive M2-like macrophages</article-title>. <source>Ann Oncol</source>
+<year>2019</year>;<volume>30</volume>:<fpage>1381</fpage>–<lpage>92</lpage>. <pub-id pub-id-type="doi">10.1093/annonc/mdz163</pub-id>
+<pub-id pub-id-type="pmid">31114846</pub-id><pub-id pub-id-type="pmcid">PMC8887589</pub-id></mixed-citation></ref><ref id="R19"><label>19</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Herbst</surname>
+<given-names>RS</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Soria</surname>
+<given-names>J-C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kowanetz</surname>
+<given-names>M</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Predictive correlates of response to the anti-PD-L1 antibody MPDL3280A in cancer patients</article-title>. <source>Nature</source>
+<year>2014</year>;<volume>515</volume>:<fpage>563</fpage>–<lpage>7</lpage>. <pub-id pub-id-type="doi">10.1038/nature14011</pub-id>
+<pub-id pub-id-type="pmid">25428504</pub-id><pub-id pub-id-type="pmcid">PMC4836193</pub-id></mixed-citation></ref><ref id="R20"><label>20</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Rosenberg</surname>
+<given-names>JE</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hoffman-Censits</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Powles</surname>
+<given-names>T</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Atezolizumab in patients with locally advanced and metastatic urothelial carcinoma who have progressed following treatment with platinum-based chemotherapy: a single-arm, multicentre, phase 2 trial</article-title>. <source>Lancet</source>
+<year>2016</year>;<volume>387</volume>:<fpage>1909</fpage>–<lpage>20</lpage>. <pub-id pub-id-type="doi">10.1016/S0140-6736(16)00561-4</pub-id>
+<pub-id pub-id-type="pmid">26952546</pub-id><pub-id pub-id-type="pmcid">PMC5480242</pub-id></mixed-citation></ref><ref id="R21"><label>21</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Horn</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mansfield</surname>
+<given-names>AS</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Szczęsna</surname>
+<given-names>A</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>First-line atezolizumab plus chemotherapy in extensive-stage small-cell lung cancer</article-title>. <source>N Engl J Med</source>
+<year>2018</year>;<volume>379</volume>:<fpage>2220</fpage>–<lpage>9</lpage>. <pub-id pub-id-type="doi">10.1056/NEJMoa1809064</pub-id>
+<pub-id pub-id-type="pmid">30280641</pub-id></mixed-citation></ref><ref id="R22"><label>22</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Schmid</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Adams</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rugo</surname>
+<given-names>HS</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Atezolizumab and nab-paclitaxel in advanced triple-negative breast cancer</article-title>. <source>N Engl J Med</source>
+<year>2018</year>;<volume>379</volume>:<fpage>2108</fpage>–<lpage>21</lpage>. <pub-id pub-id-type="doi">10.1056/NEJMoa1809615</pub-id>
+<pub-id pub-id-type="pmid">30345906</pub-id></mixed-citation></ref><ref id="R23"><label>23</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Finn</surname>
+<given-names>RS</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Qin</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ikeda</surname>
+<given-names>M</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Atezolizumab plus bevacizumab in unresectable hepatocellular carcinoma</article-title>. <source>N Engl J Med</source>
+<year>2020</year>;<volume>382</volume>:<fpage>1894</fpage>–<lpage>905</lpage>. <pub-id pub-id-type="doi">10.1056/NEJMoa1915745</pub-id>
+<pub-id pub-id-type="pmid">32402160</pub-id></mixed-citation></ref><ref id="R24"><label>24</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>West</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>McCleod</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hussein</surname>
+<given-names>M</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Atezolizumab in combination with carboplatin plus nab-paclitaxel chemotherapy compared with chemotherapy alone as first-line treatment for metastatic non-squamous non-small-cell lung cancer (IMpower130): a multicentre, randomised, open-label, phase 3 trial</article-title>. <source>Lancet Oncol</source>
+<year>2019</year>;<volume>20</volume>:<fpage>924</fpage>–<lpage>37</lpage>. <pub-id pub-id-type="doi">10.1016/S1470-2045(19)30167-6</pub-id>
+<pub-id pub-id-type="pmid">31122901</pub-id></mixed-citation></ref><ref id="R25"><label>25</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Smart</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bröske</surname>
+<given-names>A-M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rüttinger</surname>
+<given-names>D</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>PK/PD mediated dose optimization of Emactuzumab, a CSF1R inhibitor, in patients with advanced solid tumors and diffuse-type Tenosynovial giant cell tumor</article-title>. <source>Clin Pharmacol Ther</source>
+<year>2020</year>;<volume>108</volume>:<fpage>616</fpage>–<lpage>24</lpage>. <pub-id pub-id-type="doi">10.1002/cpt.1964</pub-id>
+<pub-id pub-id-type="pmid">32575160</pub-id><pub-id pub-id-type="pmcid">PMC7589268</pub-id></mixed-citation></ref><ref id="R26"><label>26</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Eisenhauer</surname>
+<given-names>EA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Therasse</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bogaerts</surname>
+<given-names>J</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>New response evaluation criteria in solid tumours: revised RECIST guideline (version 1.1)</article-title>. <source>Eur J Cancer</source>
+<year>2009</year>;<volume>45</volume>:<fpage>228</fpage>–<lpage>47</lpage>. <pub-id pub-id-type="doi">10.1016/j.ejca.2008.10.026</pub-id>
+<pub-id pub-id-type="pmid">19097774</pub-id></mixed-citation></ref><ref id="R27"><label>27</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Fehrenbacher</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Spira</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ballinger</surname>
+<given-names>M</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Atezolizumab versus docetaxel for patients with previously treated non-small-cell lung cancer (POPLAR): a multicentre, open-label, phase 2 randomised controlled trial</article-title>. <source>Lancet</source>
+<year>2016</year>;<volume>387</volume>:<fpage>1837</fpage>–<lpage>46</lpage>. <pub-id pub-id-type="doi">10.1016/S0140-6736(16)00587-0</pub-id>
+<pub-id pub-id-type="pmid">26970723</pub-id></mixed-citation></ref><ref id="R28"><label>28</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Cassier</surname>
+<given-names>PA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Italiano</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gomez-Roca</surname>
+<given-names>CA</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>CSF1R inhibition with emactuzumab in locally advanced diffuse-type tenosynovial giant cell tumours of the soft tissue: a dose-escalation and dose-expansion phase 1 study</article-title>. <source>Lancet Oncol</source>
+<year>2015</year>;<volume>16</volume>:<fpage>949</fpage>–<lpage>56</lpage>. <pub-id pub-id-type="doi">10.1016/S1470-2045(15)00132-1</pub-id>
+<pub-id pub-id-type="pmid">26179200</pub-id></mixed-citation></ref><ref id="R29"><label>29</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Harb</surname>
+<given-names>WA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Johnson</surname>
+<given-names>ML</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Goldman</surname>
+<given-names>JW</given-names>
+</string-name>
+</person-group>. <article-title>Phase 1b/2 dose-escalation study of ARRY-382, an oral inhibitor of colony-stimulating factor-1 receptor (CSF1R), in combination with pembrolizumab for treatment of patients with advanced solid tumors</article-title>. <source>Journal for Immunotherapy of Cancer</source>
+<year>2017</year>;<volume>5</volume>.</mixed-citation></ref><ref id="R30"><label>30</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Wainberg</surname>
+<given-names>Z</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Piha‐Paul</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Luke</surname>
+<given-names>J</given-names>
+</string-name>
+</person-group>. <article-title>First‐in‐human phase 1 dose escalation and expansion of a novel combination, anti–CSF‐1 receptor (cabiralizumab) plus anti– PD‐1 (nivolumab), in patients with advanced solid tumors</article-title>. <source>Journal for ImmunoTherapy of Cancer</source>
+<year>2017</year>;<volume>5</volume>:<fpage>89</fpage>. <pub-id pub-id-type="doi">10.13140/RG.2.2.28962.53443</pub-id>
+</mixed-citation></ref><ref id="R31"><label>31</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Calvo</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Joensuu</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sebastian</surname>
+<given-names>M</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Phase Ib/II study of lacnotuzumab (MCS110) combined with spartalizumab (PDR001) in patients (PTS) with advanced tumors</article-title>. <source>J Clin Oncol</source>
+<year>2018</year>;<volume>36</volume>:<fpage>3014</fpage>. <pub-id pub-id-type="doi">10.1200/JCO.2018.36.15_suppl.3014</pub-id>
+</mixed-citation></ref><ref id="R32"><label>32</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Razak</surname>
+<given-names>AR</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Cleary</surname>
+<given-names>JM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Moreno</surname>
+<given-names>V</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Safety and efficacy of AMG 820, an anti-colony-stimulating factor 1 receptor antibody, in combination with pembrolizumab in adults with advanced solid tumors</article-title>. <source>J Immunother Cancer</source>
+<year>2020</year>;<volume>8</volume>:<fpage>e001006</fpage>. <pub-id pub-id-type="doi">10.1136/jitc-2020-001006</pub-id>
+<pub-id pub-id-type="pmid">33046621</pub-id><pub-id pub-id-type="pmcid">PMC7552843</pub-id></mixed-citation></ref><ref id="R33"><label>33</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Cassier</surname>
+<given-names>PA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Garin</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Eberst</surname>
+<given-names>L</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>MEDIPLEX: a phase 1 study of durvalumab (D) combined with pexidartinib (P) in patients (PTS) with advanced pancreatic ductal adenocarcinoma (PDAC) and colorectal cancer (CRC)</article-title>. <source>JCO</source>
+<year>2019</year>;<volume>37</volume>:<elocation-id>2579</elocation-id>. <pub-id pub-id-type="doi">10.1200/JCO.2019.37.15_suppl.2579</pub-id>
+</mixed-citation></ref><ref id="R34"><label>34</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Falchook</surname>
+<given-names>GS</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Peeters</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rottey</surname>
+<given-names>S</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>A phase 1a/1b trial of CSF-1R inhibitor LY3022855 in combination with durvalumab or tremelimumab in patients with advanced solid tumors</article-title>. <source>Invest New Drugs</source>
+<year>2021</year>;<volume>39</volume>:<fpage>1284</fpage>–<lpage>97</lpage>. <pub-id pub-id-type="doi">10.1007/s10637-021-01088-4</pub-id>
+<pub-id pub-id-type="pmid">33852104</pub-id></mixed-citation></ref><ref id="R35"><label>35</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Borghaei</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Paz-Ares</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Horn</surname>
+<given-names>L</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Nivolumab versus docetaxel in advanced nonsquamous non-small-cell lung cancer</article-title>. <source>N Engl J Med</source>
+<year>2015</year>;<volume>373</volume>:<fpage>1627</fpage>–<lpage>39</lpage>. <pub-id pub-id-type="doi">10.1056/NEJMoa1507643</pub-id>
+<pub-id pub-id-type="pmid">26412456</pub-id><pub-id pub-id-type="pmcid">PMC5705936</pub-id></mixed-citation></ref><ref id="R36"><label>36</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Brahmer</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Reckamp</surname>
+<given-names>KL</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Baas</surname>
+<given-names>P</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Nivolumab versus docetaxel in advanced squamous-cell non-small-cell lung cancer</article-title>. <source>N Engl J Med</source>
+<year>2015</year>;<volume>373</volume>:<fpage>123</fpage>–<lpage>35</lpage>. <pub-id pub-id-type="doi">10.1056/NEJMoa1504627</pub-id>
+<pub-id pub-id-type="pmid">26028407</pub-id><pub-id pub-id-type="pmcid">PMC4681400</pub-id></mixed-citation></ref><ref id="R37"><label>37</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Robert</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Schachter</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Long</surname>
+<given-names>GV</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Pembrolizumab versus ipilimumab in advanced melanoma</article-title>. <source>N Engl J Med</source>
+<year>2015</year>;<volume>372</volume>:<fpage>2521</fpage>–<lpage>32</lpage>. <pub-id pub-id-type="doi">10.1056/NEJMoa1503093</pub-id>
+<pub-id pub-id-type="pmid">25891173</pub-id></mixed-citation></ref><ref id="R38"><label>38</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Bellmunt</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>de Wit</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Vaughn</surname>
+<given-names>DJ</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Pembrolizumab as second-line therapy for advanced urothelial carcinoma</article-title>. <source>N Engl J Med</source>
+<year>2017</year>;<volume>376</volume>:<fpage>1015</fpage>–<lpage>26</lpage>. <pub-id pub-id-type="doi">10.1056/NEJMoa1613683</pub-id>
+<pub-id pub-id-type="pmid">28212060</pub-id><pub-id pub-id-type="pmcid">PMC5635424</pub-id></mixed-citation></ref><ref id="R39"><label>39</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Rittmeyer</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Barlesi</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Waterkamp</surname>
+<given-names>D</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Atezolizumab versus docetaxel in patients with previously treated non-small-cell lung cancer (oak): a phase 3, open-label, multicentre randomised controlled trial</article-title>. <source>Lancet</source>
+<year>2017</year>;<volume>389</volume>:<fpage>255</fpage>–<lpage>65</lpage>. <pub-id pub-id-type="doi">10.1016/S0140-6736(16)32517-X</pub-id>
+<pub-id pub-id-type="pmid">27979383</pub-id><pub-id pub-id-type="pmcid">PMC6886121</pub-id></mixed-citation></ref><ref id="R40"><label>40</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Barlesi</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Vansteenkiste</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Spigel</surname>
+<given-names>D</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Avelumab versus docetaxel in patients with platinum-treated advanced non-small-cell lung cancer (JAVELIN lung 200): an open-label, randomised, phase 3 study</article-title>. <source>Lancet Oncol</source>
+<year>2018</year>;<volume>19</volume>:<fpage>1468</fpage>–<lpage>79</lpage>. <pub-id pub-id-type="doi">10.1016/S1470-2045(18)30673-9</pub-id>
+<pub-id pub-id-type="pmid">30262187</pub-id></mixed-citation></ref><ref id="R41"><label>41</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Powles</surname>
+<given-names>T</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Durán</surname>
+<given-names>I</given-names>
+</string-name>, <string-name name-style="western">
+<surname>van der Heijden</surname>
+<given-names>MS</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Atezolizumab versus chemotherapy in patients with platinum-treated locally advanced or metastatic urothelial carcinoma (IMvigor211): a multicentre, open-label, phase 3 randomised controlled trial</article-title>. <source>Lancet</source>
+<year>2018</year>;<volume>391</volume>:<fpage>748</fpage>–<lpage>57</lpage>. <pub-id pub-id-type="doi">10.1016/S0140-6736(17)33297-X</pub-id>
+<pub-id pub-id-type="pmid">29268948</pub-id></mixed-citation></ref><ref id="R42"><label>42</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Wolchok</surname>
+<given-names>JD</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rollin</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Larkin</surname>
+<given-names>J</given-names>
+</string-name>
+</person-group>. <article-title>Nivolumab and ipilimumab in advanced melanoma</article-title>. <source>N Engl J Med</source>
+<year>2017</year>;<volume>377</volume>:<fpage>2503</fpage>–<lpage>4</lpage>. <pub-id pub-id-type="doi">10.1056/NEJMc1714339</pub-id>
+<pub-id pub-id-type="pmid">29262279</pub-id></mixed-citation></ref><ref id="R43"><label>43</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Larkin</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chiarion-Sileni</surname>
+<given-names>V</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gonzalez</surname>
+<given-names>R</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Five-year survival with combined nivolumab and ipilimumab in advanced melanoma</article-title>. <source>N Engl J Med</source>
+<year>2019</year>;<volume>381</volume>:<fpage>1535</fpage>–<lpage>46</lpage>. <pub-id pub-id-type="doi">10.1056/NEJMoa1910836</pub-id>
+<pub-id pub-id-type="pmid">31562797</pub-id></mixed-citation></ref><ref id="R44"><label>44</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Martini</surname>
+<given-names>DJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lalani</surname>
+<given-names>A-KA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bossé</surname>
+<given-names>D</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Response to single agent PD-1 inhibitor after progression on previous PD-1/PD-L1 inhibitors: a case series</article-title>. <source>J Immunother Cancer</source>
+<year>2017</year>;<volume>5</volume>:<fpage>66</fpage>. <pub-id pub-id-type="doi">10.1186/s40425-017-0273-y</pub-id>
+<pub-id pub-id-type="pmid">28807048</pub-id><pub-id pub-id-type="pmcid">PMC5557522</pub-id></mixed-citation></ref><ref id="R45"><label>45</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Fujita</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Uchida</surname>
+<given-names>N</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yamamoto</surname>
+<given-names>Y</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Retreatment with anti-PD-L1 antibody in advanced non-small cell lung cancer previously treated with anti-PD-1 antibodies</article-title>. <source>Anticancer Res</source>
+<year>2019</year>;<volume>39</volume>:<fpage>3917</fpage>–<lpage>21</lpage>. <pub-id pub-id-type="doi">10.21873/anticanres.13543</pub-id>
+<pub-id pub-id-type="pmid">31262921</pub-id></mixed-citation></ref><ref id="R46"><label>46</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Fujita</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yamamoto</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kanai</surname>
+<given-names>O</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Retreatment with anti-PD-1 antibody in non-small cell lung cancer patients previously treated with anti-PD-L1 antibody</article-title>. <source>Thorac Cancer</source>
+<year>2020</year>;<volume>11</volume>:<fpage>15</fpage>–<lpage>18</lpage>. <pub-id pub-id-type="doi">10.1111/1759-7714.13241</pub-id>
+<pub-id pub-id-type="pmid">31701630</pub-id><pub-id pub-id-type="pmcid">PMC6938769</pub-id></mixed-citation></ref><ref id="R47"><label>47</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Evren</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ringqvist</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Willinger</surname>
+<given-names>T</given-names>
+</string-name>
+</person-group>. <article-title>Origin and ontogeny of lung macrophages: from mice to humans</article-title>. <source>Immunology</source>
+<year>2020</year>;<volume>160</volume>:<fpage>126</fpage>–<lpage>38</lpage>. <pub-id pub-id-type="doi">10.1111/imm.13154</pub-id>
+<pub-id pub-id-type="pmid">31715003</pub-id><pub-id pub-id-type="pmcid">PMC7218405</pub-id></mixed-citation></ref><ref id="R48"><label>48</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Salvagno</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ciampricotti</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Tuit</surname>
+<given-names>S</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Therapeutic targeting of macrophages enhances chemotherapy efficacy by unleashing type I interferon response</article-title>. <source>Nat Cell Biol</source>
+<year>2019</year>;<volume>21</volume>:<fpage>511</fpage>–<lpage>21</lpage>. <pub-id pub-id-type="doi">10.1038/s41556-019-0298-1</pub-id>
+<pub-id pub-id-type="pmid">30886344</pub-id><pub-id pub-id-type="pmcid">PMC6451630</pub-id></mixed-citation></ref><ref id="R49"><label>49</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Lu</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ni</surname>
+<given-names>Z</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Liu</surname>
+<given-names>X</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Beyond T cells: understanding the role of PD-1/PD-L1 in tumor-associated macrophages</article-title>. <source>J Immunol Res</source>
+<year>2019</year>;<volume>2019</volume>:<fpage>1</fpage>–<lpage>7</lpage>. <pub-id pub-id-type="doi">10.1155/2019/1919082</pub-id>
+<pub-id pub-id-type="pmcid">PMC6875348</pub-id><pub-id pub-id-type="pmid">31781673</pub-id></mixed-citation></ref><ref id="R50"><label>50</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Xiong</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mittman</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rodriguez</surname>
+<given-names>R</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Anti-PD-L1 treatment results in functional remodeling of the macrophage compartment</article-title>. <source>Cancer Res</source>
+<year>2019</year>;<volume>79</volume>:<fpage>1493</fpage>–<lpage>506</lpage>. <pub-id pub-id-type="doi">10.1158/0008-5472.CAN-18-3208</pub-id>
+<pub-id pub-id-type="pmid">30679180</pub-id></mixed-citation></ref><ref id="R51"><label>51</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Wallin</surname>
+<given-names>JJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bendell</surname>
+<given-names>JC</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Funke</surname>
+<given-names>R</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Atezolizumab in combination with bevacizumab enhances antigen-specific T-cell migration in metastatic renal cell carcinoma</article-title>. <source>Nat Commun</source>
+<year>2016</year>;<volume>7</volume>:<elocation-id>12624</elocation-id>. <pub-id pub-id-type="doi">10.1038/ncomms12624</pub-id>
+<pub-id pub-id-type="pmid">27571927</pub-id><pub-id pub-id-type="pmcid">PMC5013615</pub-id></mixed-citation></ref><ref id="R52"><label>52</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Powles</surname>
+<given-names>T</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kockx</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rodriguez-Vida</surname>
+<given-names>A</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Clinical efficacy and biomarker analysis of neoadjuvant atezolizumab in operable urothelial carcinoma in the ABACUS trial</article-title>. <source>Nat Med</source>
+<year>2019</year>;<volume>25</volume>:<fpage>1706</fpage>–<lpage>14</lpage>. <pub-id pub-id-type="doi">10.1038/s41591-019-0628-7</pub-id>
+<pub-id pub-id-type="pmid">31686036</pub-id></mixed-citation></ref><ref id="R53"><label>53</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Limagne</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Richard</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Thibaudin</surname>
+<given-names>M</given-names>
+</string-name>, <etal>et al</etal>
+</person-group>. <article-title>Tim-3/galectin-9 pathway and mMDSC control primary and secondary resistances to PD-1 blockade in lung cancer patients</article-title>. <source>Oncoimmunology</source>
+<year>2019</year>;<volume>8</volume>:<elocation-id>e1564505</elocation-id>. <pub-id pub-id-type="doi">10.1080/2162402X.2018.1564505</pub-id>
+<pub-id pub-id-type="pmid">30906658</pub-id><pub-id pub-id-type="pmcid">PMC6422400</pub-id></mixed-citation></ref></ref-list></back></article></pmc-articleset>

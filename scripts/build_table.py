@@ -1089,7 +1089,7 @@ DIMENSION_SECTIONS = [
     ("Missing data", "missing_data_notes"),
     ("Multiplicity", "multiplicity_notes"),
     ("Generalizability", "generalizability_notes"),
-    ("Treg gating / definition", "treg_gating_notes"),
+    ("Gating / definition", "gating_notes"),
     ("Counter-productive mechanisms", "counter_productive_mechanisms"),
     ("Conflict of interest & funding", "coi_funding_notes"),
     ("Spin / framing", "spin_notes"),
@@ -1146,7 +1146,12 @@ def build_critique_page(slug: str, critique: dict) -> str:
     ]
 
     for label, field in DIMENSION_SECTIONS:
-        val = critique.get(field) or "_(not assessed)_"
+        val = critique.get(field)
+        # Legacy fallback: gating_notes may be stored under shieldbreak-specific keys
+        # on older critiques (e.g., treg_gating_notes before the 2026-04-23 rename).
+        if not val and field == "gating_notes":
+            val = critique.get("treg_gating_notes") or critique.get("tam_gating_notes")
+        val = val or "_(not assessed)_"
         lines += [f"### {label}", "", val, ""]
 
     discrepancies = critique.get("extraction_discrepancies") or []
