@@ -91,6 +91,21 @@ In the solid-tumor combination setting (Jinushi 2025) the safety profile
 was reported as manageable with no new signals, but the population is
 small and follow-up is short.
 
+**Counter-productive mechanisms.** CP severity aggregate: **High**
+(paper-internal + replicated). The class concern is **depletion of
+beneficial effectors**: CCR4 is co-expressed on central-memory CD8
+T cells and Th1 effectors, so ADCC against CCR4+ Tregs collaterally
+depletes anti-tumor effectors (flagged 4/4 papers; paper-internal in
+Fujikawa 2023 and Jinushi 2025, external-evidence-only in Roelens 2022
+and Gordon 2025; anchored to Tanaka 2021 *Nat Commun* and Kurose 2015
+preclinical). Fujikawa 2023 authors explicitly argue this "dual
+depletion may cancel anti-tumor immune responses" and tie it to the
+observed minimal clinical benefit, with high-grade lymphopenia in 25%.
+Mitigations seen in the set: CTCL indications where CCR4+ malignant
+cells are themselves a target (Roelens 2022) and IL-15 rescue of
+memory-CD8/NK post-depletion (Gordon 2025, mechanism plausible but not
+directly measured).
+
 **Practical considerations.** Mogamulizumab is FDA-approved for CTCL
 (2018); off-label use in solid tumors is window-of-opportunity /
 investigator-led so far. Combinable with anti-PD-1 (Jinushi 2025) and
@@ -133,6 +148,19 @@ for heightened irAE burden relative to non-Fc-enhanced anti-CTLA-4, but
 head-to-head data are not available in this dataset. BMS-986218 safety
 in Ager 2026 was reported as manageable at the neoadjuvant dose tested.
 
+**Counter-productive mechanisms.** CP severity aggregate: **Moderate**
+(2/2 papers). Two flagged patterns: (i) **compartment dissociation /
+tdLN Treg expansion** — Ager 2026 directly documents tumor-Treg
+contraction alongside tdLN Treg expansion (p<0.0001), a paper-internal
+finding in the priming compartment; (ii) **ADCC on activated effectors**
+— Fc-engineering increases FcγR engagement on any CTLA-4-high cell,
+which transiently includes activated CD8 effectors (external: Simpson
+2013, Arce Vargas 2018). Ager 2026 partially bounds (ii) by showing
+CTLA-4 protein was largely confined to the Treg compartment in that
+tumor. Chand 2024 does not report compartment-specific data and adds
+anti-PD-1 combination autoimmune-toxicity compounding
+(paradoxical-autoimmunity tag).
+
 **Practical considerations.** Both agents are investigational
 (botensilimab AGEN1181 and BMS-986218 are in active clinical development
 as of 2026). Industry-controlled supply; academic access primarily
@@ -168,6 +196,18 @@ the load-bearing labelled risks (cyclophosphamide USPI; FDA DailyMed).
 At the 50 mg/day oral metronomic dose used by Ghiringhelli, cumulative
 exposure is lower than standard chemotherapy but long-term bladder and
 fertility monitoring is standard.
+
+**Counter-productive mechanisms.** CP severity aggregate: **Low** for
+the metronomic regimen (Ghiringhelli 2007), **Moderate** for single-IV
+dosing (Audia 2007). The mechanism-level concern is **non-selective
+lymphopenia** at cytotoxic doses; metronomic oral dosing exploits the
+lower ATP reserves of Tregs for preferential depletion (Lutsiak 2005
+*Blood*; Ghiringhelli 2004) and the paper-internal evidence is that
+effector function is preserved/restored. This is arguably the cleanest
+dose-selective Treg-depletion mechanism in the shieldbreak — but it is
+not effector-free, and the single-IV Audia 2007 null is
+mechanism-consistent with non-selective depletion eliminating the
+BCG-responding effectors.
 
 **Practical considerations.** Generic, inexpensive, orally available,
 globally accessible. Combinable with checkpoint blockade and vaccines;
@@ -215,6 +255,21 @@ hepatotoxicity (ONTAK/E7777 USPI, FDA DailyMed). The product has had
 multiple manufacturing/supply interruptions, including the shortage
 that halted Thibodeaux 2021 enrollment — a non-trivial practical
 toxicity for research planning.
+
+**Counter-productive mechanisms.** CP severity aggregate: **Moderate**
+(7/8 Moderate, 1/8 Low). Dominant flag: **CD25+ activated-effector
+collateral** — DD depletes CD25-high cells indiscriminately, including
+transiently activated CD8 and CD4 effectors (external: FDA ONTAK label,
+Baur 2013). Paper-internal concerns sharpen this in two specific
+contexts: (a) **vaccine-priming window** (Dannull 2005, Luke 2016) — if
+DD exposure overlaps priming, it may ablate the very effectors the
+vaccine generates; (b) **IFNα-CD25 interaction** (Thibodeaux 2021) —
+IFNα upregulates CD25 on activated T cells, plausibly making the
+DD+IFNα combination worse for effector collateral than DD alone. Liao
+2024's intraperitoneal route bounds systemic exposure and is the
+Low-severity case. In CTCL (Geskin 2018) the CD25+ malignant-cell
+confound operates in both directions and the Treg-depletion mechanism
+is not cleanly isolable.
 
 **Practical considerations.** E7777 (now also referred to as I/ONTAK)
 received FDA approval for CTCL (2023); supply has historically been
@@ -264,6 +319,20 @@ oncology doses. IL-2 combination (Pili 2017) and pembrolizumab
 combination (Terranova-Barberio 2020) add the respective partner
 toxicity profiles.
 
+**Counter-productive mechanisms.** CP severity aggregate: **Moderate**
+(spread: 2 Low, 2 Moderate, 1 High context-outlier). Flagged patterns:
+(i) **effector-function suppression** — pan-HDAC inhibitors
+(vorinostat, panobinostat) can reduce effector CD8 function (external:
+Kroesen 2014); bounded for class-I-selective entinostat (Pili 2017,
+Roussos Torres 2021, both Low). (ii) **Opposite-direction mechanism in
+the wrong context** — Brinkmann 2018 panobinostat in HIV/cART increases
+Tregs 40%, a High-severity outlier that is context-discordant
+(HIV-latency reactivation, not oncology) and footnoted accordingly.
+(iii) **DNMTi confounder** in Govindaraj 2014 — the azacitidine partner
+demethylates the FOXP3 TSDR and can induce Tregs, operating against the
+HDACi direction. The selectivity/breadth axis (class-I vs pan-HDAC) is
+the reconciling variable the data point at.
+
 **Practical considerations.** Vorinostat and panobinostat are
 FDA-approved (CTCL and multiple myeloma respectively); entinostat is
 investigational as of 2026. Orally available, broadly combinable. The
@@ -306,6 +375,21 @@ hypophysitis, pneumonitis, dermatitis, endocrinopathies) is
 well-characterized (YERVOY USPI, FDA DailyMed). Tremelimumab's profile
 is similar (IMJUDO USPI). Standard-dose irAEs are clinically significant
 and rate-limiting.
+
+**Counter-productive mechanisms.** CP severity aggregate: **Low** (6/8
+Low, 1 Moderate case-report, 1 High is the decitabine-co-drug confound
+in Penter 2023). The aggregate understates the real story because the
+*proximal* Treg-depletion mechanism fails in humans — so CP severity is
+technically Low (you can't have collateral from a mechanism that isn't
+engaging). The flagged class concerns are: (i) **alt-checkpoint
+upregulation** — CTLA-4 blockade induces PD-1 and LAG-3 compensatory
+expression (external: Huang 2017 *PNAS*; Woo 2012); (ii) **paradoxical
+autoimmunity** — irAEs (colitis, hypophysitis) consume immune capacity
+in non-tumor tissue (Nancey 2012 case report). Penter 2023's High
+severity is a co-drug effect: decitabine expands marrow Tregs via TSDR
+demethylation, a finding the authors document directly as an ipilimumab
+resistance mechanism — a warning for any DNMTi + anti-CTLA-4
+combination rather than a standalone ipi/treme concern.
 
 **Practical considerations.** Both agents are FDA-approved in multiple
 indications (ipi 2011, tremelimumab 2022). Widely available, combinable
@@ -363,14 +447,27 @@ ranked list:
 
 ## Ranked prioritization
 
-| Rank | Intervention | Likelihood of effect | Toxicity burden | Overall |
-|---:|---|---|---|---|
-| 1 | Anti-CCR4 (mogamulizumab) | High in CCR4+ eTreg subset (Fujikawa, Jinushi, Roelens concordant) | Moderate (cutaneous, infusion, post-allo-HSCT signal) | **Strongest, most-replicated depletion with direct tumor evidence** |
-| 2 | Fc-enhanced anti-CTLA-4 | Moderate (Ager randomized control; Chand consistent) | Moderate-to-high (class-level irAE + FcγR-engagement signal) | **Mechanism-rescue; thin but directionally clean; watch for independent replication** |
-| 3 | Low-dose metronomic cyclophosphamide | Moderate (schedule-dependent; p<0.0001 in Ghiringhelli, null in Audia) | Low-to-moderate (generic, well-characterized) | **Cheap, accessible, schedule-sensitive — good combination backbone** |
-| 4 | Denileukin diftitox | Low-to-moderate after CD25-gating discount | Moderate (capillary-leak, supply instability) | **Large literature but structurally confounded; FoxP3-mRNA readouts needed** |
-| 5 | Class-I HDAC inhibitors | Moderate in oncology, unfavorable in HIV/cART (context-dependent) | Moderate (cytopenias; QT for panobinostat) | **Plausible; context-sensitive; no single-agent replication yet** |
-| 6 | Standard anti-CTLA-4 | Very low for the Treg-depletion endpoint specifically | Moderate-to-high (standard irAE profile) | **Foundational negative result; motivates Rank 2; not the tool for this endpoint** |
+| Rank | Intervention | Likelihood of effect | Toxicity burden | Counter-productive MoA | Overall |
+|---:|---|---|---|---|---|
+| 1 | Anti-CCR4 (mogamulizumab) | High in CCR4+ eTreg subset (Fujikawa, Jinushi, Roelens concordant) | Moderate (cutaneous, infusion, post-allo-HSCT signal) | **High** (CCR4+ CD8 effector-memory collateral; 2/4 paper-internal, 4/4 replicated) | **Strongest, most-replicated depletion with direct tumor evidence — but pair with effector rescue if the goal is anti-tumor benefit** |
+| 2 | Fc-enhanced anti-CTLA-4 | Moderate (Ager randomized control; Chand consistent) | Moderate-to-high (class-level irAE + FcγR-engagement signal) | **Moderate** (tdLN Treg expansion, ADCC on activated CTLA-4-high effectors; 2/2) | **Mechanism-rescue; thin but directionally clean; CP profile narrows but does not close the Rank-1 gap** |
+| 3 | Low-dose metronomic cyclophosphamide | Moderate (schedule-dependent; p<0.0001 in Ghiringhelli, null in Audia) | Low-to-moderate (generic, well-characterized) | **Low** (metronomic regimen is the cleanest dose-selective mechanism in the set; single-IV is Moderate) | **Cheap, accessible, schedule-sensitive, low collateral — strong combination backbone** |
+| 4 | Denileukin diftitox | Low-to-moderate after CD25-gating discount | Moderate (capillary-leak, supply instability) | **Moderate** (CD25+ activated-effector collateral; vaccine-priming window and IFNα-CD25 interaction elevate specific combinations) | **Large literature but structurally confounded; FoxP3-mRNA readouts needed; avoid priming-overlap scheduling** |
+| 5 | Class-I HDAC inhibitors | Moderate in oncology, unfavorable in HIV/cART (context-dependent) | Moderate (cytopenias; QT for panobinostat) | **Moderate** (class-I-selective entinostat bounded Low; pan-HDAC and DNMTi-partner cases Moderate-High) | **Plausible; context- and selectivity-sensitive; entinostat is the cleanest CP profile in class** |
+| 6 | Standard anti-CTLA-4 | Very low for the Treg-depletion endpoint specifically | Moderate-to-high (standard irAE profile) | **Low** (proximal mechanism fails so collateral is moot; Penter 2023 decitabine-co-drug is the High outlier and a combination-specific warning) | **Foundational negative result; motivates Rank 2; not the tool for this endpoint** |
+
+The **Counter-productive MoA** column summarizes the skeptic-assessed
+severity of mechanism-level risks that the intervention may undermine
+the shieldbreak's target effect even when its proximal endpoint is
+met. It is distinct from Toxicity burden (which is about patient-level
+AEs). A severe counter-productive MoA pulls the Overall rating down
+even when Likelihood of effect is high. Severity aggregates per-group
+as the modal paper-level severity, bumped up one step when a
+paper-internal High is replicated across ≥2 papers or documents a
+wrong-direction mechanism in the intended context. Wrong-direction
+context-outliers (e.g., Brinkmann panobinostat in HIV; Penter
+decitabine co-drug) are footnoted rather than allowed to move the
+aggregate.
 
 ## Caveats
 
@@ -406,6 +503,31 @@ ranked list:
     Treg endpoint would sharpen Rank 5 considerably.
   - A head-to-head of metronomic oral vs low-dose IV cyclophosphamide
     with matched Treg PD would resolve the schedule question at Rank 3.
+- **Shared CP pattern — CD25+ effector collateral** spans Rank 4
+  (denileukin diftitox) and the non-ranked anti-CD25 daclizumab class.
+  Any CD25-targeting Treg-depletion program should assume the readout
+  is structurally confounded *and* that activated effectors are being
+  co-depleted in the priming window. Use FoxP3 mRNA / TSDR and schedule
+  around (not over) effector priming.
+- **Shared CP pattern — beneficial-effector collateral via
+  surface-marker promiscuity** is the dominant concern for the two
+  highest-likelihood classes: anti-CCR4 (CCR4+ CD8 central-memory) and
+  Fc-enhanced anti-CTLA-4 (CTLA-4-upregulating activated effectors). If
+  the target effect is re-scoped from "proximal Treg depletion" toward
+  "restored anti-tumor immunity," this shared pattern is load-bearing
+  against both top ranks and favors Rank 3 (metronomic
+  cyclophosphamide) as a combination backbone.
+- **CP aggregation rule used here:** modal per-group severity, bumped
+  up one step when a paper-internal High is replicated across ≥2
+  papers or documents a clearly wrong-direction mechanism in the
+  intended context. Wrong-direction outliers in a discordant context
+  (Brinkmann panobinostat in HIV; Penter decitabine-co-drug) are
+  footnoted rather than allowed to move the aggregate.
+- **Rankings reflect Target-effect-as-written** ("reduce Treg
+  abundance/frequency/dominance/suppressive function"). If the Target
+  effect is re-scoped toward anti-tumor benefit, CP severity should
+  weigh more heavily and Rank 1 narrows substantially against Rank 2
+  and Rank 3.
 
 ## Sources
 
