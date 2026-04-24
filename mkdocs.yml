@@ -50,6 +50,7 @@ markdown_extensions:
 
 extra_css:
   - stylesheets/treg-depletion.css
+  - stylesheets/tam-depletion.css
 
 nav:
   - Home: index.md

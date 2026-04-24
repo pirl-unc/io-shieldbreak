@@ -1,0 +1,105 @@
+{
+  "run_id": "20260423-tam-depletion",
+  "run_date": "2026-04-23",
+  "agent": "trialist_screener",
+  "shieldbreak": "tam-depletion",
+  "notes": "NCBI-first composite discovery across 12 TAM-modulation intervention families. Per-family PubMed esearch runs; counts are pre-screening hits. LILRB/TREM2 and CLEVER-1/MARCO families were initially broader (1630 and 351 hits respectively) due to common-term noise; narrowed to clinical-agent-token queries (43 and 39 hits) for screening. CT.gov cross-ref performed for NCT resolution during extraction.",
+  "queries": [
+    {
+      "source": "pubmed",
+      "family": "1. CSF1/CSF1R inhibitors",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=(pexidartinib[tiab]+OR+cabiralizumab[tiab]+OR+axatilimab[tiab]+OR+%22AMG+820%22[tiab]+OR+emactuzumab[tiab]+OR+vimseltinib[tiab]+OR+edicotinib[tiab]+OR+%22ARRY-382%22[tiab]+OR+BLZ945[tiab]+OR+lacnotuzumab[tiab]+OR+%22IMC-CS4%22[tiab]+OR+%22LY3022855%22[tiab]+OR+%22PLX7486%22[tiab]+OR+%22anti-CSF1R%22[tiab]+OR+%22CSF1R+inhibitor%22[tiab]+OR+%22CSF-1R%22[tiab])+AND+(%22tumor-associated+macrophage%22[tiab]+OR+%22tumour-associated+macrophage%22[tiab]+OR+TAM[tiab]+OR+macrophage[tiab]+OR+CD163[tiab]+OR+CD68[tiab]+OR+CD206[tiab]+OR+myeloid[tiab])+AND+(%222010%22%3A%223000%22[dp])+AND+english[la]",
+      "count": 523,
+      "retrieved_ids": 100
+    },
+    {
+      "source": "pubmed",
+      "family": "2. PI3K-gamma (eganelisib / IPI-549)",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=(eganelisib[tiab]+OR+%22IPI-549%22[tiab]+OR+%22PI3K+gamma%22[tiab]+OR+%22PI3Kgamma%22[tiab])+AND+<macrophage>+AND+(%222010%22%3A%223000%22[dp])+AND+english[la]",
+      "count": 139,
+      "retrieved_ids": 100
+    },
+    {
+      "source": "pubmed",
+      "family": "3. CCR2/CCR5 inhibitors",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=(%22PF-04136309%22[tiab]+OR+%22BMS-813160%22[tiab]+OR+cenicriviroc[tiab]+OR+maraviroc[tiab]+OR+plozalizumab[tiab]+OR+%22anti-CCR2%22[tiab]+OR+%22CCR2+inhibitor%22[tiab]+OR+%22CCR5+inhibitor%22[tiab])+AND+<macrophage>+AND+(%222010%22%3A%223000%22[dp])+AND+english[la]",
+      "count": 132,
+      "retrieved_ids": 100
+    },
+    {
+      "source": "pubmed",
+      "family": "4. Bisphosphonates (TAM-endpoint)",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=(%22zoledronic+acid%22[tiab]+OR+zoledronate[tiab]+OR+%22clodronate+liposomes%22[tiab]+OR+bisphosphonate[tiab])+AND+(%22tumor-associated+macrophage%22[tiab]+OR+TAM[tiab]+OR+CD163[tiab]+OR+CD68[tiab]+OR+CD206[tiab])+AND+(%222010%22%3A%223000%22[dp])+AND+english[la]",
+      "count": 128,
+      "retrieved_ids": 100
+    },
+    {
+      "source": "pubmed",
+      "family": "5. Trabectedin/lurbinectedin (TAM-endpoint)",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=(trabectedin[tiab]+OR+lurbinectedin[tiab]+OR+%22PM01183%22[tiab]+OR+%22ET-743%22[tiab])+AND+(%22tumor-associated+macrophage%22[tiab]+OR+TAM[tiab]+OR+CD163[tiab]+OR+CD68[tiab]+OR+macrophage[tiab])+AND+(%222010%22%3A%223000%22[dp])+AND+english[la]",
+      "count": 25,
+      "retrieved_ids": 25
+    },
+    {
+      "source": "pubmed",
+      "family": "6. Anti-CD47 / anti-SIRPalpha",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=(magrolimab[tiab]+OR+%22Hu5F9-G4%22[tiab]+OR+letaplimab[tiab]+OR+%22IBI188%22[tiab]+OR+lemzoparlimab[tiab]+OR+%22TJC4%22[tiab]+OR+%22AO-176%22[tiab]+OR+%22SRF231%22[tiab]+OR+%22TTI-622%22[tiab]+OR+%22TTI-621%22[tiab]+OR+evorpacept[tiab]+OR+%22ALX148%22[tiab]+OR+%22CC-95251%22[tiab]+OR+%22BI+765063%22[tiab]+OR+%22FSI-189%22[tiab]+OR+%22anti-CD47%22[tiab]+OR+%22anti-SIRP%22[tiab]+OR+%22CD47-SIRPalpha%22[tiab]+OR+%22CD47+blockade%22[tiab])+AND+<macrophage>+AND+(%222010%22%3A%223000%22[dp])+AND+english[la]",
+      "count": 580,
+      "retrieved_ids": 100
+    },
+    {
+      "source": "pubmed",
+      "family": "7. Anti-CD24",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=(%22anti-CD24%22[tiab]+OR+%22CD24+blockade%22[tiab]+OR+%22IMM47%22[tiab]+OR+%22SWA11%22[tiab])+AND+<macrophage>+AND+(%222010%22%3A%223000%22[dp])+AND+english[la]",
+      "count": 15,
+      "retrieved_ids": 15
+    },
+    {
+      "source": "pubmed",
+      "family": "8. CD40 agonists",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=(selicrelumab[tiab]+OR+%22RO7009789%22[tiab]+OR+%22CP-870%2C893%22[tiab]+OR+%22CP-870893%22[tiab]+OR+sotigalimab[tiab]+OR+%22APX005M%22[tiab]+OR+mitazalimab[tiab]+OR+%22CDX-1140%22[tiab]+OR+%222141-V11%22[tiab]+OR+%22SEA-CD40%22[tiab]+OR+%22ABBV-428%22[tiab]+OR+%22CD40+agonist%22[tiab]+OR+%22anti-CD40%22[tiab])+AND+<macrophage>+AND+(%222010%22%3A%223000%22[dp])+AND+english[la]",
+      "count": 131,
+      "retrieved_ids": 100
+    },
+    {
+      "source": "pubmed",
+      "family": "9. TLR agonists (TAM-reporting)",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=(%22poly-ICLC%22[tiab]+OR+Hiltonol[tiab]+OR+motolimod[tiab]+OR+%22VTX-2337%22[tiab]+OR+%22SD-101%22[tiab]+OR+tilsotolimod[tiab]+OR+%22IMO-2125%22[tiab]+OR+lefitolimod[tiab]+OR+%22MGN1703%22[tiab]+OR+%22BO-112%22[tiab]+OR+vidutolimod[tiab]+OR+%22CMP-001%22[tiab]+OR+%22G100%22[tiab]+OR+%22GLA-SE%22[tiab]+OR+imiquimod[tiab]+OR+resiquimod[tiab]+OR+%22TLR7+agonist%22[tiab]+OR+%22TLR8+agonist%22[tiab]+OR+%22TLR9+agonist%22[tiab])+AND+<macrophage-narrow>+AND+(%222010%22%3A%223000%22[dp])+AND+english[la]",
+      "count": 141,
+      "retrieved_ids": 100
+    },
+    {
+      "source": "pubmed",
+      "family": "10. STING agonists",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=(%22ADU-S100%22[tiab]+OR+%22MIW815%22[tiab]+OR+%22MK-1454%22[tiab]+OR+%22SB11285%22[tiab]+OR+%22BMS-986301%22[tiab]+OR+%22E7766%22[tiab]+OR+%22TAK-676%22[tiab]+OR+dazostinag[tiab]+OR+%22STING+agonist%22[tiab])+AND+<macrophage>+AND+(%222010%22%3A%223000%22[dp])+AND+english[la]",
+      "count": 114,
+      "retrieved_ids": 100
+    },
+    {
+      "source": "pubmed",
+      "family": "11. CLEVER-1 / Stabilin-1 / MARCO (narrowed to clinical-agent tokens)",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=(bexmarilimab[tiab]+OR+%22FP-1305%22[tiab]+OR+%22CLEVER-1%22[tiab]+OR+%22anti-Clever-1%22[tiab]+OR+%22anti-MARCO%22[tiab]+OR+%22Stabilin-1+blockade%22[tiab]+OR+%22MARCO+targeting%22[tiab])+AND+<macrophage>+AND+(%222010%22%3A%223000%22[dp])+AND+english[la]",
+      "count_initial_broad": 351,
+      "count": 39,
+      "retrieved_ids": 39
+    },
+    {
+      "source": "pubmed",
+      "family": "12. LILRB / TREM2 (narrowed to clinical-agent tokens)",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=(%22IO-108%22[tiab]+OR+%22JTX-8064%22[tiab]+OR+%22MK-0482%22[tiab]+OR+%22BND-22%22[tiab]+OR+%22PY314%22[tiab]+OR+%22JTX-5%22[tiab]+OR+%22anti-LILRB2%22[tiab]+OR+%22anti-LILRB4%22[tiab]+OR+%22anti-TREM2%22[tiab]+OR+%22LILRB2+blockade%22[tiab]+OR+%22TREM2+blockade%22[tiab])+AND+<macrophage>+AND+(%222010%22%3A%223000%22[dp])+AND+english[la]",
+      "count_initial_broad": 1630,
+      "count": 43,
+      "retrieved_ids": 43
+    }
+  ],
+  "totals": {
+    "raw_hit_count_after_narrowing": 2010,
+    "retrieved_for_screening": 922,
+    "screening_cap": 30,
+    "screening_strategy": "Title/abstract relevance screen; prioritize landmark clinical TAM-PD reports per intervention family; dedup by PMID > DOI > NCT > normalized title; exclude preclinical-only, reviews (to side-list), healthy-volunteer PD (D3), CPI monotherapy (D2), PBMC-monocyte-only without TAM-surrogate pre-specification (D1)."
+  },
+  "ctgov_cross_reference": {
+    "url_template": "https://clinicaltrials.gov/api/v2/studies?query.term=<q>&pageSize=50&format=json",
+    "used_for": "NCT ID resolution and registry-side design confirmation during per-paper extraction"
+  }
+}

@@ -131,11 +131,16 @@ def classify_success(row: dict) -> tuple[str, str]:
     cd = (row.get("change_direction") or "").lower()
     cm = (row.get("change_mechanism") or "").lower()
 
-    if cd == "increase" and cm != "expansion-with-ratio-shift":
+    # For repolarization / expansion-with-repolarization, an "increase" in M1
+    # markers is the intended outcome, not an adverse signal — don't mis-label.
+    repol_mechs = {"repolarization", "expansion-with-repolarization"}
+    if cd == "increase" and cm not in ({"expansion-with-ratio-shift"} | repol_mechs):
         return ("sf-increase", "increase")
     if ds == "succeeded" and (
         "p=" in sig or "significant" in sig or "p<" in sig or "reported" in sig
     ):
+        if cm in repol_mechs:
+            return ("sf-sig-reduction", "repolarized")
         return ("sf-sig-reduction", "significant reduction")
     if ds == "partial" or "inconsistent" in sig or "trend" in sig:
         return ("sf-nonsig-trend", "nonsignificant trend")
@@ -151,13 +156,17 @@ def mech_chip(change_mechanism: str | None) -> str:
         return ""
     cm = change_mechanism.lower()
     mapping = {
+        # treg-depletion mechanisms
         "absolute-reduction": ("mech-depletion", "depletion"),
         "ratio-shift": ("mech-ratio-only", "ratio only"),
         "expansion-with-ratio-shift": ("mech-frac-shift", "fraction shift"),
         "functional-impairment-only": ("mech-frac-shift", "functional only"),
         "null-result": ("mech-null", "null"),
+        # tam-depletion additions
+        "repolarization": ("mech-neutral", "repolarization"),
+        "expansion-with-repolarization": ("mech-neutral", "expansion + repol"),
     }
-    cls, label = mapping.get(cm, ("mech-null", cm))
+    cls, label = mapping.get(cm, ("mech-neutral", cm))
     return f'<span class="pill {cls}">{escape(label)}</span>'
 
 
@@ -182,16 +191,42 @@ def tissue_chip(tissue: str | None) -> str:
 
 def assay_chip(gating_quality: str | None, readout_type: str | None) -> str:
     """STYLE.md defines assay chips; our schema stores gating_quality.
-    Map conservatively: FOXP3-confirmed → flow, functional-assay → flow+functional,
-    surface-only → flow, mixed/unclear → flow."""
-    label = "flow"
-    cls = "assay-flow"
-    if gating_quality == "functional-assay":
-        label = "flow+fn"
-        cls = "assay-flow"
-    if readout_type == "suppressive-function":
-        label = "suppress"
-        cls = "assay-flow"
+    treg-depletion values (FOXP3-confirmed, functional-assay, surface-only, mixed, unclear)
+    and tam-depletion values (CD68-CD163-based, CD68-CD206-based, CD14-CD16-based,
+    CD68-MHCII-based, scRNA-macrophage-cluster, mIF-multiplex, CyTOF, single-marker-only,
+    mixed-or-unclear) are all accepted.
+    """
+    gq = (gating_quality or "").strip()
+    rt = (readout_type or "").strip()
+
+    # readout-type wins when present (both shieldbreaks)
+    if rt == "suppressive-function":
+        return f'<span class="pill assay-flow">{escape("suppress")}</span>'
+    if rt == "phagocytosis-function":
+        return f'<span class="pill assay-flow">{escape("phago")}</span>'
+    if rt == "scRNA-cluster-shift":
+        return f'<span class="pill assay-scrna">{escape("scRNA")}</span>'
+
+    # gating-quality driven
+    gq_map = {
+        # treg-depletion
+        "FOXP3-confirmed": ("assay-flow", "flow"),
+        "surface-only": ("assay-flow", "flow"),
+        "functional-assay": ("assay-flow", "flow+fn"),
+        "mixed": ("assay-flow", "flow"),
+        "unclear": ("assay-flow", "flow"),
+        # tam-depletion
+        "CD68-CD163-based": ("assay-ihc", "IHC"),
+        "CD68-CD206-based": ("assay-ihc", "IHC"),
+        "CD68-MHCII-based": ("assay-ihc", "IHC"),
+        "CD14-CD16-based": ("assay-flow", "flow"),
+        "scRNA-macrophage-cluster": ("assay-scrna", "scRNA"),
+        "mIF-multiplex": ("assay-mif", "mIF"),
+        "CyTOF": ("assay-cytof", "CyTOF"),
+        "single-marker-only": ("assay-ihc", "IHC"),
+        "mixed-or-unclear": ("assay-flow", "mixed"),
+    }
+    cls, label = gq_map.get(gq, ("assay-flow", "flow"))
     return f'<span class="pill {cls}">{escape(label)}</span>'
 
 
@@ -401,7 +436,11 @@ def build_row_html(
     primary_cells = [
         ("", intervention_cell(row)),
         ("", escape(safe(row.get("indication")))),
-        ('style="text-align:right"', escape(str(row.get("n_treated_with_treg_measurement") or ""))),
+        ('style="text-align:right"', escape(str(
+            row.get("n_treated_with_treg_measurement")
+            or row.get("n_treated_with_tam_measurement")
+            or ""
+        ))),
         ('class="col-report"', report_cell(row)),
         ("", tissue_chip(tissue)),
         ("", assay_chip(row.get("gating_quality"), row.get("readout_type"))),
@@ -967,6 +1006,7 @@ details.sb-section > summary:hover {
 .pill.mech-frac-shift { background:#dce6f7; color:#234f8c; border-color:#7ea5d4; font-size:0.65em; }
 .pill.mech-ratio-only { background:#fbeacb; color:#8a5510; border-color:#e0b87c; font-size:0.65em; }
 .pill.mech-null       { background:#ececf2; color:#3f3f5c; border-color:#b4b4c4; font-size:0.65em; }
+.pill.mech-neutral    { background:#e7dcf3; color:#5b3a87; border-color:#a995c8; font-size:0.65em; }
 
 /* ---- Row grouping (left-edge stripe cycle) ---- */
 .pd-table tr.group-0 td:first-child { border-left: 3px solid #7ea5d4; }
