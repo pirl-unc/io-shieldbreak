@@ -1,6 +1,6 @@
 # Trialist critique — Treg Depletion and/or Inhibition
 
-_Last updated: 2026-04-23. Papers reviewed: 44._
+_Last updated: 2026-04-24. Papers reviewed: 44._
 
 [← back to shieldbreak](index.md) · [← back to shieldbreaks](../index.md)
 
@@ -45,6 +45,14 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 | Moderate | 23 |
 | Very low | 1 |
 
+### Counter-productive-mechanism severity distribution
+
+| Severity | N |
+|---|---:|
+| High | 15 |
+| Moderate | 19 |
+| Low | 10 |
+
 </details>
 
 ## Cross-paper synthesis
@@ -78,6 +86,19 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 - Disease indication: DD positive in CTCL/RCC/ovarian, negative in melanoma. Anti-CTLA-4 non-depleting across all tested cancers (melanoma, prostate, bladder).
 - Dose and schedule: Cyclophosphamide metronomic vs single-IV is the clearest example. DD repeated vs single-dose (Morse 2008) also shows schedule effects.
 - Gating: Single-marker vs co-stain vs surface vs intracellular vs mRNA vs scRNA-seq cluster all matter.
+
+### Counter-productive-mechanism patterns across interventions
+
+- Severity distribution across the 44 papers: 15 High, 19 Moderate, 10 Low, 0 Unknown. Every paper carries some counter-productive exposure for the shieldbreak's generalizable 'remove immunosuppression' goal — the differences are in size, directness, and whether the mechanism is bounded by design.
+- High-severity / opposite-direction-mechanism cluster (n=6): CELMoD iberdomide (Amatangelo 2024 RRMM, Lipsky 2022 SLE) INCREASES Tregs by Ikaros/Aiolos-sparing-Helios design; DNMTi monotherapy (Han 2021 ITP, Penter 2023 decitabine+ipi AML) INDUCES Tregs via TSDR demethylation [Moon 2016, Clin Cancer Res]; panobinostat HIV reservoir reactivation (Brinkmann 2018) increases Tregs 40%. These are counter-productive by design for a Treg-depletion shieldbreak — useful in their actual indications but directionally opposite.
+- High-severity / depletes-beneficial-effectors cluster (anti-CCR4; n=4): Mogamulizumab (Fujikawa 2023, Jinushi 2025, Roelens 2022, Gordon 2025) depletes CCR4+ central memory CD8 T cells alongside Tregs. Fujikawa 2023 is paper-internally explicit: 'KW-0761 may concurrently deplete eTregs and central memory CD8+ T cells, and this dual depletion may cancel anti-tumor immune responses' [Tanaka 2021, Nat Commun]. Grade 3-4 lymphopenia in ~25% across studies is consistent. This is the best-evidenced counter-productive mechanism in the set.
+- High-severity / treg-expansion-by-design (non-α IL-2 variants; n=5): Bempegaldesleukin and nemvaleukin 'preferentially activate effectors over Tregs' is a denominator-artifact framing — both expand Tregs absolutely, bempeg by 8-10× (Gogas 2024 reanalysis of PIVOT-02 which had been reported as 'without Treg enhancement' in the original Bentebibel 2019 / Diab 2020 reports). The bempegaldesleukin PIVOT-IO-001 phase 3 clinical failure (2022) is the hardest clinical evidence in the entire set that a ratio-shift mechanism can fail; nemvaleukin ARTISTRY-7 phase 3 failure (2023, ovarian) is a parallel.
+- High-severity / IL-2-receptor-blockade-collateral (anti-CD25 daclizumab; n=2): Daclizumab (Mahnke 2007, Morse 2008) blocks IL-2Rα on Tregs AND on CD25-upregulating activated effector CD8 T cells — the textbook counter-productive mechanism [Rech & Vonderheide 2009, Ann NY Acad Sci]. Morse 2008 addresses this with a pharmacokinetic-decay argument but does not measure effector IL-2 signaling directly.
+- Moderate-severity / CD25-effector-collateral (denileukin diftitox; n=8): DD depletes CD25-high cells, which include transiently activated CD25+ effector T cells [FDA ONTAK label]. The CD25-gating confound in most DD papers also means the readout cannot distinguish off-target effector depletion from the intended Treg depletion. IP route (Liao 2024) bounds the systemic-exposure concern and is the lowest-severity DD study in the set.
+- Moderate-severity / ADCC-activated-effector-collateral (Fc-enhanced anti-CTLA-4, anti-GITR, anti-TIGIT; n=5): Fc-engineering increases FcγR binding and ADCC, which can deplete activated effector T cells that transiently upregulate the target marker [Simpson 2013 JEM; Arce Vargas 2018 Cancer Cell; Chauvin & Zarour 2020 JITC]. Ager 2026 provides paper-internal data that CTLA-4 protein was 'exquisitely confined' to Tregs, bounding the concern for BMS-986218 specifically — but the same paper shows tdLN Treg EXPANSION (p<0.0001), a compartment-dissociation counter-productive signal.
+- Low-severity / non-depleting standard anti-CTLA-4 (n=6): Ipilimumab and tremelimumab do not deplete intratumoral Tregs in humans despite preclinical ADCC claims (Sharma 2019 + Huang 2011 + Ribas 2009 + Comin-Anduix 2008 + Hamid 2011 + Yi 2017 converge). Because the proximal depletion mechanism does not operate, collateral concerns on effectors are moot at that step. The remaining class concerns are alt-checkpoint (PD-1/LAG-3) compensatory upregulation [Huang 2017, PNAS] and paradoxical autoimmunity (Nancey 2012 ipi-induced enterocolitis case report) — both bounded.
+- Low-severity / bounded-design interventions (n=5): Metronomic cyclophosphamide (Ghiringhelli 2007) is the cleanest dose-selective Treg-depletion mechanism in the set; class-I-selective HDACi (entinostat: Pili 2017, Roussos Torres 2021) preserves effector CD8 function in preclinical work [McCaw 2021, Cancer Med]; IP denileukin diftitox (Liao 2024) bounds systemic exposure.
+- Implication for the shieldbreak signal: the classes with the cleanest Treg-depletion endpoints (anti-CCR4, non-α IL-2) also carry the best-evidenced counter-productive mechanisms. The classes with the weakest depletion signals (standard anti-CTLA-4) have the least counter-productive exposure precisely because they don't deplete. Interventions that succeed at the proximal endpoint WITHOUT material counter-productive exposure are rare in this set; metronomic cyclophosphamide (Ghiringhelli 2007) and IP denileukin diftitox (Liao 2024) come closest.
 
 ### Functional vs numerical endpoints
 
@@ -124,6 +145,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Multiple exploratory PD endpoints (TI-Treg, DC activation, T-cell priming, recurrence stratification). Paper does not report multiplicity correction. For a phase I exploratory trial this is conventional but the p=0.031 primary Treg readout is only marginally significant and would not survive Bonferroni across the ~6-10 hypothesis tests reported.
 **Generalizability.** High-risk localized prostate cancer only (Grade Group ≥3, VHR ≥80% per arm); Columbia-single-center; neoadjuvant setting with defined tissue-collection anchor. Findings are not directly generalizable to metastatic CRPC (where Tregs in bone-marrow microenvironment differ) or to non-prostate indications. One TMB-H patient via germline MSH2 may be an outlier.
 **Treg definition / gating.** Orthogonal: scRNA-seq-based TI-Treg population identification (transcriptomic cluster); CyTOF FoxP3+CD4+ gating; mIF spatial FoxP3+ density. This is the gold standard for this class — no CD25-gating confounding. Tregs were not CD25-gated; since anti-CTLA-4 does not target CD25, no gating-confounding issue arises.
+**Counter-productive mechanisms (Moderate (`compartment-dissociation`, `tdln-treg-expansion`, `adcc-activated-effector-collateral`)).** Fc-enhanced anti-CTLA-4 (BMS-986218, afucosylated ipilimumab) augments ADCC/ADCP on CTLA-4-high cells; the paper itself argues (Figure 4I–O) that CTLA-4 protein expression was 'exquisitely confined' to the Treg compartment, bounding the collateral depletion concern for other effectors in the tumor. However, the same paper documents a compartment dissociation that is counter-productive in kind: Tregs INCREASE in tumor-draining lymph nodes (p<0.0001) in the ADT+NF arm, a known class effect the authors acknowledge [paper Results, Figure 4]. The tdLN is the compartment where anti-tumor CD8 priming happens, so tdLN Treg expansion plausibly offsets the tumor-Treg reduction the drug accomplishes. Fc-engineering also risks depleting CTLA-4-upregulating activated CD8 effectors in some tumor contexts [external: Arce Vargas 2018, Cancer Cell]. Severity is moderate — the tumor-side mechanism is clean but the tdLN signal is measured and unaddressed by the intervention.
 **COI & funding.** BMS-986218 is a Bristol Myers Squibb compound. First author (Ager) moved to J&J post-study. Funding and COI to verify in full-text Acknowledgments (not cleanly extracted from the XML header I read). Industry sponsorship and the presence of BMS-associated authors means results should be read as supporting an FC-enhanced-anti-CTLA-4 program; Columbia and Mayo investigators are primarily academic. No apparent spin in the primary Treg readout; feasibility framing is honest about limitations.
 **Spin / abstract-to-text consistency.** Abstract and results are consistent. The abstract claims 'Fc-enhanced αCTLA-4 exposure associates with reduced tumor Treg frequencies' — matches p=0.031 finding. The paper does not over-claim efficacy; it is explicitly framed as feasibility / mechanism / 'correlates with improved clinical outcomes' (small n caveat stated). The tdLN Treg INCREASE (p<0.0001) is disclosed in the results and cited to prior literature — honest framing.
 
@@ -150,6 +172,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Many immune-cell subsets analyzed simultaneously (Treg, Tcon, CD8, NK, etc.); multiplicity correction not reported. Exploratory framing.
 **Generalizability.** Heavily pretreated RRMM patients; findings may not generalize to newly diagnosed MM or non-MM indications.
 **Treg definition / gating.** Standard CD4+CD25+FOXP3+CD127low flow-cytometry gating (to be confirmed from methods). No obvious gating confounding with iberdomide (which does not target CD25 or FOXP3 directly).
+**Counter-productive mechanisms (High (`opposite-direction-mechanism`, `treg-induction-by-design`)).** Iberdomide is a cereblon modulator that degrades Ikaros (IKZF1) and Aiolos (IKZF3) but spares Helios (IKZF2) and Eos (IKZF4), preserving Treg-lineage TFs. The paper's own PD data demonstrate that iberdomide INCREASES Tregs alongside effectors in R/R myeloma, the opposite direction from a Treg-depletion hypothesis. The counter-productive mechanism here is the mechanism itself for this shieldbreak's goal: the drug is net-suppressive of the Treg-depletion endpoint. Clinically the CELMoD net effect in MM is driven by direct myeloma cytotoxicity and effector activation, not Treg reduction — which is why the drug is a useful therapeutic despite opposing the shieldbreak's proximal mechanism. Severity is high for the shieldbreak question, regardless of its clinical utility in MM.
 **COI & funding.** BMS/Celgene industry-sponsored substudy; multiple authors are BMS employees (Amatangelo, others). Iberdomide is a BMS compound. Findings of Treg-related immune effects should be read in this context, though the direction (not a depletion claim) makes spin less likely.
 **Spin / abstract-to-text consistency.** Paper does not claim Treg depletion — it reports on the full immune-modulation profile. No spin issue identified in abstract vs extracted row.
 
@@ -176,6 +199,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Not assessable from abstract only.
 **Generalizability.** Metastatic RCC only; HD IL-2-eligible patient population (highly selected for fitness, excludes organ dysfunction). Limited generalizability.
 **Treg definition / gating.** Not described in abstract. CD25-based gating would be particularly problematic here because DD targets the CD25 (IL-2Rα) component of the high-affinity IL-2 receptor — the intervention deliberately depletes CD25+ cells. This is THE classic gating-confounding issue for DD Treg studies. Full-text review required to rule out.
+**Counter-productive mechanisms (Moderate (`cd25-effector-collateral`, `il2-treg-expansion-confound`)).** Denileukin diftitox targets CD25-high cells via a diphtheria toxin fusion. The counter-productive concern is twofold: (i) activated CD8 effector T cells transiently express CD25 and can be co-depleted [external: Baur et al. 2013, FDA ONTAK label]; (ii) co-administered high-dose IL-2 is known to expand Tregs as well as effectors [external: Ahmadzadeh & Rosenberg 2006, Blood]. The paper reports high-grade lymphopenia and does not distinguish the cell populations affected beyond a CD25-gated Treg readout, which structurally confounds both the depletion claim and any off-target assessment. Severity is moderate — the CD25-gating confound is a measurement problem rather than a clear counter-productive mechanism, but transient depletion of CD25+ activated effectors is plausible for the dosing schedule used.
 **COI & funding.** Not accessible from abstract. J Immunother is subscription-only; paywall-limited critique.
 **Spin / abstract-to-text consistency.** Abstract frames the Treg reduction and lymphocyte rebound favorably and ties it to response rate, but the 33% RR matches historical HD IL-2 monotherapy benchmarks, suggesting the DD-specific immune-modulation effect may not translate into clinical benefit beyond IL-2 alone. Caution: abstract does not explicitly make the additive-benefit claim but invites that inference.
 
@@ -202,6 +226,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Primary endpoint pre-specified as FoxP3 expression; secondary suppression assay. Multiplicity not a major concern given the n.
 **Generalizability.** Stage IV melanoma only, KPS ≥60%; intramural NCI Surgery Branch population (highly selected). Negative finding in melanoma does not preclude DD activity in other indications.
 **Treg definition / gating.** Authors AVOID the CD25-based surface gating that confounds other DD studies by using FoxP3 mRNA as the primary readout. This is methodologically superior for a CD25-targeting agent. However, FoxP3 mRNA in a bulk CD4+ sort is a blunt readout — it cannot distinguish reduced Treg number from reduced per-cell FoxP3 expression.
+**Counter-productive mechanisms (Moderate (`cd25-effector-collateral`)).** Same class concerns as other denileukin diftitox studies: DD depletes CD25-high cells, which include transiently activated CD25+ CD8 and CD4 effector T cells as well as Tregs [external: FDA ONTAK label]. This paper is methodologically unusual in using FoxP3 mRNA as the primary readout, which sidesteps the CD25-gating confound but still cannot distinguish depletion of Tregs from failure to deplete them when the denominator of CD4 T cells itself changes. The Attia 2005 negative result is consistent with the class mechanism of DD being insufficiently Treg-selective to produce a frequency reduction detectable by a FoxP3 readout. Severity is moderate for the shieldbreak question.
 **COI & funding.** NCI Surgery Branch intramural; Ligand Pharmaceuticals provided DAB389IL-2. Authors (Rosenberg group) are high-credibility academic oncologists with established independence from industry. COI likely declared absent in the full text.
 **Spin / abstract-to-text consistency.** Title is unambiguous: 'Inability... to eliminate regulatory T lymphocytes'. The abstract-to-full-text consistency is excellent — authors do not spin a minor high-dose p=0.031 into a depletion claim; they explicitly state 'does not appear to eliminate regulatory T lymphocytes.' High-integrity reporting.
 
@@ -228,6 +253,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Not assessable from abstract only.
 **Generalizability.** Metastatic carcinoma mixed cohort; heterogeneous primary tumor types. BCG comparator arm may confound immune-modulation signal.
 **Treg definition / gating.** CD4+CD25+ with characterization of FoxP3, GITR, and intracellular CD152. Baseline gating quality looks reasonable; no CD25-targeting agent in use, so no gating confound.
+**Counter-productive mechanisms (Moderate (`lymphopenia-collateral`)).** Single IV cyclophosphamide is cytotoxic-dose chemotherapy, non-selective for Tregs vs effectors at that dose [external: Lutsiak et al. 2005, Blood]. The paper's null Treg result is consistent with this — at cytotoxic dose cyclo depletes lymphoid compartment broadly, including effector T cells needed for the BCG-induced anti-tumor response. Counter-productive concern: the dose regimen chosen depletes the effectors the BCG is trying to activate. Severity is moderate.
 **COI & funding.** Not accessible from abstract. Clin Exp Immunol is subscription-only; paywall-limited critique.
 **Spin / abstract-to-text consistency.** Abstract is unusually direct — authors explicitly state that 'cyclophosphamide administration may not represent an optimal therapy to eliminate Treg.' Honest null-result reporting.
 
@@ -254,6 +280,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Not assessable from abstract.
 **Generalizability.** Advanced solid tumors mixed cohort; FIH study.
 **Treg definition / gating.** Not described in abstract.
+**Counter-productive mechanisms (High (`treg-expansion-by-design`, `denominator-artifact-framing`)).** Bempegaldesleukin is a PEGylated IL-2 engineered to bias toward IL-2Rβγ (effector/NK) over IL-2Rαβγ (Treg) signaling. The counter-productive mechanism for this shieldbreak is now well-evidenced: despite the 'preferential' effector signaling framing, bempeg ABSOLUTELY expands Tregs 8-10× in humans [external: Gogas 2024 same PIVOT-02 cohort]; the class claim of 'without Treg enhancement' is a frequency-denominator artifact. The clinical consequence is visible in the phase 3 PIVOT-IO-001 failure (2022) [external: Diab et al. 2023, JCO]. Bentebibel 2019's first-in-human report predates this evidence but the mechanism concern was knowable from the IL-2 biology. Severity is high.
 **COI & funding.** Nektar Therapeutics sponsor (drug developer). Heavy industry sponsorship context. The 'designed to not expand Tregs' framing is industry-promotional.
 **Spin / abstract-to-text consistency.** The FIH paper's claim that NKTR-214 promotes 'limited increase' in Tregs is technically true but understates what subsequent Phase I/II data show — absolute Treg expansion occurs, with the ratio-shift being the claim of benefit. This is a classic FIH-biomarker-optimism pattern that later data have moderated.
 
@@ -280,6 +307,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Multiple timepoints (day 4, 28, follow-up) — this is multiplicity. Authors do not appear to have pre-specified Bonferroni or FDR correction; p=0.003 and 0.004 are modestly strong and would survive a 4-test correction.
 **Generalizability.** HIV+cART context only; not directly generalizable to oncology settings. But highly relevant to the shieldbreak's question of context-dependent HDACi effects.
 **Treg definition / gating.** Standard CD4+CD25+FoxP3+ with additional phenotype markers (to be confirmed).
+**Counter-productive mechanisms (High (`opposite-direction-mechanism`, `effector-function-suppression`)).** Panobinostat is a pan-HDAC inhibitor used here for HIV reservoir reactivation. Paper reports a 40% INCREASE in Tregs (opposite direction to the shieldbreak hypothesis). Counter-productive concerns: (a) pan-HDAC inhibition can reduce effector CD8 T-cell function and destabilize anti-tumor memory [external: Kroesen et al. 2014, Oncotarget]; (b) the context (HIV cART, not tumor) makes generalization tentative. For the shieldbreak question, the drug's net direction is counter-productive (Tregs UP), placing severity at high; for its actual HIV indication this is a separate question.
 **COI & funding.** Academic PLoS Pathogens publication; funding from HIV-research sources (Danish National AIDS Foundation, etc. — to confirm). Lower COI risk than oncology industry studies.
 **Spin / abstract-to-text consistency.** Title is explicit: panobinostat INCREASES Treg frequency. No spin — this is a contrarian result that the authors report directly.
 
@@ -306,6 +334,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Multiple timepoints and cell subsets reported; no multiplicity correction mentioned. Exploratory framing.
 **Generalizability.** Advanced solid tumors mixed cohort; post-ICI melanoma and RCC subgroups mentioned.
 **Treg definition / gating.** Standard CD4+CD25+FOXP3+ flow gating (to be confirmed). No CD25-targeting confound because nemvaleukin is designed to bind CD25-CD122-CD132 complex but with βγ bias.
+**Counter-productive mechanisms (High (`treg-expansion-by-design`, `denominator-artifact-framing`)).** Nemvaleukin alfa is an engineered IL-2 fusion designed for IL-2Rβγ preference. Same counter-productive concern as bempeg: absolute Treg expansion can outpace the 'favorable ratio' [external: Dennis et al. 2022, Lancet Oncol; ARTISTRY-7 phase 3 failed in ovarian cancer, 2023]. Nemvaleukin's clinical failures in large phase 3 programs argue the mechanism shares bempeg's core problem at the clinical level. Severity is moderate-to-high; the absolute-Treg-expansion signal is smaller than bempeg but in the same direction.
 **COI & funding.** Mural Oncology (formerly Alkermes) sponsorship — drug developer. Industry sponsorship context is relevant for interpretation.
 **Spin / abstract-to-text consistency.** The 2× Treg expansion is honestly reported; the ratio-shift framing is the claim of benefit. Consistent with the bempeg / NKTR-214 framing pattern.
 
@@ -332,6 +361,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Multi-endpoint exploratory; no multiplicity correction mentioned.
 **Generalizability.** MSS mCRC only; post-chemo heavily pretreated population.
 **Treg definition / gating.** Flow cytometry with FOXP3 (to be confirmed in methods); no CD25-targeting confound.
+**Counter-productive mechanisms (Moderate (`adcc-activated-effector-collateral`, `paradoxical-autoimmunity`)).** Botensilimab is an Fc-enhanced (Fc-optimized IgG1) anti-CTLA-4 engineered to increase FcγR engagement and ADCC/ADCP on CTLA-4-high Tregs. The counter-productive concerns: (a) Fc-enhancement can deplete activated effector T cells that transiently upregulate CTLA-4 [external: Simpson et al. 2013, J Exp Med; Arce Vargas et al. 2018, Cancer Cell]; (b) the combination with anti-PD-1 (balstilimab) compounds autoimmune-toxicity risk — the paper documents high-grade irAEs consistent with the class expectation. Unlike Ager 2026, this study does not report compartment-specific Treg data for tumor vs tdLN. Severity is moderate.
 **COI & funding.** Agenus industry-sponsored (botensilimab is Agenus compound); multiple Agenus authors. Major industry context — findings are supportive of an ongoing commercial program and should be read accordingly.
 **Spin / abstract-to-text consistency.** The trial has been prominently cited by Agenus for the botensilimab program; the paper reports clinically meaningful responses in MSS mCRC, a historically ICI-refractory population. Abstract framing is appropriately confident given the effect size but is optimistic about class generalization.
 
@@ -358,6 +388,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Many flow-cytometry parameters analyzed; multiplicity correction likely not applied (2008 era translational study).
 **Generalizability.** Melanoma patients only; UCLA cohort.
 **Treg definition / gating.** Standard CD4+CD25+ FoxP3 flow gating (era-appropriate). Anti-CTLA-4 does not target CD25, so no gating confound.
+**Counter-productive mechanisms (Low (`alt-checkpoint-upregulation`, `non-depleting-isotype`)).** Same class concerns as Huang 2011 and Ribas 2009: tremelimumab does not deplete intratumoral Tregs in humans, and CTLA-4 blockade induces compensatory alt-checkpoint upregulation [external: Huang 2017, PNAS; Woo et al. 2012]. The paper adds the observation that tremelimumab increases activated effector markers on both Treg and Teff compartments — consistent with the class interpretation that anti-CTLA-4 is a general T-cell co-stimulation release rather than a Treg-selective depletion agent. Severity is low for the Treg-depletion question.
 **COI & funding.** Ribas is on Pfizer advisory boards per related papers (Huang 2011 discloses this). Academic-led study but with industry funding for tremelimumab.
 **Spin / abstract-to-text consistency.** Title says 'detailed analysis' — descriptive framing, not over-selling a positive result.
 
@@ -384,6 +415,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Multiple immune readouts; no correction. The variability in the 26-76% range weakens the central claim.
 **Generalizability.** Predominantly RCC (+1 ovarian). The DAB389IL-2 + vaccine pairing is specific to this combined intervention. Standalone DD activity in other indications is addressed better by Attia 2005 (negative in melanoma) and Geskin 2018 (positive in CTCL).
 **Treg definition / gating.** CD4+/CD25high + intracellular FoxP3 protein flow + FoxP3 mRNA on purified CD4+ sort. The CD25-based gating is the classic confound for DD studies — the intervention targets CD25, so post-treatment CD25+ cell measurements are structurally compromised. Authors mitigate this with FoxP3 mRNA but the 30-80% mRNA-reduction range is also wide. Intracellular FoxP3 protein staining is more gating-independent and worth emphasizing; it is reported to corroborate the finding but at smaller sample.
+**Counter-productive mechanisms (Moderate (`cd25-effector-collateral`, `vaccine-priming-window`)).** Denileukin diftitox given before a tumor-RNA DC vaccine in RCC. The counter-productive concern is acute: the vaccine's effect depends on CD25-upregulating newly primed effector CD8 T cells, and DD has a window of anti-CD25 activity that overlaps the priming phase. If DD is administered close to vaccination, it may deplete the very effectors the vaccine is generating [external: Rech et al. 2012 PLoS ONE; Sci Transl Med 2009]. The paper's CD25-gated Treg readout also structurally cannot measure this off-target effect. The Morse 2008 daclizumab paper explicitly addresses this timing question for daclizumab; Dannull 2005 does not. Severity is moderate-to-high for the vaccine-combination context.
 **COI & funding.** NIH R21-CA098446 and M01-RR-30. Authors declared no COI. Ligand Pharmaceuticals provided DAB389IL-2. Duke academic-led. PMC paywalled — full acknowledgements read via WebFetch.
 **Spin / abstract-to-text consistency.** Title says 'enhancement of vaccine-mediated antitumor immunity ... after depletion of regulatory T cells' — commits to the depletion claim. The wide reported range (26-76%) is in the body of the paper but the abstract headline is less hedged. This is mild abstract-to-text-optimism, not outright spin.
 
@@ -410,6 +442,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Multiple dose cohorts, multiple timepoints, PBMC + tumor compartments — significant multiplicity; not formally corrected.
 **Generalizability.** Heavily-pretreated advanced solid tumors — poor generalizability to less-pretreated populations.
 **Treg definition / gating.** To confirm in methods; anti-GITR does not target CD25, no gating confound.
+**Counter-productive mechanisms (Moderate (`adcc-activated-effector-collateral`, `depletes-beneficial-effectors`)).** TRX518 is an afucosylated anti-GITR aimed at Treg depletion via ADCC. Counter-productive concerns: (a) GITR is expressed on activated CD8 effector T cells as well as Tregs, so afucosylated anti-GITR can deplete activated effectors [external: Pastor-Fernandez et al. 2023, Front Immunol]; (b) the anti-GITR clinical program did not advance despite modest PD signals, consistent with the collateral concern not being bounded by drug design. Severity is moderate.
 **COI & funding.** Leap Therapeutics sponsorship; industry context.
 **Spin / abstract-to-text consistency.** Program-level context: TRX518 did not advance past Phase 1; the paper is a terminal-reporting paper. Abstract may frame PD signals more positively than clinical disappointment warrants.
 
@@ -436,6 +469,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Abstract-only, not assessable.
 **Generalizability.** Phase 1 mixed tumor types; phase 3 failed to replicate the early signal.
 **Treg definition / gating.** Standard flow; to confirm in full text. No CD25-gating confound.
+**Counter-productive mechanisms (High (`treg-expansion-by-design`, `denominator-artifact-framing`)).** Same class concerns as Bentebibel 2019: bempeg + nivo in PIVOT-02. The original abstract framed the drug as effector-selective; the subsequent Gogas 2024 reanalysis of the same cohort documented 8-10× absolute Treg expansion, and the PIVOT-IO-001 phase 3 failed its primary endpoints [external: Diab et al. 2023, JCO]. The counter-productive mechanism is the drug's actual MoA: it expands Tregs, just expands effectors slightly more by frequency. Severity is high; this is arguably the cleanest negative-clinical-result evidence in the entire set that the 'favorable ratio' framing is counter-productive to the shieldbreak's goal.
 **COI & funding.** Nektar Therapeutics + BMS sponsorship. Major industry context — this was the lead-in paper for the PIVOT-IO phase 3 program that subsequently failed clinically.
 **Spin / abstract-to-text consistency.** SIGNIFICANT SPIN CONCERN: abstract claims 'without regulatory T-cell enhancement' — a claim that conflates frequency-as-%-of-CD4 with absolute count. Gogas 2024 (same PIVOT-02 cohort, subsequent analysis) documents the 8-10× absolute Treg expansion. This is exactly the kind of abstract-to-full-text inconsistency the user flagged — the paper's 'no Treg enhancement' claim is misleading. Importantly, this abstract-level framing helped justify advancement into the phase 3 PIVOT-IO trials, which subsequently FAILED in melanoma and RCC.
 
@@ -462,6 +496,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Single primary PD endpoint (eTreg); not a major multiplicity concern.
 **Generalizability.** Japanese ATLL/CTCL population; mogamulizumab approved in this indication. Generalizability to other CCR4-targeting contexts and populations should be cautious; Roelens 2022 Sézary French data support.
 **Treg definition / gating.** CCR4+FoxP3+CD45RA−CD25+ effector-Treg gating (Miyara classification). Gating quality is high; effector-Treg definition (Miyara Fr. II: CD45RA−FOXP3hi) is rigorous.
+**Counter-productive mechanisms (High (`depletes-beneficial-effectors`, `lymphopenia-collateral`)).** Mogamulizumab anti-CCR4. The paper itself documents the canonical class counter-productive mechanism: 'unexpected decrease in central memory CD8+ T cells, which also express CCR4 and have anti-tumor immunity' [paper Discussion], citing Kurose et al. 2015 and the Nature Communications 2021 preclinical work [external: Tanaka et al. 2021]. The paper argues 'KW-0761 may concurrently deplete eTregs and central memory CD8+ T cells, and this dual depletion may cancel anti-tumor immune responses.' The paper also documents high-grade lymphopenia (25%). Severity is HIGH — this is paper-internal, quantitative, and the authors explicitly argue it explains the 'minimal clinical benefit' seen in the trial.
 **COI & funding.** Kyowa Kirin (mogamulizumab manufacturer) post-marketing surveillance — industry sponsorship context is strong. However, the drug mechanism is on-target and the finding is orthogonal to multiple other mogamulizumab studies.
 **Spin / abstract-to-text consistency.** Title strongly commits to the depletion claim ('underpinned by depletion'); body of paper quantifies ~90% and is consistent. No inappropriate spin.
 
@@ -488,6 +523,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Multiple T-cell subset analyses (Treg, Th17, Th1/2); no multiplicity correction.
 **Generalizability.** Relapsed CLL only; idelalisib program has been limited by infectious and hepatic toxicity.
 **Treg definition / gating.** CD4+FOXP3+CD25+CD127low (to confirm); no CD25-targeting, no gating confound.
+**Counter-productive mechanisms (Moderate (`effector-function-suppression`, `paradoxical-autoimmunity`)).** Idelalisib is a PI3Kδ inhibitor. PI3Kδ signaling is required for Treg proliferation and function but ALSO for effector CD8 T-cell activation and germinal center formation [external: Okkenhaug et al. 2014, Cancer Discov; Ahmad et al. 2017, Clin Cancer Res]. Counter-productive concerns: (a) idelalisib has a characteristic toxicity profile of hepatitis, colitis, pneumonitis that reflects off-target effector disruption; (b) the drug's label includes black-box warnings for these immune-mediated AEs. Severity is moderate-to-high for the shieldbreak question; idelalisib is approved in CLL despite these concerns because the disease-specific efficacy dominates.
 **COI & funding.** Academic; funding to confirm.
 **Spin / abstract-to-text consistency.** Descriptive correlative paper; no evident spin.
 
@@ -514,6 +550,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Multiple comparisons (disease stage subgroups, responder vs non-responder) — no explicit multiplicity correction but the primary 29% median reduction has p=0.03 which would not survive strict Bonferroni.
 **Generalizability.** CTCL-specific; disease is already characterized by cutaneous lymphoproliferation with Tregs in flux — baseline immunology is non-standard.
 **Treg definition / gating.** CD4+CD25+FoxP3+ flow gating. CD25-gating confound applies: DD targets CD25. Post-treatment reduced CD25 staining may reflect epitope masking rather than true Treg depletion. The 'natural Treg' framing in the abstract does not fully resolve this.
+**Counter-productive mechanisms (Moderate (`cd25-effector-collateral`, `cd25-tumor-target-confound`)).** In CTCL the tumor cells themselves are often CD25+ or CD4+CD25-intermediate, so DD's anti-tumor activity and its anti-Treg activity are not separable in this disease — a well-evidenced class distinction from the solid-tumor indications [external: FDA ONTAK label]. The counter-productive concern for the shieldbreak question is that the 'Treg depletion' readout in CTCL is contaminated by depletion of CD25+ malignant cells and by depletion of CD25+ non-malignant T cells that participate in anti-tumor immunity. Severity is moderate — the drug clearly works in CTCL but not in a way that cleanly isolates a Treg-depletion mechanism for generalization to other indications.
 **COI & funding.** NIH P50CA121973 (SPORE); authors declared no COI. Academic; lower industry-bias concern.
 **Spin / abstract-to-text consistency.** Abstract framing is consistent with results — 29% median reduction and responder-stratified analyses are appropriate framing. No over-claiming.
 
@@ -540,6 +577,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Multiple functional endpoints (NK, T-cell proliferation) — no explicit multiplicity correction. Fisher's exact method is mentioned but is not obviously appropriate for paired continuous outcomes; Wilcoxon signed-rank would be more standard.
 **Generalizability.** End-stage cancer mixed population (6M/3F, range 37-65); very-late-line setting. Effect may not generalize to earlier-line or specific cancers.
 **Treg definition / gating.** CD3/CD4/CD25 surface + intracellular FoxP3 (4 patients). Cyclophosphamide does not target CD25, so no gating confound.
+**Counter-productive mechanisms (Low (`lymphopenia-collateral`)).** Metronomic (low-dose oral) cyclophosphamide is reported to be preferentially Treg-depleting because Tregs have lower ATP reserves and are more sensitive to low-dose alkylation [external: Lutsiak et al. 2005, Blood; Ghiringhelli et al. 2004, Cancer Immunol Immunother]. The counter-productive concern is bounded by the dosing: at metronomic dose, collateral effector depletion is real but modest, and effector function is reportedly preserved. Severity is low — this is arguably the cleanest dose-selective Treg-depletion mechanism in the set, but it is not effector-free.
 **COI & funding.** Ligue Nationale contre le Cancer (French charity) grants. COI not explicitly disclosed in PMC snippet — full-text verification needed.
 **Spin / abstract-to-text consistency.** Title firmly commits to 'selectively depletes'. Effect size supports this framing. No evident spin given the observed p<0.0001 numbers.
 
@@ -566,6 +604,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Many cell-subset and timepoint comparisons; p-values reported as asterisks (p<0.00001 / p<0.0001) without apparent multiplicity correction. The large effect sizes would likely survive Bonferroni even so, but the methodological norm should be explicit correction for this many comparisons.
 **Generalizability.** Melanoma subset of PIVOT-02; downstream phase 3 failure means findings don't generalize to a clinical-benefit claim.
 **Treg definition / gating.** Flow cytometry; to confirm. No CD25-gating confound.
+**Counter-productive mechanisms (High (`treg-expansion-by-design`, `denominator-artifact-framing`)).** Gogas 2024 is the reanalysis that quantified what Bentebibel 2019 and Diab 2020 framed away: bempeg absolutely expands Tregs 8-10× and the 'favorable ratio' was a denominator artifact. The counter-productive mechanism is paper-internal and well-documented here: the drug expands the population it was designed to spare, and the PIVOT-IO-001 phase 3 clinical failure is the clinical corollary [external: Diab et al. 2023, JCO]. Severity is high, and this paper is methodologically the most valuable for understanding WHY the class counter-productive mechanism matters.
 **COI & funding.** Nektar + BMS sponsorship. Industry-sponsored but honest contradiction of the earlier abstract framing is to the authors' credit.
 **Spin / abstract-to-text consistency.** Biomarker paper is appropriately framed: absolute expansion documented, ratio-shift framing used. The contrast with Diab 2020 abstract is the spin issue — not in this paper but in the earlier PIVOT-02 publication.
 
@@ -592,6 +631,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Multiple agent combination complicates causal inference.
 **Generalizability.** CLL only.
 **Treg definition / gating.** To confirm.
+**Counter-productive mechanisms (Moderate (`depletes-beneficial-effectors`, `lymphopenia-collateral`)).** Mogamulizumab + rhIL-15 in R/R T-cell malignancies. Class counter-productive concern applies: CCR4+ CD8 central memory collateral [external: Tanaka 2021, Nat Commun; Fujikawa 2023 paper]. The rhIL-15 combination partially addresses this by expanding memory CD8 and NK populations post-depletion, which could rescue the effector compartment — but the paper does not directly measure whether rescue is effective for the depleted subset. Severity is moderate.
 **COI & funding.** Industry-supported CLL regimen; obinutuzumab = Genentech/Roche, venetoclax = AbbVie, zanubrutinib = BeiGene.
 **Spin / abstract-to-text consistency.** Not a primary Treg-depletion trial; Treg finding is correlative.
 
@@ -618,6 +658,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Subset-specific endpoint reduces multiplicity burden compared to broad immune-profiling.
 **Generalizability.** AML only; TNFR2+ subset specifically.
 **Treg definition / gating.** CD4+FOXP3+TNFR2+ gating — high-quality, subset-specific. No CD25-targeting drug; no gating confound.
+**Counter-productive mechanisms (Moderate (`effector-function-suppression`, `treg-induction-by-dnmti`)).** Azacitidine + panobinostat in AML. The counter-productive concern is compound: (a) DNMTi (azacitidine) can demethylate the FOXP3 TSDR and stabilize/induce Tregs [external: Moon et al. 2016, Clin Cancer Res]; (b) pan-HDACi can reduce effector T-cell function [external: Kroesen 2014, Oncotarget]. The paper reports a REDUCTION in a TNFR2+ Treg subset only, not total Tregs; this partial signal does not resolve the class-level counter-productive exposure. Severity is moderate-to-high.
 **COI & funding.** Academic Australian group; industry panobinostat (Novartis) likely supplied.
 **Spin / abstract-to-text consistency.** Subset-specific framing is accurate. No apparent spin.
 
@@ -644,6 +685,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Multiple immune-subset analyses; multiplicity correction unclear from abstract.
 **Generalizability.** NSCLC-centric; clinical-efficacy context is mixed.
 **Treg definition / gating.** Standard CD4+FOXP3+ flow (to confirm).
+**Counter-productive mechanisms (Moderate (`adcc-activated-effector-collateral`, `depletes-beneficial-effectors`)).** Tiragolumab is anti-TIGIT Fc-active IgG1. Counter-productive concerns: (a) TIGIT is expressed on activated effector CD8 T cells (especially exhausted CD8s in TME) so anti-TIGIT Fc-active mechanism can deplete tumor-infiltrating effectors [external: Chauvin & Zarour 2020, JITC]; (b) the broader anti-TIGIT clinical program has produced mixed phase 3 results (SKYSCRAPER-01 in PD-L1-high NSCLC missed PFS) [external: Cho et al. 2022, ESMO], consistent with the collateral concern materializing at clinical scale. Severity is moderate.
 **COI & funding.** Genentech/Roche industry sponsorship. Authorship includes company employees.
 **Spin / abstract-to-text consistency.** Not overly promotional; modest effect size reported honestly.
 
@@ -670,6 +712,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Exploratory PD endpoints.
 **Generalizability.** HER2+ breast cancer only.
 **Treg definition / gating.** Likely standard CD4+CD25+FOXP3+; CD25-gating confound applies to all DD studies.
+**Counter-productive mechanisms (Moderate (`cd25-effector-collateral`, `lymphopenia-collateral`)).** DD in treatment-refractory stage IV breast cancer. Class-level CD25+ effector collateral concern applies (see Atchison 2010 entry). The paper is in a late-line heavily-pretreated population where lymphoid compartment is already depleted from prior cytotoxic therapy, so additional DD-mediated CD25+ effector depletion compounds pre-existing lymphopenia in a counter-productive direction. Severity is moderate.
 **COI & funding.** Likely UW+Citius Pharmaceuticals (Lymphir license-holder) context; to confirm.
 **Spin / abstract-to-text consistency.** Phase 1 directional reporting.
 
@@ -696,6 +739,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Biomarker paper with many comparisons; no formal correction.
 **Generalizability.** Advanced melanoma.
 **Treg definition / gating.** Ipilimumab does not target CD25; no gating confound.
+**Counter-productive mechanisms (Low (`alt-checkpoint-upregulation`, `paradoxical-autoimmunity`)).** Ipilimumab (IgG1) does not deplete intratumoral Tregs in humans. Class counter-productive concerns: (a) PD-1 and LAG-3 compensatory upregulation on T cells after CTLA-4 blockade [external: Huang 2017, PNAS]; (b) ipilimumab-mediated T-cell activation can drive immune-related adverse events (colitis, hypophysitis) that reflect paradoxical autoimmunity in non-tumor tissues — consuming immune capacity away from tumor response. Severity is low-to-moderate since the proximal Treg-depletion endpoint is not met in humans.
 **COI & funding.** BMS industry-sponsored ipilimumab program.
 **Spin / abstract-to-text consistency.** Descriptive biomarker analysis; not a depletion claim.
 
@@ -722,6 +766,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Multiple Treg endpoints (count, frequency, suppressive function) — not explicitly corrected.
 **Generalizability.** Refractory ITP — autoimmune context, NOT oncology. Generalizability to oncology DNMTi studies (e.g., Penter 2023 post-decitabine AML) is via the same mechanism: decitabine destabilizes then re-stabilizes methylation marks including at TSDR, generally favoring Treg expansion.
 **Treg definition / gating.** Likely CD4+CD25+FOXP3+ plus suppression assay. No CD25-targeting drug; no gating confound.
+**Counter-productive mechanisms (High (`opposite-direction-mechanism`, `treg-induction-by-dnmti`)).** Low-dose decitabine in immune thrombocytopenia (ITP, autoimmune). The 'counter-productive' framing here is flipped: in ITP, INCREASING Tregs IS the therapeutic goal, so the DNMTi's well-known Treg-inducing effect via TSDR demethylation [external: Moon et al. 2016, Clin Cancer Res; Lal & Bromberg 2009, Blood] is the intended mechanism. For the shieldbreak question (Treg depletion), this paper is a counterexample: DNMTi monotherapy is DIRECTIONALLY OPPOSITE to Treg depletion. Severity is high for the shieldbreak question (opposite-direction mechanism by design).
 **COI & funding.** Academic Chinese/Japanese groups typical for this literature.
 **Spin / abstract-to-text consistency.** Treg expansion framed as therapeutic in autoimmune context — appropriate and honest.
 
@@ -748,6 +793,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Multiple markers tested on the same biopsies (CD4, CD8, FOXP3, HLA-DR, CD45RO, Ki67); multiplicity NOT corrected. p=0.0029 for FOXP3 would survive a modest Bonferroni but this is a legitimate methodological weakness.
 **Generalizability.** Metastatic melanoma only; UCLA single-center; tremelimumab (not ipilimumab — related but IgG2 isotype with less ADCC).
 **Treg definition / gating.** SINGLE-MARKER FOXP3 IHC — the Sharma 2019 paper itself notes this as a limitation (FOXP3 alone can represent Teff and Treg). Huang 2011 uses the same single-FOXP3 IHC. The CyTOF co-staining (Sharma 2019 supplement) does not apply to the Huang data. This means 'FOXP3+ cell density' in Huang 2011 is technically 'intratumoral cells expressing FOXP3' — which in activated tumor tissue can include transiently FOXP3-expressing Teff cells.
+**Counter-productive mechanisms (Low (`alt-checkpoint-upregulation`, `non-depleting-isotype`)).** Tremelimumab is an IgG2 anti-CTLA-4 that does not deplete intratumoral Tregs in humans despite the preclinical mouse-ADCC hypothesis. The paper documents an INCREASE in tumor Tregs (4.75×, p=0.0029), consistent with the class finding. Counter-productive concerns: (a) anti-CTLA-4 monotherapy is known to induce compensatory upregulation of alternative T-cell checkpoints including PD-1 and LAG-3 [external: Huang 2017, PNAS; Woo et al. 2012]; (b) the IgG2 isotype's failure to deplete Tregs means the drug releases CTLA-4-mediated inhibition on both effectors AND Tregs, a net-equivocal immunomodulation. Severity is low-to-moderate because the proximal mechanism doesn't operate as intended — limiting off-target concerns.
 **COI & funding.** Pfizer funding (tremelimumab is Pfizer); Dr. Gomez-Navarro was a Pfizer employee at the time; Ribas received honoraria from Pfizer. SUBSTANTIAL industry COI — the paper reports a NEGATIVE result (increased FOXP3) for the industry-sponsor's compound, which is to the authors' credit but does not eliminate the COI.
 **Spin / abstract-to-text consistency.** STATISTICAL METHOD ISSUE: Methods state 'Mann-Whitney rank sum test' (an UNPAIRED test) but the data in Table 3 are paired pre vs post biopsies. The correct test is Wilcoxon signed-rank. This is a real methodological issue — applied Mann-Whitney to paired data is conservative in some cases but statistically inappropriate. The screener flagged this as 'paper uses paired test despite Mann-Whitney label' — the direction of bias is minor but the methodological sloppiness is notable. No abstract-to-text spin otherwise.
 
@@ -776,6 +822,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Multi-subset analyses; not explicitly corrected. The primary endpoint (eTreg depletion) had unanimous directional finding (16/16).
 **Generalizability.** Resectable solid tumors; specific tumor types to be confirmed. Neoadjuvant window-of-opportunity design is specific.
 **Treg definition / gating.** CCR4+FoxP3+ effector-Treg gating (Miyara-style). High-quality gating.
+**Counter-productive mechanisms (High (`depletes-beneficial-effectors`, `lymphopenia-collateral`)).** Mogamulizumab + nivolumab neoadjuvant in operable solid tumors. Class counter-productive mechanism from Fujikawa 2023 and the preclinical Tanaka 2021 Nature Communications paper applies directly [external]: CCR4 is expressed on central memory CD8 T cells and Th1 effectors, so anti-CCR4 ADCC depletes beneficial effectors alongside Tregs. The paper reports high-grade lymphopenia consistent with this. Severity is high — the mechanism is well-evidenced across the anti-CCR4 class and is not mitigated by the neoadjuvant setting.
 **COI & funding.** Kyowa Kirin / Ono (Japan) sponsorship context.
 **Spin / abstract-to-text consistency.** Appropriate: eTreg depletion framed as the mechanistic readout, not the clinical benefit claim.
 
@@ -802,6 +849,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Multiple cytokines analyzed (IL-8, TGF-β, sIL2Ra) and two compartments (PBMC, ascites); per-dose-cohort analyses add multiplicity. Not corrected. The p=0.0374 at 15 µg/kg would not survive strict Bonferroni but is directionally consistent with pooled data.
 **Generalizability.** Recurrent refractory ovarian cancer, heavily pretreated (2-7 prior chemo regimens). Generalizability to earlier-line ovarian or other tumors uncertain. The ONTAK formulation used was subsequently withdrawn; Lymphir (new formulation) may have different bioactivity.
 **Treg definition / gating.** CD4+CD25+FOXP3+ BUT measured by RT-PCR for FOXP3 mRNA normalized to CD4 — similar approach to Attia 2005. This avoids the worst of the CD25-masking confound (gene expression is independent of CD25 antibody binding). The specific quantification method is 'relative FoxP3 mRNA level normalized to CD4' — methodologically reasonable for a surface-receptor-targeting intervention.
+**Counter-productive mechanisms (Low (`cd25-effector-collateral`, `route-mitigation-ip`)).** Intraperitoneal DD in recurrent ovarian cancer. IP administration bounds the systemic exposure and therefore bounds the systemic CD25+ effector-collateral concern relative to IV DD, which is a design-level mitigation of the class counter-productive mechanism. Local peritoneal CD25+ effector depletion remains possible, but the paper reports dose-dependent Treg reduction without clear evidence of off-target CD8 depletion. Severity is low-to-moderate — IP route makes this the least-exposed-to-the-class-concern DD application in the set.
 **COI & funding.** JBL: research funding from Merck, AstraZeneca, Precigen, ArsenalBio, Volastra, Nurix, Laekna, Aminex through institution; consultant for Verismo. MLD: grant funding from Precigen, Veanna, Bavarian Nordic, Aston Sci; holds shares in Epithany; UW patent inventor. Significant industry relationships disclosed — authors explicitly state 'no other competing interests.' NIH NCRR M01 and NCI K23 funding. Disclosure is thorough.
 **Spin / abstract-to-text consistency.** Honest reporting: ascites p=0.2737 n.s. was correctly described as not meeting statistical significance despite meeting the 25% immunologic-efficacy secondary threshold. The authors clearly distinguish statistical from biological significance. Conclusions are conservative.
 
@@ -828,6 +876,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Multiple doses, multiple immune endpoints — would benefit from explicit correction. p<0.001 at primary dose comparison would survive Bonferroni.
 **Generalizability.** SLE autoimmune context; Treg expansion is the therapeutic goal (opposite to oncology). Generalizability to oncology CELMoD use (e.g., multiple myeloma per Amatangelo 2024) is via the same mechanism but different clinical direction.
 **Treg definition / gating.** CD4+CD25+FOXP3+CD127low (to confirm). Standard gating; no CD25-targeting confound.
+**Counter-productive mechanisms (High (`opposite-direction-mechanism`, `treg-induction-by-design`)).** Iberdomide in active SLE. The setting is autoimmunity, where INCREASING Tregs is the therapeutic goal — and the paper reports +104.9% Tregs at 0.45 mg (p<0.001), mechanistically coherent with Ikaros/Aiolos degradation sparing Helios/IKZF2. For the shieldbreak question (Treg depletion in cancer), this paper is a counterexample: CELMoD is directionally opposite. Severity is high for the shieldbreak question (opposite-direction mechanism by design).
 **COI & funding.** BMS/Celgene-sponsored clinical trial of iberdomide. Multiple BMS-employee authors. Industry context is strong but directionally HONEST (reports Treg INCREASE in autoimmune setting where that is therapeutic).
 **Spin / abstract-to-text consistency.** Treg increase framed as therapeutic for SLE — appropriate for autoimmune setting. No spin concern.
 
@@ -854,6 +903,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Multiple biomarker endpoints.
 **Generalizability.** Single indication.
 **Treg definition / gating.** CD25-gating confound applies as it does to all DD studies.
+**Counter-productive mechanisms (Moderate (`cd25-effector-collateral`, `vaccine-priming-window`)).** Single-dose denileukin diftitox immediately before a gp100 peptide vaccine in advanced melanoma. The class-level concern that DD can deplete CD25+ activated effector T cells is acutely relevant here because the assay is vaccine-induced gp100-specific CD8 response — the very population DD might ablate if given after priming. The authors use pre-vaccine DD timing to minimize this, consistent with the Baur 2013 mechanistic argument that the DD depletion window is short and confined to pre-priming. Severity is moderate: the timing mitigation is biologically sound but the paper does not measure CD25-expressing effector subsets directly.
 **COI & funding.** Likely Eisai/Eisai Ligand legacy provided DD; academic-led.
 **Spin / abstract-to-text consistency.** Phase 2 reporting norms.
 
@@ -880,6 +930,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Abstract only.
 **Generalizability.** Melanoma; German/European cohort typical for Int J Cancer papers.
 **Treg definition / gating.** CD4+CD25+ surface gating — classic CD25-confound for a CD25-targeting agent. Abstract does not mention FoxP3 confirmation, though the main paper probably includes it. Paywall limits verification.
+**Counter-productive mechanisms (High (`il2-receptor-blockade-collateral`, `cd25-gating-confound`)).** Daclizumab blocks the IL-2Rα (CD25) chain, preventing high-affinity IL-2 signaling on Tregs but ALSO on activated effector CD8 T cells and CD4 Th1 cells, both of which upregulate CD25 during priming and proliferation [external: Rech & Vonderheide 2009, Ann NY Acad Sci; Jacobs et al. 2010, Cancer Res]. This is the textbook counter-productive mechanism: the drug blocks the same IL-2 signal that anti-tumor effectors need to expand. The paper's claim of a 'prolonged decrease in Tregs in circulation' is CD25-gated and therefore cannot distinguish Treg depletion from Treg CD25-epitope masking, and cannot measure effector-CD25 signaling blockade at all. Severity is high for the shieldbreak question.
 **COI & funding.** Not accessible from abstract. Likely Eisai/Ligand-supplied drug.
 **Spin / abstract-to-text consistency.** Title and abstract commit to 'depletion.' Consistent with the Dannull-aligned literature but the CD25-confound applies.
 
@@ -906,6 +957,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Modest.
 **Generalizability.** Cancer vaccine-combination setting; DD+vaccine-specific interpretation.
 **Treg definition / gating.** Authors acknowledge the CD25-confound explicitly: 'The short half-life of denileukin diftitox (70-80 minutes) should limit its impact on subsequently activated effector T cells.' They use intracellular FoxP3 as the definitive Treg marker (CD4+CD25highFoxP3+) to address the concern — reasonable approach though the CD25-masking issue is not fully ruled out by half-life alone.
+**Counter-productive mechanisms (High (`il2-receptor-blockade-collateral`, `vaccine-priming-window`, `cd25-gating-confound`)).** Same class concern as Mahnke 2007: daclizumab blocks IL-2Rα on both Tregs and CD25-upregulating activated effectors [external: Rech & Vonderheide 2009; Jacobs 2010]. The study adds a vaccine component, making the counter-productive mechanism particularly salient — vaccine-induced CEA-specific CD8 responses depend on IL-2Rα signaling that daclizumab blocks. The authors address this with an explicit pharmacokinetic argument (daclizumab CD25 saturation decays before effector priming peaks) but do not directly measure effector IL-2 signaling. Severity is high for the shieldbreak question and for the vaccine-combination context specifically.
 **COI & funding.** NIH 1R21-CA117126 and 5P01-CA078673. Authors declare no competing financial interests. Eisai supplied DD for cohort 2. Academic.
 **Spin / abstract-to-text consistency.** The title commits to 'depletion of human regulatory T cells specifically enhances...' — somewhat strong for a 4/4 and 2/5 proportional finding. The body of the paper reports more cautiously. Mild abstract-to-title optimism.
 
@@ -932,6 +984,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** N/A.
 **Generalizability.** Case report of ipilimumab-induced enterocolitis — highly specific adverse-event context.
 **Treg definition / gating.** Not accessible.
+**Counter-productive mechanisms (Moderate (`paradoxical-autoimmunity`)).** Case report of ipilimumab-induced severe enterocolitis — a paradoxical autoimmune event driven by the same CTLA-4 blockade that is intended to enhance anti-tumor immunity. The counter-productive mechanism here is direct and paper-internal: T-cell activation capacity is consumed by gut immunopathology [external: Beck et al. 2006, JCO for the class epidemiology]. Severity is moderate at the individual-patient level, low at the population level — the colitis affects a subset but when it happens it's clearly counter-productive to the tumor target.
 **COI & funding.** Not accessible.
 **Spin / abstract-to-text consistency.** Title over-claims 'profound long-lasting depletion' from a case report. The title-level spin is substantial — a case report is insufficient evidence for 'depletion' as a class claim.
 
@@ -958,6 +1011,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Multiple timepoints (baseline, post-decitabine, post-ipilimumab) with Wilcoxon rank-sum.
 **Generalizability.** AML/MDS only; DNMTi-primed context is specific. Generalizability to de-novo ipilimumab (without decitabine priming) is limited.
 **Treg definition / gating.** scRNA-seq cluster identification + CD3+FOXP3+ mIF. High-quality orthogonal approach; no CD25-gating confound for anti-CTLA-4 intervention.
+**Counter-productive mechanisms (High (`opposite-direction-mechanism`, `treg-induction-by-dnmti`)).** Decitabine + ipilimumab in AML/MDS post-allo-HCT. Counter-productive concern is directly observed: decitabine EXPANDS marrow Tregs via TSDR demethylation [external: Moon 2016], and the paper documents this marrow Treg expansion as a resistance mechanism to ipilimumab. The ipilimumab half of the combination adds alt-checkpoint-upregulation concern. Severity is high — the paper's own finding is that decitabine counter-productively expands the cells ipi is trying to remove.
 **COI & funding.** Multiple authors have industry affiliations (per the PMC HTML summary); academic-led translational analysis of an NIH-sponsored trial (ETCTN/CTEP).
 **Spin / abstract-to-text consistency.** Honest — the authors frame the Treg expansion as a RESISTANCE mechanism, not glossing over the contradictory direction.
 
@@ -984,6 +1038,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Typical biomarker panel.
 **Generalizability.** Advanced solid tumors.
 **Treg definition / gating.** Standard. No CD25-targeting confound.
+**Counter-productive mechanisms (Moderate (`adcc-activated-effector-collateral`, `depletes-beneficial-effectors`)).** Same class concerns as Davar 2022. GWN323 is an anti-GITR with Fc-enhanced ADCC; the counter-productive mechanism is GITR expression on activated effector CD8 T cells [external: Pastor-Fernandez 2023]. Severity is moderate.
 **COI & funding.** Merck sponsorship.
 **Spin / abstract-to-text consistency.** Phase 1 reporting.
 
@@ -1010,6 +1065,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Multi-subset.
 **Generalizability.** Solid tumors.
 **Treg definition / gating.** Standard.
+**Counter-productive mechanisms (High (`treg-expansion-by-design`, `denominator-artifact-framing`)).** Less-frequent nemvaleukin dosing in advanced solid tumors. Same class counter-productive mechanism applies: absolute Treg expansion, denominator-artifact framing. Lower dosing intensity could theoretically improve the effector/Treg ratio but the paper's PD data still document absolute Treg expansion. Severity is high.
 **COI & funding.** Industry.
 **Spin / abstract-to-text consistency.** Phase 1 reporting.
 
@@ -1036,6 +1092,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Multiple biomarker endpoints.
 **Generalizability.** Metastatic RCC; IL-2-eligible population.
 **Treg definition / gating.** Standard flow.
+**Counter-productive mechanisms (Low (`il2-treg-expansion-confound`)).** Entinostat is class-I-selective HDACi with preferential Treg effects; the paper reports decreased tumor Tregs combined with HD IL-2. Counter-productive concerns: (a) HD IL-2 expands Tregs as well as effectors [external: Ahmadzadeh & Rosenberg 2006, Blood], partially offsetting entinostat's effect; (b) class-I HDACi has been associated with preferentially enhancing CD8 T-cell function in some settings, which is counter-productive-neutral [external: McCaw et al. 2021, Cancer Med]. Severity is low for entinostat specifically — the preclinical class-I-selectivity evidence and paper-internal direction are consistent with bounded collateral.
 **COI & funding.** Academic + likely Syndax (entinostat developer) sponsorship.
 **Spin / abstract-to-text consistency.** Randomized design reduces spin risk.
 
@@ -1062,6 +1119,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Multiple IHC markers; exploratory.
 **Generalizability.** Very small; retrospective; specific tumor lesions biopsied at clinician discretion.
 **Treg definition / gating.** Single-marker FoxP3 IHC — limitation explicitly acknowledged in Sharma 2019 (same type of readout).
+**Counter-productive mechanisms (Low (`alt-checkpoint-upregulation`, `non-depleting-isotype`)).** Retrospective post-hoc analysis of ipilimumab or tremelimumab. Same class counter-productive findings apply: no intratumoral Treg depletion, expected compensatory alt-checkpoint upregulation [external: Huang 2017, PNAS]. Severity is low for the shieldbreak question; the retrospective design also limits the ability to pin mechanism-level observations on the drug.
 **COI & funding.** Pfizer tremelimumab.
 **Spin / abstract-to-text consistency.** Authors acknowledge retrospective bias in their own subsequent prospective study (Huang 2011).
 
@@ -1088,6 +1146,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Multiple subsets analyzed; not explicitly corrected.
 **Generalizability.** Sézary syndrome B2 stage — specific CTCL subset. Mogamulizumab is approved here, so results are in the on-label population.
 **Treg definition / gating.** Flow cytometry with KIR3DL2 / TCRVβ for malignant vs benign compartment separation — very rigorous gating. 'Activated regulatory T cells' specifically identified.
+**Counter-productive mechanisms (Moderate (`depletes-beneficial-effectors`, `cd25-tumor-target-confound`)).** Mogamulizumab in Sézary syndrome (CTCL). In CTCL, the malignant cells are CCR4+, so anti-CCR4 has dual anti-tumor activity — this partially resolves the class counter-productive concern for CTCL specifically (CCR4+ CD8 depletion still occurs but anti-tumor activity is also enhanced by depleting CCR4+ malignant cells) [external: Tanaka 2021, Nat Commun]. For the shieldbreak question (generalizable Treg-depletion mechanism), the class concern remains. Severity is moderate — in CTCL bounded by dual anti-tumor activity, but the mechanism-level effector collateral is real and intrinsic to the drug.
 **COI & funding.** Kyowa Kirin likely context; French + European investigator-led.
 **Spin / abstract-to-text consistency.** Abstract framing is careful and balanced — no over-claiming.
 
@@ -1114,6 +1173,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Multiple biomarker endpoints; ratio-shift is one of many.
 **Generalizability.** HER2-negative breast cancer; checkpoint-combo setting.
 **Treg definition / gating.** FoxP3 IHC likely; not CD25-targeting.
+**Counter-productive mechanisms (Low (`alt-checkpoint-upregulation`)).** Entinostat + nivo ± ipi combination. Same class-I-HDACi class concerns as Pili 2017 (bounded, class-I-selective). The nivo/ipi combination adds the alt-checkpoint-upregulation concern for anti-CTLA-4 [external: Huang 2017, PNAS] and paradoxical autoimmunity risk. Severity is low-to-moderate.
 **COI & funding.** Syndax (entinostat) + BMS (nivolumab) industry context.
 **Spin / abstract-to-text consistency.** Ratio-shift framing is appropriate given underlying Treg decrease is not separately quantified.
 
@@ -1140,6 +1200,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Multiple tumor types, multiple isotypes, multiple cell markers — extensive testing without explicit multiplicity correction. However, the consistent directional finding across all comparisons (all show increase or no change, none show decrease) is its own robustness check.
 **Generalizability.** Paired-melanoma tremelimumab (n=18) is the highest-quality comparison. Unpaired stage-matched cohorts for prostate and bladder add breadth but with design caveats.
 **Treg definition / gating.** SINGLE-MARKER FOXP3 IHC for the main cohort. The paper itself notes this limitation: 'single staining for FOXP3 alone can represent Teff and Treg cells.' The CyTOF data (n=5) address this with CD3+CD4+FOXP3+CTLA-4+ — and they show INCREASED Treg frequency of the co-expression-defined population, confirming the IHC finding. This is methodologically rigorous self-critique.
+**Counter-productive mechanisms (Low (`alt-checkpoint-upregulation`, `non-depleting-isotype`)).** Well-designed Sharma 2019 paper is the cleanest negative intratumoral Treg data for standard anti-CTLA-4. Class counter-productive concerns: alt-checkpoint upregulation [external: Huang 2017, PNAS], failure to deplete means release of CTLA-4 inhibition on both Treg and Teff compartments equivalently. The paper's finding that prior 'Treg reduction' claims were frequency-denominator artifacts (Treg % dropped because total T cells rose) adds to the concern that framing anti-CTLA-4 as a Treg-depletor misallocates mechanistic attention. Severity is low for the shieldbreak question (the drug doesn't do the proximal thing, so collateral effects on Tregs-vs-effectors are moot at that mechanism).
 **COI & funding.** MD Anderson + UCLA academic. Likely Parker Institute / SPORE funding (to confirm). Ribas / Wargo / Allison / Sharma are senior anti-CTLA-4 investigators — with both credibility and implicit industry relationships.
 **Spin / abstract-to-text consistency.** Title commits firmly to the negative: 'Anti-CTLA-4 immunotherapy does not deplete FOXP3+ Tregs.' Body supports it rigorously. No spin — this is a high-integrity paper that challenges a dominant preclinical paradigm.
 
@@ -1166,6 +1227,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Multiple cell-type comparisons (CD3, CD4, CD8, Tregs, etc.); no explicit Bonferroni but tests are reported with specific p-values. The two-tailed Wilcoxon/Mann-Whitney choice is appropriate.
 **Generalizability.** ER+ metastatic breast cancer on 5 prior regimens. Highly pretreated population. Low ORR (4%) despite significant Treg reduction — caps the clinical interpretation.
 **Treg definition / gating.** CD4+FoxP3+CTLA-4+ — a rigorous triple-marker gating for ACTIVATED Tregs specifically. Excellent gating quality. Authors also analyze HLA-DR and Ki67 on Tregs — found no change in activation markers, suggesting numerical decrease rather than phenotype shift.
+**Counter-productive mechanisms (Moderate (`effector-function-suppression`)).** Vorinostat (broad HDACi, not class-I-selective) in breast cancer. Counter-productive concerns: (a) vorinostat's broader HDAC target spectrum includes class-II HDACs linked to effector function [external: Kroesen et al. 2014, Oncotarget]; (b) tamoxifen-pembro adds modulators with their own off-target profiles. The paper reports tumor Treg decrease with PBMC Treg stability, a compartment dissociation the class-I-selective preclinical evidence does not cleanly predict for pan-HDAC vorinostat. Severity is moderate.
 **COI & funding.** Merck pembrolizumab + academic (UCSF Munster lab); Syndax was not involved (this is vorinostat, Merck's Zolinza, not entinostat). Munster has established HDACi-immunotherapy research program.
 **Spin / abstract-to-text consistency.** Honest: authors specifically note the 4% ORR and early trial termination in discussion. The Treg-reduction finding is framed as a potential mechanism-of-response correlate (responders had HIGHER baseline Tregs 15.8% vs 11.5% n.s.), but the compartment-specific nature (tumor yes, PBMC no) and the bidirectional reduction in responders AND non-responders is transparently reported.
 
@@ -1192,6 +1254,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Multiple sub-studies conflated in abstract.
 **Generalizability.** Ovarian cancer; ID8-murine + human phase I-II.
 **Treg definition / gating.** Abstract refers to 'functional Treg reduction' (suggesting suppression assay used). This would side-step CD25-gating confound; full text required to verify.
+**Counter-productive mechanisms (Moderate (`cd25-effector-collateral`, `ifna-cd25-upregulation-interaction`)).** Phase II failure of DD + IFNα in advanced ovarian cancer. The class-level CD25+ effector collateral concern applies, and is relevant here because IFNα upregulates CD25 on activated T cells [external: Petricoin et al. 1997, Nature]. DD + IFNα could therefore make activated effector T cells MORE susceptible to DD depletion — the combination may have a worse effector-collateral profile than DD alone. The paper reports clinical failure without mechanistic dissection of this specific interaction. Severity is moderate-to-high for the specific combination studied.
 **COI & funding.** Not accessible from abstract.
 **Spin / abstract-to-text consistency.** 2/2 patients is presented as a positive signal in the abstract. This is mild spin — 2 patients cannot establish efficacy; the DD monotherapy failure is the more interpretable result.
 
@@ -1218,6 +1281,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Many timepoints and subsets; qualitative framing without per-comparison p-values (as the screener correctly captures).
 **Generalizability.** Advanced solid tumors.
 **Treg definition / gating.** Standard.
+**Counter-productive mechanisms (High (`treg-expansion-by-design`, `denominator-artifact-framing`)).** Same class concerns as Calvo 2025. ARTISTRY-1 nemvaleukin mono shows absolute Treg expansion with claimed effector-biased ratio. The subsequent phase 3 ARTISTRY-7 failure in ovarian cancer [external: Mylavaram et al. 2023, ASCO] is the clinical evidence the ratio-shift mechanism does not translate. Severity is high.
 **COI & funding.** Mural Oncology sponsorship.
 **Spin / abstract-to-text consistency.** Ratio-shift framing is the class standard for non-α IL-2 — appropriate.
 
@@ -1244,6 +1308,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Multiplicity.** Multiple T-cell subsets.
 **Generalizability.** NSCLC ACT setting.
 **Treg definition / gating.** Standard.
+**Counter-productive mechanisms (Low (`alt-checkpoint-upregulation`, `lymphopenia-collateral`)).** Neoadjuvant chemotherapy + ipilimumab in early-stage NSCLC. Ipilimumab counter-productive concerns apply (alt-checkpoint upregulation, paradoxical autoimmunity) [external: Huang 2017, PNAS]. The chemotherapy component adds a lymphopenia-collateral dimension: the chemo regimen itself depletes lymphoid compartment non-selectively, potentially reducing the effector population that ipilimumab activation would otherwise recruit. Severity is low-to-moderate: the combination's counter-productive exposure comes more from chemo than from ipilimumab at the mechanism level.
 **COI & funding.** Academic.
 **Spin / abstract-to-text consistency.** Descriptive.
 

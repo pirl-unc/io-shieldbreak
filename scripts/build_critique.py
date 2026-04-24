@@ -79,6 +79,13 @@ def build_per_paper_md(crit: dict, trial_rows_for_paper: list[dict]) -> str:
     lines.append(f"**Multiplicity.** {safe(crit.get('multiplicity_notes'))}")
     lines.append(f"**Generalizability.** {safe(crit.get('generalizability_notes'))}")
     lines.append(f"**Treg definition / gating.** {safe(crit.get('treg_gating_notes'))}")
+    cpm_sev = crit.get("counter_productive_severity") or "—"
+    cpm_tags = crit.get("counter_productive_tags") or []
+    cpm_tags_str = f" ({', '.join(f'`{t}`' for t in cpm_tags)})" if cpm_tags else ""
+    lines.append(
+        f"**Counter-productive mechanisms ({cpm_sev}{cpm_tags_str}).** "
+        f"{safe(crit.get('counter_productive_mechanisms'))}"
+    )
     lines.append(f"**COI & funding.** {safe(crit.get('coi_funding_notes'))}")
     lines.append(f"**Spin / abstract-to-text consistency.** {safe(crit.get('spin_notes'))}")
     lines.append("")
@@ -196,6 +203,20 @@ def build_critique_page(slug: str) -> str:
     for k, v in sorted(conf_dist.items()):
         out.append(f"| {k} | {v} |")
     out.append("")
+
+    # Counter-productive severity distribution (schema extension 2026-04-23)
+    cpm_dist: dict[str, int] = defaultdict(int)
+    for c in ordered:
+        cpm_dist[c.get("counter_productive_severity") or "—"] += 1
+    if any(k != "—" for k in cpm_dist):
+        out.append("### Counter-productive-mechanism severity distribution")
+        out.append("")
+        out.append("| Severity | N |")
+        out.append("|---|---:|")
+        sev_order = {"High": 0, "Moderate": 1, "Low": 2, "Unknown": 3, "—": 4}
+        for k, v in sorted(cpm_dist.items(), key=lambda kv: sev_order.get(kv[0], 99)):
+            out.append(f"| {k} | {v} |")
+        out.append("")
 
     # Cross-paper synthesis (if present)
     synthesis = meta.get("critique_synthesis")
