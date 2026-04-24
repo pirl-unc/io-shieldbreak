@@ -6,8 +6,8 @@ A "shieldbreak" is a single project query — one research question about a mech
 
 | Shieldbreak | Rows | Last updated | Critique |
 |---|---|---|---|
-| [Tumor-associated Macrophage Depletion, Inhibition, or Repolarization](tam-depletion/index.md) | 37 | 2026-04-24 | [critique](tam-depletion/critique.md) |
 | [Treg Depletion and/or Inhibition](treg-depletion/index.md) | 51 | 2026-04-23 | [critique](treg-depletion/critique.md) |
+| [Tumor-associated Macrophage Depletion, Inhibition, or Repolarization](tam-depletion/index.md) | 37 | 2026-04-24 | [critique](tam-depletion/critique.md) |
 
 ## Adding a shieldbreak
 

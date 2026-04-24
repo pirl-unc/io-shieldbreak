@@ -1028,7 +1028,7 @@ def update_shieldbreaks_index(slug: str, row_count: int) -> None:
     """Regenerate the cross-shieldbreak directory page from data/shieldbreaks/*/trials.jsonl."""
     # (slug, display_title, row_count, last_updated, has_critique)
     entries: list[tuple[str, str, int, str, bool]] = []
-    for sb_dir in sorted(DATA_DIR.iterdir()):
+    for sb_dir in DATA_DIR.iterdir():
         if not sb_dir.is_dir():
             continue
         jsonl = sb_dir / "trials.jsonl"
@@ -1042,6 +1042,8 @@ def update_shieldbreaks_index(slug: str, row_count: int) -> None:
         display_title = meta.get("display_title") or sb_dir.name.replace("-", " ").title()
         has_critique = (DOCS_DIR / sb_dir.name / "critique.md").exists()
         entries.append((sb_dir.name, display_title, len(rows), last_upd, has_critique))
+
+    entries.sort(key=lambda e: e[1].casefold())
 
     lines = [
         "# Shieldbreaks",
