@@ -6,7 +6,7 @@
 
 ## Research question
 
-<details class="sb-section" markdown="1">
+<details class="sb-section" open markdown="1">
 <summary>Show / hide</summary>
 
 
@@ -16,7 +16,7 @@ Which clinical interventions reduce regulatory T cells (Tregs) — in absolute n
 
 ## Scope summary
 
-<details class="sb-section" markdown="1">
+<details class="sb-section" open markdown="1">
 <summary>Show / hide</summary>
 
 
@@ -28,7 +28,7 @@ Evidence-synthesis aid for research planning — not clinical guidance.*
 
 ## Target effect
 
-<details class="sb-section" markdown="1">
+<details class="sb-section" open markdown="1">
 <summary>Show / hide</summary>
 
 
@@ -45,7 +45,7 @@ alongside magnitude.
 
 ## Cross-cutting caveat (read first)
 
-<details class="sb-section" markdown="1">
+<details class="sb-section" open markdown="1">
 <summary>Show / hide</summary>
 
 
@@ -68,7 +68,7 @@ below are calibrated to this.
 
 ## Intervention grouping
 
-<details class="sb-section" markdown="1">
+<details class="sb-section" open markdown="1">
 <summary>Show / hide</summary>
 
 
@@ -104,7 +104,7 @@ below for counterexamples.
 
 ## Top interventions
 
-<details class="sb-section" markdown="1">
+<details class="sb-section" open markdown="1">
 <summary>Show / hide</summary>
 
 
@@ -369,7 +369,7 @@ variable.
 
 ## Classes examined but not ranked (counterexamples and thin-evidence classes)
 
-<details class="sb-section" markdown="1">
+<details class="sb-section" open markdown="1">
 <summary>Show / hide</summary>
 
 
@@ -417,7 +417,7 @@ ranked list:
 
 ## Ranked prioritization
 
-<details class="sb-section" markdown="1">
+<details class="sb-section" open markdown="1">
 <summary>Show / hide</summary>
 
 
@@ -434,7 +434,7 @@ ranked list:
 
 ## Caveats
 
-<details class="sb-section" markdown="1">
+<details class="sb-section" open markdown="1">
 <summary>Show / hide</summary>
 
 
@@ -475,7 +475,7 @@ ranked list:
 
 ## Sources
 
-<details class="sb-section" markdown="1">
+<details class="sb-section" open markdown="1">
 <summary>Show / hide</summary>
 
 
@@ -596,7 +596,7 @@ See `prompts/shieldbreaks/treg-depletion/search.md` for the full search specific
 
 ## Pharmacodynamic results
 
-<details class="sb-section" markdown="1">
+<details class="sb-section" open markdown="1">
 <summary>Show / hide</summary>
 
 
@@ -700,7 +700,7 @@ See `prompts/shieldbreaks/treg-depletion/search.md` for the full search specific
 
 ## Side-list: systematic reviews and meta-analyses
 
-<details class="sb-section" markdown="1">
+<details class="sb-section" open markdown="1">
 <summary>Show / hide</summary>
 
 

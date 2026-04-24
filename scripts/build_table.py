@@ -61,7 +61,7 @@ def wrap_sections_in_details(markdown_text: str) -> str:
             return
         while section_buf and section_buf[-1].strip() == "":
             section_buf.pop()
-        out.append('<details class="sb-section" markdown="1">')
+        out.append('<details class="sb-section" open markdown="1">')
         out.append("<summary>Show / hide</summary>")
         out.append("")
         out.extend(section_buf)
@@ -1159,12 +1159,21 @@ def main(argv: list[str]) -> int:
     n_critiques = build_per_paper_critique_pages(slug)
 
     # Rewrite the skeptic-owned critique.md with the same collapsible
-    # wrapping so the whole shieldbreak site is consistent. Skip if
-    # already wrapped so re-runs don't nest `<details>` blocks.
+    # wrapping so the whole shieldbreak site is consistent. If it's
+    # already wrapped, just normalize the `<details>` opening tag
+    # (keeps the file consistent with any config change here, e.g.
+    # default-open vs default-closed) without re-nesting.
     critique_md = sb_docs / "critique.md"
     if critique_md.exists():
         existing = critique_md.read_text()
-        if 'class="sb-section"' not in existing:
+        if 'class="sb-section"' in existing:
+            existing = re.sub(
+                r'<details class="sb-section"[^>]*>',
+                '<details class="sb-section" open markdown="1">',
+                existing,
+            )
+            critique_md.write_text(existing)
+        else:
             critique_md.write_text(wrap_sections_in_details(existing))
 
     # Update cross-shieldbreak index

@@ -6,7 +6,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 
 ## Top-line findings
 
-<details class="sb-section" markdown="1">
+<details class="sb-section" open markdown="1">
 <summary>Show / hide</summary>
 
 
@@ -18,7 +18,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 
 ## Summary stats
 
-<details class="sb-section" markdown="1">
+<details class="sb-section" open markdown="1">
 <summary>Show / hide</summary>
 
 
@@ -49,7 +49,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 
 ## Cross-paper synthesis
 
-<details class="sb-section" markdown="1">
+<details class="sb-section" open markdown="1">
 <summary>Show / hide</summary>
 
 
@@ -106,7 +106,7 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 
 ## Per-paper critiques
 
-<details class="sb-section" markdown="1">
+<details class="sb-section" open markdown="1">
 <summary>Show / hide</summary>
 
 
