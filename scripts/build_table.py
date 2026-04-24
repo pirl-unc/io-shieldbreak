@@ -1032,7 +1032,9 @@ def update_shieldbreaks_index(slug: str, row_count: int) -> None:
         "5. Generate `docs/shieldbreaks/<slug>/index.md` with the trial table",
         "6. Add a row to this index page linking to the new project",
         "",
-        "Once a shieldbreak has trial rows, the companion `trialist_skeptic` subagent reads the ingested manuscripts in full, verifies the extracted fields against the source, and publishes `docs/shieldbreaks/<slug>/critique.md` — a per-paper and cross-paper methodological appraisal.",
+        "Once a shieldbreak has trial rows, the companion `trialist_skeptic` subagent reads the ingested manuscripts in full, verifies the extracted fields against the source, and publishes `docs/shieldbreaks/<slug>/critique.md` — a per-paper and cross-paper methodological appraisal. The skeptic also assesses, for every paper, **counter-productive mechanisms** by which the intervention's MoA may undermine the shieldbreak's broader target effect (e.g., anti-CCR4 depleting CCR4+ CD8 effector-memory cells alongside Tregs) even when the proximal endpoint is met.",
+        "",
+        "With the screener and skeptic runs complete, the `trialist_prescriber` subagent then synthesizes a top-level narrative: it reads `trials.jsonl` and `critiques.jsonl`, groups rows into interventions or intervention classes under PI-confirmed granularity, and for each selected intervention (3–7 total) writes a short section covering evidence base, likelihood of the desired effect, toxicity profile, counter-productive mechanisms, practical considerations, and a ranked-position rationale. The output is published as `docs/shieldbreaks/<slug>/scope_summary.md` and inlined at the top of the shieldbreak page under the `## Scope summary` heading; a Ranked prioritization table at the end weighs Likelihood × Toxicity × Counter-productive MoA into an Overall column. Rankings reflect the shieldbreak's Target effect as written; re-scoping it toward a downstream goal shifts the weights.",
     ]
     (DOCS_DIR / "index.md").write_text("\n".join(lines) + "\n")
 
