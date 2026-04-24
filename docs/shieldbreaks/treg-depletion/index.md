@@ -6,15 +6,31 @@
 
 ## Research question
 
+<details class="sb-section" markdown="1">
+<summary>Show / hide</summary>
+
+
 Which clinical interventions reduce regulatory T cells (Tregs) — in absolute number, frequency, functional dominance, or suppressive capacity — in humans, and how durable / context-dependent is that effect?
 
+</details>
+
 ## Scope summary
+
+<details class="sb-section" markdown="1">
+<summary>Show / hide</summary>
+
 
 *Scope summary for Treg Depletion and/or Inhibition. Last updated 2026-04-24
 from 51 trial-rows across 44 studies (skeptic-critiqued: 44/44, 100%).
 Evidence-synthesis aid for research planning — not clinical guidance.*
 
+</details>
+
 ## Target effect
+
+<details class="sb-section" markdown="1">
+<summary>Show / hide</summary>
+
 
 Reduce the abundance, frequency, dominance, or suppressive function of
 regulatory T cells in humans — via classical absolute depletion, ratio
@@ -25,7 +41,13 @@ lymph node, peripheral blood, bone marrow, and involved tissue (skin,
 ascites, colon). Durability and compartment concordance are tracked
 alongside magnitude.
 
+</details>
+
 ## Cross-cutting caveat (read first)
+
+<details class="sb-section" markdown="1">
+<summary>Show / hide</summary>
+
 
 **The magnitude of Treg depletion is frequently uncoupled from clinical
 benefit in this dataset**, and several of the "positive" intervention
@@ -42,7 +64,13 @@ is Fc engineering, not target engagement. Compartment dissociation is
 also pervasive (e.g., Ager 2026: tumor Tregs ↓, tdLN Tregs ↑). Rankings
 below are calibrated to this.
 
+</details>
+
 ## Intervention grouping
+
+<details class="sb-section" markdown="1">
+<summary>Show / hide</summary>
+
 
 - **Anti-CCR4 (mogamulizumab)** — Fujikawa 2023 (PMID 37729184), Jinushi
   2025 (PMID 40180420), Roelens 2022 (PMID 35041763), Gordon 2025
@@ -72,7 +100,13 @@ bucket (entinostat+nivo → HDACi; decitabine+ipi → standard anti-CTLA-4;
 mogamulizumab+IL-15 → anti-CCR4). See *Classes examined but not ranked*
 below for counterexamples.
 
+</details>
+
 ## Top interventions
+
+<details class="sb-section" markdown="1">
+<summary>Show / hide</summary>
+
 
 ### 1. Anti-CCR4 (mogamulizumab) — most-replicated, mechanism-coherent Treg depletion across PBMC, tumor, and skin
 
@@ -331,7 +365,13 @@ synthesis — it is the reason Rank 2 exists as a distinct class and the
 reason this shieldbreak treats Fc engineering as the reconciling
 variable.
 
+</details>
+
 ## Classes examined but not ranked (counterexamples and thin-evidence classes)
+
+<details class="sb-section" markdown="1">
+<summary>Show / hide</summary>
+
 
 Seven additional classes were surveyed and deliberately omitted from the
 ranked list:
@@ -373,7 +413,13 @@ ranked list:
 - **PI3Kδ inhibitors** — 1 trial (Gadi 2022 idelalisib in CLL, n=9 PBMC;
   PMID 35170759). Very-small-n, Low confidence.
 
+</details>
+
 ## Ranked prioritization
+
+<details class="sb-section" markdown="1">
+<summary>Show / hide</summary>
+
 
 | Rank | Intervention | Likelihood of effect | Toxicity burden | Overall |
 |---:|---|---|---|---|
@@ -384,7 +430,13 @@ ranked list:
 | 5 | Class-I HDAC inhibitors | Moderate in oncology, unfavorable in HIV/cART (context-dependent) | Moderate (cytopenias; QT for panobinostat) | **Plausible; context-sensitive; no single-agent replication yet** |
 | 6 | Standard anti-CTLA-4 | Very low for the Treg-depletion endpoint specifically | Moderate-to-high (standard irAE profile) | **Foundational negative result; motivates Rank 2; not the tool for this endpoint** |
 
+</details>
+
 ## Caveats
+
+<details class="sb-section" markdown="1">
+<summary>Show / hide</summary>
+
 
 - **Total-n is small for several ranked groups.** Fc-enhanced
   anti-CTLA-4 has n=36 across 2 trials; cyclophosphamide positive
@@ -419,7 +471,13 @@ ranked list:
   - A head-to-head of metronomic oral vs low-dose IV cyclophosphamide
     with matched Treg PD would resolve the schedule question at Rank 3.
 
+</details>
+
 ## Sources
+
+<details class="sb-section" markdown="1">
+<summary>Show / hide</summary>
+
 
 - Trial data and critiques: `data/shieldbreaks/treg-depletion/trials.jsonl`
   and `data/shieldbreaks/treg-depletion/critiques.jsonl`; per-trial
@@ -534,7 +592,13 @@ patient care.*
 See `prompts/shieldbreaks/treg-depletion/search.md` for the full search specification and
 `prompts/shieldbreaks/treg-depletion/extract.md` for the extraction schema.
 
+</details>
+
 ## Pharmacodynamic results
+
+<details class="sb-section" markdown="1">
+<summary>Show / hide</summary>
+
 
 <div class="pd-table-wrapper" markdown="0">
 <div class="filter-row">
@@ -632,7 +696,13 @@ See `prompts/shieldbreaks/treg-depletion/search.md` for the full search specific
 })();
 </script>
 
+</details>
+
 ## Side-list: systematic reviews and meta-analyses
+
+<details class="sb-section" markdown="1">
+<summary>Show / hide</summary>
+
 
 These are excluded from the primary table but retained as follow-up leads.
 
@@ -644,3 +714,5 @@ These are excluded from the primary table but retained as follow-up leads.
 | Churov A | 2021 | Hum Immunol | Targeting adenosine and regulatory T cells in cancer immunotherapy | narrative-review | [PMID](https://pubmed.ncbi.nlm.nih.gov/33610376/) [DOI](https://doi.org/10.1016/j.humimm.2020.12.005) |
 | Rudqvist NP | 2023 | Oncoimmunology | Next-generation CTLA-4 targeting molecules and combination therapy for cancer immunotherapy | narrative-review | [PMID](https://pubmed.ncbi.nlm.nih.gov/37937212/) [DOI](https://doi.org/10.1080/2162402X.2023.2275333) |
 | Tang F | 2018 | Cell Biosci | Anti-CTLA-4 antibodies in cancer immunotherapy: selective depletion of intratumoral regulatory T cells or checkpoint blockade? | narrative-review | [PMID](https://pubmed.ncbi.nlm.nih.gov/29713453/) [DOI](https://doi.org/10.1186/s13578-018-0229-z) |
+
+</details>

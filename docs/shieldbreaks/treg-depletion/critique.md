@@ -6,11 +6,21 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 
 ## Top-line findings
 
+<details class="sb-section" markdown="1">
+<summary>Show / hide</summary>
+
+
 - 44 of 44 papers critiqued. 34 had full text accessible (27 full PMC XML + 6 PMC-paywalled via WebFetched HTML + 1 combined); 10 were PubMed-abstract-only (paywalled journals such as J Immunother, Clin Exp Immunol, Int J Cancer, Inflamm Bowel Dis, Br J Dermatol, Cancer Discov, Clin Cancer Res subscription-only).
 - No retractions, corrections, or expressions of concern found. One extraction-fidelity discrepancy flagged (Huang 2011 — Mann-Whitney label applied to paired pre/post biopsy data; screener correctly noted the inconsistency).
 - The central methodological lesson: Treg-definition heterogeneity and gating-confounding drive much of the apparent inter-paper inconsistency. CD25-based gating during CD25-targeting therapy (denileukin diftitox, daclizumab) structurally confounds depletion claims; single-marker FOXP3 IHC cannot distinguish Tregs from activated effector T cells that transiently express FOXP3.
 
+</details>
+
 ## Summary stats
+
+<details class="sb-section" markdown="1">
+<summary>Show / hide</summary>
+
 
 - **Papers critiqued:** 44
 - **Extraction-fidelity discrepancies flagged:** 1
@@ -35,7 +45,13 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 | Moderate | 23 |
 | Very low | 1 |
 
+</details>
+
 ## Cross-paper synthesis
+
+<details class="sb-section" markdown="1">
+<summary>Show / hide</summary>
+
 
 ### Direction of effect across intervention classes
 
@@ -86,7 +102,13 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 - Compartment-stratified analysis as default (PBMC AND tumor AND tdLN in the same trial) would reveal the within-patient compartment dissociation that single-compartment papers miss.
 - A replication of Dannull 2005 (JCI positive) with FoxP3-mRNA-primary readout in RCC would resolve the Attia-Dannull conflict.
 
+</details>
+
 ## Per-paper critiques
+
+<details class="sb-section" markdown="1">
+<summary>Show / hide</summary>
+
 
 ### Ager CR 2026 — Neoadjuvant Fc-enhanced anti-CTLA-4 targets Tregs to augment androgen deprivation in high-risk prostate cancer: A randomized phase I trial
 
@@ -1233,3 +1255,5 @@ _Last updated: 2026-04-23. Papers reviewed: 44._
 **Per-trial confidence.** **Low** — Small n; ACT context complicates attribution.
 
 ---
+
+</details>
