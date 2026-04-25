@@ -118,6 +118,15 @@ with direct intratumoral evidence, a mechanism-coherent subset readout,
 and two Moderate-or-better skeptic confidences. No other class combines
 these three properties.
 
+**Per-trial detail.**
+
+| Therapeutic agent | Efficacy | Toxicity | Reference |
+|---|---|---|---|
+| Mogamulizumab (KW-0761) monotherapy, CCR4-negative solid tumors | PBMC eTreg median 2.1% → 0.20% of CD4+ at 4 weeks (~90% reduction, dose-independent across 0.1–1.0 mg/kg, n=37 evaluable). 1 PR + 9 SD of 49 (modest monotherapy activity despite profound PD) | N=49; treatment-related AEs in 93.9%; grade 3–4 in 21 (42.9%). Dominant categories skin disorders (n=34) and lymphopenia (n=34, with 15 grade 3–4 lymphopenia events ≈30%). No grade 3–4 skin disorders; no drug-related deaths | [Fujikawa 2023](https://pubmed.ncbi.nlm.nih.gov/37729184/) |
+| Mogamulizumab + nivolumab (neoadjuvant, renal/lung/esophageal/oral) | Tumor CCR4+ FoxP3+ eTreg median −86.7% (range −94.8% to −52.7%), 16/16 patients depleted; total FoxP3+ median −11.1% (decreased in 8/16). 1 pCR + 3 PRs / 16; trend toward improved PFS/OS with lymphocyte infiltration | N=16; grade 3–4 TRAEs in 6/16 (38%): lymphopenia 25%, maculopapular rash 13% most frequent. 1 grade 5 interstitial pneumonia (cause of death adjudicated as disease progression). Cohort 2 (higher dose) skin AEs led to early closure without proceeding to cohort 3 | [Jinushi 2025](https://pubmed.ncbi.nlm.nih.gov/40180420/) |
+| Mogamulizumab (Sézary syndrome, long-term PD) | Drastic decrease in activated PBMC Tregs within first 4 weeks (numeric values not reported — abstract-only, paper not OA); long-term skin immune restoration qualitative; 17/26 with early complete blood response correlated with higher baseline CCR4 | N=26; abstract-only; AE quantitative data not extractable. Mogamulizumab on-label cutaneous and infusion-reaction risks per FDA POTELIGEO USPI apply | [Roelens 2022](https://pubmed.ncbi.nlm.nih.gov/35041763/) |
+| Mogamulizumab + rhIL-15 (R/R T-cell malignancies) | Treg PD not measured in this trial — PD focus is NK expansion and ADCC. Treg row retained as mechanism-targeted regimen (uncritiqued for Treg-specific contribution); 1 PR (ATLL) | N=6; most common AEs rash, infection, fever (67% each); grade 4 AKI in 33%; grade 3+ anemia in 25% of cycles; 2 DLTs at dose level 2 (grade 4 acidosis/capillary leak/AKI; grade 4 myositis); MTD = dose level 1 | [Gordon 2025](https://pubmed.ncbi.nlm.nih.gov/40546724/) |
+
 ### 2. Fc-enhanced anti-CTLA-4 — mechanism-rescue for the anti-CTLA-4 failure mode, with thin but directionally clean human evidence
 
 **Evidence base.** 2 trials (n with Treg measurement = 36 total;
@@ -172,6 +181,13 @@ and the most rigorous intratumoral randomized comparison (Ager 2026),
 but total n across the class is small and single-vendor; one more
 replication outside the sponsors would shift this to Rank 1 territory.
 
+**Per-trial detail.**
+
+| Therapeutic agent | Efficacy | Toxicity | Reference |
+|---|---|---|---|
+| BMS-986218 (Fc-enhanced anti-CTLA-4 / afucosylated ipilimumab) + ADT, neoadjuvant high-risk localized prostate | Tumor TI-Treg frequency reduced in ADT+BMS-986218 vs ADT alone (p=0.031, n=14 vs n=10); ADT-only arm INCREASED TI-Tregs vs untreated (p=0.002); tdLN Tregs simultaneously expanded (p<0.0001). Densities figure-only, not text-quantified. Depth of Treg reduction associated with improved clinical outcomes; CD16a+ macrophage correlation p=0.033 supports ADCC | N=24 randomized; any-grade TRAEs 80% (ADT-only) vs 71% (ADT+NF), mostly attributed to ADT and injection-site reactions. Grade ≥3 TRAEs rare — 1 patient had grade 3 asymptomatic lipase elevation that resolved without intervention; 3 grade 1–2 GI events on anti-CTLA4-NF arm. No interim safety boundary crossings; no unexpected surgical complications | [Ager 2026](https://pubmed.ncbi.nlm.nih.gov/41759531/) |
+| Botensilimab (AGEN1181, Fc-enhanced anti-CTLA-4) + balstilimab (anti-PD-1), MSS mCRC | Significant intratumoral FOXP3+ reduction by IHC and RNA-seq signature in n=12 paired biopsies (fold-change and p not text-stated; figure-only, Fig 5H). PBMC/serum Tregs unchanged (tumor-selective). Activity in ICI-resistant tumor type | N≈65 phase 1 enrolled; most common grade ≥3 TRAE was diarrhea/colitis (combined preferred terms diarrhea/colitis/enteritis; per-AE frequencies in Supplementary Table S9 not in extracted text). Notably absent: hypophysitis (consistent with V11L/L30L Fc point mutations abrogating C1q binding) | [Chand 2024](https://pubmed.ncbi.nlm.nih.gov/39083809/) |
+
 ### 3. Low-dose / metronomic cyclophosphamide — schedule-dependent; the positive report is small but statistically strong
 
 **Evidence base.** 2 trials (n with Treg measurement = 58). Ghiringhelli
@@ -220,6 +236,13 @@ strong statistical result in the positive report, but the total evidence
 base is 2 trials and the positive n is 9. Ranked above DD despite the
 smaller n because the CD25-gating confound makes much of the DD
 literature hard to interpret.
+
+**Per-trial detail.**
+
+| Therapeutic agent | Efficacy | Toxicity | Reference |
+|---|---|---|---|
+| Metronomic oral cyclophosphamide 50 mg/day (advanced end-stage solid cancer) | PBMC CD4+CD25high frequency 7.9 ± 1.5% → 3.1 ± 1.8% (−61%, p<0.0001); absolute count 28.7 ± 9.4 → 6.4 ± 5.4 cells/mm³ (−78%, p<0.0001) at 1 month. T-cell proliferation and NK cytotoxicity restored to healthy-volunteer levels | N=9; AE frequencies not reported in this PD-focused paper. Cyclophosphamide class risks (myelosuppression, hemorrhagic cystitis, infections, gonadotoxicity) per generic USPI apply; metronomic 50 mg/day cumulative exposure substantially below standard chemotherapy dosing | [Ghiringhelli 2007](https://pubmed.ncbi.nlm.nih.gov/16960692/) |
+| Single IV cyclophosphamide + intratumoral BCG (metastatic mixed solid cancer) | PBMC Treg baseline 9.2% (vs 7.1% healthy); no significant modulation of Treg numbers or function post-cyclophosphamide. Authors explicitly state cyclophosphamide may not represent optimal Treg-elimination therapy | N=49; abstract-only (paper not in PMC OA); detailed AE frequencies not extractable. Standard single-dose cyclophosphamide toxicity expected | [Audia 2007](https://pubmed.ncbi.nlm.nih.gov/17956583/) |
 
 ### 4. Denileukin diftitox (DD / ONTAK / E7777) — large body of work, but the CD25-gating confound and the Attia-vs-Dannull split make this ambiguous
 
@@ -285,6 +308,19 @@ split is taken seriously. Ranked here rather than lower because Liao
 2024 and Geskin 2018 provide at least some confound-resistant positive
 signal.
 
+**Per-trial detail.**
+
+| Therapeutic agent | Efficacy | Toxicity | Reference |
+|---|---|---|---|
+| Denileukin diftitox (DAB389IL-2, single 18 µg/kg dose) prior to RCC RNA-DC vaccine | PBMC CD4+CD25high Tregs reduced 26–76% relative (median −51%) at day 4 in 7/7 treated; FoxP3 mRNA −30 to −80%; in vitro suppressive activity abrogated; nadir d4, ~75% recovery by 2 months. Enhanced vaccine-induced T-cell responses | N=7 treated + 4 vaccine-only controls; AE quantification not in extractable text — abstract describes Treg depletion "without inducing toxicity on other cellular subsets". DD class risks (capillary leak, infusion reactions, hepatotoxicity, visual events) per ONTAK USPI apply | [Dannull 2005](https://pubmed.ncbi.nlm.nih.gov/16308572/) |
+| Denileukin diftitox 9 or 18 µg/kg/day × 5 (metastatic melanoma, two cohorts) | PBMC FoxP3 mRNA cycle-1 change: 9 µg/kg cohort −1.27±2.57 (p=0.656, n=4); 18 µg/kg cohort −2.01±0.618 (p=0.031, n=5); pooled p=0.167. After ≥4 cycles −3.30±3.21 (p=0.380). In vitro Treg suppression retained at ≥50% in 5/5 patients tested. 0/13 objective responses | N=13; detailed AE frequencies not extractable from PMC text. Generally tolerated at studied doses (single grade ≥3 hypersensitivity reaction was DLT-defining in protocol) | [Attia 2005](https://pubmed.ncbi.nlm.nih.gov/16224276/) |
+| Denileukin diftitox + high-dose IL-2 (metastatic RCC) | PBMC Tregs median −56.3% pre-DD to post-DD (p=0.013, pooled cohorts B+C n=15). 33% RR (not distinguishable from HD IL-2 monotherapy historical benchmark) | N=18; abstract-only (J Immunother not OA); detailed AE frequencies not extractable. HD IL-2 toxicity (capillary leak, hypotension, organ dysfunction) is the dominant burden in this combination | [Atchison 2010](https://pubmed.ncbi.nlm.nih.gov/20664355/) |
+| Single-dose denileukin diftitox + gp100 peptide vaccine (advanced melanoma, RCT) | PBMC Tregs not significantly altered (no quantification, Fig 2 unquantified); 1/1 paired tumor biopsy showed INCREASED intratumoral FoxP3 post-DD. No improvement in vaccine-induced T-cell responses vs vaccine alone. 1 PR + 8 SD across 17 treated (4 DD: 5 vaccine-only) | N=17 treated; no drug-related grade 3–4 adverse events reported. DLTs defined as ≥grade 3 or grade 2+ autoimmunity / visual impairment per protocol | [Luke 2016](https://pubmed.ncbi.nlm.nih.gov/27330808/) |
+| Denileukin diftitox + IFNα (advanced ovarian) | DD monotherapy phase II "failed"; DD + IFNα2a phase II 2/2 patients responded before DD shortage halted enrollment (numerics not extractable from abstract). Qualitative claim of Treg depletion + IFNα-augmented anti-tumor immunity | N=2 (DD+IFNα completed); abstract-only (Clin Cancer Res not OA); AE quantitative data not extractable. DD class risks apply | [Thibodeaux 2021](https://pubmed.ncbi.nlm.nih.gov/33771857/) |
+| Denileukin diftitox 18 µg/kg/day × 5 (CTCL: MF and Sézary) | PBMC CD4+FoxP3+ median relative change −29% (94% CI −83% to −20%) post one DD cycle, p=0.03; clinical responders (9/12 long-term) achieved 20–45% absolute Treg reductions; non-responders 2/3 EXPANDED Tregs | N=77; abstract-only AE detail in extracted text. DD-typical infusion reactions, capillary-leak risk per ONTAK USPI; in CTCL cohort the CD25+ malignant-cell substrate confounds attribution | [Geskin 2018](https://pubmed.ncbi.nlm.nih.gov/29204699/) |
+| Intraperitoneal denileukin diftitox (ONTAK), recurrent ovarian | PBMC FoxP3 mRNA pooled −73% (mean 0.1726±0.0442 → 0.0374±0.0101, p=0.0275; 15 µg/kg subset p=0.0374); ascites mean −67% (0.1855±0.0945 → 0.0597±0.0304) but p=0.2737 n.s. (n=3). 5/9 met ≥25% Treg reduction efficacy criterion; 3 had CA-125 decreases, no PRs | N=10 across 3 dose levels; majority of AEs transient grades 1–2; 1 DLT in 6-patient 15 µg/kg expansion. 1 grade 4 cytokine storm at 25 µg/kg requiring prolonged hospitalization closed that arm. MTD = 15 µg/kg | [Liao 2024](https://pubmed.ncbi.nlm.nih.gov/39362046/) |
+| Denileukin diftitox (E7777 / I/ONTAK) 18 µg/kg/day × 5 + pDC-targeted vaccine (stage IV breast) | Overall PBMC Treg change p=0.10 (n.s.); 6/15 (40%) achieved ≥25% reduction (responder subset 56.0% ± 10.96%); anti-DT IgG response in 100% by week 6 likely limited efficacy. 0 CR/PR; 4 SD (27%) | N=15; 11 (73%) had at least one grade 3–4 AE; 2 (13%) discontinued for toxicity, 9 (60%) for progressive disease; per-AE category frequencies not extracted | [Gwin 2025](https://pubmed.ncbi.nlm.nih.gov/40006664/) |
+
 ### 5. Class-I HDAC inhibitors (entinostat / vorinostat / panobinostat) — context-dependent direction; oncology signals plausibly favorable, HIV/cART signal opposite
 
 **Evidence base.** 5 trials (n with Treg measurement = 76 across the
@@ -347,6 +383,16 @@ pattern prevent a higher ranking. Mechanism is plausible but not
 precisely specified (FoxP3 stability, TSDR methylation, TNFR2+ subset
 biology — each HDACi study invokes a different rationale).
 
+**Per-trial detail.**
+
+| Therapeutic agent | Efficacy | Toxicity | Reference |
+|---|---|---|---|
+| Panobinostat (pan-HDAC) in HIV+cART (reservoir reactivation, context-discordant) | PBMC Treg frequency +40% at day 4 (p=0.003), sustained at day 28 (p=0.004); CTLA-4 MFI on Tregs +25% (p=0.007); CD39 MFI +12% (p=0.02). Tregs ACTIVATED rather than depleted; returned to baseline by week 24 | N≈14–15 evaluable; HIV/cART context — paper notes oncology-dose HDACi toxicities have impeded development as immunomodulators in non-cancer; quantitative AE table not extracted | [Brinkmann 2018](https://pubmed.ncbi.nlm.nih.gov/29468194/) |
+| Entinostat + high-dose IL-2 (metastatic ccRCC) | PBMC Tregs lower in responders (n=5) than progressors (n=7) at C1D1 (p=0.0273); lower Treg overall associated with response (p=0.03). Tumor (n=3 paired): entinostat priming prevented HD IL-2-induced Treg expansion (not statistically tested). ORR 37%; mPFS 13.8 mo; mOS 65.3 mo | N=47; most common grade 3–4 TRAEs hypophosphatemia 16%, decreased lymphocytes 15%, hypocalcemia 7% — all transient. 1 RA flare; 1 death during treatment deemed unrelated (cardiac tamponade from undiagnosed lung primary). HD IL-2 hypotension 3.2%, capillary-leak signal expected | [Pili 2017](https://pubmed.ncbi.nlm.nih.gov/28939740/) |
+| Vorinostat + tamoxifen + pembrolizumab (ER+ metastatic breast, ≥5 prior regimens) | Tumor CD4+FoxP3+CTLA-4+ Tregs 11.8% → 2.9% overall (−75.4%, p=0.0067); responders 20.3% → 4.2% (p=0.031); non-responders 10.4% → 2.5% (p=0.034). PBMC Tregs unchanged. Treg depletion in BOTH responders and non-responders. ORR 4%; CBR 19%. Trial stopped early for futility | N=34; grade 3–4 toxicities included transaminitis 9% (incl immune hepatitis with discontinuation), fatigue 6%, hyponatremia 6%, thrombocytopenia 6%, anorexia 3%; 1 disabling stroke (relatedness unclear) requiring discontinuation. Grade 2 irAEs included pneumonitis, hypothyroidism, colitis, fatigue | [Terranova-Barberio 2020](https://pubmed.ncbi.nlm.nih.gov/32681091/) |
+| Entinostat + nivolumab ± ipilimumab (advanced HER2-negative breast / solid tumors) | Tumor CD8/FoxP3 ratio median 4.11 → 9.03 (T0 → T2; +119.7% RATIO, p=0.002, Wilcoxon, n=14 paired); ratio shift required ICI addition (T1 post-entinostat-only median 3.56). Not a Treg-absolute reduction. ORR 16% (incl. CR in TNBC); 4 responders trended toward greater shift (n.s.) | N=33 across 4 dose levels. Treatment-related AEs: fatigue 65%, nausea 41%, anemia 38%, diarrhea 26%, anorexia 26%. Grade 3–4: fatigue 21%, anemia 27%, neutropenia 12%. RP2D entinostat 3 mg weekly + nivolumab 3 mg/kg q2w + ipilimumab 1 mg/kg q6w (max 4) | [Roussos Torres 2021](https://pubmed.ncbi.nlm.nih.gov/34135021/) |
+| Azacitidine + panobinostat (AML, BM + PBMC) | TNFR2+ Treg subset (minority of total Tregs) decreased in PBMC and BM after 28-day cycles; associated with increased BM effector IFN-γ and IL-2 and clinical benefit in subset. Numerics not reported (abstract-only). Total FoxP3+ Tregs not the readout | N=14; abstract-only (paper not in PMC). Class panobinostat AEs (cytopenias, GI, QT prolongation per FARYDAK USPI) and azacitidine toxicities expected | [Govindaraj 2014](https://pubmed.ncbi.nlm.nih.gov/24297862/) |
+
 ### 6. Standard anti-CTLA-4 (ipilimumab / tremelimumab) — foundational negative result for the Treg-depletion endpoint; motivates Rank 2
 
 **Evidence base.** 8 trials (n with Treg measurement = 233 across the
@@ -402,6 +448,19 @@ list because the negative result is load-bearing for the rest of the
 synthesis — it is the reason Rank 2 exists as a distinct class and the
 reason this shieldbreak treats Fc engineering as the reconciling
 variable.
+
+**Per-trial detail.**
+
+| Therapeutic agent | Efficacy | Toxicity | Reference |
+|---|---|---|---|
+| Tremelimumab 15 mg/kg q3mo (metastatic melanoma, paired biopsies) | Tumor FOXP3+ density 35.20 ± 30.06 → 167.35 ± 162.37 cells/mm² post-dose (+375%, p=0.0029 paired, n=19). FOXP3 INCREASED, not depleted; CD8+ TIL increase independent of clinical response. Caveat: paper applied unpaired Mann-Whitney label to paired biopsy data | N=32 enrolled, 19 paired-biopsy. Tremelimumab + ipilimumab class irAEs (grade ≥3) ~20% in pivotal phase 2; per-AE breakdown not in extracted text for this translational paper. DLT-defined events: grade 4 TRAE, grade ≥3 hypersensitivity, grade ≥2 colitis, autoimmune events in critical organs | [Huang 2011](https://pubmed.ncbi.nlm.nih.gov/21558401/) |
+| Ipilimumab (advanced melanoma, predictive-biomarker study) | Baseline (NOT longitudinal) FOXP3 quantification only: detected in 75.0% of clinical-benefit pretreatment biopsies vs 36.0% of non-benefit (p=0.014). Not a depletion endpoint — incidental Treg readout | N=82 evaluable across two ipilimumab doses (10 mg/kg vs 3 mg/kg). Drug-related any-grade 82.5% vs 76.2%; grade 3–4 15.0% vs 31.0%. irAE any-grade 55.0% vs 66.7%; grade 3–4 7.5% vs 19.0%. GI most common irAE category. 5 (12.5%) vs 11 (26.2%) discontinued for AE | [Hamid 2011](https://pubmed.ncbi.nlm.nih.gov/22123319/) |
+| Ipilimumab or tremelimumab (foundational paired tumor analysis: melanoma, prostate, bladder) | Tumor FOXP3+ INCREASED in all cohorts: ipilimumab melanoma (n=16 post vs 19 untreated, p<0.05), tremelimumab paired melanoma (n=18, p<0.05), no reduction in bladder (n=9) or prostate (n=16). CyTOF orthogonal validation in n=5 paired melanoma. Densities figure-only | N=45 across cohorts; this is a translational tumor-IHC paper without primary AE reporting. Standard ipilimumab/tremelimumab irAE profiles per YERVOY and IMJUDO USPIs apply | [Sharma 2019](https://pubmed.ncbi.nlm.nih.gov/30054281/) |
+| Tremelimumab (melanoma, PBMC PD with detailed flow) | PBMC FoxP3 mRNA showed no statistically significant change pre vs post-dose (n=8 evaluable of 13); Treg functional assay not performed (insufficient cells from 40 mL draws) | N=29 reported on this trial cohort; documented G2/G3 toxicities included diarrhea G2, hepatitis G3, acne rosacea G2, colitis G3, panhypopituitarism (2 cases, hypophysitis), uveitis, leukocytoclastic vasculitis. Per-patient case-list rather than aggregated rates | [Comin-Anduix 2008](https://pubmed.ncbi.nlm.nih.gov/18452610/) |
+| Ipilimumab or tremelimumab (retrospective biopsy analysis, melanoma) | n=15 biopsies from 7 patients; no consistent FoxP3 reduction; slight FoxP3+ increase in 2/3 paired responders; IDO associated with non-response. Numerics not extractable (paper not in PMC OA) | N=7; abstract-only AE detail. Standard anti-CTLA-4 irAEs apply | [Ribas 2009](https://pubmed.ncbi.nlm.nih.gov/19118070/) |
+| Ipilimumab (case series of patients with severe enterocolitis) | Lamina-propria FoxP3+ Treg "profound long-lasting depletion" reported qualitatively in n=4; numeric density values not extractable (paper not in PMC OA). Title overclaims for case-report-level evidence | N=4 case series — all by definition had severe (grade ≥3) ipilimumab-induced enterocolitis, which is the inclusion criterion. Not informative for class-level toxicity rates | [Nancey 2012](https://pubmed.ncbi.nlm.nih.gov/22069060/) |
+| Neoadjuvant chemotherapy + ipilimumab (early-stage NSCLC) | PBMC: median Treg frequency INCREASED slightly by +1.05% (V1 chemo-alone → V3 post-ipi), p=0.012 — significant but tiny magnitude and opposite direction from depletion. Tumor: no pre-treatment biopsy, change not assessable | N=24; treatment-related grade 1–2 AEs in 54%, grade 3–4 in 46%, no treatment-related deaths. Most AEs attributable to carboplatin/paclitaxel. Ipilimumab-attributed irAEs: grade 2 pneumonitis 4%, grade 3 adrenal insufficiency 17%, diarrhea/colitis grade 1–2 25% + grade 3 13% | [Yi 2017](https://pubmed.ncbi.nlm.nih.gov/28951518/) |
+| Decitabine + ipilimumab (R/R AML/MDS, BM scRNA-seq + mIF) | Bone-marrow CD3+FOXP3+ density INCREASED post-ipilimumab (qualitative; baseline not numerically reported, no p-value cited); authors interpret BM Treg expansion as ipilimumab-resistance mechanism and explicitly suggest combining with Treg-depleting strategies | N=18; AE quantitative data not in extracted PMC text. Decitabine + ipilimumab combination toxicity (cytopenias, irAEs) per parent ETCTN/CTEP 10026 trial | [Penter 2023](https://pubmed.ncbi.nlm.nih.gov/36706355/) |
 
 ## Classes examined but not ranked (counterexamples and thin-evidence classes)
 

@@ -279,6 +279,7 @@ details.sb-section > summary:hover {
 .pill.mech-frac-shift { background:#dce6f7; color:#234f8c; border-color:#7ea5d4; font-size:0.65em; }
 .pill.mech-ratio-only { background:#fbeacb; color:#8a5510; border-color:#e0b87c; font-size:0.65em; }
 .pill.mech-null       { background:#ececf2; color:#3f3f5c; border-color:#b4b4c4; font-size:0.65em; }
+.pill.mech-neutral    { background:#e7dcf3; color:#5b3a87; border-color:#a995c8; font-size:0.65em; }
 
 /* ---- Row grouping (left-edge stripe cycle) ---- */
 .pd-table tr.group-0 td:first-child { border-left: 3px solid #7ea5d4; }
