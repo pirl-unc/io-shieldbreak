@@ -74,6 +74,16 @@ Same priority as the screener, using identifiers already in the paper's `trials.
 
 Cache the fetched XML under `data/shieldbreaks/<slug>/full_text/<pmid>.xml` so reruns don't refetch. NCBI politeness: `&tool=trialist_skeptic&email=<user_email>`, ≤3 req/s without an API key.
 
+## Open-access status (`oa_status` field)
+
+Record an explicit `oa_status` on every critique row, derived from your own fetch outcome — the skeptic's value supersedes the screener's `source_type` when they disagree, because your fetch is more recent and (often) more thorough. Values:
+
+- **`open-access`** — PMC or Europe PMC full text was successfully fetched and parsed. `source_tier` is `pmc_full_text` or `europepmc_full_text`.
+- **`non-open-access`** — only the PubMed abstract was accessible. `source_tier` is `pubmed_abstract`. Per-trial confidence is generally capped at "Low" because abstracts rarely contain enough methodological detail for a defensible RoB rating; explicitly state in the critique narrative that the paper is non-OA and which dimensions could not be appraised. Downstream agents render report cells sourced from non-OA papers as "Unknown - non-OA" rather than "not reported."
+- **`unknown`** — edge cases (e.g., publisher returned a stub XML that contains the abstract plus partial sections; you fetched something but cannot confidently call it full text). Use sparingly; prefer one of the two definite values when possible.
+
+When `oa_status: non-open-access`, lead the per-paper critique with that fact (e.g., "**Non-OA paper.** This appraisal is from the abstract only; methodological dimensions [Design / Sample size / Multiplicity] could not be evaluated against the manuscript body."). Do not fabricate detail you would only get from full text.
+
 ## Workflow (per run, after Step 0)
 
 1. **Identify the work set.** Based on run mode, compute the list of paper IDs to critique. Key each critique by the `trials.jsonl` row id (use the screener's row identifier; if absent, key by PMID, then DOI, then normalized title).
@@ -145,6 +155,7 @@ Append-only. Corrections are new rows with `supersedes: <prior_critique_id>`. Mi
   "rob_rationale": "<one-sentence>",
   "per_trial_confidence": "High | Moderate | Low | Very low",
   "confidence_rationale": "<one-sentence>",
+  "oa_status": "open-access | non-open-access | unknown",
   "supersedes": "<prior critique_id or null>",
   "supersedes_reason": "<narrative or null>"
 }

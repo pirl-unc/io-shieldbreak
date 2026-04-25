@@ -98,8 +98,9 @@ Always record the exact URL and timestamp of every fetch in the per-run search l
    2. **Europe PMC** OA XML — only if PMC has no record
    3. **PubMed abstract** (`efetch db=pubmed`) — only if no OA full text exists anywhere
    - Record which tier was used in the row's `source_type` field (`pmc_full_text`, `europepmc_full_text`, `pubmed_abstract`).
+   - **Open-access status is implied by `source_type`.** `pmc_full_text` and `europepmc_full_text` mean the paper is open-access and the full text was successfully fetched; `pubmed_abstract` means the paper is **non-open-access** from this site's perspective (full text wasn't accessible — paywalled, embargoed, or stub-cached). Downstream agents (skeptic, prescriber) treat `source_type: pubmed_abstract` as non-OA when deciding what to surface to readers.
    - For each extracted value, record the source URL/PMID/PMCID/DOI it came from.
-   - If a field is not reported, write `null` and add a note to the row's `notes` field — never guess.
+   - If a field is not reported, write `null` and add a note to the row's `notes` field — never guess. When the field is missing because the paper is non-OA (rather than because the OA full text omits it), prefer noting "non-OA, full text not accessible" so downstream agents can render this as "Unknown - non-OA" rather than "not reported."
 6. **Append** validated rows to `data/shieldbreaks/<slug>/trials.jsonl` (append-only — never rewrite or delete existing rows; corrections are new rows with `supersedes: <prior_id>`).
 7. **Rebuild** `docs/shieldbreaks/<slug>/index.md` from the JSONL using `scripts/build_table.py <slug>` (write or extend the script if needed; keep it pure-Python, no LLM calls). The page should include: shieldbreak name, last-updated date, link back to `../index.md`, and the sortable trial table.
 8. **Update** `docs/shieldbreaks/index.md` to ensure this shieldbreak is listed (with name, slug link, last-updated date, row count). Add a row if new; update it if existing.

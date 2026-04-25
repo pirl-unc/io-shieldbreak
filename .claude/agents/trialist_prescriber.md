@@ -144,10 +144,36 @@ One row per trial considered for the intervention (i.e., every trial
 listed in the Evidence base paragraph). If a single trial contributes
 multiple rows in `trials.jsonl` via row-grain (tissue × timepoint ×
 cohort), collapse to one row here — the per-trial detail table is
-per-*trial*, not per-*trial_row*. If a numeric field is not reported
-in the paper, write "not reported" rather than omitting. Keep cells
-terse: 1–3 facts per cell. Cite the source PMID for every efficacy
-value inline when it isn't obvious from the Reference column.
+per-*trial*, not per-*trial_row*. Keep cells terse: 1–3 facts per cell.
+Cite the source PMID for every efficacy value inline when it isn't
+obvious from the Reference column.
+
+**Open-access flagging.** Determine each trial's open-access status
+once and use it to choose the right phrasing for missing cells:
+
+- The latest critique row in `critiques.jsonl` has an `oa_status`
+  field — read that first.
+- If absent, fall back to the trial's `source_type` in `trials.jsonl`:
+  `pmc_full_text` and `europepmc_full_text` are open-access;
+  `pubmed_abstract` is non-OA.
+
+Write missing-cell content with this distinction:
+
+- **`Unknown - non-OA`** — when the source is non-OA *and* the data
+  isn't extractable from the abstract. Signals to the reader that the
+  data may exist in the inaccessible full text — distinct from a real
+  reporting gap. Use this verbatim phrasing.
+- **`not reported`** — when full text was accessible and the data is
+  genuinely absent from the paper. Means the gap is in the manuscript,
+  not in our access.
+- For mixed cells (e.g., qualitative AE list available from the abstract
+  but no per-grade frequencies), surface what's available and append
+  `(Unknown - non-OA for grade-level frequencies)` so the reader sees
+  both the abstract-level data and the access constraint.
+
+Lead each non-OA row's Efficacy or Toxicity cell with the `Unknown -
+non-OA` flag when most of the cell would otherwise be empty, so the
+reader doesn't have to scan further to learn it's an access gap.
 
 ### 2. <...>
 (repeat per intervention, 3–7 total)
