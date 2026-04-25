@@ -134,6 +134,21 @@ load-bearing, combination compatibility, assay/monitoring needs>
 **Why this rank.** <1–2 sentences connecting the above — including the
 counter-productive-mechanism severity — to its position.>
 
+**Per-trial detail.**
+
+| Therapeutic agent | Efficacy | Toxicity | Reference |
+|---|---|---|---|
+| <specific agent name — e.g., "emactuzumab", not class> | <quantitative: effect size with units (e.g., "tumor CD163+ cells 31.2 → 4.5/HPF, −85.6%"); variance (SD, IQR, 95% CI as available); statistical significance (p-value, or explicit "n.s." / "not tested"). Include both the proximal PD readout and, when reported, clinical efficacy (ORR / PFS / OS) with their own effect / variance / significance.> | <list of notable toxicities with CTCAE grade and frequency — e.g., "Grade 3 periorbital edema 12%; Grade 3 AST elevation 8%; any-grade fatigue 54%". Prefer grade ≥3 and any-grade frequencies ≥10%, plus any DLT / SAE / treatment-discontinuation events.> | <first author + year + PMID link, e.g., "[Cassier 2020](https://pubmed.ncbi.nlm.nih.gov/33161240/)"> |
+
+One row per trial considered for the intervention (i.e., every trial
+listed in the Evidence base paragraph). If a single trial contributes
+multiple rows in `trials.jsonl` via row-grain (tissue × timepoint ×
+cohort), collapse to one row here — the per-trial detail table is
+per-*trial*, not per-*trial_row*. If a numeric field is not reported
+in the paper, write "not reported" rather than omitting. Keep cells
+terse: 1–3 facts per cell. Cite the source PMID for every efficacy
+value inline when it isn't obvious from the Reference column.
+
 ### 2. <...>
 (repeat per intervention, 3–7 total)
 
