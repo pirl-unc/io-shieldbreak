@@ -432,14 +432,15 @@ def _render_markdown_block(pdf, md: str, top_h1: bool) -> None:
             i += 1
             continue
 
-        # H3 — same font size as the parent section (## = 16pt) per
-        # report styling. Slight top padding so adjacent intervention
-        # blocks don't visually merge.
+        # H3 — the numbered intervention descriptors. These are the
+        # primary navigation anchors of the report (one per ranked
+        # intervention) so they're rendered larger than the parent
+        # ## section header to read as the dominant content tier.
         if s.startswith("### "):
-            pdf.ln(4)
+            pdf.ln(5)
             pdf.set_text_color(*INK)
-            pdf.set_font(_FONT_FAMILY, "B", 16)
-            _multiline_text(pdf, s[4:].strip(), 8)
+            pdf.set_font(_FONT_FAMILY, "B", 20)
+            _multiline_text(pdf, s[4:].strip(), 9.5)
             pdf.ln(2)
             i += 1
             continue
