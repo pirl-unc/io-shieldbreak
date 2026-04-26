@@ -439,8 +439,7 @@ def _render_markdown_block(pdf, md: str, top_h1: bool) -> None:
         if s.startswith("### "):
             pdf.ln(5)
             pdf.set_text_color(*INK)
-            pdf.set_font(_FONT_FAMILY, "B", 20)
-            _multiline_text(pdf, s[4:].strip(), 9.5)
+            _multiline_text(pdf, s[4:].strip(), line_h=10, size=20)
             pdf.ln(2)
             i += 1
             continue
@@ -448,8 +447,7 @@ def _render_markdown_block(pdf, md: str, top_h1: bool) -> None:
         # H4 (rarely used in this report — but support it)
         if s.startswith("#### "):
             pdf.set_text_color(*INK)
-            pdf.set_font(_FONT_FAMILY, "B", 11)
-            _multiline_text(pdf, s[5:].strip(), 5)
+            _multiline_text(pdf, s[5:].strip(), line_h=5.5, size=11)
             i += 1
             continue
 
@@ -831,9 +829,16 @@ def _strip_inline_md(text: str) -> str:
     return text
 
 
-def _word_wrap(text: str, width: float, pdf, font_style: str = "") -> list[str]:
-    """Break `text` into lines that each fit in `width` mm using current font."""
-    pdf.set_font(_FONT_FAMILY, font_style, 8)
+def _word_wrap(text: str, width: float, pdf, font_style: str = "", size: int = 8) -> list[str]:
+    """Break `text` into lines that each fit in `width` mm at the given font size.
+
+    Default size 8 is for table cells. Heading paths pass their own size so
+    measurement uses the same metrics as final rendering — otherwise wrapping
+    is wrong AND the rendering picks up size 8 (which previously caused
+    `### N.` headings to silently downgrade to 8pt regardless of what the
+    caller asked for).
+    """
+    pdf.set_font(_FONT_FAMILY, font_style, size)
     words = text.split()
     if not words:
         return [""]
@@ -850,10 +855,11 @@ def _word_wrap(text: str, width: float, pdf, font_style: str = "") -> list[str]:
     return lines
 
 
-def _multiline_text(pdf, text: str, line_h: float) -> None:
+def _multiline_text(pdf, text: str, line_h: float, size: int = 16) -> None:
     """Render a heading text with manual word wrap (so we don't lose page layout)."""
     width = pdf.w - pdf.r_margin - pdf.l_margin
-    lines = _word_wrap(text, width, pdf, font_style="B")
+    lines = _word_wrap(text, width, pdf, font_style="B", size=size)
+    pdf.set_font(_FONT_FAMILY, "B", size)
     for ln in lines:
         pdf.cell(0, line_h, ln, new_x=XPos_LMARGIN(), new_y=YPos_NEXT())
 
