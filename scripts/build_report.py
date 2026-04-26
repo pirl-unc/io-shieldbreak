@@ -337,7 +337,7 @@ def _render_cover(pdf, title: str, research_q: str, today: str) -> None:
     pdf.set_x(20)
     pdf.set_text_color(*INK_MUTED)
     pdf.set_font(_FONT_FAMILY, "", 10)
-    pdf.cell(0, 5, f"Generated {today}    ·    pirl-unc/io-shieldbreak")
+    pdf.cell(0, 5, f"Generated {today}")
 
     # Disclaimer
     pdf.set_y(pdf.h - 32)
