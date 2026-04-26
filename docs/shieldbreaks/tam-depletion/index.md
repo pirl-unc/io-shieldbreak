@@ -4,7 +4,7 @@
 
 **Last updated:** 2026-04-26  **Rows:** 37 across 35 studies  **Outcomes:** 19 succeeded / 4 partial / 2 failed / 12 not-assessed (ratio-shift)
 
-<p class="pdf-download"><a href="tam-depletion-shieldbreak-report.pdf" download>📄 Download PDF report</a> <span class="pdf-meta">(137 KB — executive summary + ranked interventions + per-trial detail tables)</span></p>
+<p class="pdf-download"><a href="tam-depletion-shieldbreak-report.pdf" download>📄 Download PDF report</a> <span class="pdf-meta">(131 KB — executive summary + ranked interventions + per-trial detail tables)</span></p>
 
 ## Research question
 

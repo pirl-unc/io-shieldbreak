@@ -39,14 +39,65 @@ DOCS_DIR = REPO_ROOT / "docs" / "shieldbreaks"
 
 
 # Sections from scope_summary.md to include in the PDF body, in order.
+# The PDF is for external review — "Target effect" and "Cross-cutting
+# caveat" stay on the website but are intentionally omitted here so the
+# report goes straight from the executive summary into the ranked
+# interventions. Reviewers who want context browse the live page.
 INCLUDED_SECTIONS = [
-    "Target effect",
-    "Cross-cutting caveat",
     "Top interventions",
     "Ranked prioritization",
     "Caveats",
     "Sources",
 ]
+
+
+# Substitutions to scrub references to the internal agent pipeline so
+# external reviewers see findings + interpretation, not the toolchain.
+# Order matters: longest / most specific patterns first.
+_AGENT_SCRUBS: list[tuple[re.Pattern, str]] = [
+    (re.compile(r"\bskeptic-critiqued\b"),   "critically appraised"),
+    (re.compile(r"\bskeptic-High-confidence\b"), "High-confidence"),
+    (re.compile(r"\bskeptic-High\b"),        "High"),
+    (re.compile(r"\bskeptic-Moderate\b"),    "Moderate"),
+    (re.compile(r"\bskeptic-Low\b"),         "Low"),
+    (re.compile(r"\bskeptic-assessed\b"),    "appraised"),
+    (re.compile(r"\bskeptic-weighted\b"),    "confidence-weighted"),
+    (re.compile(r"\bSkeptic\s+confidences?\b"),  "Confidence"),
+    (re.compile(r"\bskeptic\s+confidences?\b"),  "confidence"),
+    (re.compile(r"\bSkeptic\s+CP-severity\b"), "CP severity"),
+    (re.compile(r"\bskeptic\s+CP-severity\b"), "CP severity"),
+    (re.compile(r"flagged by the skeptic"),  "flagged in critical appraisal"),
+    (re.compile(r"the skeptic flagged"),     "critical appraisal flagged"),
+    (re.compile(r"the skeptic identified"),  "critical appraisal identified"),
+    (re.compile(r"the skeptic rated"),       "critical appraisal rated"),
+    (re.compile(r"the skeptic called out"),  "critical appraisal called out"),
+    (re.compile(r"forcing the skeptic to cap"), "forcing a cap of"),
+    (re.compile(r"the skeptic'?s appraisal"), "the critical appraisal"),
+    (re.compile(r"the skeptic'?s narrative"), "the critique narrative"),
+    (re.compile(r"the skeptic'?s"),          "the critical appraisal's"),
+    (re.compile(r"in skeptic narrative"),    "in critique narrative"),
+    (re.compile(r"\bskeptic notes\b"),       "critique notes"),
+    (re.compile(r"\bThe skeptic\b"),         "Critical appraisal"),
+    (re.compile(r"\bthe skeptic\b"),         "critical appraisal"),
+    (re.compile(r"\bskeptic\b"),             "critique"),
+    # Screener / prescriber appear less often
+    (re.compile(r"\btrialist_screener\b"),   "search"),
+    (re.compile(r"\btrialist_skeptic\b"),    "critical appraisal"),
+    (re.compile(r"\btrialist_prescriber\b"), "synthesis"),
+    (re.compile(r"\bscreener pass\b"),       "extraction pass"),
+    (re.compile(r"\bThe screener\b"),        "The literature search"),
+    (re.compile(r"\bthe screener\b"),        "the literature search"),
+    (re.compile(r"\bscreener\b"),            "search"),
+    (re.compile(r"\bThe prescriber\b"),      "This synthesis"),
+    (re.compile(r"\bthe prescriber\b"),      "this synthesis"),
+    (re.compile(r"\bprescriber\b"),          "synthesis"),
+]
+
+
+def _scrub_agent_names(text: str) -> str:
+    for pat, repl in _AGENT_SCRUBS:
+        text = pat.sub(repl, text)
+    return text
 
 
 # ---------- markdown parsing ----------
@@ -242,12 +293,12 @@ def _make_pdf(slug: str, meta: dict, exec_md: str, scope_md: str, out_path: Path
     _register_unicode_font(pdf)
 
     _render_cover(pdf, title, research_q, today)
-    _render_exec_summary(pdf, exec_md)
+    _render_exec_summary(pdf, _scrub_agent_names(exec_md))
 
     for heading, body in sections:
         if heading.startswith("Sources"):
             body = _strip_disclaimer(body)
-        _render_section(pdf, heading, body)
+        _render_section(pdf, heading, _scrub_agent_names(body))
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
     pdf.output(str(out_path))
@@ -381,13 +432,15 @@ def _render_markdown_block(pdf, md: str, top_h1: bool) -> None:
             i += 1
             continue
 
-        # H3
+        # H3 — same font size as the parent section (## = 16pt) per
+        # report styling. Slight top padding so adjacent intervention
+        # blocks don't visually merge.
         if s.startswith("### "):
-            pdf.ln(2)
+            pdf.ln(4)
             pdf.set_text_color(*INK)
-            pdf.set_font(_FONT_FAMILY, "B", 12)
-            _multiline_text(pdf, s[4:].strip(), 6)
-            pdf.ln(1)
+            pdf.set_font(_FONT_FAMILY, "B", 16)
+            _multiline_text(pdf, s[4:].strip(), 8)
+            pdf.ln(2)
             i += 1
             continue
 

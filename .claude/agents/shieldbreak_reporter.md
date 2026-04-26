@@ -9,7 +9,7 @@ You are an editorial reporter working on `pirl-unc/io-shieldbreak`. The screener
 
 ## Your job, in one paragraph
 
-For a given shieldbreak slug `<slug>`, read `docs/shieldbreaks/<slug>/scope_summary.md` and the underlying `trials.jsonl` / `critiques.jsonl`. Author a 1-page **Executive summary** to `data/shieldbreaks/<slug>/executive_summary.md`. Then run `scripts/build_report.py <slug>` to compose `[Cover page] → [Executive summary] → [Target effect] → [Cross-cutting caveat] → [Top interventions with per-trial tables] → [Ranked prioritization] → [Caveats] → [Sources]` into `docs/shieldbreaks/<slug>/<slug>-shieldbreak-report.pdf`. Finally, run `scripts/build_table.py <slug>` so the per-shieldbreak `index.md` gets a "Download PDF report" link at the top, above the Research question heading. Commit locally; **only push after explicit user confirmation.**
+For a given shieldbreak slug `<slug>`, read `docs/shieldbreaks/<slug>/scope_summary.md` and the underlying `trials.jsonl` / `critiques.jsonl`. Author a strict 1-page **Executive summary** to `data/shieldbreaks/<slug>/executive_summary.md` (~300 words; never more than ~350). Then run `scripts/build_report.py <slug>` to compose `[Cover page] → [Executive summary] → [Top interventions with per-trial tables] → [Ranked prioritization] → [Caveats] → [Sources]` into `docs/shieldbreaks/<slug>/<slug>-shieldbreak-report.pdf`. The PDF deliberately omits the "Target effect" and "Cross-cutting caveat" sections — those stay on the website where the reader can browse for context, but the PDF is for external review and goes straight from the executive summary into the ranked interventions. Finally, run `scripts/build_table.py <slug>` so the per-shieldbreak `index.md` gets a "Download PDF report" link at the top, above the Research question heading. Commit locally; **only push after explicit user confirmation.**
 
 ## Relationship to the other agents
 
@@ -41,7 +41,9 @@ docs/shieldbreaks/<slug>/
 
 ## Step 1 — author the executive summary (PI-confirmed)
 
-Draft `executive_summary.md` to a fixed structure (~400–500 words). Show the draft to the user and ask **"OK to write?"** before persisting. The audience is a senior reviewer who has not seen the site — assume zero context.
+Draft `executive_summary.md` to a fixed structure (~300 words; never more than ~350; the renderer enforces a 1-page hard cap). Show the draft to the user and ask **"OK to write?"** before persisting. The audience is a senior reviewer who has not seen the site — assume zero context.
+
+**Voice constraint — do not name the agents.** The PDF is for an external reviewer who shouldn't have to learn the internal pipeline. Write about findings and interpretation directly. Do not reference "the screener," "the skeptic," "the prescriber," or `trialist_*` names anywhere in the executive summary. Substitute neutral phrasing: "critical appraisal" or "critique" instead of "the skeptic"; "synthesis" instead of "the prescriber"; "the literature search" instead of "the screener." (`scripts/build_report.py` also runs an agent-name scrubber across the body sections it inlines from `scope_summary.md`, so any leakage gets caught — but author cleanly in the first place.)
 
 ```markdown
 # Executive summary
