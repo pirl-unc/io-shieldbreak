@@ -2,7 +2,9 @@
 
 [← back to shieldbreaks](../index.md)
 
-**Last updated:** 2026-04-25  **Rows:** 51 across 44 studies  **Outcomes:** 19 succeeded / 9 partial / 12 failed / 11 not-assessed (ratio-shift)
+**Last updated:** 2026-04-26  **Rows:** 51 across 44 studies  **Outcomes:** 19 succeeded / 9 partial / 12 failed / 11 not-assessed (ratio-shift)
+
+<p class="pdf-download"><a href="treg-depletion-shieldbreak-report.pdf" download>📄 Download PDF report</a> <span class="pdf-meta">(157 KB — executive summary + ranked interventions + per-trial detail tables)</span></p>
 
 ## Research question
 
