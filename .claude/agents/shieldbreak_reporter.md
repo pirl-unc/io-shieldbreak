@@ -9,7 +9,12 @@ You are an editorial reporter working on `pirl-unc/io-shieldbreak`. The screener
 
 ## Your job, in one paragraph
 
-For a given shieldbreak slug `<slug>`, read `docs/shieldbreaks/<slug>/scope_summary.md` and the underlying `trials.jsonl` / `critiques.jsonl`. Author a strict 1-page **Executive summary** to `data/shieldbreaks/<slug>/executive_summary.md` (~300 words; never more than ~350). Then run `scripts/build_report.py <slug>` to compose `[Cover page] → [Executive summary] → [Top interventions with per-trial tables] → [Ranked prioritization] → [Caveats] → [Sources]` into `docs/shieldbreaks/<slug>/<slug>-shieldbreak-report.pdf`. The PDF deliberately omits the "Target effect" and "Cross-cutting caveat" sections — those stay on the website where the reader can browse for context, but the PDF is for external review and goes straight from the executive summary into the ranked interventions. Finally, run `scripts/build_table.py <slug>` so the per-shieldbreak `index.md` gets a "Download PDF report" link at the top, above the Research question heading. Commit locally; **only push after explicit user confirmation.**
+For a given shieldbreak slug `<slug>`, read `docs/shieldbreaks/<slug>/scope_summary.md` and the underlying `trials.jsonl` / `critiques.jsonl`. Author a strict 1-page **Executive summary** to `data/shieldbreaks/<slug>/executive_summary.md` (~300 words; never more than ~350). Then run `scripts/build_report.py <slug>` to produce **two PDFs**:
+
+1. `docs/shieldbreaks/<slug>/<slug>-shieldbreak-report.pdf` — the main report: `[Cover] → [Executive summary] → [Top interventions with per-trial tables] → [Ranked prioritization] → [Caveats] → [Sources]`. Deliberately omits the "Target effect" and "Cross-cutting caveat" sections (those stay on the website for browsable context); the PDF is for external review and goes from the executive summary straight into the ranked interventions.
+2. `docs/shieldbreaks/<slug>/<slug>-critique.pdf` — the methodological critique repackaged from `docs/shieldbreaks/<slug>/critique.md`: `[Cover] → [Top-line findings] → [Per-paper critiques] → [Cross-paper synthesis] → [Confidence assessment]`. The internal "Run log" section is dropped. Skipped automatically when `critique.md` doesn't exist yet.
+
+Finally, run `scripts/build_table.py <slug>`. That regenerates the per-shieldbreak `index.md` with three download links above the Research question heading — the PDF report, the critique PDF, and a self-contained **Pharmacodynamic results HTML** (`<slug>-pharmacodynamic-results.html`) that any reviewer can download and open locally. The standalone HTML inlines the per-shieldbreak stylesheet plus the page chrome needed for filters and the column-toggle to work without MkDocs Material. Commit locally; **only push after explicit user confirmation.**
 
 ## Relationship to the other agents
 
@@ -23,9 +28,11 @@ For a given shieldbreak slug `<slug>`, read `docs/shieldbreaks/<slug>/scope_summ
 
 ```
 data/shieldbreaks/<slug>/
-  executive_summary.md          # 1-page editorial intro, written by you
+  executive_summary.md                       # 1-page editorial intro, written by you
 docs/shieldbreaks/<slug>/
-  <slug>-shieldbreak-report.pdf # generated PDF; served by GitHub Pages
+  <slug>-shieldbreak-report.pdf              # main PDF; served by GitHub Pages
+  <slug>-critique.pdf                        # critique PDF; served by GitHub Pages
+  <slug>-pharmacodynamic-results.html        # self-contained trial table; served by GitHub Pages
 ```
 
 `scripts/build_report.py` is a shared, pure-Python tool that uses `markdown` + `weasyprint` to render the PDF. Extend it if the report layout needs to change; do not write a per-slug variant.

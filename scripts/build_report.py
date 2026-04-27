@@ -304,10 +304,79 @@ def _make_pdf(slug: str, meta: dict, exec_md: str, scope_md: str, out_path: Path
     pdf.output(str(out_path))
 
 
+# Sections to drop from the critique PDF — "Run log" is internal audit
+# bookkeeping, not useful for an external reviewer.
+_CRITIQUE_DROPPED_SECTIONS = {"Run log"}
+
+
+def _make_critique_pdf(slug: str, meta: dict, critique_md: str, out_path: Path) -> None:
+    """Render the skeptic-owned critique.md into a standalone PDF.
+
+    Structure:
+      Cover ('SHIELDBREAK CRITIQUE' eyebrow + title) → critique body verbatim
+      (with agent names scrubbed and the Run log section dropped).
+    """
+    try:
+        from fpdf import FPDF
+    except ImportError as e:
+        raise SystemExit(
+            "build_report: missing dependency `fpdf2`.\n  pip install fpdf2 markdown"
+        ) from e
+
+    title = meta.get("display_title") or slug.replace("-", " ").title()
+    research_q = meta.get("research_question") or ""
+    today = datetime.now(timezone.utc).date().isoformat()
+
+    class CritiquePDF(FPDF):
+        def footer(self):
+            if self.page_no() <= 1:
+                return
+            self.set_y(-12)
+            self.set_font(_FONT_FAMILY, "I", 8)
+            self.set_text_color(*INK_MUTED)
+            self.cell(
+                0,
+                6,
+                f"{self.page_no()} of {{nb}}    ·    {slug} critique",
+                align="C",
+            )
+
+    pdf = CritiquePDF(orientation="P", unit="mm", format="Letter")
+    pdf.set_auto_page_break(auto=True, margin=20)
+    pdf.set_margins(left=18, top=20, right=18)
+    pdf.alias_nb_pages()
+    _register_unicode_font(pdf)
+
+    _render_cover(pdf, title, research_q, today, eyebrow="SHIELDBREAK CRITIQUE")
+
+    # Strip the H1 title line from critique.md so we don't repeat the cover
+    # title; render the rest as one long body. Drop the Run log section.
+    body_md = re.sub(r"\A#\s.*\n+", "", critique_md, count=1)
+    sections = _split_sections(body_md)
+    if sections and sections[0][0] == "":
+        # leading prose before any ## stays as a body block
+        prelude = sections[0][1]
+        sections = sections[1:]
+    else:
+        prelude = ""
+
+    pdf.add_page()
+    if prelude.strip():
+        _render_markdown_block(pdf, _scrub_agent_names(prelude), top_h1=False)
+
+    for heading, body in sections:
+        if heading in _CRITIQUE_DROPPED_SECTIONS:
+            continue
+        _render_section(pdf, heading, _scrub_agent_names(body))
+
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    pdf.output(str(out_path))
+
+
 # ---------- cover ----------
 
 
-def _render_cover(pdf, title: str, research_q: str, today: str) -> None:
+def _render_cover(pdf, title: str, research_q: str, today: str, eyebrow: str = "SHIELDBREAK REPORT") -> None:
     pdf.add_page()
     # Background tint
     pdf.set_fill_color(*COVER_BG)
@@ -317,7 +386,7 @@ def _render_cover(pdf, title: str, research_q: str, today: str) -> None:
     pdf.set_x(20)
     pdf.set_text_color(*ACCENT)
     pdf.set_font(_FONT_FAMILY, "B", 10)
-    pdf.cell(0, 6, "SHIELDBREAK REPORT")
+    pdf.cell(0, 6, eyebrow)
 
     pdf.set_y(58)
     pdf.set_x(20)
@@ -888,9 +957,21 @@ def main(argv: list[str]) -> int:
 
     out_path = DOCS_DIR / slug / f"{slug}-shieldbreak-report.pdf"
     _make_pdf(slug, meta, exec_md, scope_md, out_path)
+    print(
+        f"built {out_path.relative_to(REPO_ROOT)} — "
+        f"{out_path.stat().st_size / 1024:.0f} KB"
+    )
 
-    size_kb = out_path.stat().st_size / 1024
-    print(f"built {out_path.relative_to(REPO_ROOT)} — {size_kb:.0f} KB")
+    # Critique PDF — only if the skeptic has produced critique.md
+    critique_md_path = DOCS_DIR / slug / "critique.md"
+    if critique_md_path.exists():
+        critique_pdf_path = DOCS_DIR / slug / f"{slug}-critique.pdf"
+        _make_critique_pdf(slug, meta, critique_md_path.read_text(), critique_pdf_path)
+        print(
+            f"built {critique_pdf_path.relative_to(REPO_ROOT)} — "
+            f"{critique_pdf_path.stat().st_size / 1024:.0f} KB"
+        )
+
     return 0
 
 

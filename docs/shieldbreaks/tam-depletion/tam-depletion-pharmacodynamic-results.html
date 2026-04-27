@@ -1,296 +1,437 @@
-# Tumor-associated Macrophage Depletion, Inhibition, or Repolarization
-
-[← back to shieldbreaks](../index.md)
-
-**Last updated:** 2026-04-27  **Rows:** 37 across 35 studies  **Outcomes:** 19 succeeded / 4 partial / 2 failed / 12 not-assessed (ratio-shift)
-
-<p class="pdf-download"><a href="tam-depletion-shieldbreak-report.pdf" download>📄 Download PDF report</a> <span class="pdf-meta">(131 KB — executive summary + ranked interventions + per-trial detail tables)</span></p>
-<p class="pdf-download"><a href="tam-depletion-critique.pdf" download>🔍 Download critique PDF</a> <span class="pdf-meta">(286 KB — per-paper appraisal + cross-paper synthesis)</span></p>
-<p class="pdf-download"><a href="tam-depletion-pharmacodynamic-results.html" download>📊 Download Pharmacodynamic results (HTML)</a> <span class="pdf-meta">(124 KB — sortable, filterable trial table; opens locally in any browser)</span></p>
-
-## Research question
-
-<details class="sb-section" open markdown="1">
-<summary>Show / hide</summary>
-
-
-Which clinical interventions deplete, inhibit, or repolarize tumor-associated macrophages (TAMs) in humans, and how durable / context-dependent is that effect?
-
-</details>
-
-## Scope summary
-
-<details class="sb-section" open markdown="1">
-<summary>Show / hide</summary>
-
-
-*Scope summary for tumor-associated macrophage depletion, inhibition, or repolarization. Last updated 2026-04-23 from 37 trial rows (35 unique PMIDs; skeptic-critiqued: 35/35, 100%). Evidence-synthesis aid for research planning — not clinical guidance.*
-
-</details>
-
-## Target effect
-
-<details class="sb-section" open markdown="1">
-<summary>Show / hide</summary>
-
-
-The shieldbreak's target effect is **durable human tumor-compartment TAM modulation**, captured orthogonally via intent (`intervention_class`) and observation (`change_mechanism` — absolute reduction, ratio shift, repolarization, or functional impairment). Success is agent-specific: count reduction for CSF1R-style depleters; multi-marker M1-direction shift for repolarizing agents; assay-level functional change for "don't-eat-me" blockers. CPI monotherapy and healthy-volunteer PD are out-of-scope.
-
-</details>
-
-## Cross-cutting caveat (read first)
-
-<details class="sb-section" open markdown="1">
-<summary>Show / hide</summary>
-
-
-**No TAM-targeting intervention class in this evidence base is free of a structural counter-productive concern.** The skeptic's appraisal across 35 papers returned zero at Low CP severity (distribution: 6 High / 25 Moderate / 4 Unknown / 0 Low). Three findings motivate this framing: (1) the single largest and most rigorously-critiqued trial in the whole set — **Gomez-Roca 2022 (PMID 35577503, n=221)** — paper-internally reports that depth of TAM depletion is *inversely* associated with CD8 infiltration and clinical benefit; (2) CCR2/CCR5 development has effectively program-failed, with Noel 2020 terminated for pulmonary toxicity and Grierson 2025's discussion openly conceding underperformance; (3) CD47/SIRPα's solid-tumor TAM-modulation evidence is absent — the 4 included papers are all hematologic and all `functional-impairment-only` inferred from receptor occupancy, not ex-vivo phagocytosis. Rankings below are calibrated to this.
-
-</details>
-
-## Intervention grouping
-
-<details class="sb-section" open markdown="1">
-<summary>Show / hide</summary>
-
-
-- **CSF1R pathway (mAb + TKI)** — 13 unique PMIDs, 14 rows: Cassier 2020 (33161240), Gomez-Roca 2022 (35577503), Kitko 2023 (36459673, cGVHD), Papadopoulos 2017 (28655795), Autio 2020 (32847933), Dowlati 2021 (33624233), Falchook 2021 (33852104), Razak 2020 (33046621), Wesolowski 2019 (31258629), Manji 2021 (34321280), Machiels 2020 (33097612), Weiss 2021 (34140403), Boal 2020 (32943455).
-- **CD40 agonism** — 3 PMIDs, 3 rows: Byrne 2021 (34112709, selicrelumab neoadjuvant PDAC), Soto 2024 (38181044, sotigalimab neoadj EAC), Coveler 2023 (37385724, SEA-CD40).
-- **CD47 / SIRPα blockade** — 4 PMIDs, 4 rows: Advani 2018 (30380386, NEJM DLBCL/FL), Sallman 2023 (36888930, MDS), Daver 2025 (40198272, AML), Strati 2025 (40729376, evorpacept B-NHL).
-- **CCR2 / CCR5 blockade** — 3 PMIDs, 3 rows: Nywening 2016 (27055731), Noel 2020 (31297636, terminated), Grierson 2025 (40125795, BMS-813160).
-- **CLEVER-1 blockade (bexmarilimab)** — 3 PMIDs, 3 rows: Virtakoivu 2021 (34078651, MATINS-1), Rannikko 2023 (38056464, MATINS-2), Kontro 2025 (40449509, BEXMAB).
-- **LILRB2 / TREM2 blockade** — 3 PMIDs, 4 rows: Taylor 2024 (39567210, IO-108), Yeku 2025 (40081941, PY314 + PY159 split arms), Beckermann 2024 (38372949, PY314 + pembro).
-- **PI3Kγ inhibition (eganelisib)** — 2 PMIDs, 2 rows: Hong 2023 (37000164, MARIO-1), O'Connell 2024 (39214650, MARIO-3).
-- **Trabectedin / lurbinectedin** — 2 PMIDs, 2 rows: Germano 2013 (23410977), Sun 2024 (38374062, TARMIC — primary endpoint missed).
-- **STING agonism (ADU-S100)** — 1 PMID, 1 row: Meric-Bernstam 2022 (34716197).
-- **TLR4 agonism (G100)** — 1 PMID, 1 row: Bhatia 2019 (30093453).
-
-CSF1R-in-combo papers are rolled up into the CSF1R group rather than left in a generic `combo` class because pharmacology is what matters for research-planning ranking.
-
-</details>
-
-## Top interventions
-
-<details class="sb-section" open markdown="1">
-<summary>Show / hide</summary>
-
-
-### 1. CSF1R pathway (mAb and small-molecule inhibitors) — largest and most reproducible depletion signal; but with a paper-internal counter-productive finding that tempers the rank
-
-**Evidence base.** 13 unique trials (phase 1–1b; mono and combo; total n treated with TAM readout ≈ 748). Agents: emactuzumab, cabiralizumab, AMG 820, LY3022855/IMC-CS4, axatilimab, pexidartinib. Absolute-reduction is the dominant observed mechanism (10/13 trials report `absolute-reduction` or `succeeded` depletion). Skeptic confidence distribution: 1 High, 6 Moderate, 6 Low; RoB 11 Moderate / 2 Serious; CP-severity 11 Moderate / 2 High. Tumor-compartment evidence is strongest for emactuzumab — Cassier 2020 (PMID 33161240) documents durable CSF1R+/CD163+ depletion with 71% ORR in dTGCT (a macrophage-driven tumor), and Gomez-Roca 2022 (PMID 35577503, n=221) reports median −80% CSF1R+ and −63% CD163+ in paired tumor biopsies. Axatilimab (Kitko 2023, PMID 36459673) is an FDA-approved proof-of-mechanism, but in cGVHD, not cancer.
-
-**Likelihood of desired effect.** High for the PD endpoint itself — multiple independently-sponsored trials in different indications reproduce tumor and PBMC macrophage depletion on treatment. Much lower for clinical benefit outside macrophage-driven tumors: among the solid-tumor combo trials (Autio 2020, Dowlati 2021, Papadopoulos 2017, Razak 2020, Falchook 2021), objective responses are uncommon and Razak 2020 was specifically called "insufficient for further evaluation." Gomez-Roca 2022 reports the critical disconnect paper-internally: **deeper CSF1R+/CD163+ reduction was associated with progressive disease, and persistence of a TAM subpopulation tracked with CD8 infiltration and benefit.** This is the single most consequential finding for ranking in the whole evidence base.
-
-**Toxicity profile.** Class signature is on-target tissue-macrophage collateral: periorbital edema (Langerhans-cell depletion), transaminitis (Kupffer-cell depletion), CK/LDH elevations (myocyte-associated macrophage involvement), and a compensatory serum CSF1 rise documented across essentially every trial (Cassier 2020, Autio 2020, Papadopoulos 2017, Gomez-Roca 2022). Pexidartinib adds a hepatic black-box warning and a broader kinase footprint (KIT, FLT3-ITD). Long-term osteoclast depletion carries fracture risk; in pediatric dosing (Boal 2020, PMID 32943455), growth-plate concerns are acknowledged but not directly measured. Sources: trial-internal AE tables; FDA axatilimab label (Niktimvo, Aug 2024); pexidartinib label (Turalio, 2019).
-
-**Counter-productive mechanisms.** CP severity aggregate: **High**, replicated across the set. Three concerns drive the rating. (i) **Depletion depth is inversely correlated with clinical benefit** — Gomez-Roca 2022 paper-internally shows that in their n=221 dataset, patients with deeper CSF1R+/CD163+ reduction had *worse* outcomes, and persistence of a residual TAM subpopulation tracked with CD8 infiltration. The skeptic rated this paper High confidence — it is the most-rigorously-evidenced paper in the set and the finding directly contradicts depletion-as-goal. (ii) **Tissue-macrophage collateral is on-mechanism, not idiosyncratic** — osteoclasts, Kupffer cells, Langerhans cells, and splenic red-pulp macrophages all depend on CSF1R signaling; their depletion is the cause of the class AE signature, not a side-effect. (iii) **IL-34-driven escape** — CSF1R has two ligands (CSF1 and IL-34); receptor blockade alone cannot address IL-34-dominant suppressive TAM subsets, which may survive or expand during treatment. Partial depletion with a specific subset target appears to be a better PD endpoint than maximal depletion.
-
-**Practical considerations.** Multiple agents are clinically available (pexidartinib, axatilimab approved; emactuzumab, LY3022855, AMG 820 developmental). ADA immunogenicity is a cross-agent concern that the Falchook 2021 / Gomez-Roca 2022 discussions both raise (LY3022855 reported ~3× the ADA rate of emactuzumab). IL-34-driven escape (dual CSF1R-ligand biology) is class-wide and cannot be overcome by receptor blockade alone. For combo design, the Gomez-Roca finding argues for *partial* rather than maximal depletion as the target PD endpoint.
-
-**Why this rank.** Largest reproducible PD signal across the shieldbreak, but the Gomez-Roca inverse-correlation finding — skeptic-High-confidence, n=221, the paper most deserving of weight in the set — reframes maximal depletion as potentially counter-productive and forces a High CP-severity call at the class level. Rank 1 reflects evidence-base size and mechanism clarity, not an endorsement of deeper-is-better.
-
-**Per-trial detail.**
-
-| Therapeutic agent | Efficacy | Toxicity | Reference |
-|---|---|---|---|
-| Emactuzumab (monotherapy) | Substantial decrease in tumor CSF1R+ and CD68/CD163+ macrophages in 36/63 paired biopsies (qualitative); ORR 71%, 2-yr ORR 64% in dTGCT | Most frequent AEs pruritus, asthenia, edema (Unknown - non-OA for grade-level frequencies) | [Cassier 2020](https://pubmed.ncbi.nlm.nih.gov/33161240/) |
-| Emactuzumab + atezolizumab | Median tumor CSF1R+ change −80% PD vs −72% non-PD (p=0.11); median CD163+ change −63% PD vs −28% non-PD (p=0.25); deeper reduction tracked with progression. ORR 9.8% ICB-naive UBC, 12.5% ICB-experienced NSCLC, 8.3% ICB-experienced UBC, 5.6% ICB-experienced MEL | N=221; any-grade related AEs: periorbital edema 28.5%, face edema 26.2%, rash 25.8%, fatigue 24.0%, pruritus 24.0%, AST increased 12.7%, eyelid edema 19.5%. Grade ≥3 related: fatigue/rash 6.3% each, asthenia 5.9%, anemia/AST 3.6%. 15.4% discontinued for AE; 4 (1.8%) AE-related deaths (all unrelated) | [Gomez-Roca 2022](https://pubmed.ncbi.nlm.nih.gov/35577503/) |
-| Axatilimab (monotherapy, cGVHD) | ORR 50% at C7D1 (primary endpoint); ORR 82% in first 6 cycles; Lee Symptom Scale improvement 58%; decreased skin CSF1R+ macrophages | N=40; grade ≥3 TRAEs in 8 patients (20%); 2 DLTs at 3 mg/kg Q2W; class-typical periorbital edema and transaminase elevation; no CMV reactivations | [Kitko 2023](https://pubmed.ncbi.nlm.nih.gov/36459673/) |
-| AMG 820 (monotherapy) | Reduced skin macrophages on biopsy + serum CSF1 rise (qualitative); no ORs, SD 32% (8/25) | N=25; periorbital edema flagged as class-typical (Unknown - non-OA for grade-level frequencies) | [Papadopoulos 2017](https://pubmed.ncbi.nlm.nih.gov/28655795/) |
-| LY3022855 (monotherapy, MBC/mCRPC) | CD14dim CD16bright monocytes decreased at day 8; circulating CSF-1 increased (qualitative); 2 MBC SD >9 mo, no objective responses | N=34; common any-grade TRAEs fatigue, decreased appetite, nausea, asymptomatic lipase increased, CPK increased (Unknown - non-OA for grade-level frequencies) | [Autio 2020](https://pubmed.ncbi.nlm.nih.gov/32847933/) |
-| LY3022855 (monotherapy, solid tumors) | TAMs and CD14dim CD16bright monocytes decreased; serum CSF-1 and IL-34 increased (qualitative); 3 SD, no ORs | Class-typical PD profile noted; Unknown - non-OA for grade-level frequencies | [Dowlati 2021](https://pubmed.ncbi.nlm.nih.gov/33624233/) |
-| LY3022855 + durvalumab or tremelimumab | N=72; DCR 33.3%, CR 1.4%, PR 2.8%; Unknown - non-OA for monocyte/TAM PD readout | Gomez-Roca 2022 discussion notes ~3× the ADA rate of emactuzumab for LY3022855 (Unknown - non-OA for grade-level frequencies) | [Falchook 2021](https://pubmed.ncbi.nlm.nih.gov/33852104/) |
-| AMG 820 + pembrolizumab | CD16+ monocyte reduction + CSF1/IL-34 feedback rise; tumor biopsy PD-L1, CD4, CD8 increased; insufficient antitumor activity for further evaluation (1/19 NSCLC PR) | N=116; any-grade AEs: AST increased 59.5%, fatigue 48.3%, periorbital/face edema 48.3%, rash 37.1%, anemia 29.3%. Grade ≥3: AST 27.6%, anemia 17.2%, lipase 12.9%, rash 11.2%, hypophosphatemia 10.3%. 12.1% discontinued AMG 820 for AE; 6 fatal AEs (5.2%) | [Razak 2020](https://pubmed.ncbi.nlm.nih.gov/33046621/) |
-| Pexidartinib + paclitaxel | CD14dim/CD16+ monocyte levels decreased 57–100%; plasma CSF-1 increased 1.6–53-fold | N=54; related any-grade: fatigue 65%, anemia 59%, neutropenia 43%, diarrhea/nausea 39% each, AST increased 35%, CPK increased 31%. Grade 3–4: anemia 26%, neutropenia 22%, lymphopenia 19%, fatigue 15%, hypertension 11%. SAEs in 31%; 11% AE-driven discontinuation | [Wesolowski 2019](https://pubmed.ncbi.nlm.nih.gov/31258629/) |
-| Pexidartinib + sirolimus | "Decreased proportion of activated M2 macrophages" in tumor (qualitative; skeptic notes n≈3 paired biopsies with "non-statistically significant trends"); 3 PR + 9 SD (67% clinical benefit, driven by TGCT) | N=18; 5 DLTs (AST/ALT elevation ×2, sirolimus trough ×2, grade 5 dehydration/cardiac arrest ×1); grade ≥3 TRAEs: AST/ALT increased 11.1–11.1%, fatigue 11.1%, anemia 11.1%, hypertension 16.7%; 1 grade 5 | [Manji 2021](https://pubmed.ncbi.nlm.nih.gov/34321280/) |
-| Emactuzumab + selicrelumab (CD40) | CD14dim CD16bright monocyte reduction; Ki67+ CD8+ T-cell increase; B-cell decrease; no objective responses (SD in 40.5%) | N=37; 3 DLTs (all infusion-related reactions); related any-grade: IRR 75.7%, fatigue 37.8%, facial edema 37.8%, periorbital edema 24.3%, CPK increased 35.1%. Grade ≥3 related: CPK 16.2%, hypertension 5.4%, IRR 8.1%, GGT increased 10.8% | [Machiels 2020](https://pubmed.ncbi.nlm.nih.gov/33097612/) |
-| APX005M (CD40) + cabiralizumab (CSF1R) ± nivolumab | Pro-inflammatory cytokines (TNFα, CXCL10, CCL3/4, IL-12p40) upregulated 4h post-infusion; serum CD40 and MCSF increased; 1 uPR (4%), 8 SD (31%), 16 PD (62%) | N=26; DLT definitions extensive (grade ≥3 non-laboratory non-hematologic); triple-agent regimen with CD40-class CRS overlaid on CSF1R class AEs; detailed AE frequencies not parsed in extractable section | [Weiss 2021](https://pubmed.ncbi.nlm.nih.gov/34140403/) |
-| Pexidartinib (pediatric) | Plasma MCSF rise + absolute monocyte count decrease (qualitative); 1 patient 67% RECIST reduction, 2 SD | N=16; no DLTs across 3 dose levels; common non-DLT: fatigue, headache, proteinuria, WBC/lymphocyte decrease, CPK/amylase increases; skin hypopigmentation after cycle 1. Long-term bone-development effects not assessed | [Boal 2020](https://pubmed.ncbi.nlm.nih.gov/32943455/) |
-
-### 2. CD40 agonism — mechanistically distinct (activation, not depletion); small dataset, consistent repolarization, mixed clinical signal
-
-**Evidence base.** 3 monotherapy/near-mono trials + 2 combinations with CSF1R blockade (Machiels 2020, Weiss 2021, counted under the CSF1R group). Agents: selicrelumab (CP-870,893), sotigalimab (APX005M), SEA-CD40. All 3 standalone trials skeptic-Moderate confidence, CP-Moderate, RoB-Moderate. Total n ≈ 89 across the 3 mono papers. Byrne 2021 (PMID 34112709) — neoadjuvant selicrelumab in resectable PDAC — is the clearest "repolarization without depletion" row in the set. Soto 2024 (PMID 38181044) documents scRNA-seq myeloid-compartment shift in neoadjuvant EAC with a 38% pCR rate.
-
-**Likelihood of desired effect.** Moderate for repolarization (succeeded/partial in all 3 mono trials); low-to-moderate for downstream clinical benefit as monotherapy. The combo evidence is pointedly negative: Weiss 2021 (PMID 34140403) — APX005M + cabiralizumab ± nivolumab — produced 62% PD with 0% ORR, and the critique notes this as a mechanism-coherent concern (CSF1R depletion removing the antigen-presenting macrophage the CD40 agonist is trying to activate). Machiels 2020 produced no objective responses. **Combining CD40 agonism with CSF1R depletion is, in the available evidence, null-efficacy.**
-
-**Toxicity profile.** Cytokine release syndrome, transaminitis, and thromboembolism are reported across every CD40-agonist trial (Byrne 2021, Soto 2024, Coveler 2023, Machiels 2020, Weiss 2021). SEA-CD40's non-fucosylated Fc engineering may increase exhaustion-driver risk per the Coveler 2023 critique. Neoadjuvant positioning makes CRS/transaminitis-driven surgical delays a specific clinical counter-productive signal.
-
-**Counter-productive mechanisms.** CP severity aggregate: **Moderate** (3/3 mono papers). Two patterns flagged: (i) **systemic non-cognate T-cell activation** — CD40 agonists activate T cells broadly, which can drive terminal differentiation and exhaustion rather than productive anti-tumor priming when the timing isn't matched to a tumor-antigen-specific response; (ii) **mechanism conflict with CSF1R combinations** — the CD40+CSF1R combo null-efficacy signal (Weiss 2021 and Machiels 2020, both 0% ORR in unselected solid tumors) is mechanism-coherent: CSF1R inhibition removes the macrophage population CD40 is trying to activate. This is a specific contraindication for research-planning, not just a signal across unrelated trials. SEA-CD40's Fc engineering (Coveler 2023) adds an exhaustion-driver concern at the dose-response level.
-
-**Practical considerations.** Sotigalimab's parent PRINCE phase 2 in metastatic PDAC was negative; selicrelumab has no oncology approval. Neoadjuvant windows (Byrne 2021, Soto 2024) are the current highest-signal clinical setting. Avoid stacking with CSF1R depleters.
-
-**Why this rank.** Mechanistically different from all other ranked entries and the only class in the set with reproducible *repolarization-without-depletion* evidence. Ranked 2 despite thin evidence because the mechanism is non-redundant with other classes; the low rank reflects the negative combination signal and small cohorts.
-
-**Per-trial detail.**
-
-| Therapeutic agent | Efficacy | Toxicity | Reference |
-|---|---|---|---|
-| Selicrelumab (neoadjuvant PDAC) ± gemcitabine/nab-paclitaxel | M2-like TAMs reduced vs control, fibrosis reduced, intratumoral DC maturation, T-cell activation (qualitative IHC); intratumoral CD163−:CD163+ ratio shifted higher. Median OS 23.4 mo (95% CI 18.0–28.8) | N=16; CRS with transient chills/fever/rigor in 10/16 (63%), grade 1 in 9. Neoadjuvant AEs mostly mild: single grade 3 hyperglycemia and grade 3 AST/ALT elevation; no neoadjuvant SAEs. Adjuvant: grade 3 fatigue (2 pts), grade 4 pancreatitis (1 pt); 3 SAEs in 2 pts | [Byrne 2021](https://pubmed.ncbi.nlm.nih.gov/34112709/) |
-| Sotigalimab (APX005M) + chemoradiation (neoadjuvant E/GEJ) | Increased antigen presentation, altered myeloid metabolism, elevated T-cell activation/cytotoxicity, reduced TME Tregs (scRNA-seq + CITEseq + MIBI, n=6 paired biopsies); pCR 38% (11/29, adenocarcinoma 33%, SCC 60%) | N=33 safety-evaluable; detailed AE frequencies not reported in this correlative paper (parent trial NCT03165994); class-typical CRS/transaminitis/thromboembolism flagged in skeptic narrative | [Soto 2024](https://pubmed.ncbi.nlm.nih.gov/38181044/) |
-| SEA-CD40 (non-fucosylated CD40 agonist) | Dose-dependent cytokine induction; innate + adaptive immune cell activation and trafficking (qualitative PD); clinical response data not reported in abstract | N=67; IHRs (CRS / IRR / hypersensitivity / anaphylaxis) in 49 (73%), grade 3 in 8, grade 4 in 1 (anaphylaxis/hypotension at 60 µg/kg, fastest infusion rate). 1 grade 4 acute MI judged related. 7 deaths in safety window, none SEA-CD40-attributed. Slow-infusion protocol mitigated IHRs | [Coveler 2023](https://pubmed.ncbi.nlm.nih.gov/37385724/) |
-
-### 3. CD47 / SIRPα blockade — strong hematologic-malignancy efficacy, but TAM biology is inferred and two phase 3 trials failed post-dataset
-
-**Evidence base.** 4 trials: Advani 2018 (NEJM DLBCL/FL), Sallman 2023 (MDS), Daver 2025 (AML), Strati 2025 (evorpacept B-NHL). Total n ≈ 243. All 4 skeptic-Low confidence, all RoB-Moderate, CP-severity 3 Moderate / 1 High. Critically, **every trial in this group reports `change_mechanism: functional-impairment-only` inferred from receptor-occupancy or clinical response, not from an ex-vivo phagocytosis assay** — a uniform extraction flag that the skeptic called out in all 4 critiques.
-
-**Likelihood of desired effect.** Clinically, the efficacy signal in hematologic combos is real (Advani 2018: 50% ORR, 36% CR in rituximab-refractory NHL; Strati 2025: 80% CR with evorpacept + len + rit). Mechanistically, the shieldbreak's target effect — demonstrated TAM modulation — is not well-served by this evidence because phagocytosis is not measured. The post-dataset reality is additionally load-bearing: the magrolimab phase 3 ENHANCE (MDS) and ENHANCE-3 (AML) trials both posted futility/harm signals in 2023–2024, forcing the skeptic to cap Sallman 2023 and Daver 2025 at Low confidence despite large n.
-
-**Toxicity profile.** Uniform on-target anemia (CD47 on RBCs) and thrombocytopenia (CD47 on platelets); priming-dose strategies partially mitigate but do not eliminate these. Evorpacept's engineered reduced-RBC-binding design (Strati 2025) appears to lower but not abolish cytopenia signal. Infection/sepsis signal is prominent in AML combos.
-
-**Counter-productive mechanisms.** CP severity aggregate: **Moderate-to-High** (3 Moderate, 1 High across the set). Three concerns: (i) **on-target anemia/thrombocytopenia** is unavoidable because CD47 is ubiquitously expressed on RBCs and platelets — not a dose-limiting off-target effect but an on-mechanism collateral; (ii) **post-dataset phase 3 failures** (ENHANCE, ENHANCE-3) are external evidence that the mechanism in its tested form does not translate to durable clinical benefit in the hematologic populations where the phase 1b signal was strongest; (iii) **TAM-modulation evidence is absent in solid tumors**, where the shieldbreak's target biology actually resides — all 4 papers are hematologic. If the PI's question is "can CD47/SIRPα blockade modulate solid-tumor TAMs," the literature in this shieldbreak does not answer it.
-
-**Practical considerations.** Magrolimab program restructured after ENHANCE failures; evorpacept is the active CD47-pathway agent. The solid-tumor scope of this shieldbreak is not well-represented in the evidence — all 4 papers are hematologic.
-
-**Why this rank.** Solid clinical-efficacy data in hematologic malignancies but weak direct-TAM evidence, and the post-dataset phase 3 failures cap confidence. Ranked 3 above CCR2/CCR5 because the CD40 comparator is the only one with tumor-compartment PD; CD47 is third because two phase 3 failures plus missing TAM-assay evidence is a research-planning signal worth flagging prominently.
-
-**Per-trial detail.**
-
-| Therapeutic agent | Efficacy | Toxicity | Reference |
-|---|---|---|---|
-| Hu5F9-G4 (magrolimab) + rituximab | ~100% CD47 receptor occupancy on circulating cells at 30 mg/kg; ex-vivo phagocytosis not measured. ORR 50%, CR 36% (n=22; FL 71% ORR, DLBCL 40% ORR); 91% ongoing responses at 6.2–8.1 mo median follow-up | N=22; most common TRAEs chills 41%, headache 41%, anemia 41%, IRR 36%. 3 DLTs: grade 3 PE (cohort 2; occult DVT from lymphoma compression), grade 4 neutropenia, grade 3 ITP. Mean Hb drop 0.9 g/dL (max 2.4); 3 pts transfused; priming-dose strategy mitigated on-target anemia | [Advani 2018](https://pubmed.ncbi.nlm.nih.gov/30380386/) |
-| Magrolimab + azacitidine (HR-MDS) | Ex-vivo phagocytosis not measured. CR 33%, ORR 75%, mDOR 11.1 mo, mPFS 11.6 mo; TP53-mut CR 40% | N=95; any-grade TEAEs: constipation 68.4%, thrombocytopenia 54.7%, anemia 51.6%, neutropenia 47.4%. Grade 3/4: anemia 47.4%, neutropenia 46.3%, thrombocytopenia 46.3%. SAEs ≥5%: febrile neutropenia 24.2%, pneumonia 9.5%, anemia 8.4%, bacteremia 6.3%. 10.5% discontinued for AE; 60-day mortality 2.1%. Median cycle-1 Hb drop −0.7 g/dL; 27.2% had ≥2 g/dL drop between doses 1–3. *Phase 3 ENHANCE subsequently failed (futility)* | [Sallman 2023](https://pubmed.ncbi.nlm.nih.gov/36888930/) |
-| Magrolimab + azacitidine + venetoclax (AML) | Ex-vivo phagocytosis not measured. 1L CRc 63% (TP53-mut 49%, TP53 wt 90%); 1L mEFS 6.6 mo, mOS 9.8 mo (TP53-mut 7.6 mo vs wt 13 mo); R/R CRc 29%, R/R mOS 3.9 mo | N=110; 19% had grade 5 TEAE (15/21 infection-related). Grade 3–5 infections 75.4%: febrile neutropenia 43.6%, lung infection 36.4% (7 grade 5), sepsis/bacteremia 18.2% (8 grade 5). Grade 3–5 non-infectious: hyperbilirubinemia 10.9%, respiratory failure 6.4% (5 grade 4, 2 grade 5), AKI 6.4%. Magrolimab infusion reaction 10.9% (all grade 1–2). *Program halted after ENHANCE-3 futility* | [Daver 2025](https://pubmed.ncbi.nlm.nih.gov/40198272/) |
-| Evorpacept (ALX148) + lenalidomide + rituximab (R/R B-NHL) | Significant increase in T cells and intratumoral macrophages; anti-tumoral macrophage pathways upregulated (spatial + bulk RNA; ex-vivo phagocytosis not measured). CR 80% (16/20), 2-yr PFS 69%, median follow-up 28 mo; no DLTs | N=20; no DLTs at DL1/DL2. Any-grade: neutropenia 85% (55% grade 3–4; 55% needed G-CSF, no febrile neutropenia), infections 53% (COVID 25%), anemia 70% (grade 3–4 10%, transient), ALT elevation 75% (15% grade 3+), AST 70% (10% grade 3+), skin rash 50% (grade 3–4 10%). 1 myocarditis (lenalidomide-attributed; treatment discontinued, full recovery). Reduced-RBC-binding design lowered anemia vs magrolimab | [Strati 2025](https://pubmed.ncbi.nlm.nih.gov/40729376/) |
-
-### 4. CCR2 / CCR5 blockade — program-failed at class level; retained because the failure mode is instructive
-
-**Evidence base.** 3 trials: Nywening 2016 (PF-04136309 + FOLFIRINOX), Noel 2020 (PF-04136309 + GnP — terminated for pulmonary toxicity), Grierson 2025 (BMS-813160 + nivo + GnP). Total n ≈ 92. Skeptic CP-severity 2 High / 1 Moderate; confidence 2 Moderate / 1 Low; RoB 2 Serious / 1 Moderate. Nywening 2016 is the strongest PD demonstration (mean tumor TAM 9.0% → 2.4%, p=0.008, paired biopsies) with a 49% vs 0% ORR signal. Grierson 2025 reports intratumoral TAM reduction *without* concurrent peripheral-monocyte change — the authors interpret this as peripheral rebound compensating for tumor depletion.
-
-**Likelihood of desired effect.** PD target-engagement is demonstrable but not translating. Noel 2020's early termination for pulmonary toxicity is the defining datapoint. Grierson 2025's discussion section contains a sponsor-written concession that the drug under-delivered and a call for "a more efficacious CCR2-targeted therapeutic." Monocyte rebound on therapy-off is well-characterized.
-
-**Toxicity profile.** Pulmonary toxicity (Noel 2020), and the mechanism-proposed counter-productive signal is monocyte sequestration in pulmonary tissue from blocked egress. Grierson 2025 reports standard GnP-plus-nivo toxicity without a new CCR2/5-specific signal — consistent with the drug not engaging as hoped.
-
-**Counter-productive mechanisms.** CP severity aggregate: **High** (2 High, 1 Moderate). Three concerns: (i) **program-terminating toxicity** — Noel 2020's pulmonary-toxicity early termination is the class-defining safety datapoint; (ii) **monocyte rebound** — on-therapy blockade of CCR2+ monocyte mobilization is reversible on drug washout, and the Grierson 2025 intratumoral-reduction-without-peripheral-change finding is interpreted as compensatory mobilization from the bone-marrow reservoir; (iii) **sponsor-acknowledged underperformance** — Grierson 2025's discussion explicitly calls for "a more efficacious CCR2-targeted therapeutic," which is an unusual public concession in a phase 1b paper and signals the class as currently program-failed.
-
-**Practical considerations.** No approved CCR2/5 oncology agent. Development programs for PF-04136309 and BMS-813160 have not advanced. The class is **effectively program-failed** for the oncology TAM indication as of 2026.
-
-**Why this rank.** Ranked 4 (last) to stay honest about the class-level failure while keeping it in the ranked set because Nywening 2016 remains the cleanest demonstration in the whole shieldbreak of tumor-compartment TAM depletion correlating with objective response — a mechanism-hypothesis worth preserving even if the specific agents failed.
-
-**Per-trial detail.**
-
-| Therapeutic agent | Efficacy | Toxicity | Reference |
-|---|---|---|---|
-| PF-04136309 (CCR2i) + FOLFIRINOX | Paired tumor biopsies (n=6): TAM 9.0% → 2.4% of total cells (p=0.008); intratumoral CD8+ TIL 1.2% → 2.4% (p=0.032); Treg 57.3% → 11.8% of CD4 (p=0.029). Peripheral CCR2+ monocytes −36.56% (p=0.006). ORR 49% (16/33 evaluable) vs 0/5 FOLFIRINOX alone (p=0.006 vs pre-specified 25% historical) | N=39 investigational / 6 control; no treatment-related deaths. Grade ≥3: neutropenia 69.2% (56% G-CSF; febrile neutropenia 18%), hypokalemia 18.0%, diarrhea 15.4%. 5.1% AE-driven termination. PF-04136309 dose-held/reduced in 15.4% for grade ≥3 diarrhea | [Nywening 2016](https://pubmed.ncbi.nlm.nih.gov/27055731/) |
-| PF-04136309 (CCR2i) + nab-paclitaxel/gemcitabine | No significant change in PD biomarkers (n.s.); ORR 23.8%; **trial terminated early (21/52 planned) for pulmonary toxicity** | N=21; primary counter-productive outcome was interstitial pneumonitis / respiratory failure leading to early study termination; most patients did not complete planned cycles | [Noel 2020](https://pubmed.ncbi.nlm.nih.gov/31297636/) |
-| BMS-813160 (dual CCR2/5) + nivolumab + gemcitabine/nab-paclitaxel | Intratumoral monocytes/macrophages decreased by scRNA-seq + flow (without peripheral-monocyte change); T-cell proliferation and effector genes enhanced. BR PDAC ORR 42% vs 0% control (n=8); LA PDAC ORR 20%. ITT: BR mPFS 11.9 mo, mOS 18.2 mo; LA mPFS 14.7 mo, mOS 17 mo. Resection 83.3% BR / 20% LA | N=32 investigational / 8 control. In dose-finding, no grade 3–4 TEAEs attributed solely to BMS-813160. In dose-expansion: grade 3 diarrhea and grade 3 QTc prolongation solely BMS-813160-attributed; grade 3–4 anemia 24%, fatigue 12%, ALT 12%, neutropenia 20% (shared attribution with GnP/nivo). 22/32 (69%) completed study; 2 COVID-era deaths from secondary bacterial pneumonia; 1 sudden death during cycle-1 off week (indeterminate) | [Grierson 2025](https://pubmed.ncbi.nlm.nih.gov/40125795/) |
-
-</details>
-
-## Classes examined but not ranked (unranked observations)
-
-<details class="sb-section" open markdown="1">
-<summary>Show / hide</summary>
-
-
-**CLEVER-1 blockade (bexmarilimab, 3 trials, Virtakoivu 2021 / Rannikko 2023 / Kontro 2025).** Skeptic CP-severity Unknown across all 3 — narrow-target early clinical. Repolarization signal is mechanistically unusual (v-ATPase-mediated endosomal-acidification impairment per Virtakoivu 2021), and MATINS has pivoted to hematologic indications. Too early to rank; the BEXMAB (Kontro 2025) AML/MDS phase 1 is the most watchable next-step datapoint.
-
-**LILRB2 / TREM2 blockade (3 trials, Taylor 2024 / Yeku 2025 / Beckermann 2024).** Genuinely early. IO-108 (Taylor 2024) has a 23% combo-cohort ORR signal worth tracking; PY314 has two papers (Yeku 2025 and Beckermann 2024) with a null-result in ICI-refractory RCC. **TREM2-specific long-term concern: microglial and osteoclast dependence — Nasu-Hakola disease is TREM2 loss-of-function — which short phase 1 trials cannot detect.** Not ranked for lack of evidence.
-
-**PI3Kγ inhibition (eganelisib, Hong 2023 / O'Connell 2024).** MARIO-1 showed MDSC reduction; MARIO-3 showed TAM repolarization correlating with PFS in front-line TNBC. Program has attenuated. Class collateral includes paradoxical autoimmunity from neutrophil ROS impairment and DC migration defects. Not ranked because n is small and program momentum has visibly slowed.
-
-**Trabectedin / lurbinectedin (Germano 2013 / Sun 2024).** Monocyte-selective cytotoxicity is mechanistically distinctive (caspase-8-dependent), but **the TARMIC phase 1/2 (Sun 2024) missed its primary 6-month non-progression endpoint — observed 12.5% vs 40% target.** Germano 2013 remains the mechanistic foundation. Not ranked because the clinical evidence does not support a forward research call in this shieldbreak frame.
-
-**STING agonism (ADU-S100, Meric-Bernstam 2022).** Textbook counter-productive-mechanism case: intratumoral injection with n=47 and the paper explicitly reports that "RNA expression and immune infiltration assessments in paired tumor biopsies did not reveal significant on-treatment changes." Program halted. Skeptic CP-severity High. Not ranked; retained in this section as the clearest negative exemplar in the set.
-
-</details>
-
-## Ranked prioritization
-
-<details class="sb-section" open markdown="1">
-<summary>Show / hide</summary>
-
-
-| Rank | Intervention | Likelihood of desired effect | Toxicity burden | Counter-productive MoA | Overall |
-|---:|---|---|---|---|---|
-| 1 | CSF1R pathway (mAb + TKI) | High for PD; Low-Moderate for clinical benefit outside macrophage-driven tumors | Moderate (on-target tissue-macrophage collateral; hepatic for TKI) | **High** (Gomez-Roca paper-internal inverse correlation between depletion depth and CD8 benefit; IL-34 escape) | Highest-evidence class but temper depletion-depth as the PD goal |
-| 2 | CD40 agonism | Moderate for repolarization; Low-Moderate for monotherapy clinical benefit; Null in CSF1R combo | Moderate (CRS, transaminitis, thromboembolism class-wide) | **Moderate** (mechanism conflict with CSF1R depleters; exhaustion drivers with engineered Fc) | Non-redundant mechanism; avoid CSF1R combos |
-| 3 | CD47 / SIRPα blockade | Low for the shieldbreak's TAM-modulation target (phagocytosis inferred, not measured); Moderate-High for hematologic clinical benefit | Moderate-High (uniform anemia, thrombocytopenia; sepsis in AML combos) | **Moderate-High** (post-dataset ENHANCE phase 3 failures; solid-tumor evidence absent) | Active clinical program only at evorpacept; solid-tumor gap |
-| 4 | CCR2 / CCR5 blockade | Moderate for PD; Low for clinical translation | Serious for PF-04136309 + GnP (program-terminated for pulmonary toxicity) | **High** (terminated trial; rebound kinetics; sponsor-acknowledged underperformance) | Class effectively program-failed; retained for mechanism-hypothesis value |
-
-The **Counter-productive MoA** column summarizes the skeptic-assessed severity of mechanism-level risks that the intervention may undermine the shieldbreak's target effect even when its proximal endpoint is met. It is distinct from Toxicity burden (which is about patient-level AEs). A severe counter-productive MoA pulls the Overall rating down even when Likelihood of effect is high. Severity aggregates per-group as the modal paper-level severity, bumped up one step when a paper-internal High is replicated across ≥2 papers or documents a wrong-direction mechanism in the intended context. Wrong-direction context-outliers are footnoted rather than allowed to move the aggregate.
-
-</details>
-
-## Caveats
-
-<details class="sb-section" open markdown="1">
-<summary>Show / hide</summary>
-
-
-- **Zero Low-CP-severity trials in this shieldbreak.** No ranked intervention is free of a structural counter-productive concern; rankings are relative, not absolute endorsements.
-- **Sample-size heterogeneity.** CSF1R has n ≈ 748 across 13 trials; CCR2/CCR5 has n ≈ 92 across 3. The ranking weights reproducibility alongside magnitude.
-- **Hematologic vs solid-tumor split.** CD47/SIRPα evidence is entirely hematologic; CCR2/5 is entirely pancreatic; CSF1R and CD40 span indications.
-- **Combination antagonism signal.** The CD40+CSF1R combo null-efficacy (Machiels 2020, Weiss 2021) is a specific research-planning call: do not stack these mechanisms without a preclinical rationale addressing the antigen-presentation conflict.
-- **Phagocytosis-assay gap.** No CD47 paper in this set reports ex-vivo phagocytosis quantification. A phase 2 that measures this endpoint directly would be highly informative.
-- **CP aggregation rule used here:** modal per-group severity, bumped up one step when a paper-internal High is replicated across ≥2 papers or documents a clearly wrong-direction mechanism in the intended context. Wrong-direction outliers in a discordant context (e.g., Kitko 2023 axatilimab in cGVHD vs oncology repurposing) are footnoted rather than allowed to move the aggregate.
-- **Rankings reflect Target-effect-as-written** ("durable human tumor-compartment TAM modulation"). If the Target effect is re-scoped toward anti-tumor clinical benefit, CP severity should weigh more heavily and Rank 1 narrows substantially against Rank 2 — CSF1R's Gomez-Roca inverse-correlation finding becomes near-disqualifying and CD40 agonism's non-redundant mechanism becomes a more attractive research-planning choice.
-- **What would change the ranking.** (a) A CSF1R trial that demonstrates *partial* depletion as a pre-specified PD endpoint with correlated clinical benefit would strengthen rank 1. (b) A CD40 monotherapy phase 2 with tumor scRNA-seq would elevate rank 2. (c) An evorpacept solid-tumor phase 1b with paired biopsies would reposition CD47/SIRPα. (d) CLEVER-1 or LILRB2 phase 2 data could introduce a new ranked entry.
-
-</details>
-
-## Sources
-
-<details class="sb-section" open markdown="1">
-<summary>Show / hide</summary>
-
-
-- Advani R 2018, NEJM — PMID 30380386
-- Autio KA 2020, Cancer — PMID 32847933
-- Beckermann KE 2024 — PMID 38372949
-- Bhatia S 2019, Cancer Immunol Res — PMID 30093453
-- Boal LH 2020 — PMID 32943455
-- Byrne KT 2021, Cancer Immunol Res — PMID 34112709
-- Cassier PA 2020, Lancet Oncol — PMID 33161240
-- Coveler AL 2023 — PMID 37385724
-- Daver N 2025 — PMID 40198272
-- Dowlati A 2021 — PMID 33624233
-- Falchook GS 2021 — PMID 33852104
-- Germano G 2013, Cancer Cell — PMID 23410977
-- Gomez-Roca C 2022, Ann Oncol — PMID 35577503
-- Grierson PM 2025 — PMID 40125795
-- Hong DS 2023 (MARIO-1) — PMID 37000164
-- Kitko CL 2023 — PMID 36459673
-- Kontro M 2025 (BEXMAB) — PMID 40449509
-- Machiels JP 2020 — PMID 33097612
-- Manji GA 2021 — PMID 34321280
-- Meric-Bernstam F 2022 (ADU-S100) — PMID 34716197
-- Noel M 2020 (terminated) — PMID 31297636
-- Nywening TM 2016, Lancet Oncol — PMID 27055731
-- O'Connell BC 2024 (MARIO-3) — PMID 39214650
-- Papadopoulos KP 2017 — PMID 28655795
-- Rannikko JH 2023 (MATINS part 2) — PMID 38056464
-- Razak AR 2020 — PMID 33046621
-- Sallman DA 2023 (MDS) — PMID 36888930
-- Soto M 2024 — PMID 38181044
-- Strati P 2025 (evorpacept) — PMID 40729376
-- Sun CM 2024 (TARMIC — primary endpoint missed) — PMID 38374062
-- Taylor MH 2024 (IO-108) — PMID 39567210
-- Virtakoivu R 2021 (MATINS part 1) — PMID 34078651
-- Weiss SA 2021 — PMID 34140403
-- Wesolowski R 2019 — PMID 31258629
-- Yeku OO 2025 (PY314 + PY159) — PMID 40081941
-
-External labels/cited: Niktimvo (axatilimab) FDA label, Aug 2024; Turalio (pexidartinib) FDA label, 2019.
-
----
-*This summary is an evidence-synthesis aid for research planning. It does not constitute clinical advice and must not be used to guide patient care.*
-
-### Scope inventory
-
-- **Intervention classes:** combo (19), csf1r-inhibitor (6), cd40-agonist (2), clever1-marco-blockade (2), lilrb2-trem2-blockade (2), trabectedin-lurbinectedin (2), pi3kg-inhibitor (1), sting-agonist (1), other-repolarizing (1), tlr-agonist (1)
-- **Tissue compartments:** tumor (20), PBMC (13), bone-marrow (3), skin (1)
-- **Design types:** paired pre/post, treated-vs-untreated, single-arm, window-of-opportunity, case series (all flagged per row)
-- **Row grain:** one row per (study × tissue × timepoint-cluster × dose-cohort)
-- **Primary-research-only;** reviews / meta-analyses live in the [side-list](#side-list-systematic-reviews-and-meta-analyses) below.
-
-See `prompts/shieldbreaks/tam-depletion/search.md` for the full search specification and
-`prompts/shieldbreaks/tam-depletion/extract.md` for the extraction schema.
-
-</details>
-
-## Pharmacodynamic results
-
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tumor-associated Macrophage Depletion, Inhibition, or Repolarization — Pharmacodynamic results</title>
+<style>
+/* Standalone-page chrome for the Pharmacodynamic results trial table.
+   Renders alongside the per-shieldbreak stylesheet so all pill / chip
+   / filter / table styles are inherited. */
+
+:root {
+  /* Mirror the Material light-theme tokens used in the per-shieldbreak CSS. */
+  --md-default-bg-color: #ffffff;
+  --md-default-fg-color: #1a1a26;
+  --md-default-fg-color--light: #4a4a5c;
+  --md-default-fg-color--lighter: rgba(0, 0, 0, 0.14);
+  --md-default-fg-color--lightest: rgba(0, 0, 0, 0.045);
+  --md-primary-fg-color: #5b3a87;
+  --md-primary-fg-color--lightest: rgba(91, 58, 135, 0.06);
+  --md-code-font: ui-monospace, "SFMono-Regular", "Consolas", monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --md-default-bg-color: #1a1a26;
+    --md-default-fg-color: #f1f1f5;
+    --md-default-fg-color--light: #c8c8d2;
+    --md-default-fg-color--lighter: rgba(255, 255, 255, 0.18);
+    --md-default-fg-color--lightest: rgba(255, 255, 255, 0.05);
+    --md-primary-fg-color: #b89cd6;
+    --md-primary-fg-color--lightest: rgba(184, 156, 214, 0.10);
+  }
+  /* Trigger the slate-mode CSS rules in the per-shieldbreak stylesheet. */
+  html { color-scheme: dark; }
+  body { background: var(--md-default-bg-color); color: var(--md-default-fg-color); }
+}
+
+* { box-sizing: border-box; }
+html { color-scheme: light dark; }
+body {
+  margin: 0;
+  padding: 1.5rem clamp(1rem, 4vw, 3rem) 3rem;
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
+               Helvetica, Arial, sans-serif;
+  line-height: 1.45;
+  font-size: 14px;
+}
+
+.sb-meta {
+  max-width: 90rem;
+  margin: 0 auto 1.5rem auto;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--md-default-fg-color--lighter);
+}
+.sb-meta-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--md-primary-fg-color);
+  margin: 0 0 0.4rem 0;
+}
+.sb-meta-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0 0 0.4rem 0;
+  line-height: 1.25;
+}
+.sb-meta-stats {
+  font-size: 0.85rem;
+  color: var(--md-default-fg-color--light);
+  margin: 0;
+}
+.sb-meta-back {
+  display: inline-block;
+  margin-top: 0.6rem;
+  font-size: 0.85rem;
+  color: var(--md-primary-fg-color);
+  text-decoration: none;
+}
+.sb-meta-back:hover { text-decoration: underline; }
+
+/* Treat the slate dark-mode prefix used by the per-shieldbreak stylesheet
+   as a no-op selector — the @media block above already swapped variables. */
+[data-md-color-scheme="slate"] { display: contents; }
+
+main { max-width: 90rem; margin: 0 auto; }
+
+/* Hard-coded substitutes for Material's Markdown-extension classes that
+   the inlined stylesheet may reference. */
+table { border-collapse: collapse; }
+
+
+/* Generated by scripts/build_table.py — do not hand-edit.
+   Source spec: styles/treg-depletion/STYLE.md */
+
+/* ---- PDF download link (above Research question) ---- */
+p.pdf-download {
+  display: inline-block;
+  margin: 0.5em 0 1em 0;
+  padding: 0.4em 0.9em;
+  border: 1px solid var(--md-primary-fg-color, #5b3a87);
+  border-radius: 0.3em;
+  background: var(--md-primary-fg-color--lightest, rgba(91, 58, 135, 0.06));
+  font-size: 0.92em;
+}
+p.pdf-download a {
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--md-primary-fg-color, #5b3a87);
+}
+p.pdf-download a:hover { text-decoration: underline; }
+p.pdf-download .pdf-meta {
+  margin-left: 0.5em;
+  font-size: 0.82em;
+  opacity: 0.75;
+  font-weight: 400;
+}
+[data-md-color-scheme="slate"] p.pdf-download {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+/* ---- Collapsible subsection wrappers (one toggle per ## section) ---- */
+details.sb-section {
+  margin: 0.25em 0 1.25em 0;
+}
+details.sb-section > summary {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0.25em 0.85em;
+  background: var(--md-default-fg-color--lightest, rgba(0, 0, 0, 0.045));
+  border: 1px solid var(--md-default-fg-color--lighter, rgba(0, 0, 0, 0.14));
+  border-radius: 0.3em;
+  font-size: 0.82em;
+  font-weight: 600;
+  user-select: none;
+  margin: 0.1em 0 0.9em 0;
+  list-style: none;
+  transition: background 0.12s;
+}
+details.sb-section > summary::-webkit-details-marker { display: none; }
+details.sb-section > summary::before {
+  content: "\25B8";   /* ▸ */
+  display: inline-block;
+  margin-right: 0.45em;
+  transition: transform 0.12s;
+}
+details.sb-section[open] > summary::before {
+  content: "\25BE";   /* ▾ */
+}
+details.sb-section > summary:hover {
+  background: var(--md-default-fg-color--lighter, rgba(0, 0, 0, 0.1));
+}
+[data-md-color-scheme="slate"] details.sb-section > summary {
+  background: rgba(255, 255, 255, 0.055);
+  border-color: rgba(255, 255, 255, 0.14);
+}
+[data-md-color-scheme="slate"] details.sb-section > summary:hover {
+  background: rgba(255, 255, 255, 0.11);
+}
+
+/* ---- .pill base class (factor into pills.css if a second shieldbreak lands) ---- */
+.pill {
+  display: inline-block;
+  padding: 0.05em 0.55em;
+  margin-right: 0.35em;
+  border-radius: 0.65em;
+  font-size: 0.72em;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  vertical-align: 0.12em;
+  white-space: nowrap;
+  border: 1px solid transparent;
+}
+
+/* ---- Citation links ---- */
+.cite-links a {
+  font-size: 0.75em;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--md-primary-fg-color);
+  text-decoration: none;
+  margin-right: 0.3em;
+  white-space: nowrap;
+}
+.cite-links a:hover { text-decoration: underline; }
+.cite-links a.critique-link {
+  color: var(--md-default-fg-color);
+  background: var(--md-default-fg-color--lightest, rgba(0,0,0,0.05));
+  padding: 0.05em 0.4em;
+  border-radius: 0.3em;
+  font-style: italic;
+}
+[data-md-color-scheme="slate"] .cite-links a.critique-link {
+  background: rgba(255,255,255,0.08);
+}
+
+/* ---- Booktabs-style table ---- */
+.pd-table-wrapper { overflow-x: auto; margin: 1em 0; }
+.pd-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.88em;
+}
+.pd-table thead tr:first-child th { border-top: 2px solid var(--md-default-fg-color); }
+.pd-table thead tr:last-child  th { border-bottom: 1.5px solid var(--md-default-fg-color); }
+.pd-table tbody tr:last-child  td { border-bottom: 2px solid var(--md-default-fg-color); }
+.pd-table th, .pd-table td {
+  border: none;
+  padding: 0.35em 0.6em;
+  vertical-align: top;
+}
+.pd-table td { border-bottom: none !important; }
+.pd-table th { text-align: left; font-weight: 600; }
+
+/* ---- Truncation ---- */
+.pd-table td.truncate {
+  max-width: 22ch;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.pd-table td.truncate:hover {
+  white-space: normal;
+  overflow: visible;
+  position: relative;
+  z-index: 10;
+  background: var(--md-default-bg-color);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* ---- Monospace cells ---- */
+.pd-table td.mono {
+  font-family: var(--md-code-font);
+  font-size: 0.82em;
+}
+
+/* ---- Durability ---- */
+.pd-table td.col-durability { font-style: italic; font-size: 0.83em; }
+
+/* ---- Notes column ---- */
+.pd-table td.col-notes {
+  font-style: italic;
+  font-size: 0.80em;
+  opacity: 0.8;
+  max-width: 26ch;
+}
+
+/* ---- Inline combination secondary text ---- */
+.pd-table td .combo {
+  display: block;
+  font-size: 0.82em;
+  opacity: 0.7;
+  margin-top: 0.15em;
+}
+.pd-table td .combo::before { content: "+ "; }
+
+/* ---- Two-tier column visibility ---- */
+.pd-table .col-expanded { display: none; }
+.pd-table.show-all .col-expanded { display: table-cell; }
+.pd-table .th-expanded { display: none; }
+.pd-table.show-all .th-expanded { display: table-cell; }
+
+.expand-toggle {
+  display: inline-block;
+  margin: 0.5em 0;
+  font-size: 0.85em;
+  cursor: pointer;
+  user-select: none;
+}
+.expand-toggle input { margin-right: 0.4em; }
+
+/* ---- Filter chip row ---- */
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em;
+  margin-bottom: 0.75em;
+  align-items: center;
+}
+.filter-chip {
+  cursor: pointer;
+  opacity: 0.65;
+  transition: opacity 0.15s;
+}
+.filter-chip.active { opacity: 1; outline: 2px solid var(--md-primary-fg-color); }
+.filter-chip:hover { opacity: 0.9; }
+
+/* ---- Signed change (typed pct_change) ---- */
+.change-neg { color: #1d6b4a; font-weight: 600; }
+.change-pos { color: #8c4a1f; font-weight: 600; }
+[data-md-color-scheme="slate"] .change-neg { color: #9fd4b7; }
+[data-md-color-scheme="slate"] .change-pos { color: #e8b896; }
+
+/* ---- Directional change (qualitative fallback, no typed pct_change) ---- */
+.change-neg-qual { color: #1d6b4a; font-weight: 500; font-style: italic; opacity: 0.85; }
+.change-pos-qual { color: #8c4a1f; font-weight: 500; font-style: italic; opacity: 0.85; }
+.change-null { color: var(--md-default-fg-color--light); font-style: italic; }
+[data-md-color-scheme="slate"] .change-neg-qual { color: #9fd4b7; }
+[data-md-color-scheme="slate"] .change-pos-qual { color: #e8b896; }
+
+/* ---- Success flag badges ---- */
+.pill.sf-sig-reduction {
+  background: #d9f2e5; color: #1d6b4a; border-color: #9fd4b7;
+  font-size: 0.78em;
+}
+.pill.sf-nonsig-trend {
+  background: #fbeacb; color: #8a5510; border-color: #e0b87c;
+}
+.pill.sf-null-result {
+  background: #ececf2; color: #3f3f5c; border-color: #b4b4c4;
+}
+.pill.sf-increase {
+  background: #fde4d3; color: #8c4a1f; border-color: #e8b896;
+}
+[data-md-color-scheme="slate"] .pill.sf-sig-reduction {
+  background: #1d4a36; color: #9fd4b7; border-color: #4a7a62;
+}
+[data-md-color-scheme="slate"] .pill.sf-nonsig-trend {
+  background: #4a3616; color: #e0b87c; border-color: #7a5c2e;
+}
+[data-md-color-scheme="slate"] .pill.sf-null-result {
+  background: #2a2a38; color: #b4b4c4; border-color: #4e4e64;
+}
+[data-md-color-scheme="slate"] .pill.sf-increase {
+  background: #4a2a14; color: #e8b896; border-color: #7a4a2a;
+}
+
+/* ---- Tissue chips ---- */
+.pill.tis-pbmc    { background:#dce6f7; color:#234f8c; border-color:#7ea5d4; }
+.pill.tis-tumor   { background:#e7dcf3; color:#5b3a87; border-color:#a995c8; }
+.pill.tis-tdln    { background:#d4ecec; color:#1d5c5c; border-color:#8fc4c4; }
+.pill.tis-bm      { background:#e8ebc7; color:#5a6a1d; border-color:#bac28a; }
+.pill.tis-ascites { background:#fbeacb; color:#8a5510; border-color:#e0b87c; }
+.pill.tis-skin    { background:#fde4d3; color:#8c4a1f; border-color:#e8b896; }
+.pill.tis-other   { background:#ececf2; color:#3f3f5c; border-color:#b4b4c4; }
+
+/* ---- Assay chips ---- */
+.pill.assay-flow      { background:#dce6f7; color:#234f8c; border-color:#7ea5d4; }
+.pill.assay-cytof     { background:#e7dcf3; color:#5b3a87; border-color:#a995c8; }
+.pill.assay-ihc       { background:#d4ecec; color:#1d5c5c; border-color:#8fc4c4; }
+.pill.assay-mif       { background:#fbeacb; color:#8a5510; border-color:#e0b87c; }
+.pill.assay-bulk-rna  { background:#e8ebc7; color:#5a6a1d; border-color:#bac28a; }
+.pill.assay-scrna     { background:#d9f2e5; color:#1d6b4a; border-color:#9fd4b7; }
+.pill.assay-qpcr      { background:#ececf2; color:#3f3f5c; border-color:#b4b4c4; }
+
+/* ---- Report (authorship + venue) cell ---- */
+.pd-table td.col-report { max-width: 18ch; }
+.report-cell { line-height: 1.25; }
+.report-authors { font-weight: 600; font-size: 0.92em; }
+.report-venue { font-size: 0.78em; opacity: 0.75; font-style: italic; margin-top: 0.1em; }
+
+/* ---- Confidence pills ---- */
+.pill.conf-high         { background: #d9f2e5; color: #1d6b4a; border-color: #9fd4b7; }
+.pill.conf-moderate     { background: #dce6f7; color: #234f8c; border-color: #7ea5d4; }
+.pill.conf-low          { background: #fbeacb; color: #8a5510; border-color: #e0b87c; }
+.pill.conf-very-low     { background: #fde4d3; color: #8c4a1f; border-color: #e8b896; }
+[data-md-color-scheme="slate"] .pill.conf-high      { background:#1d4a36; color:#9fd4b7; border-color:#4a7a62; }
+[data-md-color-scheme="slate"] .pill.conf-moderate  { background:#2a3a5a; color:#7ea5d4; border-color:#3d5e8a; }
+[data-md-color-scheme="slate"] .pill.conf-low       { background:#4a3616; color:#e0b87c; border-color:#7a5c2e; }
+[data-md-color-scheme="slate"] .pill.conf-very-low  { background:#4a2a14; color:#e8b896; border-color:#7a4a2a; }
+
+/* ---- Risk-of-bias pills (smaller, secondary to confidence) ---- */
+.pill.rob-low               { background:#d9f2e5; color:#1d6b4a; border-color:#9fd4b7; font-size:0.68em; }
+.pill.rob-some-concerns     { background:#fbeacb; color:#8a5510; border-color:#e0b87c; font-size:0.68em; }
+.pill.rob-moderate          { background:#ececf2; color:#3f3f5c; border-color:#b4b4c4; font-size:0.68em; }
+.pill.rob-serious           { background:#fde4d3; color:#8c4a1f; border-color:#e8b896; font-size:0.68em; }
+.pill.rob-na                { background:#ececf2; color:#6b6b7f; border-color:#b4b4c4; font-size:0.68em; font-style:italic; }
+[data-md-color-scheme="slate"] .pill.rob-low           { background:#1d4a36; color:#9fd4b7; border-color:#4a7a62; }
+[data-md-color-scheme="slate"] .pill.rob-some-concerns { background:#4a3616; color:#e0b87c; border-color:#7a5c2e; }
+[data-md-color-scheme="slate"] .pill.rob-moderate      { background:#2a2a38; color:#b4b4c4; border-color:#4e4e64; }
+[data-md-color-scheme="slate"] .pill.rob-serious       { background:#4a2a14; color:#e8b896; border-color:#7a4a2a; }
+[data-md-color-scheme="slate"] .pill.rob-na            { background:#2a2a38; color:#8a8a9e; border-color:#4e4e64; }
+
+/* ---- Bias / confounding flag pills ---- */
+.bias-flags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2em;
+  margin-top: 0.25em;
+  max-width: 22ch;
+}
+.pill.bias-flag {
+  font-size: 0.62em;
+  padding: 0.02em 0.4em;
+  white-space: nowrap;
+}
+.pill.bias-flag.bias-confound { background:#fde4d3; color:#8c4a1f; border-color:#e8b896; }
+.pill.bias-flag.bias-caveat   { background:#ececf2; color:#3f3f5c; border-color:#b4b4c4; }
+[data-md-color-scheme="slate"] .pill.bias-flag.bias-confound { background:#4a2a14; color:#e8b896; border-color:#7a4a2a; }
+[data-md-color-scheme="slate"] .pill.bias-flag.bias-caveat   { background:#2a2a38; color:#b4b4c4; border-color:#4e4e64; }
+
+.pd-table td.col-bias { max-width: 24ch; }
+
+/* ---- Change mechanism chips (smaller) ---- */
+.pill.mech-depletion  { background:#d9f2e5; color:#1d6b4a; border-color:#9fd4b7; font-size:0.65em; }
+.pill.mech-frac-shift { background:#dce6f7; color:#234f8c; border-color:#7ea5d4; font-size:0.65em; }
+.pill.mech-ratio-only { background:#fbeacb; color:#8a5510; border-color:#e0b87c; font-size:0.65em; }
+.pill.mech-null       { background:#ececf2; color:#3f3f5c; border-color:#b4b4c4; font-size:0.65em; }
+.pill.mech-neutral    { background:#e7dcf3; color:#5b3a87; border-color:#a995c8; font-size:0.65em; }
+
+/* ---- Row grouping (left-edge stripe cycle) ---- */
+.pd-table tr.group-0 td:first-child { border-left: 3px solid #7ea5d4; }
+.pd-table tr.group-1 td:first-child { border-left: 3px solid #9fd4b7; }
+.pd-table tr.group-2 td:first-child { border-left: 3px solid #e0b87c; }
+.pd-table tr.group-3 td:first-child { border-left: 3px solid #a995c8; }
+.pd-table tr.group-4 td:first-child { border-left: 3px solid #bac28a; }
+.pd-table tr.group-5 td:first-child { border-left: 3px solid #8fc4c4; }
+[data-md-color-scheme="slate"] .pd-table tr.group-0 td:first-child { border-left-color: #3d5e8a; }
+[data-md-color-scheme="slate"] .pd-table tr.group-1 td:first-child { border-left-color: #4a7a62; }
+[data-md-color-scheme="slate"] .pd-table tr.group-2 td:first-child { border-left-color: #7a5c2e; }
+[data-md-color-scheme="slate"] .pd-table tr.group-3 td:first-child { border-left-color: #6a4c90; }
+[data-md-color-scheme="slate"] .pd-table tr.group-4 td:first-child { border-left-color: #555f25; }
+[data-md-color-scheme="slate"] .pd-table tr.group-5 td:first-child { border-left-color: #3e6464; }
+</style>
+</head>
+<body>
+<header class="sb-meta">
+  <p class="sb-meta-eyebrow">Pharmacodynamic results</p>
+  <h1 class="sb-meta-title">Tumor-associated Macrophage Depletion, Inhibition, or Repolarization</h1>
+  <p class="sb-meta-stats"><strong>Last updated:</strong> 2026-04-27 &nbsp;
+    <strong>Rows:</strong> 37 across 35 studies &nbsp;
+    <strong>Outcomes:</strong> 19 succeeded / 4 partial /
+    2 failed / 12 not-assessed (ratio-shift)</p>
+  <p class="sb-meta-stats"><em>Self-contained download from
+    pirl-unc.github.io/io-shieldbreak — open in any modern browser.
+    Filters and the "Show all columns" toggle work offline.</em></p>
+</header>
+<main>
 <div class="pd-table-wrapper" markdown="0">
 <div class="filter-row">
   <span class="filter-chip active" data-tissue="all">All</span>
@@ -372,23 +513,6 @@ See `prompts/shieldbreaks/tam-depletion/search.md` for the full search specifica
   });
 })();
 </script>
-
-## Side-list: systematic reviews and meta-analyses
-
-<details class="sb-section" open markdown="1">
-<summary>Show / hide</summary>
-
-
-These are excluded from the primary table but retained as follow-up leads.
-
-| First author | Year | Journal | Title | Type | Links |
-|---|---|---|---|---|---|
-| Cannarile MA | 2014 | Oncoimmunology | Targeting tumor-associated macrophages in cancer therapy and understanding their complexity | narrative-review | [PMID](https://pubmed.ncbi.nlm.nih.gov/25941615/) [DOI](https://doi.org/10.4161/21624011.2014.955347) |
-| Wen J | 2023 | Eur J Med Chem | CSF1R inhibitors are emerging immunotherapeutic drugs for cancer treatment | narrative-review | [PMID](https://pubmed.ncbi.nlm.nih.gov/36335744/) [DOI](https://doi.org/10.1016/j.ejmech.2022.114972) |
-| Xu H | 2024 | Cancer Immunol Immunother | Targeting PI3K-gamma in myeloid-driven tumour immune suppression: a systematic literature review and meta-analysis | systematic-review | [PMID](https://pubmed.ncbi.nlm.nih.gov/39105848/) [DOI](https://doi.org/10.1007/s00262-024-03785-4) |
-| Djureinovic D | 2021 | Cancers (Basel) | Agonistic CD40 Antibodies in Cancer Treatment | narrative-review | [PMID](https://pubmed.ncbi.nlm.nih.gov/33804039/) [DOI](https://doi.org/10.3390/cancers13061302) |
-| Maute R | 2022 | Immunooncol Technol | CD47-SIRPα-targeted therapeutics: status and prospects | narrative-review | [PMID](https://pubmed.ncbi.nlm.nih.gov/35754851/) [DOI](https://doi.org/10.1016/j.iotech.2022.03.001) |
-| Mirza W | 2025 | Clin Exp Med | Clinical outcomes and safety of CD47-targeted immunotherapies across hematologic malignancies: a systematic review | systematic-review | [PMID](https://pubmed.ncbi.nlm.nih.gov/41217554/) [DOI](https://doi.org/10.1007/s10238-025-01762-4) |
-| Wang Y | 2022 | J Hematol Oncol | Emerging strategies in targeting tumor-resident myeloid cells for cancer immunotherapy | narrative-review | [PMID](https://pubmed.ncbi.nlm.nih.gov/36031601/) [DOI](https://doi.org/10.1186/s13045-022-01335-y) |
-
-</details>
+</main>
+</body>
+</html>

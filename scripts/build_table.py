@@ -623,6 +623,146 @@ def build_reviews_section(reviews: list[dict]) -> str:
 # ---------- page ----------
 
 
+_STANDALONE_HTML_BASE_CSS = """
+/* Standalone-page chrome for the Pharmacodynamic results trial table.
+   Renders alongside the per-shieldbreak stylesheet so all pill / chip
+   / filter / table styles are inherited. */
+
+:root {
+  /* Mirror the Material light-theme tokens used in the per-shieldbreak CSS. */
+  --md-default-bg-color: #ffffff;
+  --md-default-fg-color: #1a1a26;
+  --md-default-fg-color--light: #4a4a5c;
+  --md-default-fg-color--lighter: rgba(0, 0, 0, 0.14);
+  --md-default-fg-color--lightest: rgba(0, 0, 0, 0.045);
+  --md-primary-fg-color: #5b3a87;
+  --md-primary-fg-color--lightest: rgba(91, 58, 135, 0.06);
+  --md-code-font: ui-monospace, "SFMono-Regular", "Consolas", monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --md-default-bg-color: #1a1a26;
+    --md-default-fg-color: #f1f1f5;
+    --md-default-fg-color--light: #c8c8d2;
+    --md-default-fg-color--lighter: rgba(255, 255, 255, 0.18);
+    --md-default-fg-color--lightest: rgba(255, 255, 255, 0.05);
+    --md-primary-fg-color: #b89cd6;
+    --md-primary-fg-color--lightest: rgba(184, 156, 214, 0.10);
+  }
+  /* Trigger the slate-mode CSS rules in the per-shieldbreak stylesheet. */
+  html { color-scheme: dark; }
+  body { background: var(--md-default-bg-color); color: var(--md-default-fg-color); }
+}
+
+* { box-sizing: border-box; }
+html { color-scheme: light dark; }
+body {
+  margin: 0;
+  padding: 1.5rem clamp(1rem, 4vw, 3rem) 3rem;
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
+               Helvetica, Arial, sans-serif;
+  line-height: 1.45;
+  font-size: 14px;
+}
+
+.sb-meta {
+  max-width: 90rem;
+  margin: 0 auto 1.5rem auto;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--md-default-fg-color--lighter);
+}
+.sb-meta-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--md-primary-fg-color);
+  margin: 0 0 0.4rem 0;
+}
+.sb-meta-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0 0 0.4rem 0;
+  line-height: 1.25;
+}
+.sb-meta-stats {
+  font-size: 0.85rem;
+  color: var(--md-default-fg-color--light);
+  margin: 0;
+}
+.sb-meta-back {
+  display: inline-block;
+  margin-top: 0.6rem;
+  font-size: 0.85rem;
+  color: var(--md-primary-fg-color);
+  text-decoration: none;
+}
+.sb-meta-back:hover { text-decoration: underline; }
+
+/* Treat the slate dark-mode prefix used by the per-shieldbreak stylesheet
+   as a no-op selector — the @media block above already swapped variables. */
+[data-md-color-scheme="slate"] { display: contents; }
+
+main { max-width: 90rem; margin: 0 auto; }
+
+/* Hard-coded substitutes for Material's Markdown-extension classes that
+   the inlined stylesheet may reference. */
+table { border-collapse: collapse; }
+"""
+
+
+def build_standalone_pd_html(
+    slug: str,
+    rows: list[dict],
+    critique_pmids: set[str] | None,
+    critiques_by_pmid: dict[str, dict] | None,
+    meta: dict,
+) -> str:
+    """Compose a self-contained HTML document with the Pharmacodynamic results
+    trial table — usable by an external reviewer without MkDocs."""
+    n_rows = len(rows)
+    n_studies = len({r.get("pmid") for r in rows if r.get("pmid")})
+    n_success = sum(1 for r in rows if r.get("depletion_success") == "succeeded")
+    n_failed = sum(1 for r in rows if r.get("depletion_success") == "failed")
+    n_partial = sum(1 for r in rows if r.get("depletion_success") == "partial")
+    n_not_assessed = sum(1 for r in rows if r.get("depletion_success") == "not-assessed")
+    title = meta.get("display_title") or slug.replace("-", " ").title()
+    today = datetime.now(timezone.utc).date().isoformat()
+
+    table_html = build_table_html(rows, critique_pmids, critiques_by_pmid)
+    inlined_css = _STANDALONE_HTML_BASE_CSS + "\n\n" + build_css()
+
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{escape(title)} — Pharmacodynamic results</title>
+<style>{inlined_css}</style>
+</head>
+<body>
+<header class="sb-meta">
+  <p class="sb-meta-eyebrow">Pharmacodynamic results</p>
+  <h1 class="sb-meta-title">{escape(title)}</h1>
+  <p class="sb-meta-stats"><strong>Last updated:</strong> {today} &nbsp;
+    <strong>Rows:</strong> {n_rows} across {n_studies} studies &nbsp;
+    <strong>Outcomes:</strong> {n_success} succeeded / {n_partial} partial /
+    {n_failed} failed / {n_not_assessed} not-assessed (ratio-shift)</p>
+  <p class="sb-meta-stats"><em>Self-contained download from
+    pirl-unc.github.io/io-shieldbreak — open in any modern browser.
+    Filters and the "Show all columns" toggle work offline.</em></p>
+</header>
+<main>
+{table_html}
+</main>
+</body>
+</html>
+"""
+
+
 def _read_shieldbreak_meta(slug: str) -> dict:
     """Read top-level meta fields from schema.json. Returns empty dict if missing."""
     schema_path = DATA_DIR / slug / "schema.json"
@@ -695,16 +835,35 @@ def build_index_md(slug: str) -> str:
               "[side-list](#side-list-systematic-reviews-and-meta-analyses) below.\n"
         )
 
+    download_block_parts: list[str] = []
     pdf_path = DOCS_DIR / slug / f"{slug}-shieldbreak-report.pdf"
-    pdf_link_block = ""
     if pdf_path.exists():
         size_kb = pdf_path.stat().st_size / 1024
-        pdf_link_block = (
+        download_block_parts.append(
             f'<p class="pdf-download"><a href="{slug}-shieldbreak-report.pdf" '
             f'download>📄 Download PDF report</a> '
             f'<span class="pdf-meta">({size_kb:.0f} KB — executive summary + ranked '
-            f'interventions + per-trial detail tables)</span></p>\n\n'
+            f'interventions + per-trial detail tables)</span></p>'
         )
+    critique_pdf_path = DOCS_DIR / slug / f"{slug}-critique.pdf"
+    if critique_pdf_path.exists():
+        size_kb = critique_pdf_path.stat().st_size / 1024
+        download_block_parts.append(
+            f'<p class="pdf-download"><a href="{slug}-critique.pdf" '
+            f'download>🔍 Download critique PDF</a> '
+            f'<span class="pdf-meta">({size_kb:.0f} KB — per-paper appraisal '
+            f'+ cross-paper synthesis)</span></p>'
+        )
+    standalone_html_path = DOCS_DIR / slug / f"{slug}-pharmacodynamic-results.html"
+    if standalone_html_path.exists():
+        size_kb = standalone_html_path.stat().st_size / 1024
+        download_block_parts.append(
+            f'<p class="pdf-download"><a href="{slug}-pharmacodynamic-results.html" '
+            f'download>📊 Download Pharmacodynamic results (HTML)</a> '
+            f'<span class="pdf-meta">({size_kb:.0f} KB — sortable, filterable trial '
+            f'table; opens locally in any browser)</span></p>'
+        )
+    pdf_link_block = "\n".join(download_block_parts) + ("\n\n" if download_block_parts else "")
 
     header = f"""# {title}
 
@@ -1255,13 +1414,26 @@ def main(argv: list[str]) -> int:
         return 1
     sb_docs.mkdir(parents=True, exist_ok=True)
 
-    page = build_index_md(slug)
-    (sb_docs / "index.md").write_text(page)
-
-    # CSS
+    # CSS first — the standalone HTML inlines it.
     css_dir = REPO_ROOT / "docs" / "stylesheets"
     css_dir.mkdir(parents=True, exist_ok=True)
     (css_dir / f"{slug}.css").write_text(build_css())
+
+    # Standalone Pharmacodynamic-results HTML — must exist before
+    # build_index_md runs so the download-link block can detect it.
+    rows_for_html = read_jsonl(sb_data / "trials.jsonl")
+    critiques_for_html = read_jsonl(sb_data / "critiques.jsonl")
+    standalone_html = build_standalone_pd_html(
+        slug,
+        rows_for_html,
+        {c["pmid"] for c in critiques_for_html if c.get("pmid")},
+        {c["pmid"]: c for c in critiques_for_html if c.get("pmid")},
+        _read_shieldbreak_meta(slug),
+    )
+    (sb_docs / f"{slug}-pharmacodynamic-results.html").write_text(standalone_html)
+
+    page = build_index_md(slug)
+    (sb_docs / "index.md").write_text(page)
 
     # Per-paper critique pages (skipped if critiques.jsonl doesn't exist)
     n_critiques = build_per_paper_critique_pages(slug)
