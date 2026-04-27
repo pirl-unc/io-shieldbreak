@@ -6,7 +6,7 @@
 
 <p class="pdf-download"><a href="treg-depletion-shieldbreak-report.pdf" download>📄 Download PDF report</a> <span class="pdf-meta">(152 KB — executive summary + ranked interventions + per-trial detail tables)</span></p>
 <p class="pdf-download"><a href="treg-depletion-critique.pdf" download>🔍 Download critique PDF</a> <span class="pdf-meta">(405 KB — per-paper appraisal + cross-paper synthesis)</span></p>
-<p class="pdf-download"><a href="treg-depletion-pharmacodynamic-results.html" download>📊 Download Pharmacodynamic results (HTML)</a> <span class="pdf-meta">(212 KB — sortable, filterable trial table; opens locally in any browser)</span></p>
+<p class="pdf-download"><a href="treg-depletion-pharmacodynamic-results.html" download>📊 Download Pharmacodynamic results (HTML)</a> <span class="pdf-meta">(213 KB — sortable, filterable trial table; opens locally in any browser)</span></p>
 
 ## Research question
 
